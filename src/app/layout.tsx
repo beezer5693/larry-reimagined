@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const crimsonPro = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -19,14 +20,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen scroll-smooth bg-[#101217] antialiased",
+          "min-h-screen scroll-smooth bg-white antialiased dark:bg-[#101217]",
           crimsonPro.className,
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

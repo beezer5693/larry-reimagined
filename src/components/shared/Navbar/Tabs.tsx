@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "@/styles/navbar/navbar.css";
 import { cn } from "@/lib/utils";
 
 type TabProps = {
@@ -18,10 +17,13 @@ const Tabs = ({ tabs, path }: TabProps) => {
         {tabs.map((tab) => (
           <li
             key={tab.id}
-            className={cn("text-sm text-white", {
-              "underline-hover-animation": path !== tab.path,
-              "underline underline-offset-[3px]": path === tab.path,
-            })}
+            className={cn(
+              "relative text-sm text-black before:absolute before:bottom-[2px] before:left-0 before:h-[1px] before:w-0 before:bg-black before:transition-all before:duration-300 before:ease-in-out before:hover:w-full dark:text-white before:dark:bg-white",
+              {
+                "underline underline-offset-[3px] before:hidden":
+                  path === tab.path,
+              },
+            )}
           >
             <Link href={tab.path}>
               <span>{tab.label}</span>

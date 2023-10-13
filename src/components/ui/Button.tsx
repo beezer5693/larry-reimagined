@@ -8,10 +8,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primaryWithHoverAnimation:
-          "bg-yellow-400 hover:-translate-x-[3px] hover:-translate-y-[3px]",
+          "bg-yellow-300 hover:-translate-x-[3px] hover:-translate-y-[3px]",
         secondaryWithHoverAnimation:
           "bg-white hover:-translate-x-[3px] hover:-translate-y-[3px]",
-        primary: "bg-yellow-400",
+        primary: "bg-yellow-300",
         secondary: "bg-white",
       },
       size: {
