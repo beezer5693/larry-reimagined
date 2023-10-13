@@ -23,25 +23,19 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 z-50 flex w-full justify-center bg-[#fffff8] px-5">
       <div className="relative flex w-full max-w-screen-xl items-center justify-between border-b border-dashed border-black bg-[#fffff8] py-4">
-        <Link
-          className="text-xl font-medium text-black dark:text-white"
-          href="/"
-        >
+        <Link className="text-xl font-medium text-black" href="/">
           L|B
         </Link>
         <Tabs tabs={tabs} path={currentPath} />
         <Button
           variant={"primaryWithHoverAnimation"}
-          className="hidden -translate-x-[3px] -translate-y-[3px] md:block"
-          className2="dark:bg-yellow-200 bg-black"
+          className="hidden -translate-x-[4px] -translate-y-[4px] md:block"
+          className2="bg-black"
           path="/contact"
         >
           Book Larry
         </Button>
-        <Menu
-          className="ml-auto text-black dark:text-white md:hidden"
-          size={24}
-        />
+        <Menu className="ml-auto text-black md:hidden" size={24} />
       </div>
     </div>
   );

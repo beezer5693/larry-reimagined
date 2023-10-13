@@ -54,7 +54,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
             size={"sm"}
             variant={"secondaryWithHoverAnimation"}
             className="rounded-full text-xs"
-            className2="rounded-full"
+            className2="rounded-full bg-[#38F8D3] border border-black"
             className3="max-w-max"
           >
             <span>Learn More</span>
@@ -88,7 +88,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
             size={"sm"}
             variant={"secondaryWithHoverAnimation"}
             className="rounded-full text-xs"
-            className2="rounded-full"
+            className2="rounded-full bg-[#38F8D3] border border-black"
             className3="max-w-max"
           >
             <span>Learn More</span>
@@ -106,6 +106,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
             variant={"secondaryWithHoverAnimation"}
             className="rounded-full text-xs"
             className2="rounded-full"
+            className3="max-w-max"
           >
             <span>Learn More</span>
             <ArrowUpRight className="ml-1" size={18} />

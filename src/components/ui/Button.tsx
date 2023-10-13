@@ -9,9 +9,9 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primaryWithHoverAnimation:
-          "bg-[#38F8D3] hover:-translate-x-[3px] hover:-translate-y-[3px]",
+          "bg-[#38F8D3] hover:-translate-x-[4px] hover:-translate-y-[4px]",
         secondaryWithHoverAnimation:
-          "bg-white hover:-translate-x-[3px] hover:-translate-y-[3px]",
+          "bg-white hover:-translate-x-[4px] hover:-translate-y-[4px]",
         primary: "bg-[#38F8D3]",
         secondary: "bg-white",
       },

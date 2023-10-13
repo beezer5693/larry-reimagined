@@ -6,7 +6,7 @@ import { ArrowRight, Redo } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="border-b border-dashed border-black pb-10 pt-7 dark:border-white">
+    <div className="border-b border-dashed border-black pb-10 pt-7">
       <section className="relative flex flex-col rounded-sm border border-black bg-gradient-to-br from-[#4c6df9] to-[#3254df] md:flex-row md:justify-between">
         {/* Hero background */}
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm bg-black"></div>
