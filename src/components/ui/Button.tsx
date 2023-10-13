@@ -3,21 +3,25 @@ import { VariantProps, cva } from "class-variance-authority";
 import { ButtonHTMLAttributes, FC } from "react";
 
 const buttonVariants = cva(
-  "active:translate-x-0 relative rounded-sm inline-flex items-center justify-center active:translate-y-0 transition duration-200 ease-in-out border border-black text-sm text-black focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white hover:-translate-x-[3px] hover:-translate-y-[3px]",
+  "active:translate-x-0 relative rounded-sm inline-flex items-center justify-center active:translate-y-0 transition duration-200 ease-in-out border border-black text-sm text-black focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
   {
     variants: {
       variant: {
+        primaryWithHoverAnimation:
+          "bg-yellow-400 hover:-translate-x-[3px] hover:-translate-y-[3px]",
+        secondaryWithHoverAnimation:
+          "bg-white hover:-translate-x-[3px] hover:-translate-y-[3px]",
         primary: "bg-yellow-400",
         secondary: "bg-white",
       },
       size: {
         default: "px-8 py-2.5",
-        sm: "px-6 py-2",
+        sm: "px-3 py-2",
         lg: "md:px-10 md:py-3 px-6 py-2 text-base",
       },
     },
     defaultVariants: {
-      variant: "primary",
+      variant: "primaryWithHoverAnimation",
       size: "default",
     },
   },
@@ -40,7 +44,7 @@ const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <div className="relative">
+    <div className="relative inline-block">
       <div
         className={cn("absolute inset-0 rounded-sm bg-black", className2)}
       ></div>

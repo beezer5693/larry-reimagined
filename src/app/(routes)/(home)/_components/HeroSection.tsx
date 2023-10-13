@@ -4,17 +4,18 @@ import larry from "../../../../../public/assets/home/hero.png";
 
 const HeroSection = () => {
   return (
-    <div className="border-b border-dashed border-black py-7">
-      <section className="relative flex flex-col items-center rounded-sm border border-black bg-gradient-to-br from-indigo-400 to-indigo-600 md:flex-row">
+    <div className="border-b border-dashed border-white pb-10 pt-7">
+      <section className="relative flex flex-col items-center rounded-sm border border-black bg-indigo-500 md:flex-row md:justify-between">
         {/* Hero background */}
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm bg-black"></div>
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm bg-indigo-400"></div>
 
         {/* Hero text and buttons */}
-        <div className="flex-1 space-y-4 px-4 pt-10 md:pl-8 md:pt-0 lg:pl-14">
-          <p className="text-center text-5xl leading-[45px] tracking-tighter md:text-left lg:text-6xl lg:leading-[50px]">
-            Dare to <br /> think{" "}
+        <div className="h-full space-y-4 px-4 pt-10 md:pl-11 md:pt-0 lg:pl-20">
+          <h1 className="text-center text-5xl leading-[45px] tracking-tighter sm:text-6xl md:text-left md:leading-[50px] lg:text-7xl lg:leading-[60px]">
+            Dare to <span className="md:hidden">think</span> <br />{" "}
+            <span className="hidden md:inline-block">think</span>{" "}
             <span className="font-bold italic">Different.</span>
-          </p>
+          </h1>
           <p className="max-w-[45ch] text-center leading-5 md:text-left lg:text-lg lg:leading-5">
             Harnessing the immense potential within to transmute personal
             obstacles into reservoirs of self-empowerment.
@@ -24,12 +25,12 @@ const HeroSection = () => {
               className="w-full rounded-full"
               className2="rounded-full"
               size={"lg"}
-              variant={"secondary"}
+              variant={"secondaryWithHoverAnimation"}
             >
               Services
             </Button>
             <Button
-              variant={"secondary"}
+              variant={"secondaryWithHoverAnimation"}
               className="w-full rounded-full hover:bg-yellow-400"
               className2="rounded-full"
               size={"lg"}
@@ -40,8 +41,8 @@ const HeroSection = () => {
         </div>
 
         {/* Hero image */}
-        <div className="relative w-full self-stretch md:w-[45%]">
-          <div className="relative h-[300px] sm:h-[600px] md:h-[475px]">
+        <div className="relative self-stretch md:w-[45%]">
+          <div className="relative h-[300px] sm:h-[500px] md:h-[500px]">
             <Image
               className="object-cover md:object-center"
               src={larry}

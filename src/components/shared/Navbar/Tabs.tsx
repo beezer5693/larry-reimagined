@@ -18,7 +18,7 @@ const Tabs = ({ tabs, path }: TabProps) => {
         {tabs.map((tab) => (
           <li
             key={tab.id}
-            className={cn("text-sm", {
+            className={cn("text-sm text-white", {
               "underline-hover-animation": path !== tab.path,
               "underline underline-offset-[3px]": path === tab.path,
             })}

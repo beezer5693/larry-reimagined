@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen scroll-smooth bg-white antialiased",
+          "min-h-screen scroll-smooth bg-[#101217] antialiased",
           crimsonPro.className,
         )}
       >
