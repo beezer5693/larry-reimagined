@@ -12,7 +12,7 @@ type TabProps = {
 
 const Tabs = ({ tabs, path }: TabProps) => {
   return (
-    <nav>
+    <nav className="hidden md:block">
       <ul className="flex items-center gap-10">
         {tabs.map((tab) => (
           <li

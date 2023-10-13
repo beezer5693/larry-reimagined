@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
+import Link from "next/link";
 import { ButtonHTMLAttributes, FC } from "react";
 
 const buttonVariants = cva(
@@ -8,10 +9,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primaryWithHoverAnimation:
-          "bg-yellow-300 hover:-translate-x-[3px] hover:-translate-y-[3px]",
+          "bg-[#38F8D3] hover:-translate-x-[3px] hover:-translate-y-[3px]",
         secondaryWithHoverAnimation:
           "bg-white hover:-translate-x-[3px] hover:-translate-y-[3px]",
-        primary: "bg-yellow-300",
+        primary: "bg-[#38F8D3]",
         secondary: "bg-white",
       },
       size: {
@@ -32,29 +33,45 @@ export interface ButtonProps
     VariantProps<typeof buttonVariants> {
   isLoading?: boolean;
   className2?: string;
+  className3?: string;
+  path?: string;
 }
 
 const Button: FC<ButtonProps> = ({
   className,
   className2,
+  className3,
   children,
   variant,
   size,
   isLoading = false,
+  path,
   ...props
 }) => {
   return (
-    <div className="relative inline-block">
+    <div className={cn("relative md:max-w-max", className3)}>
       <div
         className={cn("absolute inset-0 rounded-sm bg-black", className2)}
       ></div>
-      <button
-        disabled={isLoading}
-        className={cn(buttonVariants({ variant, size, className }))}
-        {...props}
-      >
-        {children}
-      </button>
+      {path ? (
+        <Link href={path}>
+          <button
+            disabled={isLoading}
+            className={cn(buttonVariants({ variant, size, className }))}
+            {...props}
+          >
+            {children}
+          </button>
+        </Link>
+      ) : (
+        <button
+          disabled={isLoading}
+          className={cn(buttonVariants({ variant, size, className }))}
+          {...props}
+        >
+          {children}
+        </button>
+      )}
     </div>
   );
 };
