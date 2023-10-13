@@ -44,10 +44,11 @@ const HeroSection = () => {
         <div className="relative self-stretch md:w-[45%]">
           <div className="relative h-[300px] sm:h-[500px] md:h-[500px]">
             <Image
-              className="object-cover md:object-center"
+              className="object-cover object-center"
               src={larry}
               fill
-              alt=""
+              sizes="(min-width: 1360px) 575px, (min-width: 1040px) calc(53.33vw - 140px), (min-width: 780px) calc(66.25vw - 236px), calc(100vw - 42px)"
+              alt="Larry Bryan"
               quality={65}
             />
           </div>
