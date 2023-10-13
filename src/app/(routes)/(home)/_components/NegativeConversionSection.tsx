@@ -7,7 +7,7 @@ const NegativeConversionSection = () => {
       <section className="space-y-10">
         <div className="space-y-3">
           <h2 className="text-4xl font-bold leading-8 text-white">
-            Negative <br /> Conversions
+            Negative <br /> Conversations
           </h2>
           <p className="max-w-[60ch] leading-[18px] text-white">
             The conversions we have with ourselves on a daily basis have a
