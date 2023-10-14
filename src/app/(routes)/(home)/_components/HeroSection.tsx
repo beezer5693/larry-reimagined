@@ -1,21 +1,21 @@
 import Button from "@/components/ui/Button";
-import { ArrowRight, Redo } from "lucide-react";
+import { Redo } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   return (
     <div className="border-b border-dashed border-black pb-12 pt-7">
-      <section className="relative flex flex-col rounded-sm border border-black bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] lg:flex-row lg:justify-between lg:pt-24">
+      <section className="relative flex flex-col rounded-sm border border-black bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] pb-0 pt-14 lg:flex-row lg:justify-between lg:pt-24">
         {/* Hero background */}
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm bg-black"></div>
 
         {/* Hero left/top */}
-        <div className="relative flex flex-1 flex-col items-center justify-center self-stretch px-10 pb-10 pt-10 lg:justify-start lg:px-0 lg:pb-0 lg:pl-10 lg:pt-0">
+        <div className="relative flex flex-1 flex-col items-center justify-center self-stretch px-10 pb-10 lg:justify-start lg:px-0 lg:pb-0 lg:pl-10 lg:pt-10">
           <div className="relative">
             <h1 className="relative text-center text-6xl font-medium leading-[55px] tracking-tighter text-[#101217] md:text-7xl lg:text-left lg:leading-[60px]">
-              <span className="relative px-2 before:absolute before:inset-0 before:-skew-y-2 before:bg-yellow-300">
+              <span className="relative px-2">
+                <span className="absolute inset-0 -skew-y-2 bg-yellow-300"></span>
                 <span className="relative">Dare to</span>
               </span>{" "}
               <span className="hidden align-middle lg:inline-block">
@@ -54,24 +54,12 @@ const HeroSection = () => {
                 Book Larry
               </Button>
             </div>
-            <div className="absolute -bottom-32 left-0 hidden rounded-full bg-[#101217]/80 px-4 py-0.5 lg:block">
-              <Link href="/podcast">
-                <p className="group inline-flex items-center text-xs font-medium text-white">
-                  <span className="mr-1.5 text-lg">🎙️</span>
-                  <span>Be on the lookout for upcoming podcast episodes!</span>
-                  <ArrowRight
-                    className="ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
-                    size={14}
-                  />
-                </p>
-              </Link>
-            </div>
           </div>
         </div>
 
         {/* Hero right/bottom */}
-        <div className="relative flex justify-center self-stretch px-5 pb-10 lg:w-[45%] lg:pr-5">
-          <div className="relative rounded-[2px] border border-black bg-gradient-to-br from-[#3a53f5] to-[#2e42c4]">
+        <div className="relative flex justify-center self-stretch px-5 lg:w-[45%] lg:pr-5">
+          <div className="relative rounded-bl-[2px] rounded-br-[2px] rounded-tl-full rounded-tr-full border-x border-t border-black bg-gradient-to-br from-[#3a53f5] to-[#2e42c4]">
             <Image
               className="object-cover object-bottom grayscale"
               src={larry}
