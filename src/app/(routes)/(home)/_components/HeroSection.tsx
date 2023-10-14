@@ -30,7 +30,7 @@ const HeroSection = () => {
                 Different.
               </span>
             </h1>
-            <p className="mt-5 max-w-[45ch] text-center leading-5 text-[#101217] lg:px-0 lg:text-left lg:text-lg lg:leading-5">
+            <p className="mt-5 max-w-[45ch] text-center leading-5 text-blue-200 lg:px-0 lg:text-left lg:text-lg lg:leading-5">
               Harnessing the immense potential within to transmute personal
               obstacles into reservoirs of self-empowerment.
             </p>

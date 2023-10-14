@@ -20,7 +20,9 @@ const NegativeConversationCards = ({ data }: CardProps) => {
           >
             {data[0].label}
           </h3>
-          <p className="lg:text-lg lg:leading-6">{data[0].description}</p>
+          <p className="text-blue-200 lg:text-lg lg:leading-6">
+            {data[0].description}
+          </p>
           <Button
             size={"sm"}
             variant={"secondaryWithHoverAnimation"}
@@ -110,7 +112,9 @@ const NegativeConversationCards = ({ data }: CardProps) => {
           >
             {data[5].label}
           </h3>
-          <p className="lg:text-lg lg:leading-6">{data[5].description}</p>
+          <p className="text-blue-200 lg:text-lg lg:leading-6">
+            {data[5].description}
+          </p>
           <Button
             size={"sm"}
             variant={"secondaryWithHoverAnimation"}
