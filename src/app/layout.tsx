@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/Navbar/Navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -25,6 +26,7 @@ export default function RootLayout({
           crimsonPro.className,
         )}
       >
+        <Navbar />
         {children}
       </body>
     </html>

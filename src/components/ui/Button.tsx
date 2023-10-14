@@ -9,10 +9,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primaryWithHoverAnimation:
-          "bg-[#38F8D3] hover:-translate-x-[4px] hover:-translate-y-[4px]",
+          "bg-yellow-300 hover:-translate-x-[4px] hover:-translate-y-[4px]",
         secondaryWithHoverAnimation:
           "bg-white hover:-translate-x-[4px] hover:-translate-y-[4px]",
-        primary: "bg-[#38F8D3]",
+        primary: "bg-yellow-300",
         secondary: "bg-white",
       },
       size: {
@@ -49,7 +49,7 @@ const Button: FC<ButtonProps> = ({
   ...props
 }) => {
   return (
-    <div className={cn("relative md:max-w-max", className3)}>
+    <div className={cn("relative w-full lg:max-w-max", className3)}>
       <div
         className={cn("absolute inset-0 rounded-sm bg-black", className2)}
       ></div>
