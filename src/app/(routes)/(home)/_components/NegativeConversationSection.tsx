@@ -10,7 +10,7 @@ const NegativeConversationSection = () => {
           <div className="inline-block pb-3 text-xs text-black">
             <p className="inline-flex items-center rounded-full border border-black px-3 py-1">
               <span className="inline-block">
-                <Brain size={18} className="mr-2 fill-[#4c6df9]" />
+                <Brain size={18} className="mr-2 fill-[#3a53f5]" />
               </span>
               Change your mind - change your life.
             </p>
