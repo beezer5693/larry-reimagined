@@ -4,8 +4,8 @@ import { Brain } from "lucide-react";
 
 const NegativeConversationSection = () => {
   return (
-    <div className="border-b border-dashed border-black pb-12 pt-10">
-      <section className="space-y-10">
+    <div className="flex w-full justify-center px-10 py-14">
+      <section className="max-w-screen-xl space-y-10 ">
         <div className="space-y-3">
           <div className="inline-block pb-3 text-xs text-black">
             <p className="inline-flex items-center rounded-full border border-black px-3 py-1">

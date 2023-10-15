@@ -1,12 +1,14 @@
 import HeroSection from "./_components/HeroSection";
+import MindsetSection from "./_components/MindsetSection";
 import NegativeConversationSection from "./_components/NegativeConversationSection";
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden px-5 pb-40">
-      <div className="w-full max-w-screen-xl">
+    <main className="flex w-full flex-col items-center overflow-hidden pb-40">
+      <div className="flex w-full flex-col items-center">
         <HeroSection />
         <NegativeConversationSection />
+        <MindsetSection />
       </div>
     </main>
   );
