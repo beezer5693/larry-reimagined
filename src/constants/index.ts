@@ -2,7 +2,7 @@ export const NEGATIVE_CONVOS = [
   {
     label: "Negative Self-Talk",
     description:
-      "I am making progress in my endeavors, yet I believe I could achieve significantly greater success if I were not impeded by the persistent presence of self-deprecating thoughts.",
+      "I'm progressing in my endeavors, but self-deprecating thoughts hinder my potential for greater success.",
   },
   {
     label: "Fear",
@@ -17,7 +17,7 @@ export const NEGATIVE_CONVOS = [
   {
     label: "Feeling Lost",
     description:
-      "I know I am capable of so much more and I want to reach my full potential but I just can’t get started.",
+      "I know I am capable of so much more and I want to reach my full potential but I just don't know how to get started.",
   },
   {
     label: "Embarrassment",
@@ -27,7 +27,7 @@ export const NEGATIVE_CONVOS = [
   {
     label: "Poor Decisions",
     description:
-      "At times, my decision-making does not yield the desired outcomes and results that I aspire to achieve. I recognize that there is room for improvement in my choice-making process, as I strive to enhance my ability to consistently attain my intended goals.",
+      "Occasionally, my decision-making doesn't meet my desired outcomes. I'm aware of the need for improvement as I aim for more consistent goal achievement.",
   },
 ];
 

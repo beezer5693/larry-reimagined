@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ButtonHTMLAttributes, FC } from "react";
 
 const buttonVariants = cva(
-  "relative  inline-flex items-center justify-center transition duration-200 ease-in-out border border-black text-sm text-black focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
+  "relative  inline-flex items-center justify-center uppercase transition duration-200 ease-in-out text-sm text-black focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
   {
     variants: {
       variant: {

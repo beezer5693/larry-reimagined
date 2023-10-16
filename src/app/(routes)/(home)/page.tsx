@@ -1,3 +1,4 @@
+import CharacteristicsSection from "./_components/CharacteristicsSection";
 import HeroSection from "./_components/HeroSection";
 import MindsetSection from "./_components/MindsetSection";
 import NegativeConversationSection from "./_components/NegativeConversationSection";
@@ -9,6 +10,7 @@ export default function Home() {
         <HeroSection />
         <NegativeConversationSection />
         <MindsetSection />
+        <CharacteristicsSection />
       </div>
     </main>
   );
