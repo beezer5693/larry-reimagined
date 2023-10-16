@@ -16,7 +16,8 @@ const HeroSection = () => {
           alt="crowd of people"
           fill
           quality={65}
-          sizes="(min-width: 1400px) 1278px, calc(94.44vw - 25px)"
+          sizes="100vw"
+          priority
         />
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
         {/* Hero left/top */}
@@ -67,7 +68,7 @@ const HeroSection = () => {
               src={larry}
               height={700}
               width={700}
-              sizes="(min-width: 1320px) 500px, (min-width: 1040px) calc(35vw + 45px), (min-width: 620px) 500px, calc(94vw - 64px)"
+              sizes="(min-width: 1460px) 545px, (min-width: 1040px) calc(34vw + 55px), (min-width: 780px) 700px, (min-width: 400px) 94.44vw, calc(68.75vw + 79px)"
               alt="Larry Bryan"
               quality={65}
               priority

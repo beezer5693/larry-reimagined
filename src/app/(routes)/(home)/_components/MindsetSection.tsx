@@ -42,6 +42,8 @@ const MindsetSection = () => {
                 className="object-cover"
                 fill
                 alt="Man thinking"
+                quality={65}
+                sizes="(min-width: 1440px) 640px, (min-width: 1040px) calc(42.11vw + 42px), (min-width: 780px) calc(100vw - 80px), calc(100vw - 40px)"
               />
             </div>
           </div>
