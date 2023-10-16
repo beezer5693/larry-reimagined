@@ -6,20 +6,21 @@ import Link from "next/link";
 
 const MindsetSection = () => {
   return (
-    <div className="flex w-full justify-center border-b border-dashed border-black bg-black px-5 pb-16 pt-14 md:px-10">
+    <div className="flex w-full justify-center bg-black px-5 pb-16 pt-14 md:px-10">
       <div className="relative w-full max-w-screen-xl">
         <div className="absolute inset-0 translate-x-2 translate-y-2 bg-[#3a53f5]"></div>
-        <div className="relative flex h-[800px] flex-col items-center overflow-hidden  lg:h-[550px] lg:flex-row">
-          <div className="relative flex basis-1/2 flex-col items-center justify-center self-stretch bg-black p-10 lg:w-1/2 lg:px-32">
+        <div className="relative flex h-[800px] flex-col items-center overflow-hidden lg:h-[550px] lg:flex-row">
+          <div className="relative flex basis-1/2 flex-col items-center justify-center self-stretch bg-black px-5 md:p-10 lg:w-1/2 lg:px-32">
             <div className="space-y-3">
-              <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl">
-                Strengthen <br className="hidden lg:inline-block" /> Your Mind
+              <h2 className="text-5xl font-bold tracking-tighter text-white md:text-6xl">
+                Strengthen Your Mind
               </h2>
               <p className="max-w-[50ch] text-white lg:max-w-[40ch]">
-                Cultivating and fortifying your mental resilience is an
-                indispensable undertaking on the path of personal development,
-                playing a fundamental role in achieving growth and fostering
-                success in your life.
+                On any given day, the average person processes a staggering
+                60,000 thoughts, and an overwhelming 80% of these tend to be
+                negative, often persistently recurring. This underscores the
+                crucial significance of fortifying your mental strength. Let
+                Larry show you how.
               </p>
               <div className="pt-5">
                 <Link href="/contact">

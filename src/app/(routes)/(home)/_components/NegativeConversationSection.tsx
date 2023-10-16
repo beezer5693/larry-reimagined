@@ -1,6 +1,5 @@
-import NegativeConversationCards from "./NegativeConversationCards";
 import { NEGATIVE_CONVOS } from "@/constants";
-import { Brain } from "lucide-react";
+import NegativeConversationCards from "./NegativeConversationCards";
 
 const NegativeConversationSection = () => {
   return (

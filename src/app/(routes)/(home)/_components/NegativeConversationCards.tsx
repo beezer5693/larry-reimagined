@@ -1,5 +1,4 @@
-import Button from "@/components/ui/Button";
-import { ArrowUpRight, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 type CardProps = {
   data: {
@@ -11,7 +10,7 @@ type CardProps = {
 const NegativeConversationCards = ({ data }: CardProps) => {
   return (
     <div className="grid w-full grid-cols-12 gap-5 text-black">
-      <div className="relative col-span-12 flex flex-col items-center justify-center border border-black bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
+      <div className="relative col-span-12 flex flex-col items-center justify-center border border-black bg-[‚] p-10 md:col-span-7 lg:col-span-5">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 border border-black bg-black"></div>
         <div className="space-y-5">
           <h3

@@ -22,7 +22,7 @@ const HeroSection = () => {
         {/* Hero left/top */}
         <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
           <div className="relative mb-10 flex items-center justify-center lg:mb-0">
-            <div className="flex flex-col items-center justify-center pt-10 sm:w-2/3 lg:mt-0 lg:w-full lg:items-start lg:pb-32 lg:pt-28 xl:pb-44 xl:pt-40">
+            <div className="flex flex-col items-center justify-center pt-14 sm:w-2/3 md:pt-20 lg:mt-0 lg:w-full lg:items-start lg:pb-32 lg:pt-28 xl:pb-44 xl:pt-40">
               <h1 className="text-center text-6xl font-semibold leading-[50px] text-white sm:text-7xl md:leading-[60px] lg:text-left">
                 Dare to{" "}
                 <span className="hidden align-middle lg:inline-block">
