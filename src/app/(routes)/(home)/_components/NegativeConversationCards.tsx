@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ChevronRight } from "lucide-react";
 
 type CardProps = {
   data: {
@@ -11,8 +11,8 @@ type CardProps = {
 const NegativeConversationCards = ({ data }: CardProps) => {
   return (
     <div className="grid w-full grid-cols-12 gap-5 text-black">
-      <div className="relative col-span-12 flex flex-col items-center justify-center rounded-sm border border-black bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-black"></div>
+      <div className="relative col-span-12 flex flex-col items-center justify-center border border-black bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 border border-black bg-black"></div>
         <div className="space-y-5">
           <h3
             style={{ textShadow: "2px 2px 0px rgb(0, 0, 0)" }}
@@ -20,95 +20,80 @@ const NegativeConversationCards = ({ data }: CardProps) => {
           >
             {data[0].label}
           </h3>
-          <p className="text-blue-200 lg:text-lg lg:leading-6">
+          <p className="text-white lg:text-lg lg:leading-6">
             {data[0].description}
           </p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <div className="group flex cursor-pointer items-center gap-1 text-white hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center rounded-sm border border-black bg-black p-10 md:col-span-5 lg:col-span-4">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-[#3a53f5]"></div>
+      <div className="justify-centerborder relative col-span-12 flex flex-col items-center border-black bg-black p-10 md:col-span-5 lg:col-span-4">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-[#3a53f5]"></div>
         <div className="space-y-5 text-white">
           <h3 className="text-3xl font-semibold">{data[1].label}</h3>
           <p>{data[1].description}</p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full bg-[#3a53f5]"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <div className="group flex cursor-pointer items-center gap-1 text-white hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 rounded-sm border border-black bg-yellow-300 p-10 md:col-span-5 lg:col-span-3">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-black"></div>
+      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-white p-10 md:col-span-5 lg:col-span-3">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-black"></div>
         <div className="space-y-5">
           <h3 className="text-3xl font-semibold lg:text-2xl">
             {data[2].label}
           </h3>
-          <p className="lg:text-sm">{data[2].description}</p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full bg-black"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <p>{data[2].description}</p>
+          <div className="group flex cursor-pointer items-center gap-1 hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 rounded-sm border border-black bg-black p-10 md:col-span-7 lg:col-span-3">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-[#3a53f5]"></div>
+      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-black p-10 md:col-span-7 lg:col-span-3">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-[#3a53f5]"></div>
         <div className="space-y-5 text-white">
           <h3 className="text-3xl font-semibold lg:text-2xl">
             {data[3].label}
           </h3>
-          <p className="lg:text-sm">{data[3].description}</p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full bg-[#3a53f5]"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <p>{data[3].description}</p>
+          <div className="group flex cursor-pointer items-center gap-1 text-white hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 rounded-sm border border-black bg-[#fffff8] p-10 md:col-span-7 lg:col-span-4">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-black"></div>
+      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-[#fffff8] p-10 md:col-span-7 lg:col-span-4">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-black"></div>
         <div className="space-y-5">
           <h3 className="text-3xl font-semibold">{data[4].label}</h3>
           <p>{data[4].description}</p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full bg-black border border-black"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <div className="group flex cursor-pointer items-center gap-1 hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 rounded-sm border border-black bg-[#3a53f5] p-10 md:col-span-5 lg:col-span-5">
-        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 rounded-sm border border-black bg-black"></div>
+      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-[#3a53f5] p-10 md:col-span-5 lg:col-span-5">
+        <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2  bg-black"></div>
         <div className="space-y-5">
           <h3
             style={{ textShadow: "2px 2px 0px rgb(0, 0, 0)" }}
@@ -116,19 +101,16 @@ const NegativeConversationCards = ({ data }: CardProps) => {
           >
             {data[5].label}
           </h3>
-          <p className="text-blue-200 lg:text-lg lg:leading-6">
+          <p className="text-white lg:text-lg lg:leading-6">
             {data[5].description}
           </p>
-          <Button
-            size={"sm"}
-            variant={"secondaryWithHoverAnimation"}
-            className="rounded-full text-xs"
-            className2="rounded-full"
-            className3="max-w-max"
-          >
-            <span>Learn More</span>
-            <ArrowUpRight className="ml-1" size={18} />
-          </Button>
+          <div className="group flex cursor-pointer items-center gap-1 text-white hover:underline">
+            <p>Learn more</p>
+            <ChevronRight
+              size={16}
+              className="transition duration-200 ease-in-out group-hover:translate-x-1"
+            />
+          </div>
         </div>
       </div>
     </div>

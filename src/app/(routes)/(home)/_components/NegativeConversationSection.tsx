@@ -4,14 +4,11 @@ import { Brain } from "lucide-react";
 
 const NegativeConversationSection = () => {
   return (
-    <div className="flex w-full justify-center px-10 py-14">
+    <div className="flex w-full justify-center px-5 pb-16 pt-14 md:px-10">
       <section className="max-w-screen-xl space-y-10 ">
         <div className="space-y-3">
           <div className="inline-block pb-3 text-xs text-black">
             <p className="inline-flex items-center rounded-full border border-black px-3 py-1">
-              <span className="inline-block">
-                <Brain size={18} className="mr-2 fill-[#3a53f5]" />
-              </span>
               Change your mind - change your life.
             </p>
           </div>
