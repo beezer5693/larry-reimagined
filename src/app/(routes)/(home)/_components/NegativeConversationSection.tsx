@@ -1,4 +1,4 @@
-import { NEGATIVE_CONVOS } from "@/constants";
+import { NEGATIVE_THOUGHTS } from "@/constants";
 import NegativeConversationCards from "./NegativeConversationCards";
 
 const NegativeConversationSection = () => {
@@ -11,16 +11,17 @@ const NegativeConversationSection = () => {
               Your mindset determines your life
             </p>
           </div>
-          <h2 className="text-4xl font-bold leading-8 text-black md:text-5xl md:leading-10">
-            Conversations That Manifest <br /> a Negative Mindset
+          <h2 className="text-4xl font-bold leading-8 tracking-tight text-black md:text-5xl md:leading-[45px]">
+            Do Any of These Thoughts
+            <br /> Ever Hold You Back?
           </h2>
-          <p className="max-w-[60ch] leading-[18px] text-black">
+          <p className="max-w-[60ch] leading-[20px] text-black">
             The conversations we have with ourselves on a daily basis have a
-            significant impact on the results we get life. Do you have any of
-            the following feelings and or thoughts?
+            significant impact on the results we get in life. Do you have any of
+            the following thoughts or feelings?
           </p>
         </div>
-        <NegativeConversationCards data={NEGATIVE_CONVOS} />
+        <NegativeConversationCards data={NEGATIVE_THOUGHTS} />
       </div>
     </section>
   );

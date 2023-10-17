@@ -13,12 +13,12 @@ const MindsetSection = () => {
             <h2 className="text-5xl font-bold tracking-tighter text-white md:text-6xl">
               Strengthen Your Mind
             </h2>
-            <p className="max-w-[50ch] text-white lg:max-w-[40ch]">
-              On any given day, 95% of people process a staggering 60,000
-              thoughts, and an overwhelming 80% of these tend to be negative,
-              regardless of their personal success. This underscores the
-              substantial improvements that could be achieved in our lives
-              through a shift in this mindset. Let Larry show you how.
+            <p className="max-w-[45ch] text-white lg:max-w-[35ch]">
+              On any given day, 95% of us process a staggering 60,000 thoughts,
+              and an overwhelming 80% of these tend to be negative, regardless
+              of our personal success. Can you imagine the improvements that
+              could be made in our lives through a shift in this mindset? Let
+              Larry show you how.
             </p>
             <div className="w-full pt-5">
               <Link href="/contact">

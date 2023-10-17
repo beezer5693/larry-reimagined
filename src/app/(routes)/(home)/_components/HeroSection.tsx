@@ -21,9 +21,9 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
-        <div className="relative mb-10 flex items-center justify-center lg:mb-0 lg:pl-20">
+        <div className="relative mb-10 flex items-center justify-center lg:mb-0">
           <div className="relative flex flex-col items-center justify-center pt-14 sm:w-10/12 md:pt-20 lg:mt-0 lg:w-full lg:items-start lg:pb-32 lg:pt-28 xl:pb-44 xl:pt-40">
-            <h1 className="text-center text-6xl font-semibold leading-[50px] tracking-tighter text-white sm:text-7xl sm:leading-[60px] md:px-10 lg:px-0 lg:text-left lg:text-6xl lg:leading-[50px] xl:text-7xl xl:leading-[60px]">
+            <h1 className="text-center text-6xl font-semibold leading-[50px] tracking-tighter text-white sm:text-7xl sm:leading-[60px] md:px-10 lg:px-0 lg:text-left lg:text-7xl lg:leading-[55px] xl:text-8xl xl:leading-[75px]">
               Dare to{" "}
               <span className="hidden align-middle lg:inline-block">
                 <Redo size={40} className="rotate-[30deg] text-white" />

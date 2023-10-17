@@ -1,33 +1,53 @@
-export const NEGATIVE_CONVOS = [
+export const NEGATIVE_THOUGHTS = [
   {
-    label: "Negative Self-Talk",
+    thought: "Impostor Syndrome",
     description:
-      "I'm progressing in my endeavors, but self-deprecating thoughts hinder my potential for greater success.",
+      "Feeling like a fraud and believing that your achievements are undeserved, which can hinder self-confidence and career progression.",
   },
   {
-    label: "Fear",
+    thought: "Fear of Failure",
     description:
-      "My fear sometimes holds me back from doing so many things and I don’t know how to overcome that way of thinking and feeling.",
+      "Constantly worrying about making mistakes or failing in business endeavors, leading to hesitancy and missed opportunities.",
   },
   {
-    label: "Judgment",
+    thought: "Comparing to Others",
     description:
-      "I hold the belief that the world's constant scrutiny and judgment inhibits me from wholeheartedly pursuing my dreams and aspirations.",
+      "Continuously comparing oneself to colleagues or competitors and feeling inadequate, which can undermine self-esteem and innovation.",
   },
   {
-    label: "Feeling Lost",
+    thought: "Lack of Self-Confidence",
     description:
-      "I know I am capable of so much more and I want to reach my full potential but I just don't know how to get started.",
+      "Believing you are not qualified or capable of taking on challenging roles or responsibilities, which can limit career growth.",
   },
   {
-    label: "Embarrassment",
+    thought: "Avoiding Risk",
     description:
-      "I am fully aware of my untapped potential and possess a strong desire to achieve my maximum capabilities, yet I find it challenging to initiate the process.",
+      "Being overly risk-averse and shying away from innovative ideas or ventures, which can stifle business development.",
   },
   {
-    label: "Poor Decisions",
+    thought: "Overthinking",
     description:
-      "Occasionally, my decision-making doesn't meet my desired outcomes. I'm aware of the need for improvement as I aim for more consistent goal achievement.",
+      "Dwelling on negative possibilities or scenarios, which can lead to indecision and missed opportunities.",
+  },
+  {
+    thought: "Negative Self-Talk",
+    description:
+      "Engaging in self-criticism and negative internal dialogue, which can erode self-esteem and motivation.",
+  },
+  {
+    thought: "Insecurity About Networking",
+    description:
+      "Feeling inadequate or unworthy when interacting with colleagues or potential business connections, which can impede professional relationships and growth.",
+  },
+  {
+    thought: "Resistance to Change",
+    description:
+      "Being resistant to change and new approaches, which can hinder adaptability and competitiveness in a dynamic business environment.",
+  },
+  {
+    thought: "Discounting Achievements",
+    description:
+      "Downplaying or dismissing one's successes and accomplishments, which can undermine confidence and hinder career advancement.",
   },
 ];
 
