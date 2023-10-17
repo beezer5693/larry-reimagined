@@ -5,7 +5,7 @@ import NegativeConversationSection from "./_components/NegativeConversationSecti
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden pb-40">
+    <main className="flex w-full flex-col items-center overflow-hidden">
       <div className="flex w-full flex-col items-center">
         <HeroSection />
         <NegativeConversationSection />

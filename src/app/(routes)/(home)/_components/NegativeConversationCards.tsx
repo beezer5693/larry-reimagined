@@ -10,13 +10,10 @@ type CardProps = {
 const NegativeConversationCards = ({ data }: CardProps) => {
   return (
     <div className="grid w-full grid-cols-12 gap-5 text-black">
-      <div className="relative col-span-12 flex flex-col items-center justify-center border border-black bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
+      <div className="relative col-span-12 flex flex-col items-center justify-center bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 border border-black bg-black"></div>
         <div className="space-y-5">
-          <h3
-            style={{ textShadow: "2px 2px 0px rgb(0, 0, 0)" }}
-            className="text-3xl font-semibold text-white lg:text-5xl"
-          >
+          <h3 className="text-3xl font-semibold text-white lg:text-4xl">
             {data[6].thought}
           </h3>
           <p className="text-white lg:text-lg lg:leading-6">
@@ -48,7 +45,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
       <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-white p-10 md:col-span-5 lg:col-span-3">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-black"></div>
         <div className="space-y-5">
-          <h3 className="text-3xl font-semibold lg:text-2xl">
+          <h3 className="text-3xl font-semibold lg:text-3xl lg:leading-[30px]">
             {data[2].thought}
           </h3>
           <p>{data[2].description}</p>
@@ -64,7 +61,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
       <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-black p-10 md:col-span-7 lg:col-span-3">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-[#3a53f5]"></div>
         <div className="space-y-5 text-white">
-          <h3 className="text-3xl font-semibold lg:text-2xl">
+          <h3 className="text-3xl font-semibold lg:text-3xl lg:leading-[30px]">
             {data[3].thought}
           </h3>
           <p>{data[3].description}</p>
@@ -94,10 +91,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
       <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-[#3a53f5] p-10 md:col-span-5 lg:col-span-5">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2  bg-black"></div>
         <div className="space-y-5">
-          <h3
-            style={{ textShadow: "2px 2px 0px rgb(0, 0, 0)" }}
-            className="text-3xl font-semibold text-white lg:text-5xl"
-          >
+          <h3 className="text-3xl font-semibold text-white lg:text-4xl">
             {data[5].thought}
           </h3>
           <p className="text-white lg:text-lg lg:leading-6">
@@ -115,10 +109,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
       <div className="relative col-span-12 flex flex-col items-center justify-center border border-black bg-[#3a53f5] p-10 md:col-span-7 lg:col-span-5">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 border border-black bg-black"></div>
         <div className="space-y-5">
-          <h3
-            style={{ textShadow: "2px 2px 0px rgb(0, 0, 0)" }}
-            className="text-3xl font-semibold text-white lg:text-5xl"
-          >
+          <h3 className="text-3xl font-semibold text-white lg:text-4xl">
             {data[0].thought}
           </h3>
           <p className="text-white lg:text-lg lg:leading-6">
@@ -150,7 +141,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
       <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-white p-10 md:col-span-5 lg:col-span-3">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-black"></div>
         <div className="space-y-5">
-          <h3 className="text-3xl font-semibold lg:text-2xl">
+          <h3 className="text-3xl font-semibold lg:text-3xl lg:leading-[30px]">
             {data[9].thought}
           </h3>
           <p>{data[9].description}</p>

@@ -7,13 +7,13 @@ const NegativeConversationSection = () => {
       <div className="max-w-screen-xl space-y-10">
         <div className="space-y-4">
           <div className="inline-block pb-3 text-xs text-black">
-            <p className="inline-flex items-center rounded-full border border-black px-3 py-1 font-semibold uppercase">
+            <p className="inline-flex items-center rounded-full border border-black px-3 py-1 font-semibold capitalize">
               Your mindset determines your life
             </p>
           </div>
-          <h2 className="text-4xl font-bold leading-8 tracking-tight text-black md:text-5xl md:leading-[45px]">
-            Do Any of These Thoughts
-            <br /> Ever Hold You Back?
+          <h2 className="text-4xl font-bold leading-8 tracking-tight text-black md:text-[2.5rem] md:leading-[35px]">
+            Do Any of These Thoughts Ever
+            <br /> Hold You Back In Your Career?
           </h2>
           <p className="max-w-[60ch] leading-[20px] text-black">
             The conversations we have with ourselves on a daily basis have a

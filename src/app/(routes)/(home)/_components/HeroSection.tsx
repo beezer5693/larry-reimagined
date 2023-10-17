@@ -18,7 +18,7 @@ const HeroSection = () => {
         sizes="100vw"
         priority
       />
-      <div className="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
         <div className="relative mb-10 flex items-center justify-center lg:mb-0">
@@ -33,16 +33,16 @@ const HeroSection = () => {
                 Different.
               </span>
             </h1>
-            <p className="mt-5 text-center text-white sm:px-20 md:px-32 md:text-lg lg:w-2/3 lg:px-0 lg:text-left">
-              Harnessing the immense potential within to transmute personal
-              obstacles into reservoirs of self-empowerment.
+            <p className="mt-5 text-center font-medium text-white sm:px-20 md:px-32 md:text-lg lg:w-2/3 lg:px-0 lg:text-left">
+              Embrace the {`"Dare to Think Different"`} motto igniting a
+              transformative journey toward professional excellence.
             </p>
             <div className="mt-10 flex w-full flex-col-reverse items-center gap-3 sm:w-2/3 lg:w-full lg:flex-row">
               <Link className="w-full lg:max-w-max" href="/services">
                 <Button className="group w-full" variant={"secondary"}>
                   <span>Services</span>
                   <ChevronRight
-                    size={16}
+                    size={14}
                     className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
                   />
                 </Button>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <Button variant={"primary"} className="group relative w-full ">
                   <span>Book Larry</span>
                   <ChevronRight
-                    size={16}
+                    size={14}
                     className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
                   />
                 </Button>
@@ -65,8 +65,8 @@ const HeroSection = () => {
           <Image
             className="hidden object-cover lg:block"
             src={larry}
-            height={800}
-            width={800}
+            height={900}
+            width={900}
             sizes="(min-width: 1460px) 545px, (min-width: 1040px) calc(34vw + 55px), (min-width: 780px) 700px, (min-width: 400px) 94.44vw, calc(68.75vw + 79px)"
             alt="Larry Bryan"
             quality={65}

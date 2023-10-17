@@ -8,24 +8,24 @@ const MindsetSection = () => {
   return (
     <section className="flex w-full justify-center bg-black px-5 py-20 md:px-10">
       <div className="relative flex h-[850px] w-full max-w-screen-xl flex-col items-center before:absolute before:inset-0 before:-translate-x-2 before:translate-y-2 before:bg-[#3a53f5] lg:h-[550px] lg:flex-row before:lg:translate-x-2">
-        <div className="relative flex flex-1 flex-col items-center justify-center self-stretch bg-black px-5 md:p-10 lg:w-1/2 lg:px-32">
+        <div className="relative flex flex-1 flex-col items-center justify-center self-stretch bg-black px-5 md:p-10 lg:w-1/2 lg:px-20">
           <div className="space-y-5">
-            <h2 className="text-5xl font-bold tracking-tighter text-white md:text-6xl">
-              Strengthen Your Mind
+            <h2 className="text-5xl font-bold tracking-tighter text-white md:text-6xl md:leading-[55px]">
+              Your Mindset Matters
             </h2>
             <p className="max-w-[45ch] text-white lg:max-w-[35ch]">
-              On any given day, 95% of us process a staggering 60,000 thoughts,
-              and an overwhelming 80% of these tend to be negative, regardless
-              of our personal success. Can you imagine the improvements that
-              could be made in our lives through a shift in this mindset? Let
-              Larry show you how.
+              Every day, 95% of us process a staggering 60,000 thoughts, and an
+              overwhelming 80% of these tend to be negative, regardless of our
+              success. Can you imagine the personal growth that could be made in
+              our professional lives through a shift in this mindset? Let Larry
+              show you how.
             </p>
             <div className="w-full pt-5">
               <Link href="/contact">
                 <Button className="group">
                   <span>get in touch</span>
                   <ChevronRight
-                    size={16}
+                    size={14}
                     className="absolute right-4 top-1/2 -translate-y-1/2 text-white opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
                   />
                 </Button>
