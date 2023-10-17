@@ -65,8 +65,8 @@ const HeroSection = () => {
           <Image
             className="hidden object-cover lg:block"
             src={larry}
-            height={900}
-            width={900}
+            height={800}
+            width={800}
             sizes="(min-width: 1460px) 545px, (min-width: 1040px) calc(34vw + 55px), (min-width: 780px) 700px, (min-width: 400px) 94.44vw, calc(68.75vw + 79px)"
             alt="Larry Bryan"
             quality={65}
