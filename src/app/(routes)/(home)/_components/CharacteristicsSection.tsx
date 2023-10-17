@@ -4,8 +4,8 @@ const CharacteristicsSection = () => {
       <div className="w-full max-w-screen-xl">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold leading-10 tracking-tight text-black md:text-[2.5rem] md:leading-10">
-            The 5 Keys To Mastering Your Mind <br /> For Personal and
-            Professional Success.
+            5 Keys To Changing Your Mindset <br className="hidden sm:block" />{" "}
+            For Personal and Professional Success.
           </h2>
           <p className="max-w-[60ch] leading-[20px] text-black">
             Your mindset is the lens through which you perceive and interact

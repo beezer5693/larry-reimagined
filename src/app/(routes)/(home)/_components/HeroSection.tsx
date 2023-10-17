@@ -19,6 +19,7 @@ const HeroSection = () => {
         priority
       />
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
         <div className="relative mb-10 flex items-center justify-center lg:mb-0">
@@ -78,7 +79,7 @@ const HeroSection = () => {
             src={larry}
             height={500}
             width={500}
-            sizes="(min-width: 1460px) 545px, (min-width: 1040px) calc(34vw + 55px), (min-width: 780px) 700px, (min-width: 400px) 94.44vw, calc(68.75vw + 79px)"
+            sizes="(min-width: 580px) 500px, calc(92.31vw - 17px)"
             alt="Larry Bryan"
             quality={65}
             priority
