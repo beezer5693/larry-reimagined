@@ -13,7 +13,7 @@ const NegativeConversationSection = () => {
           </div>
           <h2 className="text-4xl font-bold leading-10 tracking-tight text-black md:text-[2.5rem] md:leading-10">
             The Thoughts That Limit
-            <br /> Our Potential.
+            <br className="hidden sm:block" /> Our Potential.
           </h2>
           <p className="max-w-[60ch] leading-[20px] text-black">
             The conversations we have with ourselves on a daily basis have a
