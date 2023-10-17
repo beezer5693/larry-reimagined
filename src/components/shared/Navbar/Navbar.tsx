@@ -11,7 +11,7 @@ const Navbar = () => {
   const currentPath = usePathname();
 
   return (
-    <div className="sticky top-0 z-50 flex w-full justify-center bg-[#fffff8] px-5 shadow-md shadow-neutral-300/20 md:px-10">
+    <div className="sticky top-0 z-50 flex w-full justify-center bg-white px-5 shadow-lg shadow-neutral-300/20 md:px-10">
       <div className="relative flex w-full max-w-screen-xl items-center justify-between py-4">
         <Link className="text-xl font-medium text-black" href="/">
           L|B

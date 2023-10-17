@@ -11,14 +11,14 @@ const NegativeConversationSection = () => {
               Your mindset determines your life
             </p>
           </div>
-          <h2 className="text-4xl font-bold leading-8 tracking-tight text-black md:text-[2.5rem] md:leading-[35px]">
-            Do Any of These Thoughts Ever
-            <br /> Hold You Back In Your Career?
+          <h2 className="text-4xl font-bold leading-10 tracking-tight text-black md:text-[2.5rem] md:leading-10">
+            The Thoughts That Limit
+            <br /> Our Potential.
           </h2>
           <p className="max-w-[60ch] leading-[20px] text-black">
             The conversations we have with ourselves on a daily basis have a
-            significant impact on the results we get in life. Do you have any of
-            the following thoughts or feelings?
+            significant impact on the results we get. Do any of these thoughts
+            ever hold you back in your life or career?
           </p>
         </div>
         <NegativeConversationCards data={NEGATIVE_THOUGHTS} />

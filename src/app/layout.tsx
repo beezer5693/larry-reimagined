@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen scroll-smooth bg-[#fffff8] antialiased",
+          "min-h-screen scroll-smooth bg-white antialiased",
           bricolageGrotesque.className,
         )}
       >

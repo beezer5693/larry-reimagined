@@ -23,7 +23,7 @@ const HeroSection = () => {
       <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
         <div className="relative mb-10 flex items-center justify-center lg:mb-0">
           <div className="relative flex flex-col items-center justify-center pt-14 sm:w-10/12 md:pt-20 lg:mt-0 lg:w-full lg:items-start lg:pb-32 lg:pt-28 xl:pb-44 xl:pt-40">
-            <h1 className="text-center text-6xl font-semibold leading-[50px] tracking-tighter text-white sm:text-7xl sm:leading-[60px] md:px-10 lg:px-0 lg:text-left lg:text-7xl lg:leading-[55px] xl:text-8xl xl:leading-[75px]">
+            <h1 className="text-center text-6xl font-semibold leading-[55px] tracking-tighter text-white sm:text-7xl sm:leading-[65px] md:px-10 lg:px-0 lg:text-left lg:text-7xl lg:leading-[65px] xl:text-8xl xl:leading-[85px]">
               Dare to{" "}
               <span className="hidden align-middle lg:inline-block">
                 <Redo size={40} className="rotate-[30deg] text-white" />
@@ -35,11 +35,12 @@ const HeroSection = () => {
             </h1>
             <p className="mt-5 text-center font-medium text-white sm:px-20 md:px-32 md:text-lg lg:w-2/3 lg:px-0 lg:text-left">
               Embrace the {`"Dare to Think Different"`} motto igniting a
-              transformative journey toward professional excellence.
+              transformative journey toward personal and professional
+              excellence.
             </p>
             <div className="mt-10 flex w-full flex-col-reverse items-center gap-3 sm:w-2/3 lg:w-full lg:flex-row">
               <Link className="w-full lg:max-w-max" href="/services">
-                <Button className="group w-full" variant={"secondary"}>
+                <Button className="group relative w-full" variant={"secondary"}>
                   <span>Services</span>
                   <ChevronRight
                     size={14}

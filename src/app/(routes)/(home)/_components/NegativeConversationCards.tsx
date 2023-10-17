@@ -74,7 +74,7 @@ const NegativeConversationCards = ({ data }: CardProps) => {
           </div>
         </div>
       </div>
-      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-[#fffff8] p-10 md:col-span-7 lg:col-span-4">
+      <div className="relative col-span-12 flex flex-col items-center justify-center gap-5 border border-black bg-white p-10 md:col-span-7 lg:col-span-4">
         <div className="absolute inset-0 -z-10 translate-x-2 translate-y-2 bg-black"></div>
         <div className="space-y-5">
           <h3 className="text-3xl font-semibold">{data[4].thought}</h3>

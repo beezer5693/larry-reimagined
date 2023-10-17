@@ -7,22 +7,22 @@ export const NEGATIVE_THOUGHTS = [
   {
     thought: "Fear of Failure",
     description:
-      "Constantly worrying about making mistakes or failing in business endeavors, leading to hesitancy and missed opportunities.",
+      "Constantly worrying about making mistakes or failing in my personal life or business endeavors, leading to hesitancy and missed opportunities.",
   },
   {
     thought: "Comparing to Others",
     description:
-      "Continuously comparing oneself to colleagues or competitors and feeling inadequate, which can undermine self-esteem and innovation.",
+      "Continuously comparing oneself to colleagues, competitors, and others, making us feel inadequate, which can undermine our self-esteem and innovation.",
   },
   {
     thought: "Lack of Self-Confidence",
     description:
-      "Believing you are not qualified or capable of taking on challenging roles or responsibilities, which can limit career growth.",
+      "Believing you are not qualified or capable of taking on challenging roles or responsibilities, which can limit personal and career growth.",
   },
   {
     thought: "Avoiding Risk",
     description:
-      "Being overly risk-averse and shying away from innovative ideas or ventures, which can stifle business development.",
+      "Being overly risk-averse and shying away from innovative ideas, ventures, and other personal opportunities which can stifle development and growth in all areas of our lives.",
   },
   {
     thought: "Overthinking",
@@ -42,12 +42,12 @@ export const NEGATIVE_THOUGHTS = [
   {
     thought: "Resistance to Change",
     description:
-      "Being resistant to change and new approaches, which can hinder adaptability and competitiveness in a dynamic business environment.",
+      "Being resistant to change can lead to missed opportunities, stagnation, and a failure to adapt to evolving circumstances, ultimately hindering personal and professional growth.",
   },
   {
     thought: "Discounting Achievements",
     description:
-      "Downplaying or dismissing one's successes and accomplishments, which can undermine confidence and hinder career advancement.",
+      "Downplaying or dismissing one's successes and accomplishments, can erode self-confidence and hinder your motivation to pursue new goals, limiting your overall potential for success and personal fulfillment.",
   },
 ];
 
