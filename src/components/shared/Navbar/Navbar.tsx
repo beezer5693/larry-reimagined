@@ -1,30 +1,27 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import { ChevronRight, Menu } from "lucide-react";
+import { NAV_LINKS } from "@/constants";
+import { ArrowUpRight, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import NavLinks from "./NavLinks";
-import { NAV_LINKS } from "@/constants";
 
 const Navbar = () => {
   const currentPath = usePathname();
 
   return (
     <div className="sticky top-0 z-50 flex w-full justify-center bg-white px-5 shadow-lg shadow-neutral-300/20 md:px-10">
-      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-4">
+      <div className="relative flex w-full max-w-screen-2xl items-center justify-between py-4">
         <Link className="text-xl font-medium text-black" href="/">
           L|B
         </Link>
         <NavLinks links={NAV_LINKS} path={currentPath} />
-        <div className="max-w-max">
+        <div className="hidden max-w-max md:block">
           <Link href={"/contact"}>
-            <Button className="group hidden md:block">
-              <span>Book Larry</span>
-              <ChevronRight
-                size={14}
-                className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
-              />
+            <Button className="hover:opacity-90">
+              <span>book larry</span>
+              <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
             </Button>
           </Link>
         </div>

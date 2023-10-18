@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { ChevronRight, Redo } from "lucide-react";
+import { ArrowUpRight, ChevronRight, Redo } from "lucide-react";
 import Image from "next/image";
 import larry from "../../../../../public/assets/home/hero-larry.png";
 import bg from "../../../../../public/assets/home/main-landing.jpeg";
@@ -21,7 +21,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
 
       {/* Hero left/top */}
-      <div className="relative flex max-w-screen-xl flex-col lg:flex-row lg:justify-between">
+      <div className="relative flex max-w-screen-2xl flex-col lg:flex-row lg:justify-between">
         <div className="relative mb-10 flex items-center justify-center lg:mb-0">
           <div className="relative flex flex-col items-center justify-center pt-14 sm:w-10/12 md:pt-20 lg:mt-0 lg:w-full lg:items-start lg:pb-32 lg:pt-28 xl:pb-44 xl:pt-40">
             <h1 className="text-center text-6xl font-semibold leading-[55px] tracking-tighter text-white sm:text-7xl sm:leading-[65px] md:px-10 lg:px-0 lg:text-left lg:text-7xl lg:leading-[65px] xl:text-8xl xl:leading-[85px]">
@@ -41,21 +41,17 @@ const Hero = () => {
             </p>
             <div className="mt-10 flex w-full flex-col-reverse items-center gap-3 sm:w-2/3 lg:w-full lg:flex-row">
               <Link className="w-full lg:max-w-max" href="/talks">
-                <Button className="group relative w-full" variant={"secondary"}>
+                <Button
+                  className="relative w-full hover:opacity-90"
+                  variant={"secondary"}
+                >
                   <span>See My Talks</span>
-                  <ChevronRight
-                    size={14}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
-                  />
                 </Button>
               </Link>
-              <Link className="w-full lg:max-w-max" href="/contact">
-                <Button variant={"primary"} className="group relative w-full ">
-                  <span>Book Larry</span>
-                  <ChevronRight
-                    size={14}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-1 group-hover:opacity-100 "
-                  />
+              <Link className="w-full lg:max-w-max" href="/talks">
+                <Button className="w-full hover:opacity-90">
+                  <span>{"Let's Chat"}</span>
+                  <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
                 </Button>
               </Link>
             </div>

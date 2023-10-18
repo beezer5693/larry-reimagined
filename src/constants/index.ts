@@ -6,54 +6,58 @@ import awareness from "../../public/assets/home/awareness.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
-    thought: "Impostor Syndrome",
+    thought: "Negative Self-Talk",
     description:
-      "Feeling like a fraud and believing that your achievements are undeserved, which can hinder self-confidence and career progression.",
+      "Engaging in self-criticism and negative internal dialogue, which can erode self-esteem and motivation.",
+    style: "blue",
   },
   {
     thought: "Fear of Failure",
     description:
       "Constantly worrying about making mistakes or failing in my personal life or business endeavors, leading to hesitancy and missed opportunities.",
+    style: "blue",
   },
   {
-    thought: "Comparing to Others",
+    thought: "Overthinking Procrastinating",
+    description:
+      "Dwelling on negative possibilities or scenarios, which can lead to indecision and missed opportunities.",
+    style: "blue",
+  },
+  {
+    thought: "Comparing Yourself to Others",
     description:
       "Continuously comparing oneself to colleagues, competitors, and others, making us feel inadequate, which can undermine our self-esteem and innovation.",
+    style: "blue",
+  },
+  {
+    thought: "Impostor Syndrome",
+    description:
+      "Feeling like a fraud and believing that your achievements are undeserved, which can hinder self-confidence and career progression.",
+    style: "blue",
   },
   {
     thought: "Lack of Self-Confidence",
     description:
       "Believing you are not qualified or capable of taking on challenging roles or responsibilities, which can limit personal and career growth.",
+    style: "blue",
   },
   {
     thought: "Avoiding Risk",
     description:
       "Being overly risk-averse and shying away from innovative ideas, ventures, and other personal opportunities which can stifle development and growth in all areas of our lives.",
-  },
-  {
-    thought: "Overthinking",
-    description:
-      "Dwelling on negative possibilities or scenarios, which can lead to indecision and missed opportunities.",
-  },
-  {
-    thought: "Negative Self-Talk",
-    description:
-      "Engaging in self-criticism and negative internal dialogue, which can erode self-esteem and motivation.",
-  },
-  {
-    thought: "Insecurity About Networking",
-    description:
-      "Feeling inadequate or unworthy when interacting with colleagues or potential business connections, which can impede professional relationships and growth.",
+    style: "blue",
   },
   {
     thought: "Resistance to Change",
     description:
       "Being resistant to change can lead to missed opportunities, stagnation, and a failure to adapt to evolving circumstances, ultimately hindering personal and professional growth.",
+    style: "blue",
   },
   {
     thought: "Discounting Achievements",
     description:
       "Downplaying or dismissing one's successes and accomplishments, can erode self-confidence and hinder your motivation to pursue new goals, limiting your overall potential for success and personal fulfillment.",
+    style: "blue",
   },
 ];
 

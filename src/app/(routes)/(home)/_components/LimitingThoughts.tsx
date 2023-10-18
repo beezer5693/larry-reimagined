@@ -1,21 +1,20 @@
 import { NEGATIVE_THOUGHTS } from "@/constants";
-import ThoughtCards from "./ThoughtCards";
-import dots from "../../../../../public/assets/home/dot-grid.png";
 import Image from "next/image";
-import mindset from "../../../../../public/assets/home/mindset.jpg";
+import ThoughtCards from "./ThoughtCards";
+import struggle from "../../../../../public/assets/home/struggle.jpeg";
 
 const LimitingThoughts = () => {
   return (
     <section className="relative flex w-full justify-center px-5 pb-20 pt-16 md:px-10">
-      <div className="relative w-full max-w-screen-xl space-y-10">
+      <div className="relative w-full max-w-screen-2xl space-y-10">
         <div className="space-y-4">
           <div className="inline-block pb-3 text-xs text-black">
             <p className="inline-flex items-center rounded-full border bg-black px-3 py-1 font-semibold capitalize text-white">
               Your mindset determines your life
             </p>
           </div>
-          <h2 className="text-4xl font-bold leading-10 tracking-tight text-black md:text-[2.5rem] md:leading-10">
-            Thoughts That Limit Our Potential
+          <h2 className="text-4xl font-bold leading-10 tracking-tight text-black md:text-[3rem] md:leading-10">
+            Thoughts That Limit Our Potential.
           </h2>
           <p className="max-w-[60ch] leading-[20px] text-black">
             The conversations we have with ourselves on a daily basis have a
@@ -23,18 +22,19 @@ const LimitingThoughts = () => {
             ever hold you back in your life or career?
           </p>
         </div>
-        <ThoughtCards data={NEGATIVE_THOUGHTS} />
-        {/* <div className="flex w-full border-b-8 border-l-8 border-[#3a53f5]">
-          <div className="relative h-[500px] basis-1/2">
+        <div className="relative flex h-[700px] w-full flex-col-reverse items-center gap-3 md:h-[800px] lg:h-[550px] lg:flex-row lg:pl-0">
+          <div className="relative basis-2/5 items-center justify-center self-stretch overflow-hidden  shadow-2xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%] lg:rounded-r-sm">
             <Image
-              className="object-cover"
-              src={mindset}
-              alt="woman working out"
+              src={struggle}
+              className="object-cover grayscale"
               fill
+              alt="Women working out"
+              quality={65}
+              sizes="(min-width: 1440px) 572px, (min-width: 1040px) calc(37.89vw + 34px), (min-width: 780px) calc(100vw - 88px), calc(100vw - 48px)"
             />
           </div>
-          <div className="relative basis-1/2"></div>
-        </div> */}
+          <ThoughtCards data={NEGATIVE_THOUGHTS} />
+        </div>
       </div>
     </section>
   );
