@@ -74,7 +74,7 @@ export const KEYS_TO_MASTER = [
     title: "Thinking differently",
     description: "A positive mindset shift sparks positive life outcomes.",
     imageSrc: thinkDifferently,
-    style: "object-right",
+    style: "object-bottom",
   },
   {
     title: "self-leadership",

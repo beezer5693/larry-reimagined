@@ -1,20 +1,20 @@
 import Button from "@/components/ui/Button";
 import { KEYS_TO_MASTER } from "@/constants";
 import { cn } from "@/lib/utils";
-import { ArrowRight, ArrowUpRight, ChevronRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Keys = () => {
   return (
-    <section className="relative flex w-full justify-center bg-white px-5 py-20 md:px-10">
+    <section className="relative flex w-full justify-center bg-white px-5 pb-20 pt-16 md:px-10">
       <div className="w-full max-w-screen-2xl">
-        <div className="space-y-10">
-          <div className="space-y-4 text-black">
-            <h2 className="text-4xl font-bold leading-10 tracking-tight md:text-[3rem] md:leading-10">
+        <div className="space-y-10 lg:space-y-16">
+          <div className="item-center flex flex-col space-y-6 text-black lg:items-center">
+            <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 md:text-6xl md:leading-[55px] lg:text-center">
               5 Keys to a New Mindset.
             </h2>
-            <p className="max-w-[60ch] pb-6 leading-[20px]">
+            <p className="max-w-[65ch] text-center text-sm text-black sm:text-left sm:text-base sm:leading-[20px] lg:text-center">
               It took me some time to realize how my mindset influenced my life,
               but you {"don't"} have to take as long as I did. Applying my Five
               Keys to a New Mindset can expedite the process, offering a
@@ -22,18 +22,31 @@ const Keys = () => {
               unleashing new, positive behaviors that elevate your personal and
               professional life to new heights.
             </p>
-            <Link href="/contact">
-              <Button className="hover:brightness-125">
-                <span>reach out</span>
-                <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
-              </Button>
-            </Link>
+            <div className="flex w-full flex-col-reverse items-center gap-3 sm:flex-row lg:justify-center">
+              <Link className="inline-block w-full sm:max-w-max" href="/talks">
+                <Button
+                  className="relative w-full bg-black text-white hover:opacity-90"
+                  variant={"secondary"}
+                >
+                  <span>See My Talks</span>
+                </Button>
+              </Link>
+              <Link
+                className="inline-block w-full sm:max-w-max"
+                href="/contact"
+              >
+                <Button className="w-full hover:brightness-125">
+                  <span>reach out</span>
+                  <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
+                </Button>
+              </Link>
+            </div>
           </div>
           <div className="grid grid-cols-1 shadow-xl shadow-neutral-500/50 md:grid-cols-5">
             {KEYS_TO_MASTER.map((key) => (
               <div
                 key={key.title}
-                className="relative flex flex-col overflow-hidden  bg-black text-white"
+                className="relative flex flex-col overflow-hidden bg-black text-white"
               >
                 <div className="group relative h-[250px] overflow-hidden sm:h-[325px] lg:h-[350px]">
                   <Image
@@ -49,10 +62,10 @@ const Keys = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/70 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
                   <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">
-                    <h3 className="text-2xl font-semibold capitalize tracking-tight">
+                    <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl md:leading-[1.25rem] lg:text-2xl lg:leading-6">
                       {key.title}
                     </h3>
-                    <p className="font-medium leading-[18px]">
+                    <p className="font-medium leading-[18px] md:text-sm md:leading-[18px] lg:text-base lg:leading-[1.25rem]">
                       {key.description}
                     </p>
                   </div>
