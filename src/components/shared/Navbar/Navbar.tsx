@@ -19,7 +19,7 @@ const Navbar = () => {
         <NavLinks links={NAV_LINKS} path={currentPath} />
         <div className="hidden max-w-max md:block">
           <Link href={"/contact"}>
-            <Button className="hover:opacity-90">
+            <Button className="hover:brightness-125">
               <span>book larry</span>
               <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
             </Button>

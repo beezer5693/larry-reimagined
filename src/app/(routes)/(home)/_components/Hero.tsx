@@ -49,7 +49,7 @@ const Hero = () => {
                 </Button>
               </Link>
               <Link className="w-full lg:max-w-max" href="/talks">
-                <Button className="w-full hover:opacity-90">
+                <Button className="w-full hover:brightness-125">
                   <span>{"Let's Chat"}</span>
                   <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
                 </Button>

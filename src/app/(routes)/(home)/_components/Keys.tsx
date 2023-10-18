@@ -23,7 +23,7 @@ const Keys = () => {
               professional life to new heights.
             </p>
             <Link href="/contact">
-              <Button className="hover:opacity-90">
+              <Button className="hover:brightness-125">
                 <span>reach out</span>
                 <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
               </Button>

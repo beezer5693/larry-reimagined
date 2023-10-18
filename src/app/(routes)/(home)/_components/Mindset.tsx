@@ -21,7 +21,7 @@ const Mindset = () => {
             </p>
             <div className="w-full sm:pt-5">
               <Link href="/contact">
-                <Button className="hover:opacity-90">
+                <Button className="hover:brightness-125">
                   <span>get in touch</span>
                   <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
                 </Button>
