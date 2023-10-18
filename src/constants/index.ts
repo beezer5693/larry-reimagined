@@ -1,3 +1,9 @@
+import thinkDifferently from "../../public/assets/home/thinking.jpg";
+import leadership from "../../public/assets/home/leadership.jpg";
+import grit from "../../public/assets/home/grit.jpg";
+import courage from "../../public/assets/home/courage-2.jpg";
+import awareness from "../../public/assets/home/awareness.jpg";
+
 export const NEGATIVE_THOUGHTS = [
   {
     thought: "Impostor Syndrome",
@@ -54,7 +60,40 @@ export const NEGATIVE_THOUGHTS = [
 export const NAV_LINKS = [
   { key: "home", label: "Home", href: "/" },
   { key: "about", label: "About", href: "/about" },
-  { key: "services", label: "Services", href: "/services" },
+  { key: "talks", label: "Talks", href: "/Talks" },
   { key: "contact", label: "Contact", href: "/contact" },
   { key: "podcast", label: "Podcast", href: "/podcast" },
+];
+
+export const KEYS_TO_MASTER = [
+  {
+    title: "Thinking differently",
+    description: "A positive mindset shift sparks positive life outcomes.",
+    imageSrc: thinkDifferently,
+    style: "object-right",
+  },
+  {
+    title: "self-leadership",
+    description: "Take control of your own actions and decisions.",
+    imageSrc: leadership,
+    style: "object-center",
+  },
+  {
+    title: "Developing grit",
+    description: "Overcome hurdles with determination and resilience",
+    imageSrc: grit,
+    style: "object-center",
+  },
+  {
+    title: "Embracing courage",
+    description: "Face challenges with bravery and determination.",
+    imageSrc: courage,
+    style: "object-right",
+  },
+  {
+    title: "Becoming aware",
+    description: "Understand your thoughts, emotions, and behaviors.",
+    imageSrc: awareness,
+    style: "object-right",
+  },
 ];
