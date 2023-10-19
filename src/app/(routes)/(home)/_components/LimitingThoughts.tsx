@@ -5,9 +5,9 @@ import struggle from "../../../../../public/assets/home/struggle.jpeg";
 
 const LimitingThoughts = () => {
   return (
-    <section className="relative flex w-full justify-center px-7 pb-20 pt-16 md:px-10">
-      <div className="relative w-full max-w-screen-2xl space-y-10 lg:space-y-16">
-        <div className="flex flex-col items-start space-y-6 lg:items-center">
+    <section className="flex w-full justify-center px-7 pb-20 pt-16 md:px-10">
+      <div className="w-full max-w-screen-2xl space-y-10 lg:space-y-16">
+        <div className="flex flex-col items-start gap-5 lg:items-center">
           <div className="inline-block pb-3 text-xs text-black">
             <p className="inline-flex items-center rounded-full border bg-black px-3 py-1 font-semibold capitalize text-white">
               Your mindset determines your life
@@ -22,7 +22,7 @@ const LimitingThoughts = () => {
             ever hold you back in your life or career?
           </p>
         </div>
-        <div className="relative flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row-reverse lg:pl-0">
+        <div className="flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row-reverse lg:pl-0">
           <div className="relative basis-2/5 items-center justify-center self-stretch  overflow-hidden shadow-2xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%] lg:rounded-r-sm">
             <Image
               src={struggle}

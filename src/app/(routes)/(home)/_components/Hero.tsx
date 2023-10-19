@@ -22,10 +22,10 @@ const Hero = () => {
 
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-2xl flex-col gap-10">
-        <div className="mt-20 flex w-full flex-col items-center justify-center gap-3">
+        <div className="mt-20 flex w-full flex-col items-center justify-center gap-5">
           <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
             Dare to think{" "}
-            <span className="relative font-extrabold italic text-[#3a53f5]">
+            <span className="font-extrabold italic text-[#3a53f5]">
               Different.
             </span>
           </h1>
@@ -33,12 +33,9 @@ const Hero = () => {
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>
-          <div className="flex w-full flex-col gap-3 pt-5 sm:w-[350px] sm:flex-row">
+          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[350px] sm:flex-row">
             <Link className="w-full sm:inline-block" href="/talks">
-              <Button
-                className="relative w-full hover:opacity-90"
-                variant={"secondary"}
-              >
+              <Button className="w-full hover:opacity-90" variant={"secondary"}>
                 <span>See My Talks</span>
               </Button>
             </Link>
@@ -52,7 +49,7 @@ const Hero = () => {
         </div>
 
         {/* Hero right/bottom */}
-        <div className="flex items-end justify-center self-stretch">
+        <div className="relative flex items-end justify-center self-stretch">
           <Image
             className="object-cover"
             src={larry}
