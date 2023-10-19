@@ -1,5 +1,5 @@
 import Button from "@/components/ui/Button";
-import { ArrowUpRight, Redo } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import larry from "../../../../../public/assets/home/hero-larry.png";
@@ -7,7 +7,7 @@ import bg from "../../../../../public/assets/home/main-landing.jpeg";
 
 const Hero = () => {
   return (
-    <section className="relative flex w-full justify-center px-5 md:px-10">
+    <section className="relative flex w-full justify-center px-7 md:px-10">
       {/* Hero background */}
       <Image
         className="object-cover grayscale"
@@ -23,7 +23,7 @@ const Hero = () => {
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-2xl flex-col gap-10">
         <div className="mt-20 flex w-full flex-col items-center justify-center gap-3">
-          <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
+          <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
             Dare to think{" "}
             <span className="relative font-extrabold italic text-[#3a53f5]">
               Different.

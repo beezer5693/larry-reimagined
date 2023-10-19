@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Keys = () => {
   return (
-    <section className="relative flex w-full justify-center bg-white px-5 pb-20 pt-16 md:px-10">
+    <section className="relative flex w-full justify-center bg-white px-7 pb-20 pt-16 md:px-10">
       <div className="w-full max-w-screen-2xl">
         <div className="space-y-10 lg:space-y-16">
           <div className="flex flex-col justify-center space-y-6 text-black lg:items-center">

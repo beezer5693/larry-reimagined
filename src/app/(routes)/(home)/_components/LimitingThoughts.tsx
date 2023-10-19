@@ -5,7 +5,7 @@ import struggle from "../../../../../public/assets/home/struggle.jpeg";
 
 const LimitingThoughts = () => {
   return (
-    <section className="relative flex w-full justify-center px-5 pb-20 pt-16 md:px-10">
+    <section className="relative flex w-full justify-center px-7 pb-20 pt-16 md:px-10">
       <div className="relative w-full max-w-screen-2xl space-y-10 lg:space-y-16">
         <div className="flex flex-col items-start space-y-6 lg:items-center">
           <div className="inline-block pb-3 text-xs text-black">

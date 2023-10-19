@@ -6,8 +6,8 @@ import mindset from "../../../../../public/assets/home/mindset.jpg";
 
 const Mindset = () => {
   return (
-    <section className="flex w-full justify-center bg-black px-5 py-20 md:px-10">
-      <div className="relative flex h-[525px] w-full max-w-screen-2xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
+    <section className="flex w-full justify-center bg-black px-7 py-20 md:px-10">
+      <div className="relative flex h-[650px] w-full max-w-screen-2xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
         <div className="relative flex flex-col self-stretch bg-black lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
           <div className="flex flex-col gap-5">
             <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-left">
