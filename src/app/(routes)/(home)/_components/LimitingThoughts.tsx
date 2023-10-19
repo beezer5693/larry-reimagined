@@ -13,7 +13,7 @@ const LimitingThoughts = () => {
               Your mindset determines your life
             </p>
           </div>
-          <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 md:text-6xl md:leading-[50px] lg:text-center">
+          <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 lg:text-center">
             Thoughts That Limit <br className="lg:hidden" /> Our Potential.
           </h2>
           <p className="max-w-[65ch] text-center text-sm text-black sm:text-left sm:text-base sm:leading-[20px] lg:text-center">

@@ -17,7 +17,7 @@ const Mindset = () => {
               Every day, 95% of us process a staggering 60,000 thoughts, and an
               overwhelming 80% of these tend to be negative, regardless of our
               success. Can you imagine the personal growth that could be made in
-              our lives through a shift in this mindset? Let Larry show you how.
+              our lives through a shift in this mindset? Let me show you how.
             </p>
             <Link className="inline-block w-full sm:max-w-max" href="/contact">
               <Button className="w-full hover:brightness-125">

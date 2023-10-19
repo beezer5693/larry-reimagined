@@ -10,8 +10,8 @@ const Keys = () => {
     <section className="relative flex w-full justify-center bg-white px-5 pb-20 pt-16 md:px-10">
       <div className="w-full max-w-screen-2xl">
         <div className="space-y-10 lg:space-y-16">
-          <div className="item-center flex flex-col space-y-6 text-black lg:items-center">
-            <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 md:text-6xl md:leading-[55px] lg:text-center">
+          <div className="flex flex-col items-center justify-center space-y-6 text-black sm:items-start lg:items-center">
+            <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 lg:text-center">
               5 Keys to a New Mindset.
             </h2>
             <p className="max-w-[65ch] text-center text-sm text-black sm:text-left sm:text-base sm:leading-[20px] lg:text-center">
@@ -22,8 +22,8 @@ const Keys = () => {
               unleashing new, positive behaviors that elevate your personal and
               professional life to new heights.
             </p>
-            <div className="flex w-full flex-col-reverse items-center gap-3 sm:flex-row lg:justify-center">
-              <Link className="inline-block w-full sm:max-w-max" href="/talks">
+            <div className="flex w-full flex-col gap-2 pt-5 sm:w-[350px] sm:flex-row">
+              <Link className="inline-block w-full" href="/talks">
                 <Button
                   className="relative w-full bg-black text-white hover:opacity-90"
                   variant={"secondary"}
@@ -31,10 +31,7 @@ const Keys = () => {
                   <span>See My Talks</span>
                 </Button>
               </Link>
-              <Link
-                className="inline-block w-full sm:max-w-max"
-                href="/contact"
-              >
+              <Link className="inline-block w-full" href="/contact">
                 <Button className="w-full hover:brightness-125">
                   <span>reach out</span>
                   <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
