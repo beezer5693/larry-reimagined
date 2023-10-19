@@ -9,11 +9,11 @@ const Mindset = () => {
     <section className="flex w-full justify-center bg-black px-5 py-20 md:px-10">
       <div className="relative flex h-[525px] w-full max-w-screen-2xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
         <div className="relative flex flex-col self-stretch bg-black lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
-          <div className="flex flex-col items-center gap-5 sm:items-start">
-            <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-white sm:text-left sm:text-5xl md:text-6xl md:leading-[55px]">
+          <div className="flex flex-col gap-5">
+            <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-left">
               Your Mindset Matters.
             </h2>
-            <p className="max-w-[50ch] pb-3 text-center text-sm text-white sm:text-left sm:text-base lg:max-w-[50ch]">
+            <p className="max-w-[50ch] pb-3 text-white lg:max-w-[50ch] lg:text-left">
               Every day, 95% of us process a staggering 60,000 thoughts, and an
               overwhelming 80% of these tend to be negative, regardless of our
               success. Can you imagine the personal growth that could be made in
@@ -22,7 +22,7 @@ const Mindset = () => {
             <Link className="inline-block w-full sm:max-w-max" href="/contact">
               <Button className="w-full hover:brightness-125">
                 <span>get in touch</span>
-                <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
+                <ArrowUpRight className="ml-2" size={16} />
               </Button>
             </Link>
           </div>

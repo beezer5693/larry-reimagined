@@ -10,11 +10,11 @@ const Keys = () => {
     <section className="relative flex w-full justify-center bg-white px-5 pb-20 pt-16 md:px-10">
       <div className="w-full max-w-screen-2xl">
         <div className="space-y-10 lg:space-y-16">
-          <div className="flex flex-col items-center justify-center space-y-6 text-black sm:items-start lg:items-center">
-            <h2 className="text-center text-4xl font-bold leading-8 tracking-tighter text-black sm:text-left sm:text-5xl sm:leading-10 lg:text-center">
+          <div className="flex flex-col justify-center space-y-6 text-black lg:items-center">
+            <h2 className="text-4xl font-bold tracking-tighter text-black sm:text-5xl lg:text-center">
               5 Keys to a New Mindset.
             </h2>
-            <p className="max-w-[65ch] text-center text-sm text-black sm:text-left sm:text-base sm:leading-[20px] lg:text-center">
+            <p className="max-w-[65ch] text-black lg:text-center">
               It took me some time to realize how my mindset influenced my life,
               but you {"don't"} have to take as long as I did. Applying my Five
               Keys to a New Mindset can expedite the process, offering a
@@ -34,16 +34,16 @@ const Keys = () => {
               <Link className="inline-block w-full" href="/contact">
                 <Button className="w-full hover:brightness-125">
                   <span>reach out</span>
-                  <ArrowUpRight className="-mt-0.5 ml-2" size={16} />
+                  <ArrowUpRight className="ml-2" size={16} />
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 shadow-xl shadow-neutral-500/50 md:grid-cols-5">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-5">
             {KEYS_TO_MASTER.map((key) => (
               <div
                 key={key.title}
-                className="relative flex flex-col overflow-hidden bg-black text-white"
+                className="relative flex flex-col overflow-hidden bg-black text-white shadow-xl shadow-neutral-500/50"
               >
                 <div className="group relative h-[250px] overflow-hidden sm:h-[325px] lg:h-[350px]">
                   <Image
@@ -59,12 +59,10 @@ const Keys = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/70 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
                   <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">
-                    <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl md:leading-[1.25rem] lg:text-2xl lg:leading-6">
+                    <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl lg:text-2xl">
                       {key.title}
                     </h3>
-                    <p className="font-medium leading-[18px] md:text-sm md:leading-[18px] lg:text-base lg:leading-[1.25rem]">
-                      {key.description}
-                    </p>
+                    <p className="font-medium">{key.description}</p>
                   </div>
                 </div>
               </div>
