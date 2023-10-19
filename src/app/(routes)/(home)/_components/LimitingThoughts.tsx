@@ -5,10 +5,10 @@ import struggle from "../../../../../public/assets/home/struggle.jpeg";
 
 const LimitingThoughts = () => {
   return (
-    <section className="flex w-full justify-center px-7 pb-20 pt-16 md:px-10">
-      <div className="w-full max-w-screen-2xl space-y-10 lg:space-y-16">
+    <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10">
+      <div className="w-full max-w-screen-xl space-y-10 lg:space-y-16">
         <div className="flex flex-col items-start gap-5 lg:items-center">
-          <div className="inline-block pb-3 text-xs text-black">
+          <div className="inline-block text-xs text-black">
             <p className="inline-flex items-center rounded-full border bg-black px-3 py-1 font-semibold capitalize text-white">
               Your mindset determines your life
             </p>
@@ -22,15 +22,15 @@ const LimitingThoughts = () => {
             ever hold you back in your life or career?
           </p>
         </div>
-        <div className="flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row-reverse lg:pl-0">
-          <div className="relative basis-2/5 items-center justify-center self-stretch  overflow-hidden shadow-2xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%] lg:rounded-r-sm">
+        <div className="flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row lg:pl-0">
+          <div className="relative basis-2/5 items-center justify-center self-stretch overflow-hidden rounded-lg shadow-xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%]">
             <Image
               src={struggle}
               className="object-cover grayscale"
               fill
               alt="Women working out"
               quality={65}
-              sizes="(min-width: 1440px) 572px, (min-width: 1040px) calc(37.89vw + 34px), (min-width: 780px) calc(100vw - 88px), calc(100vw - 48px)"
+              sizes="(min-width: 1720px) 691px, (min-width: 1040px) calc(39.24vw + 24px), calc(96.67vw - 46px)"
             />
           </div>
           <ThoughtCards data={NEGATIVE_THOUGHTS} />

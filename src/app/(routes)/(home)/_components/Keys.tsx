@@ -7,8 +7,8 @@ import Link from "next/link";
 
 const Keys = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 pb-20 pt-16 md:px-10">
-      <div className="w-full max-w-screen-2xl">
+    <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10">
+      <div className="w-full max-w-screen-xl">
         <div className="space-y-10 lg:space-y-16">
           <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
             <h2 className="text-4xl font-bold tracking-tighter text-black sm:text-5xl lg:text-center">
@@ -43,7 +43,7 @@ const Keys = () => {
             {KEYS_TO_MASTER.map((key) => (
               <div
                 key={key.title}
-                className="flex flex-col overflow-hidden bg-black text-white shadow-xl shadow-neutral-500/50"
+                className="flex flex-col overflow-hidden rounded-lg bg-black text-white shadow-xl shadow-neutral-500/50"
               >
                 <div className="group relative h-[250px] overflow-hidden sm:h-[325px] lg:h-[350px]">
                   <Image
@@ -54,10 +54,10 @@ const Keys = () => {
                     src={key.imageSrc}
                     fill
                     alt={key.title}
-                    sizes="(min-width: 1440px) 240px, (min-width: 780px) calc(18.13vw - 17px), calc(100vw - 40px)"
+                    sizes="(min-width: 1720px) 298px, (min-width: 780px) calc(18.26vw - 12px), calc(100vw - 56px)"
                     quality={65}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/70 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/90 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
                   <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">
                     <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl lg:text-2xl">
                       {key.title}

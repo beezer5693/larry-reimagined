@@ -7,21 +7,17 @@ import bg from "../../../../../public/assets/home/main-landing.jpeg";
 
 const Hero = () => {
   return (
-    <section className="relative flex w-full justify-center px-7 md:px-10">
-      {/* Hero background */}
-      <Image
-        className="object-cover grayscale"
-        src={bg}
-        alt="crowd of people"
-        fill
-        quality={65}
-        sizes="100vw"
-        priority
-      />
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-
+    <section
+      style={{
+        backgroundImage: `linear-gradient(black, black), url(${bg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundBlendMode: "saturation",
+      }}
+      className="relative z-10 flex w-full justify-center px-7 shadow-xl shadow-black/30 before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/80 before:via-transparent before:to-black/30 before:backdrop-blur-[2px] md:px-10"
+    >
       {/* Hero left/top */}
-      <div className="relative flex max-w-screen-2xl flex-col gap-10">
+      <div className="relative flex max-w-screen-xl flex-col gap-10">
         <div className="mt-20 flex w-full flex-col items-center justify-center gap-5">
           <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
             Dare to think{" "}

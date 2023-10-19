@@ -6,8 +6,8 @@ import mindset from "../../../../../public/assets/home/mindset.jpg";
 
 const Mindset = () => {
   return (
-    <section className="flex w-full justify-center bg-black px-7 py-20 md:px-10">
-      <div className="flex h-[650px] w-full max-w-screen-2xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
+    <section className="relative z-10 flex w-full justify-center bg-black px-7 py-24 shadow-xl shadow-black/30 md:px-10">
+      <div className="flex h-[650px] w-full max-w-screen-xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
         <div className="flex flex-col self-stretch bg-black lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
           <div className="flex flex-col gap-5">
             <h2 className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-left">
@@ -27,14 +27,14 @@ const Mindset = () => {
             </Link>
           </div>
         </div>
-        <div className="relative flex-1 items-center justify-center self-stretch overflow-hidden lg:flex-none lg:basis-[45%] lg:rounded-l-sm">
+        <div className="relative flex-1 items-center justify-center self-stretch overflow-hidden rounded-lg lg:flex-none lg:basis-[45%]">
           <Image
             src={mindset}
             className="object-cover brightness-125"
             fill
             alt="Women working out"
             quality={65}
-            sizes="(min-width: 1440px) 572px, (min-width: 1040px) calc(37.89vw + 34px), (min-width: 780px) calc(100vw - 88px), calc(100vw - 48px)"
+            sizes="(min-width: 1720px) 691px, (min-width: 1040px) calc(39.24vw + 24px), calc(96.67vw - 46px)"
           />
         </div>
       </div>
