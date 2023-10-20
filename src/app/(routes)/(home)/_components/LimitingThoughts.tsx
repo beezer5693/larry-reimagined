@@ -8,11 +8,9 @@ const LimitingThoughts = () => {
     <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10">
       <div className="w-full max-w-screen-xl space-y-10 lg:space-y-16">
         <div className="flex flex-col items-start gap-5 lg:items-center">
-          <div className="inline-block text-xs text-black">
-            <p className="inline-flex items-center rounded-full border bg-black px-3 py-1 font-semibold capitalize text-white">
-              Your mindset determines your life
-            </p>
-          </div>
+          <p className="pb-3 font-medium text-black">
+            {`"You mindset determines everything." - Larry Bryan`}
+          </p>
           <h2 className="text-4xl font-bold tracking-tighter text-black sm:text-5xl lg:text-center">
             Thoughts That Limit <br className="lg:hidden" /> Our Potential.
           </h2>
@@ -23,7 +21,7 @@ const LimitingThoughts = () => {
           </p>
         </div>
         <div className="flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row lg:pl-0">
-          <div className="relative basis-2/5 items-center justify-center self-stretch overflow-hidden rounded-lg shadow-xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%]">
+          <div className="relative basis-2/5 items-center justify-center self-stretch overflow-hidden rounded-lg shadow-xl shadow-neutral-500/50 before:absolute before:inset-0 before:z-10 before:bg-black/30 sm:basis-1/2 lg:basis-[45%]">
             <Image
               src={struggle}
               className="object-cover grayscale"

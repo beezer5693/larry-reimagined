@@ -3,22 +3,22 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import larry from "../../../../../public/assets/home/hero-larry.png";
-import bg from "../../../../../public/assets/home/main-landing.jpeg";
+import bg from "../../../../../public/assets/home/bg.jpg";
 
 const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: `linear-gradient(black, black), url(${bg.src})`,
+        backgroundImage: `linear-gradient(white, white), url(${bg.src})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundBlendMode: "saturation",
       }}
-      className="relative z-10 flex w-full justify-center px-7 shadow-xl shadow-black/30 before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/80 before:via-transparent before:to-black/30 before:backdrop-blur-[2px] md:px-10"
+      className="relative flex w-full justify-center px-7 pt-20 shadow-xl shadow-black/30 before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/80 before:via-transparent before:to-black/30 before:backdrop-blur-[1px] md:px-10"
     >
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col gap-10">
-        <div className="mt-20 flex w-full flex-col items-center justify-center gap-5">
+        <div className="flex w-full flex-col items-center justify-center gap-5">
           <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
             Dare to think{" "}
             <span className="font-extrabold italic text-[#3a53f5]">

@@ -11,6 +11,12 @@ const Keys = () => {
       <div className="w-full max-w-screen-xl">
         <div className="space-y-10 lg:space-y-16">
           <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
+            <p className="pb-3 font-medium text-black">
+              {`"Change your thoughts, and you change your world."`}{" "}
+              <span className="block sm:inline-block">
+                - Norman Vincent Peale
+              </span>
+            </p>
             <h2 className="text-4xl font-bold tracking-tighter text-black sm:text-5xl lg:text-center">
               5 Keys to a New Mindset.
             </h2>
@@ -39,16 +45,16 @@ const Keys = () => {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-3 md:grid-cols-5">
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-5">
             {KEYS_TO_MASTER.map((key) => (
               <div
                 key={key.title}
-                className="flex flex-col overflow-hidden rounded-lg bg-black text-white shadow-xl shadow-neutral-500/50"
+                className="flex flex-col overflow-hidden rounded-lg text-white shadow-xl shadow-neutral-500/50"
               >
-                <div className="group relative h-[250px] overflow-hidden sm:h-[325px] lg:h-[350px]">
+                <div className="group relative h-[300px] overflow-hidden sm:h-[400px] md:h-[325px] lg:h-[350px]">
                   <Image
                     className={cn(
-                      "object-cover grayscale transition-all duration-500 ease-in-out group-hover:scale-125 group-hover:brightness-125",
+                      "object-cover object-top grayscale transition duration-500 ease-in-out group-hover:brightness-125",
                       key.style,
                     )}
                     src={key.imageSrc}
@@ -57,7 +63,7 @@ const Keys = () => {
                     sizes="(min-width: 1720px) 298px, (min-width: 780px) calc(18.26vw - 12px), calc(100vw - 56px)"
                     quality={65}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/90 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/30 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
                   <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">
                     <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl lg:text-2xl">
                       {key.title}

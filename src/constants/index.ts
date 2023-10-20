@@ -1,4 +1,4 @@
-import thinkDifferently from "../../public/assets/home/thinking.jpg";
+import thinkDifferently from "../../public/assets/home/thinking2.jpg";
 import leadership from "../../public/assets/home/leadership.jpg";
 import grit from "../../public/assets/home/grit.jpg";
 import courage from "../../public/assets/home/courage-2.jpg";
@@ -74,12 +74,18 @@ export const KEYS_TO_MASTER = [
     title: "Thinking differently",
     description: "A positive mindset shift sparks positive life outcomes.",
     imageSrc: thinkDifferently,
-    style: "object-bottom",
+    style: "object-center",
   },
   {
     title: "self-leadership",
     description: "Take control of your own actions and decisions.",
     imageSrc: leadership,
+    style: "object-center",
+  },
+  {
+    title: "Embracing courage",
+    description: "Face challenges with bravery and determination.",
+    imageSrc: courage,
     style: "object-center",
   },
   {
@@ -89,15 +95,42 @@ export const KEYS_TO_MASTER = [
     style: "object-center",
   },
   {
-    title: "Embracing courage",
-    description: "Face challenges with bravery and determination.",
-    imageSrc: courage,
-    style: "object-right",
-  },
-  {
     title: "Becoming aware",
     description: "Understand your thoughts, emotions, and behaviors.",
     imageSrc: awareness,
-    style: "object-right",
+    style: "object-center",
+  },
+];
+
+export const TALKS = [
+  {
+    title: "Your Mindset Determines Your Life",
+    description:
+      "Explore the roots of your current mindset and learn how to overcome its limitations for greater life success in this engaging talk.",
+    keyPoints: [
+      "Understand the origins of your current mindset, gaining self-awareness and introspection.",
+      "Discover effective strategies and techniques to overcome mindset limitations.",
+      "Empower yourself with the tools needed to achieve greater success and fulfillment in various aspects of life.",
+    ],
+  },
+  {
+    title: "Exploring the Mindset and Behaviors of Elite Salespeople",
+    description:
+      "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results",
+    keyPoints: [
+      "Gain deep insights into the mindset of successful sales professionals.",
+      "Discover the behaviors and strategies that set elite salespeople apart.",
+      "Learn valuable techniques to enhance your own sales performance and results.",
+    ],
+  },
+  {
+    title: "Newest Requirements For Corporate Leadership",
+    description:
+      "Discover the latest criteria and expectations shaping effective corporate leadership in today's dynamic business landscape.",
+    keyPoints: [
+      "Learn the latest criteria shaping effective corporate leadership.",
+      "Understand the expectations of today's corporate leaders.",
+      "Discover the latest strategies and techniques to enhance your leadership skills.",
+    ],
   },
 ];

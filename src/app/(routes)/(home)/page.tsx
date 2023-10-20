@@ -2,6 +2,7 @@ import Hero from "./_components/Hero";
 import LimitingThoughts from "./_components/LimitingThoughts";
 import Mindset from "./_components/Mindset";
 import Keys from "./_components/Keys";
+import Talks from "./_components/Talks";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <LimitingThoughts />
         <Mindset />
         <Keys />
+        <Talks />
       </div>
     </main>
   );
