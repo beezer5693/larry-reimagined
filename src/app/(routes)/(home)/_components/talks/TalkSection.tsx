@@ -18,7 +18,6 @@ const TalkSection = () => {
               professional development. These talks are a gateway to empowering
               your audience and propelling them towards success.
             </p>
-            <div className="flex w-full items-center justify-between border"></div>
           </div>
           <Talks talks={MY_TALKS} />
         </div>

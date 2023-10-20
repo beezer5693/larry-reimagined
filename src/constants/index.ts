@@ -134,3 +134,26 @@ export const MY_TALKS = [
     ],
   },
 ];
+
+export const SOCIAL_LINKS = [
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/larrybryanmotivates/",
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/lblmotivates/",
+  },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/larry-bryan-0618a986/",
+  },
+  {
+    label: "X",
+    href: "https://twitter.com/larry_motivates",
+  },
+  {
+    label: "Youtube",
+    href: "https://www.youtube.com/@lblmotivates/videos",
+  },
+];
