@@ -1,4 +1,5 @@
-import Navbar from "@/components/shared/Navbar/Navbar";
+import Footer from "@/components/shared/folder/Footer";
+import Navbar from "@/components/shared/navbar/Navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

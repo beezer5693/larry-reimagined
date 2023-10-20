@@ -1,8 +1,8 @@
-import thinkDifferently from "../../public/assets/home/thinking2.jpg";
-import leadership from "../../public/assets/home/leadership.jpg";
-import grit from "../../public/assets/home/grit.jpg";
-import courage from "../../public/assets/home/courage-2.jpg";
 import awareness from "../../public/assets/home/awareness.jpg";
+import courage from "../../public/assets/home/courage-2.jpg";
+import grit from "../../public/assets/home/grit.jpg";
+import leadership from "../../public/assets/home/leadership.jpg";
+import thinkDifferently from "../../public/assets/home/thinking2.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -102,7 +102,7 @@ export const KEYS_TO_MASTER = [
   },
 ];
 
-export const TALKS = [
+export const MY_TALKS = [
   {
     title: "Your Mindset Determines Your Life",
     description:
@@ -116,11 +116,11 @@ export const TALKS = [
   {
     title: "Exploring the Mindset and Behaviors of Elite Salespeople",
     description:
-      "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results",
+      "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
     keyPoints: [
-      "Gain deep insights into the mindset of successful sales professionals.",
-      "Discover the behaviors and strategies that set elite salespeople apart.",
-      "Learn valuable techniques to enhance your own sales performance and results.",
+      "Gain profound insights into the mindset and behaviors of highly successful sales professionals.",
+      "Learn about the strategic actions and techniques employed by top-tier salespeople to achieve outstanding results.",
+      "Acquire valuable knowledge and inspiration to enhance your own sales performance and drive exceptional outcomes.",
     ],
   },
   {

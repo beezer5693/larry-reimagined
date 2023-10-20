@@ -1,18 +1,18 @@
-import Hero from "./_components/Hero";
-import LimitingThoughts from "./_components/LimitingThoughts";
-import Mindset from "./_components/Mindset";
-import Keys from "./_components/Keys";
-import Talks from "./_components/Talks";
+import HeroSection from "./_components/HeroSection";
+import MindsetSection from "./_components/MindsetSection";
+import KeySection from "./_components/keys/KeySection";
+import TalkSection from "./_components/talks/TalkSection";
+import ThoughtSection from "./_components/thoughts/ThoughtSection";
 
 export default function Home() {
   return (
     <main className="flex w-full flex-col items-center overflow-hidden">
       <div className="flex h-full w-full flex-col items-center">
-        <Hero />
-        <LimitingThoughts />
-        <Mindset />
-        <Keys />
-        <Talks />
+        <HeroSection />
+        <ThoughtSection />
+        <MindsetSection />
+        <KeySection />
+        <TalkSection />
       </div>
     </main>
   );
