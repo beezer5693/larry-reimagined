@@ -6,36 +6,37 @@ import Subscribe from "./Subscribe";
 const Footer = () => {
   return (
     <section className="relative flex w-full flex-col items-center bg-black px-7 pb-32 pt-24 md:px-10">
-      <div className="flex w-full max-w-screen-xl items-start justify-between gap-10">
-        <div className="flex flex-col gap-8 text-white">
+      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
+        <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
-            <p className="text-4xl font-bold">Larry Bryan</p>
-            <p className="font-medium">
+            <p className="text-center text-2xl font-bold lg:text-left">
+              Larry Bryan
+            </p>
+            <p className="text-center text-sm font-medium lg:text-left">
               151 N Nob Hill Rd, Suite 350
               <br />
               Plantation, FL 33324
             </p>
           </div>
-          <div className="space-y-3">
-            <p className="font-medium">Connect With Larry</p>
+          <div className="space-y-3 text-center lg:text-left">
+            <p className="text-sm font-medium">Connect With Larry</p>
             <SocialLinks />
           </div>
           <div className="text-sm">
-            <p>
+            <p className="text-center lg:text-left">
               Website by{" "}
-              <Link
-                href={"https://www.wisdomstudios.co"}
-                className="relative before:absolute before:bottom-[1px] before:left-0 before:h-[1px] before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out before:hover:w-full"
-              >
-                Wisdom Studios
+              <Link href={"https://www.wisdomstudios.co"} className="group">
+                <span className="relative before:absolute before:bottom-[1px] before:left-0 before:h-[1px] before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out before:group-hover:w-full">
+                  Wisdom Studios
+                </span>
+                <ArrowUpRight size={14} className="ml-1 inline-block" />
               </Link>
-              <ArrowUpRight size={14} className="ml-1 inline-block" />
             </p>
           </div>
         </div>
         <Subscribe />
       </div>
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 text-xs text-white">
+      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white">
         © {new Date().getFullYear()} Larry Bryan. All rights reserved.
       </div>
     </section>
@@ -43,5 +44,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// © {new Date().getFullYear()} Larry Bryan. All rights reserved.

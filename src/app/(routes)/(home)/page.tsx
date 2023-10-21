@@ -1,3 +1,4 @@
+import BookSection from "./_components/BookSection";
 import HeroSection from "./_components/HeroSection";
 import MindsetSection from "./_components/MindsetSection";
 import KeySection from "./_components/keys/KeySection";
@@ -13,6 +14,7 @@ export default function Home() {
         <MindsetSection />
         <KeySection />
         <TalkSection />
+        <BookSection />
       </div>
     </main>
   );

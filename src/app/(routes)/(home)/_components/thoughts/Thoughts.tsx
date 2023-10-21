@@ -12,7 +12,7 @@ const Thoughts = ({ data }: ThoughtProps) => {
     <div className="relative flex w-full flex-1 self-stretch">
       <div className="grid grid-cols-3 gap-3">
         {data.map((thought, i) => (
-          <Thought key={i} data={thought} />
+          <Thought key={i} id={i} data={thought} />
         ))}
       </div>
     </div>

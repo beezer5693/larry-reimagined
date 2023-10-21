@@ -31,7 +31,7 @@ const SubscribeForm = () => {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="relative flex w-full items-center justify-between gap-5 border-b pb-1">
+        <div className="relative">
           <FormField
             control={form.control}
             name="email"
@@ -39,7 +39,9 @@ const SubscribeForm = () => {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="w-full rounded-none border-0 ring-transparent focus:ring-transparent"
+                    className="w-full rounded-none border-x-0 border-b border-t-0 border-neutral-200/60 pl-1 ring-transparent 
+                    placeholder:text-sm focus:border-white 
+                    focus:ring-transparent"
                     placeholder="Your Email Address"
                     {...field}
                   />
@@ -48,7 +50,7 @@ const SubscribeForm = () => {
             )}
           />
           <Button
-            className="transition duration-200 ease-in-out hover:brightness-125"
+            className="absolute bottom-1 right-0 px-2.5 py-1.5 text-sm transition duration-200 ease-in-out hover:brightness-125"
             type="submit"
           >
             Subscribe

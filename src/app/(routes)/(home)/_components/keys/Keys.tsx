@@ -13,8 +13,8 @@ type KeyProps = {
 const Keys = ({ keys }: KeyProps) => {
   return (
     <div className="grid grid-cols-1 gap-5 md:grid-cols-5">
-      {keys.map((key) => (
-        <Key key={key.title} data={key} />
+      {keys.map((key, i) => (
+        <Key key={key.title} id={i} data={key} />
       ))}
     </div>
   );

@@ -1,5 +1,8 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 
 type KeyProps = {
   data: {
@@ -8,11 +11,20 @@ type KeyProps = {
     imageSrc: StaticImageData;
     style: string;
   };
+  id: number;
 };
 
-const Key = ({ data }: KeyProps) => {
+const Key = ({ data, id }: KeyProps) => {
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.75, delay: 0.15 * id }}
+      variants={{
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 75 },
+      }}
       key={data.title}
       className="flex flex-col overflow-hidden rounded-lg text-white shadow-xl shadow-neutral-500/50"
     >
@@ -36,7 +48,7 @@ const Key = ({ data }: KeyProps) => {
           <p className="font-medium">{data.description}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Key;

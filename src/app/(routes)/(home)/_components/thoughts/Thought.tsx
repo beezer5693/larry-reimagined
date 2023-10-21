@@ -5,9 +5,10 @@ type CardProps = {
     thought: string;
     description: string;
   };
+  id: number;
 };
 
-const Thought = ({ data }: CardProps) => {
+const Thought = ({ data, id }: CardProps) => {
   return (
     <div
       className={cn(

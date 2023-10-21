@@ -10,12 +10,12 @@ import {
 
 const SocialLinks = () => {
   return (
-    <div className="flex items-center gap-4 text-white">
+    <div className="flex items-center justify-center gap-4 text-white lg:justify-start">
       <Link
         className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
         href={SOCIAL_LINKS[0].href}
       >
-        <FaFacebookF size={15} />
+        <FaFacebookF size={14} />
       </Link>
       <Link
         className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
