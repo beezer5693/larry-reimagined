@@ -22,8 +22,8 @@ const Key = ({ data, id }: KeyProps) => {
       viewport={{ once: true }}
       transition={{ duration: 0.75, delay: 0.15 * id }}
       variants={{
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -50 },
       }}
       key={data.title}
       className="flex flex-col overflow-hidden rounded-lg text-white shadow-xl shadow-neutral-500/50"

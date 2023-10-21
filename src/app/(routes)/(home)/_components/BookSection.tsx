@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 
 const BookSection = () => {
@@ -13,7 +14,7 @@ const BookSection = () => {
             Get In Touch
           </span>
         </Link>
-        <ArrowRight className="ml-3 inline-block align-middle" size={30} />
+        <FaArrowRight className="ml-3 inline-block align-middle" size={24} />
       </p>
     </div>
   );

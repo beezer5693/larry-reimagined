@@ -68,7 +68,7 @@ const KeySection = () => {
               transition={{ duration: 0.75, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 50 },
               }}
               className="flex w-full flex-col gap-3 sm:w-[350px] sm:flex-row"
             >

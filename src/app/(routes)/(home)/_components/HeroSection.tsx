@@ -2,11 +2,10 @@
 
 import Button from "@/components/ui/Button";
 import { ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import larry from "../../../../../public/assets/home/hero-larry.png";
 import bg from "../../../../../public/assets/home/bg.jpg";
+import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   return (
@@ -22,47 +21,17 @@ const HeroSection = () => {
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-5">
-          <motion.h1
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.75 }}
-            variants={{
-              visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 75 },
-            }}
-            className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl"
-          >
+          <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl">
             Dare to think{" "}
             <span className="font-extrabold italic text-[#3a53f5]">
               Different.
             </span>
-          </motion.h1>
-          <motion.p
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.75, delay: 0.15 }}
-            variants={{
-              visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 75 },
-            }}
-            className="max-w-[40ch] text-center font-medium text-white lg:max-w-[50ch] lg:px-0 lg:text-lg"
-          >
+          </h1>
+          <p className="max-w-[40ch] text-center font-medium text-white lg:max-w-[50ch] lg:px-0 lg:text-lg">
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
-          </motion.p>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.75, delay: 0.25 }}
-            variants={{
-              visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 75 },
-            }}
-            className="flex w-full flex-col gap-3 pt-3 sm:w-[350px] sm:flex-row"
-          >
+          </p>
+          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[350px] sm:flex-row">
             <Link className="w-full sm:inline-block" href="/talks">
               <Button className="w-full hover:opacity-90" variant={"secondary"}>
                 <span>See My Talks</span>
@@ -74,7 +43,7 @@ const HeroSection = () => {
                 <ArrowUpRight className="ml-2" size={16} />
               </Button>
             </Link>
-          </motion.div>
+          </div>
         </div>
 
         {/* Hero right/bottom */}

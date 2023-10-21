@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
         <Subscribe />
       </div>
-      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white">
+      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white/30">
         © {new Date().getFullYear()} Larry Bryan. All rights reserved.
       </div>
     </section>

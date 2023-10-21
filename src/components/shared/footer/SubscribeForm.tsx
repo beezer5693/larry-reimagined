@@ -39,8 +39,8 @@ const SubscribeForm = () => {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="w-full rounded-none border-x-0 border-b border-t-0 border-neutral-200/60 pl-1 ring-transparent 
-                    placeholder:text-sm focus:border-white 
+                    className="w-full rounded-none border-x-0 border-b border-t-0 border-slate-200/60 pl-1 ring-transparent 
+                    placeholder:text-sm placeholder:text-slate-200/60 focus:border-white 
                     focus:ring-transparent"
                     placeholder="Your Email Address"
                     {...field}
@@ -50,7 +50,7 @@ const SubscribeForm = () => {
             )}
           />
           <Button
-            className="absolute bottom-1 right-0 px-2.5 py-1.5 text-sm transition duration-200 ease-in-out hover:brightness-125"
+            className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-br from-transparent to-transparent p-0 text-sm text-white/80 transition duration-200 ease-in-out hover:text-white hover:brightness-125"
             type="submit"
           >
             Subscribe
