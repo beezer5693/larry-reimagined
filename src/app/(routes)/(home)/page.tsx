@@ -8,14 +8,12 @@ import ThoughtSection from "./_components/thoughts/ThoughtSection";
 export default function Home() {
   return (
     <main className="flex w-full flex-col items-center overflow-hidden">
-      <div className="flex h-full w-full flex-col items-center">
-        <HeroSection />
-        <ThoughtSection />
-        <MindsetSection />
-        <KeySection />
-        <TalkSection />
-        <BookSection />
-      </div>
+      <HeroSection />
+      <ThoughtSection />
+      <MindsetSection />
+      <KeySection />
+      <TalkSection />
+      <BookSection />
     </main>
   );
 }

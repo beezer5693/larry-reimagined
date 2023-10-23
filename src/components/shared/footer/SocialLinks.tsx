@@ -1,4 +1,5 @@
 import { SOCIAL_LINKS } from "@/constants";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -8,9 +9,18 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 
-const SocialLinks = () => {
+type SocialLinkProps = {
+  className?: string;
+};
+
+const SocialLinks = ({ className }: SocialLinkProps) => {
   return (
-    <div className="flex items-center justify-center gap-4 text-white lg:justify-start">
+    <div
+      className={cn(
+        "flex items-center justify-center gap-4 text-white lg:justify-start",
+        className,
+      )}
+    >
       <Link
         className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
         href={SOCIAL_LINKS[0].href}

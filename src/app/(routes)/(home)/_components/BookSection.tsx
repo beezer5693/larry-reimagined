@@ -1,6 +1,5 @@
-import { ArrowRight } from "lucide-react";
-import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 const BookSection = () => {
   return (
@@ -9,12 +8,12 @@ const BookSection = () => {
         <span className="align-middle">
           Ready to book Larry for your next event?
         </span>{" "}
-        <Link className="group" href="/contact">
+        <Link className="group whitespace-nowrap" href="/contact">
           <span className="relative align-middle before:absolute before:bottom-[1px] before:left-0 before:h-[3px] before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out before:group-hover:w-full">
             Get In Touch
           </span>
+          <FaArrowRight className="ml-3 inline-block h-6 w-6 align-middle lg:h-7 lg:w-7" />
         </Link>
-        <FaArrowRight className="ml-3 inline-block align-middle" size={24} />
       </p>
     </div>
   );

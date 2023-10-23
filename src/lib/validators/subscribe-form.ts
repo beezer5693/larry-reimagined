@@ -6,6 +6,6 @@ type SubscribeFormSchema = {
 
 export const subscribeFormSchema: ZodType<SubscribeFormSchema> = z.object({
   email: z.string().email({
-    message: "Please enter a valid email address",
+    message: "Please enter a valid email address.",
   }),
 });

@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 const TalkSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-[#f5f5f7] px-7 py-24 md:px-10">
+    <section className="flex w-full flex-col items-center bg-[#f5f5f7] px-7 py-16 md:px-10 lg:py-24">
       <div className="w-full max-w-screen-xl">
-        <div className="space-y-10 lg:space-y-16">
+        <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
             <motion.h2
               initial="hidden"

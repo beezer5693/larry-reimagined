@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +16,7 @@ const HeroSection = () => {
         backgroundPosition: "center",
         backgroundBlendMode: "saturation",
       }}
-      className="relative flex w-full justify-center px-7 pt-20 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10"
+      className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10"
     >
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col gap-10">
@@ -27,7 +27,7 @@ const HeroSection = () => {
               Different.
             </span>
           </h1>
-          <p className="max-w-[40ch] text-center font-medium text-white lg:max-w-[50ch] lg:px-0 lg:text-lg">
+          <p className="max-w-[40ch] text-center font-medium text-white lg:max-w-[55ch] lg:px-0 lg:text-lg">
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>
@@ -53,7 +53,7 @@ const HeroSection = () => {
             src={larry}
             height={500}
             width={500}
-            sizes="(min-width: 1460px) 545px, (min-width: 1040px) calc(34vw + 55px), (min-width: 780px) 700px, (min-width: 400px) 94.44vw, calc(68.75vw + 79px)"
+            sizes="(min-width: 600px) 500px, calc(91.43vw - 30px)"
             alt="Larry Bryan"
             quality={65}
             priority

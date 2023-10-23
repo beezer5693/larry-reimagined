@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +9,7 @@ import mindset from "../../../../../public/assets/home/mindset1.jpg";
 
 const MindsetSection = () => {
   return (
-    <section className="flex w-full justify-center bg-black px-7 py-24 md:px-10">
+    <section className="flex w-full justify-center bg-black px-7 py-16 md:px-10 lg:py-24">
       <div className="flex h-[650px] w-full max-w-screen-xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
         <div className="flex flex-col self-stretch bg-black lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
           <div className="flex flex-col gap-5">
@@ -81,7 +81,7 @@ const MindsetSection = () => {
             fill
             alt="Women working out"
             quality={65}
-            sizes="(min-width: 1720px) 691px, (min-width: 1040px) calc(39.24vw + 24px), calc(96.67vw - 46px)"
+            sizes="(min-width: 1460px) 576px, (min-width: 1040px) calc(36vw + 58px), calc(96.67vw - 46px)"
           />
         </motion.div>
       </div>

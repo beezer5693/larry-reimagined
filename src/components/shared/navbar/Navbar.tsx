@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { NAV_LINKS } from "@/constants";
 import { ArrowUpRight, Menu } from "lucide-react";
 import Link from "next/link";
@@ -12,9 +12,12 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-50 flex w-full justify-center bg-white/70 px-5 shadow-lg shadow-neutral-300/20 backdrop-blur-lg md:px-10">
-      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-2">
-        <Link className="text-xl font-medium text-black" href="/">
-          L|B
+      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-3">
+        <Link
+          className="border-[2.5px] border-black px-1 text-2xl font-bold text-black"
+          href="/"
+        >
+          L/B
         </Link>
         <NavLinks links={NAV_LINKS} path={currentPath} />
         <div className="hidden max-w-max md:block">

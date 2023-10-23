@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
-            <p className="text-center text-2xl font-bold lg:text-left">
-              Larry Bryan
+            <p className="max-w-max border-[2.5px] px-1 text-center text-2xl font-bold uppercase lg:text-left">
+              L/B
             </p>
             <p className="text-center text-sm font-medium lg:text-left">
               151 N Nob Hill Rd, Suite 350

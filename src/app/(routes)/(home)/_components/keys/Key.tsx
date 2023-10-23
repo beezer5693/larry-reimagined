@@ -37,7 +37,7 @@ const Key = ({ data, id }: KeyProps) => {
           src={data.imageSrc}
           fill
           alt={data.title}
-          sizes="(min-width: 1720px) 298px, (min-width: 780px) calc(18.26vw - 12px), calc(100vw - 56px)"
+          sizes="(min-width: 1440px) 240px, (min-width: 780px) calc(18.13vw - 17px), calc(100vw - 56px)"
           quality={65}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/30 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>

@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { KEYS_TO_MASTER } from "@/constants";
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -10,9 +10,9 @@ import Keys from "./Keys";
 
 const KeySection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10">
+    <section className="flex w-full justify-center bg-white px-7 py-16 md:px-10 lg:py-24">
       <div className="w-full max-w-screen-xl">
-        <div className="space-y-10 lg:space-y-16">
+        <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
             <motion.p
               initial="hidden"
@@ -52,7 +52,7 @@ const KeySection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 75 },
               }}
-              className="max-w-[65ch] pb-2 text-black lg:text-center"
+              className="max-w-[70ch] pb-2 text-black lg:text-center"
             >
               It took me some time to realize how my mindset influenced my life,
               but you {"don't"} have to take as long as I did. Applying my Five
@@ -70,7 +70,7 @@ const KeySection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 },
               }}
-              className="flex w-full flex-col gap-3 sm:w-[350px] sm:flex-row"
+              className="flex w-full flex-col gap-3 sm:w-[375px] sm:flex-row"
             >
               <Link className="inline-block w-full" href="/talks">
                 <Button
