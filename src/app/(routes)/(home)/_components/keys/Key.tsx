@@ -19,7 +19,7 @@ const Key = ({ data, id }: KeyProps) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.75 }}
       transition={{ duration: 0.75, delay: 0.15 * id }}
       variants={{
         visible: { opacity: 1, x: 0 },

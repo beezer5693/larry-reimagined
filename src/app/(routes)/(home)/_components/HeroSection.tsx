@@ -2,22 +2,25 @@
 
 import { Button } from "@/components/ui/Button";
 import { ArrowUpRight } from "lucide-react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import bg from "../../../../../public/assets/home/bg.jpg";
 import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
+  let { scrollYProgress } = useScroll();
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "150%"]);
   return (
-    <section
-      style={{
-        backgroundImage: `linear-gradient(white, white), url(${bg.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundBlendMode: "saturation",
-      }}
-      className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10"
-    >
+    <section className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10">
+      <motion.div style={{ y }} className="absolute inset-0 -z-20">
+        <Image
+          src={bg}
+          fill
+          alt="crowd at conference"
+          className="object-cover grayscale"
+        />
+      </motion.div>
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-5">

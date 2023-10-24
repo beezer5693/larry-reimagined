@@ -9,33 +9,33 @@ import mindset from "../../../../../public/assets/home/mindset1.jpg";
 
 const MindsetSection = () => {
   return (
-    <section className="flex w-full justify-center bg-black px-7 py-16 md:px-10 lg:py-24">
+    <section className="flex w-full justify-center bg-black px-7 py-24 md:px-10 lg:py-40">
       <div className="flex h-[650px] w-full max-w-screen-xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
-        <div className="flex flex-col self-stretch bg-black lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-col self-stretch lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
+          <div className="flex flex-col gap-5 text-white">
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 50 },
               }}
-              className="text-4xl font-bold tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-left"
+              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-left"
             >
               Your Mindset Matters.
             </motion.h2>
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75, delay: 0.15 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.45 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[50ch] pb-3 text-white lg:max-w-[50ch] lg:text-left"
+              className="max-w-[50ch] pb-3 lg:max-w-[50ch] lg:text-left"
             >
               Every day, 95% of us process a staggering 60,000 thoughts, and an
               overwhelming 80% of these tend to be negative, regardless of our
@@ -45,11 +45,11 @@ const MindsetSection = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75, delay: 0.25 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.55 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 60 },
               }}
             >
               <Link
@@ -68,7 +68,7 @@ const MindsetSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.05 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
           variants={{
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 50 },

@@ -86,7 +86,12 @@ const ContactForm = () => {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                      className={cn(
+                        "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
+                        {
+                          "border-red-500": form.formState.errors.firstName,
+                        },
+                      )}
                       placeholder="First Name*"
                       disabled={isSubmitting || invitationSentSuccessfully}
                       {...field}
@@ -106,7 +111,12 @@ const ContactForm = () => {
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                      className={cn(
+                        "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
+                        {
+                          "border-red-500": form.formState.errors.lastName,
+                        },
+                      )}
                       placeholder="Last Name*"
                       disabled={isSubmitting || invitationSentSuccessfully}
                       {...field}
@@ -127,7 +137,12 @@ const ContactForm = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className={cn(
+                      "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
+                      {
+                        "border-red-500": form.formState.errors.email,
+                      },
+                    )}
                     placeholder="Email*"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}
@@ -147,7 +162,12 @@ const ContactForm = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className={cn(
+                      "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
+                      {
+                        "border-red-500": form.formState.errors.phoneNumber,
+                      },
+                    )}
                     placeholder="Phone Number*"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}
@@ -168,7 +188,7 @@ const ContactForm = () => {
                 <FormLabel className="font-semibold">Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
                     placeholder="Company Name"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}
@@ -187,7 +207,7 @@ const ContactForm = () => {
                 <FormControl>
                   <Input
                     type="date"
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
                     placeholder="Company Name"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}
@@ -205,7 +225,7 @@ const ContactForm = () => {
                 <FormLabel className="font-semibold">Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
                     placeholder="Event Location"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}
@@ -225,7 +245,7 @@ const ContactForm = () => {
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-[#3a53f5] focus:ring-transparent"
+                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
                     placeholder="Estimated Speaker Budget"
                     disabled={isSubmitting || invitationSentSuccessfully}
                     {...field}

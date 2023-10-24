@@ -10,18 +10,18 @@ import Keys from "./Keys";
 
 const KeySection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 py-16 md:px-10 lg:py-24">
+    <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10 lg:py-40">
       <div className="w-full max-w-screen-xl">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 50 },
               }}
               className="pb-3 font-medium text-black"
             >
@@ -33,11 +33,11 @@ const KeySection = () => {
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75, delay: 0.15 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.45 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 55 },
               }}
               className="text-4xl font-bold tracking-tighter text-black sm:text-5xl lg:text-center"
             >
@@ -46,11 +46,11 @@ const KeySection = () => {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75, delay: 0.25 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.55 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 75 },
+                hidden: { opacity: 0, y: 60 },
               }}
               className="max-w-[70ch] pb-2 text-black lg:text-center"
             >
@@ -64,11 +64,11 @@ const KeySection = () => {
             <motion.div
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.75, delay: 0.35 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.75, delay: 0.65 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 65 },
               }}
               className="flex w-full flex-col gap-3 sm:w-[375px] sm:flex-row"
             >
