@@ -14,7 +14,7 @@ const ThoughtSection = () => {
           <motion.p
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: "all" }}
             transition={{ duration: 0.75, delay: 0.35 }}
             variants={{
               visible: { opacity: 1, y: 0 },
@@ -27,7 +27,7 @@ const ThoughtSection = () => {
           <motion.h2
             initial="hidden"
             whileInView="visible"
-            viewport={{}}
+            viewport={{ once: true, amount: "all" }}
             transition={{ duration: 0.75, delay: 0.45 }}
             variants={{
               visible: { opacity: 1, y: 0 },
@@ -40,7 +40,7 @@ const ThoughtSection = () => {
           <motion.p
             initial="hidden"
             whileInView="visible"
-            viewport={{}}
+            viewport={{ once: true, amount: "all" }}
             transition={{ duration: 0.75, delay: 0.55 }}
             variants={{
               visible: { opacity: 1, y: 0 },
@@ -60,20 +60,10 @@ const ThoughtSection = () => {
           transition={{ duration: 1.25, delay: 0.65 }}
           variants={{
             visible: { opacity: 1, y: 0 },
-            hidden: { opacity: 0, y: 0 },
+            hidden: { opacity: 0, y: 50 },
           }}
           className="flex h-[700px] w-full flex-col-reverse items-center gap-5 md:h-[800px] lg:h-[550px] lg:flex-row lg:pl-0"
         >
-          <div className="relative basis-2/5 items-center justify-center self-stretch overflow-hidden rounded-lg shadow-xl shadow-neutral-500/50 sm:basis-1/2 lg:basis-[45%]">
-            <Image
-              src={struggle}
-              className="object-cover brightness-90"
-              fill
-              alt="Women working out"
-              quality={65}
-              sizes="(min-width: 1460px) 576px, (min-width: 1040px) calc(36vw + 58px), calc(96.67vw - 46px)"
-            />
-          </div>
           <Thoughts data={NEGATIVE_THOUGHTS} />
         </motion.div>
       </div>

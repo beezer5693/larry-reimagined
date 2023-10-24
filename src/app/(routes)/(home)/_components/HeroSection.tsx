@@ -10,7 +10,7 @@ import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   let { scrollYProgress } = useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "150%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "125%"]);
   return (
     <section className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10">
       <motion.div style={{ y }} className="absolute inset-0 -z-20">
@@ -54,8 +54,8 @@ const HeroSection = () => {
           <Image
             className="object-cover"
             src={larry}
-            height={500}
-            width={500}
+            height={575}
+            width={575}
             sizes="(min-width: 600px) 500px, calc(91.43vw - 30px)"
             alt="Larry Bryan"
             quality={65}

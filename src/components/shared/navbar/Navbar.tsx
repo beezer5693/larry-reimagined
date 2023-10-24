@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 flex w-full justify-center bg-white/70 px-5 shadow-lg shadow-neutral-300/20 backdrop-blur-lg md:px-10">
       <div className="relative flex w-full max-w-screen-xl items-center justify-between py-3">
         <Link
-          className="border-[2.5px] border-black px-1 text-2xl font-bold text-black"
+          className="border-[2px] border-black px-1 text-xl font-bold text-black"
           href="/"
         >
           L/B

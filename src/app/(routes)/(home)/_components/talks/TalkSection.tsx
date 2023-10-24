@@ -13,8 +13,8 @@ const TalkSection = () => {
             <motion.h2
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.75, delay: 0.35 }}
+              viewport={{ once: true, amount: "all" }}
+              transition={{ duration: 1, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 },
@@ -26,8 +26,8 @@ const TalkSection = () => {
             <motion.p
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ duration: 0.75, delay: 0.45 }}
+              viewport={{ once: true, amount: "all" }}
+              transition={{ duration: 1, delay: 0.45 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },

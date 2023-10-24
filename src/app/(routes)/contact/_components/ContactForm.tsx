@@ -288,17 +288,17 @@ const ContactForm = () => {
         >
           {invitationSentSuccessfully ? (
             <span className="inline-flex items-center gap-1.5">
-              <Check size={20} /> Invitation Sent Successfully
+              <Check size={20} /> Contact Information Sent Successfully
             </span>
           ) : (
             <span className="inline-flex items-center gap-2">
               {isSubmitting ? (
                 <>
                   <Loader2 className={cn("animate-spin")} size={20} />
-                  Sending Invitation...
+                  Sending...
                 </>
               ) : (
-                "Send Invitation"
+                "Send"
               )}
             </span>
           )}
