@@ -19,7 +19,7 @@ const TalkSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 },
               }}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-center"
+              className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
             >
               Talks to inspire <br /> your audience.
             </motion.h2>
@@ -32,7 +32,7 @@ const TalkSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[50ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
+              className="max-w-[60ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
             >
               Join Larry in a transformative journey with these three compelling
               talks designed to uplift and inspire your audience. Larry brings

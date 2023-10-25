@@ -22,7 +22,7 @@ const MindsetSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 },
               }}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-left"
+              className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-left lg:text-7xl"
             >
               Your mindset <br /> matters.
             </motion.h2>
@@ -35,7 +35,7 @@ const MindsetSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[50ch] pb-3 font-semibold text-gray-300/70 lg:max-w-[50ch] lg:text-left lg:text-lg"
+              className="max-w-[55ch] pb-3 font-semibold text-gray-300/70 lg:max-w-[50ch] lg:text-left lg:text-lg"
             >
               Every day,{" "}
               <span className="text-white">

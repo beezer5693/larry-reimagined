@@ -24,7 +24,7 @@ const ContactFormSection = () => {
         <div className="max-w-[550px] space-y-10 lg:space-y-16">
           <div className="space-y-5">
             <AnimatedText
-              className="text-5xl font-bold tracking-tighter text-black md:text-6xl"
+              className="text-5xl font-semibold tracking-tighter text-black md:text-6xl lg:text-7xl"
               text={"Invite Larry to Speak at your Next Event."}
             />
             <motion.p

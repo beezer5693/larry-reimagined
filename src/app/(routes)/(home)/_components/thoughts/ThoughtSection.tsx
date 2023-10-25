@@ -31,7 +31,7 @@ const ThoughtSection = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 55 },
             }}
-            className="text-4xl font-bold tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-center"
+            className="text-4xl font-semibold tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
           >
             Thoughts that limit <br className="" /> our potential.
           </motion.h2>
@@ -44,7 +44,7 @@ const ThoughtSection = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 65 },
             }}
-            className="max-w-[50ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
+            className="max-w-[55ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
           >
             The{" "}
             <span className="text-black">
@@ -68,7 +68,7 @@ const ThoughtSection = () => {
           }}
           className="flex w-full flex-col items-center justify-center"
         >
-          <div className="w-full max-w-[900px]">
+          <div className="w-full max-w-[1000px]">
             <Thoughts data={NEGATIVE_THOUGHTS} />
           </div>
         </motion.div>

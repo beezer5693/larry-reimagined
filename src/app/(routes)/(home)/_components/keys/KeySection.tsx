@@ -39,7 +39,7 @@ const KeySection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="text-4xl font-bold tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-center"
+              className="text-4xl font-semibold tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
             >
               5 Keys to a<br /> new mindset.
             </motion.h2>
@@ -52,7 +52,7 @@ const KeySection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 60 },
               }}
-              className="max-w-[50ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
+              className="max-w-[60ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
             >
               It took me some time to realize how my mindset influenced my life,
               but you {"don't"} have to take as long as I did.{" "}
