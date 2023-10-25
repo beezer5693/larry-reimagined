@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <div className="max-w-[375px] space-y-8 text-white">
       <div className="space-y-3">
-        <h4 className="text-center text-2xl font-bold lg:text-left">
+        <h4 className="text-center text-2xl font-semibold lg:text-left">
           Get Inspired. Subscribe.
         </h4>
         <p className="text-center text-sm font-medium text-gray-300/80 lg:text-left">

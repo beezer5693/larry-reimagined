@@ -87,12 +87,12 @@ const ContactForm = () => {
               name="firstName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="font-bold">
+                  <FormLabel>
                     First Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn(" border-gray-300 focus:border-[#2e42c4]", {
+                      className={cn("border-gray-300", {
                         "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                           form.formState.errors.firstName,
                       })}
@@ -111,12 +111,12 @@ const ContactForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="font-bold">
+                  <FormLabel>
                     Last Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                      className={cn("border-gray-300", {
                         "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                           form.formState.errors.lastName,
                       })}
@@ -135,12 +135,12 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">
+                <FormLabel>
                   Email<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                    className={cn("border-gray-300", {
                       "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                         form.formState.errors.email,
                     })}
@@ -158,12 +158,12 @@ const ContactForm = () => {
             name="phoneNumber"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">
+                <FormLabel>
                   Phone Number<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                    className={cn("border-gray-300", {
                       "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                         form.formState.errors.phoneNumber,
                     })}
@@ -184,10 +184,10 @@ const ContactForm = () => {
             name="companyName"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">Company Name</FormLabel>
+                <FormLabel>Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300 focus:border-[#2e42c4]"
+                    className="border-gray-300"
                     placeholder="Company Name"
                     disabled={isSubmitting}
                     {...field}
@@ -202,11 +202,11 @@ const ContactForm = () => {
             name="eventDate"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">Event Date</FormLabel>
+                <FormLabel>Event Date</FormLabel>
                 <FormControl>
                   <Input
                     type="date"
-                    className="border-gray-300 focus:border-[#2e42c4]"
+                    className="border-gray-300"
                     placeholder="Company Name"
                     disabled={isSubmitting}
                     {...field}
@@ -221,10 +221,10 @@ const ContactForm = () => {
             name="eventLocation"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">Company Name</FormLabel>
+                <FormLabel>Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300 focus:border-[#2e42c4]"
+                    className="border-gray-300"
                     placeholder="Event Location"
                     disabled={isSubmitting}
                     {...field}
@@ -239,12 +239,10 @@ const ContactForm = () => {
             name="speakerBudget"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-bold">
-                  Estimated Speaker Budget
-                </FormLabel>
+                <FormLabel>Estimated Speaker Budget</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300 focus:border-[#2e42c4]"
+                    className="border-gray-300"
                     placeholder="Estimated Speaker Budget"
                     disabled={isSubmitting}
                     {...field}
@@ -263,7 +261,7 @@ const ContactForm = () => {
             name="eventDescription"
             render={({ field }) => (
               <FormItem className="w-full pt-3">
-                <FormLabel className="font-bold">
+                <FormLabel>
                   Tell me a little about your event and audience.
                 </FormLabel>
                 <FormControl>

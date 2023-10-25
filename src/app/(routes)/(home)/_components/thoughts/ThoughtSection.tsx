@@ -48,13 +48,11 @@ const ThoughtSection = () => {
           >
             The{" "}
             <span className="text-black">
-              conversations we have with ourselves
-            </span>{" "}
-            on a daily basis have a{" "}
-            <span className="text-black">
+              conversations we have with ourselves on a daily basis have a
               significant impact on the results we get.
             </span>{" "}
-            Do any of these thoughts ever hold you back in your life or career?
+            <span className="text-black"></span> Do any of these thoughts ever
+            hold you back in your life or career?
           </motion.p>
         </div>
         <motion.div

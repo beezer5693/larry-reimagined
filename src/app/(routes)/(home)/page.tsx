@@ -1,3 +1,4 @@
+import About from "./_components/About";
 import BookSection from "./_components/BookSection";
 import HeroSection from "./_components/HeroSection";
 import MindsetSection from "./_components/MindsetSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <ThoughtSection />
       <MindsetSection />
+      <About />
       <KeySection />
       <TalkSection />
       <BookSection />

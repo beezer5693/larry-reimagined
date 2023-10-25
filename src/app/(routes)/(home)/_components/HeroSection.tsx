@@ -10,7 +10,7 @@ import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   let { scrollYProgress } = useScroll();
-  let y = useTransform(scrollYProgress, [0, 1], ["0%", "125%"]);
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "150%"]);
   return (
     <section className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10 lg:pt-32">
       <motion.div style={{ y }} className="absolute inset-0 -z-20">
@@ -21,6 +21,7 @@ const HeroSection = () => {
           className="object-cover grayscale"
           quality={65}
           sizes="100vw"
+          priority
         />
       </motion.div>
       {/* Hero left/top */}
@@ -36,7 +37,7 @@ const HeroSection = () => {
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>
-          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[350px] sm:flex-row">
+          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[400px] sm:flex-row">
             <Link className="w-full sm:inline-block" href="/talks">
               <Button className="w-full hover:opacity-90" variant={"secondary"}>
                 <span>See My Talks</span>

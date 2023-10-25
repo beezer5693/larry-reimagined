@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
             <p className="text-center lg:text-left">
-              <span className="border-[2px] px-1 text-xl font-bold uppercase">
+              <span className="border-[2px] px-1 text-xl font-semibold uppercase">
                 L/B
               </span>
             </p>

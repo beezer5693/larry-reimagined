@@ -12,7 +12,7 @@ type NavLinkProps = {
 
 const NavLinks = ({ links, path }: NavLinkProps) => {
   return (
-    <nav className="hidden flex-1 md:block">
+    <nav className="hidden flex-1 lg:block">
       <ul className="mr-20 flex items-center justify-end gap-10">
         {links.map((link) => (
           <li

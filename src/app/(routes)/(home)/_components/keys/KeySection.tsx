@@ -72,7 +72,7 @@ const KeySection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 65 },
               }}
-              className="flex w-full flex-col gap-3 sm:w-[375px] sm:flex-row"
+              className="flex w-full flex-col gap-3 pt-2.5 sm:w-[400px] sm:flex-row"
             >
               <Link className="inline-block w-full" href="/talks">
                 <Button
