@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,16 +37,20 @@ const HeroSection = () => {
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>
-          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[400px] sm:flex-row">
+          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[450px] sm:flex-row">
             <Link className="w-full sm:inline-block" href="/talks">
               <Button className="w-full hover:opacity-90" variant={"secondary"}>
                 <span>See My Talks</span>
+                <ArrowUpRight className="ml-2" size={20} />
               </Button>
             </Link>
             <Link className="w-full sm:inline-block" href="/talks">
-              <Button className="w-full hover:brightness-125">
+              <Button className="group w-full hover:brightness-125">
                 <span>{"Let's Chat"}</span>
-                <ArrowUpRight className="ml-2" size={16} />
+                <ArrowRight
+                  className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
+                  size={20}
+                />
               </Button>
             </Link>
           </div>

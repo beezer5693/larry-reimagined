@@ -20,12 +20,12 @@ const Talk = ({ talk, id }: TalkProps) => {
         once: true,
         amount: 0.15,
       }}
-      transition={{ duration: 1, delay: id * 0.15 }}
+      transition={{ duration: 1, delay: id * 0.25 }}
       variants={{
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 75 },
       }}
-      className="col-span-1 flex flex-col justify-between self-start rounded-lg bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-400/20 md:items-center"
+      className="col-span-1 flex flex-col justify-between rounded-lg bg-white px-5 pb-5 pt-10 md:items-center"
     >
       <div className="flex w-full flex-col items-center gap-6">
         <h4
@@ -37,10 +37,10 @@ const Talk = ({ talk, id }: TalkProps) => {
         </h4>
         <p className="text-center font-semibold">{talk.description}</p>
 
-        <div className={`w-full space-y-6 px-10 pt-5 text-black`}>
+        <div className={`space-y-6 px-10 pt-5 text-[#2e42c4]`}>
           {talk.keyPoints.map((point) => (
             <p
-              className="border-b border-[#3a53f5] pb-2 text-center"
+              className="border-b border-gray-900 pb-5 text-center font-medium"
               key={point}
             >
               {point}
@@ -48,10 +48,10 @@ const Talk = ({ talk, id }: TalkProps) => {
           ))}
         </div>
       </div>
-      <Link className="mt-10 w-full" href={"/talks"}>
-        <Button className="w-full hover:brightness-125">
+      <Link className="mt-14 w-full" href={"/talks"}>
+        <Button className="w-full text-white hover:brightness-125">
           <span>Learn More</span>
-          <ArrowUpRight className="ml-2" size={16} />
+          <ArrowUpRight className="ml-2" size={20} />
         </Button>
       </Link>
     </motion.div>

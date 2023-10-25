@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 const TalkSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-[#f5f5f7] px-7 py-24 md:px-10 lg:py-40">
-      <div className="w-full max-w-screen-xl">
+    <section className="flex w-full flex-col items-center bg-white px-7 pb-24 md:px-10 lg:pb-40">
+      <div className="w-full max-w-screen-2xl">
         <div className="space-y-16 lg:space-y-20">
-          <div className="flex flex-col justify-center gap-8 text-black lg:items-center">
+          <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -32,12 +32,12 @@ const TalkSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[60ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
+              className="max-w-[65ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
             >
               Join Larry in a transformative journey with these three compelling
               talks designed to uplift and inspire your audience. Larry brings
               his{" "}
-              <span className="text-black">
+              <span className="text-gray-950">
                 wealth of knowledge and passion for growth to the forefront,
                 offering invaluable insights and strategies for personal and
                 professional development.
@@ -46,7 +46,9 @@ const TalkSection = () => {
               propelling them towards success.
             </motion.p>
           </div>
-          <Talks talks={MY_TALKS} />
+          <div className="bg-[#f5f5f7] p-5 md:p-8 lg:p-10">
+            <Talks talks={MY_TALKS} />
+          </div>
         </div>
       </div>
     </section>

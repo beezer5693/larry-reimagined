@@ -3,12 +3,12 @@ import { VariantProps, cva } from "class-variance-authority";
 import { ButtonHTMLAttributes, FC } from "react";
 
 const buttonVariants = cva(
-  "relative inline-flex items-center font-semibold rounded justify-center capitalize transition duration-200 ease-in-out text-black focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
+  "relative inline-flex items-center font-semibold rounded justify-center capitalize transition duration-200 ease-in-out text-gray-950 focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 focus-visible:ring-offset-white",
   {
     variants: {
       variant: {
         primary: "bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] text-white",
-        secondary: "bg-white text-black",
+        secondary: "bg-white text-gray-950",
       },
       size: {
         default: "px-10 py-3",

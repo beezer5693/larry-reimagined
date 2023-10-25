@@ -1,4 +1,4 @@
-import About from "./_components/About";
+import AboutSection from "./_components/AboutSection";
 import BookSection from "./_components/BookSection";
 import HeroSection from "./_components/HeroSection";
 import MindsetSection from "./_components/MindsetSection";
@@ -10,11 +10,15 @@ export default function Home() {
   return (
     <main className="flex w-full flex-col items-center overflow-hidden">
       <HeroSection />
-      <ThoughtSection />
-      <MindsetSection />
-      <About />
-      <KeySection />
-      <TalkSection />
+      <div className="w-full space-y-28 lg:space-y-60">
+        <ThoughtSection />
+        <MindsetSection />
+      </div>
+      <AboutSection />
+      <div className="w-full space-y-28 lg:space-y-60">
+        <KeySection />
+        <TalkSection />
+      </div>
       <BookSection />
     </main>
   );

@@ -6,7 +6,7 @@ import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 py-24 md:px-10 lg:py-40">
+    <section className="flex w-full justify-center bg-white px-7 pt-24 md:px-10 lg:pt-40">
       <div className="w-full max-w-screen-xl space-y-16 lg:space-y-20">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <motion.p
@@ -18,7 +18,7 @@ const ThoughtSection = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 50 },
             }}
-            className="font-medium text-black"
+            className="font-medium text-gray-950"
           >
             {`"Your mindset determines everything." - Larry Bryan`}
           </motion.p>
@@ -31,7 +31,7 @@ const ThoughtSection = () => {
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 55 },
             }}
-            className="text-4xl font-semibold tracking-tighter text-black sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
+            className="text-4xl font-semibold tracking-tighter text-gray-950 sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
           >
             Thoughts that limit <br className="" /> our potential.
           </motion.h2>
@@ -47,12 +47,12 @@ const ThoughtSection = () => {
             className="max-w-[55ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
           >
             The{" "}
-            <span className="text-black">
+            <span className="text-gray-950">
               conversations we have with ourselves on a daily basis have a
               significant impact on the results we get.
             </span>{" "}
-            <span className="text-black"></span> Do any of these thoughts ever
-            hold you back in your life or career?
+            <span className="text-gray-950"></span> Do any of these thoughts
+            ever hold you back in your life or career?
           </motion.p>
         </div>
         <motion.div
