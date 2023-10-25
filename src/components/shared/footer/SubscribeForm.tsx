@@ -55,11 +55,18 @@ const SubscribeForm = () => {
                 <FormItem className="w-full">
                   <FormControl>
                     <Input
-                      disabled={isSubscribed || isSubmitting}
-                      className="w-full rounded-none border-x-0 border-b border-t-0 border-gray-200/60 pl-1 ring-transparent 
-                    placeholder:text-sm placeholder:text-gray-200/60 focus:border-white 
-                    focus:ring-transparent"
-                      placeholder="Your Email Address"
+                      disabled={isSubmitting}
+                      className={cn(
+                        "w-full border-gray-200/60 px-3 py-2 placeholder:text-sm placeholder:text-gray-200/60 focus:border-[#2e42c4]",
+                        {
+                          "placeholder:text-white": isSubscribed,
+                        },
+                      )}
+                      placeholder={
+                        isSubscribed
+                          ? "Thanks for subscribing!"
+                          : "Your Email Address"
+                      }
                       {...field}
                     />
                   </FormControl>
@@ -67,11 +74,11 @@ const SubscribeForm = () => {
               )}
             />
             <Button
-              disabled={isSubscribed || isSubmitting}
+              disabled={isSubmitting || isSubscribed}
               className={cn(
-                "absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-br from-transparent to-transparent p-0 text-sm text-white/80 transition duration-200 ease-in-out hover:text-white hover:brightness-125",
+                "absolute right-2 top-1/2 -translate-y-1/2 bg-gradient-to-br from-transparent to-transparent p-0 text-sm text-white/80 transition duration-200 ease-in-out hover:text-white hover:brightness-125",
                 {
-                  "text-green-400 opacity-100 hover:text-green-400 hover:brightness-100":
+                  "cursor-not-allowed text-green-400 opacity-100 hover:text-green-400 hover:brightness-100":
                     isSubscribed,
                 },
               )}

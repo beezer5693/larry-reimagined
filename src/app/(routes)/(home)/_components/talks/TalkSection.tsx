@@ -9,7 +9,7 @@ const TalkSection = () => {
     <section className="flex w-full flex-col items-center bg-[#f5f5f7] px-7 py-24 md:px-10 lg:py-40">
       <div className="w-full max-w-screen-xl">
         <div className="space-y-16 lg:space-y-20">
-          <div className="flex flex-col justify-center gap-5 text-black lg:items-center">
+          <div className="flex flex-col justify-center gap-8 text-black lg:items-center">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -19,9 +19,9 @@ const TalkSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 50 },
               }}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl lg:text-center"
+              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-center"
             >
-              Talks to Inspire Your Audience.
+              Talks to inspire <br /> your audience.
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -32,14 +32,18 @@ const TalkSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[70ch] pb-2 lg:text-center"
+              className="max-w-[50ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
             >
               Join Larry in a transformative journey with these three compelling
               talks designed to uplift and inspire your audience. Larry brings
-              his wealth of knowledge and passion for growth to the forefront,
-              offering invaluable insights and strategies for personal and
-              professional development. These talks are a gateway to empowering
-              your audience and propelling them towards success.
+              his{" "}
+              <span className="text-black">
+                wealth of knowledge and passion for growth to the forefront,
+                offering invaluable insights and strategies for personal and
+                professional development.
+              </span>{" "}
+              These talks are a gateway to empowering your audience and
+              propelling them towards success.
             </motion.p>
           </div>
           <Talks talks={MY_TALKS} />

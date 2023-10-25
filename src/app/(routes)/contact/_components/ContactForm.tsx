@@ -12,7 +12,7 @@ import {
 import { Input } from "@/components/ui/Input";
 import { contactFormSchema } from "@/lib/validators/contact-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import {
@@ -28,6 +28,12 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [invitationSentSuccessfully, setInvitationSentSuccessfully] =
     useState(false);
+
+  const ref = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    ref.current?.focus();
+  }, []);
 
   const form = useForm<z.infer<typeof contactFormSchema>>({
     resolver: zodResolver(contactFormSchema),
@@ -81,20 +87,19 @@ const ContactForm = () => {
               name="firstName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="font-semibold">
+                  <FormLabel className="font-bold">
                     First Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn(
-                        "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
-                        {
-                          "border-red-500": form.formState.errors.firstName,
-                        },
-                      )}
+                      className={cn(" border-gray-300 focus:border-[#2e42c4]", {
+                        "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
+                          form.formState.errors.firstName,
+                      })}
                       placeholder="First Name*"
-                      disabled={isSubmitting || invitationSentSuccessfully}
+                      disabled={isSubmitting}
                       {...field}
+                      ref={ref}
                     />
                   </FormControl>
                   <FormMessage className="ml-1 text-red-500" />
@@ -106,23 +111,21 @@ const ContactForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="font-semibold">
+                  <FormLabel className="font-bold">
                     Last Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn(
-                        "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
-                        {
-                          "border-red-500": form.formState.errors.lastName,
-                        },
-                      )}
+                      className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                        "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
+                          form.formState.errors.lastName,
+                      })}
                       placeholder="Last Name*"
-                      disabled={isSubmitting || invitationSentSuccessfully}
+                      disabled={isSubmitting}
                       {...field}
                     />
                   </FormControl>
-                  <FormMessage className="ml-1" />
+                  <FormMessage className="ml-1 text-red-500" />
                 </FormItem>
               )}
             />
@@ -132,19 +135,17 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">
+                <FormLabel className="font-bold">
                   Email<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn(
-                      "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
-                      {
-                        "border-red-500": form.formState.errors.email,
-                      },
-                    )}
+                    className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                      "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
+                        form.formState.errors.email,
+                    })}
                     placeholder="Email*"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                   />
                 </FormControl>
@@ -157,26 +158,24 @@ const ContactForm = () => {
             name="phoneNumber"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">
+                <FormLabel className="font-bold">
                   Phone Number<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn(
-                      "rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent",
-                      {
-                        "border-red-500": form.formState.errors.phoneNumber,
-                      },
-                    )}
+                    className={cn("border-gray-300 focus:border-[#2e42c4]", {
+                      "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
+                        form.formState.errors.phoneNumber,
+                    })}
                     placeholder="Phone Number*"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                     onChange={(e) =>
                       field.onChange(phoneNumberFormatter(e.target.value))
                     }
                   />
                 </FormControl>
-                <FormMessage className="ml-1" />
+                <FormMessage className="ml-1 text-red-500" />
               </FormItem>
             )}
           />
@@ -185,12 +184,12 @@ const ContactForm = () => {
             name="companyName"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">Company Name</FormLabel>
+                <FormLabel className="font-bold">Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
+                    className="border-gray-300 focus:border-[#2e42c4]"
                     placeholder="Company Name"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                   />
                 </FormControl>
@@ -203,13 +202,13 @@ const ContactForm = () => {
             name="eventDate"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">Event Date</FormLabel>
+                <FormLabel className="font-bold">Event Date</FormLabel>
                 <FormControl>
                   <Input
                     type="date"
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
+                    className="border-gray-300 focus:border-[#2e42c4]"
                     placeholder="Company Name"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                   />
                 </FormControl>
@@ -222,12 +221,12 @@ const ContactForm = () => {
             name="eventLocation"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">Company Name</FormLabel>
+                <FormLabel className="font-bold">Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
+                    className="border-gray-300 focus:border-[#2e42c4]"
                     placeholder="Event Location"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                   />
                 </FormControl>
@@ -240,14 +239,14 @@ const ContactForm = () => {
             name="speakerBudget"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel className="font-semibold">
+                <FormLabel className="font-bold">
                   Estimated Speaker Budget
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className="rounded-none border-x-0 border-b border-t-0 border-gray-300 pl-1 shadow-none ring-transparent focus:border-black focus:ring-transparent"
+                    className="border-gray-300 focus:border-[#2e42c4]"
                     placeholder="Estimated Speaker Budget"
-                    disabled={isSubmitting || invitationSentSuccessfully}
+                    disabled={isSubmitting}
                     {...field}
                     value={field.value ? `$${field.value}` : ""}
                     onChange={(e) =>
@@ -264,14 +263,11 @@ const ContactForm = () => {
             name="eventDescription"
             render={({ field }) => (
               <FormItem className="w-full pt-3">
-                <FormLabel className="font-semibold">
+                <FormLabel className="font-bold">
                   Tell me a little about your event and audience.
                 </FormLabel>
                 <FormControl>
-                  <Textarea
-                    disabled={isSubmitting || invitationSentSuccessfully}
-                    {...field}
-                  />
+                  <Textarea disabled={isSubmitting} {...field} />
                 </FormControl>
                 <FormMessage className="ml-1" />
               </FormItem>
@@ -279,7 +275,7 @@ const ContactForm = () => {
           />
         </div>
         <Button
-          disabled={isSubmitting || invitationSentSuccessfully}
+          disabled={isSubmitting}
           type="submit"
           className={cn("mt-10 w-full hover:brightness-125", {
             "bg-gradient-to-br from-green-500 to-green-600 hover:brightness-100 disabled:cursor-not-allowed":

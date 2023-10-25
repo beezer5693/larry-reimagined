@@ -22,7 +22,7 @@ const Footer = () => {
           </div>
           <div className="space-y-3 text-center lg:text-left">
             <p className="text-sm font-medium">Connect With Larry</p>
-            <SocialLinks />
+            <SocialLinks className="opacity-80 hover:opacity-100" />
           </div>
           <div className="text-sm">
             <p className="text-center lg:text-left">
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <Subscribe />
       </div>
-      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white/30">
+      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white">
         © {new Date().getFullYear()} Larry Bryan. All rights reserved.
       </div>
     </section>

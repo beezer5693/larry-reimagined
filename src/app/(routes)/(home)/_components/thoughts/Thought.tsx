@@ -12,7 +12,7 @@ const Thought = ({ data, id }: CardProps) => {
   return (
     <div
       className={cn(
-        "relative col-span-1 flex items-center justify-center rounded-lg bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] p-5 text-white shadow-xl shadow-[#3a53f5]/40 ",
+        "relative col-span-1 flex items-center justify-center rounded-lg bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] p-10 text-white shadow-xl shadow-[#3a53f5]/40 ",
       )}
       key={data.thought}
     >

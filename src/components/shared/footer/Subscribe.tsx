@@ -7,7 +7,7 @@ const Subscribe = () => {
         <h4 className="text-center text-2xl font-bold lg:text-left">
           Get Inspired. Subscribe.
         </h4>
-        <p className="text-center text-sm lg:text-left">
+        <p className="text-center text-sm font-medium text-gray-300/80 lg:text-left">
           Your gateway to a wealth of motivation and personal development
           resources. Get ready for exclusive content, empowering insights, and
           the latest from Larry, all delivered directly to your inbox.

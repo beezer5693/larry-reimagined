@@ -19,6 +19,8 @@ const HeroSection = () => {
           fill
           alt="crowd at conference"
           className="object-cover grayscale"
+          quality={65}
+          sizes="100vw"
         />
       </motion.div>
       {/* Hero left/top */}
@@ -30,7 +32,7 @@ const HeroSection = () => {
               Different.
             </span>
           </h1>
-          <p className="max-w-[40ch] text-center font-medium text-white lg:max-w-[55ch] lg:px-0 lg:text-lg">
+          <p className="max-w-[40ch] text-center font-semibold text-white lg:max-w-[55ch] lg:px-0 lg:text-lg">
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>

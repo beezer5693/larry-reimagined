@@ -18,35 +18,49 @@ const SocialLinks = ({ className }: SocialLinkProps) => {
     <div
       className={cn(
         "flex items-center justify-center gap-4 text-white lg:justify-start",
-        className,
       )}
     >
       <Link
-        className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
+        className={cn(
+          "cursor-pointer transition duration-200 ease-in-out",
+          className,
+        )}
         href={SOCIAL_LINKS[0].href}
       >
         <FaFacebookF size={14} />
       </Link>
       <Link
-        className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
+        className={cn(
+          "cursor-pointer transition duration-200 ease-in-out",
+          className,
+        )}
         href={SOCIAL_LINKS[1].href}
       >
         <FaInstagram size={16} />
       </Link>
       <Link
-        className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
+        className={cn(
+          "cursor-pointer transition duration-200 ease-in-out",
+          className,
+        )}
         href={SOCIAL_LINKS[2].href}
       >
         <FaLinkedinIn size={16} />
       </Link>
       <Link
-        className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
+        className={cn(
+          "cursor-pointer transition duration-200 ease-in-out",
+          className,
+        )}
         href={SOCIAL_LINKS[3].href}
       >
         <FaXTwitter size={16} />
       </Link>
       <Link
-        className="cursor-pointer opacity-80 transition duration-200 ease-in-out hover:opacity-100"
+        className={cn(
+          "cursor-pointer transition duration-200 ease-in-out",
+          className,
+        )}
         href={SOCIAL_LINKS[4].href}
       >
         <FaYoutube size={16} />

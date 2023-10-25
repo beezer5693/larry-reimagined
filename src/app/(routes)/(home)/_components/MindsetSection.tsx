@@ -12,7 +12,7 @@ const MindsetSection = () => {
     <section className="flex w-full justify-center bg-black px-7 py-24 md:px-10 lg:py-40">
       <div className="flex h-[650px] w-full max-w-screen-xl flex-col items-center gap-10 sm:h-[600px] md:h-[650px] lg:h-[450px] lg:flex-row">
         <div className="flex flex-col self-stretch lg:flex-1 lg:items-center lg:justify-center lg:pr-5">
-          <div className="flex flex-col gap-5 text-white">
+          <div className="flex flex-col gap-8 text-white">
             <motion.h2
               initial="hidden"
               whileInView="visible"
@@ -24,7 +24,7 @@ const MindsetSection = () => {
               }}
               className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-left"
             >
-              Your Mindset Matters.
+              Your mindset <br /> matters.
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -35,12 +35,16 @@ const MindsetSection = () => {
                 visible: { opacity: 1, y: 0 },
                 hidden: { opacity: 0, y: 55 },
               }}
-              className="max-w-[50ch] pb-3 lg:max-w-[50ch] lg:text-left"
+              className="max-w-[50ch] pb-3 font-semibold text-gray-300/70 lg:max-w-[50ch] lg:text-left lg:text-lg"
             >
-              Every day, 95% of us process a staggering 60,000 thoughts, and an
-              overwhelming 80% of these tend to be negative, regardless of our
-              success. Can you imagine the personal growth that could be made in
-              our lives through a shift in this mindset? Let me show you how.
+              Every day,{" "}
+              <span className="text-white">
+                95% of us process a staggering 60,000 thoughts, and an
+                overwhelming 80% of these tend to be negative, regardless of our
+                success.
+              </span>{" "}
+              Can you imagine the personal growth that could be made in our
+              lives through a shift in this mindset? Let me show you how.
             </motion.p>
             <motion.div
               initial="hidden"

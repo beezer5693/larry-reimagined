@@ -24,10 +24,11 @@ const ContactFormSection = () => {
         <div className="max-w-[550px] space-y-10 lg:space-y-16">
           <div className="space-y-5">
             <AnimatedText
-              className="text-5xl font-bold tracking-tighter text-black"
+              className="text-5xl font-bold tracking-tighter text-black md:text-6xl"
               text={"Invite Larry to Speak at your Next Event."}
             />
             <motion.p
+              className="font-semibold text-gray-600/90 lg:text-lg"
               initial="hidden"
               animate="visible"
               transition={{ duration: 1.25, delay: 2 }}
@@ -71,7 +72,7 @@ const ContactFormSection = () => {
             </div>
             <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
               <h3 className="font-semibold">Connect on Social</h3>
-              <SocialLinks className="text-black" />
+              <SocialLinks className="text-black hover:opacity-80" />
             </div>
             <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
               <h3 className="font-semibold">Email</h3>
