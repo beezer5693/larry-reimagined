@@ -74,7 +74,7 @@ const MindsetSection = () => {
         <div className="basis-1/2 self-stretch">
           <Image
             src={mindset}
-            className="h-full w-full object-cover object-left grayscale"
+            className="h-full w-full object-cover object-left shadow-2xl shadow-black/40 grayscale"
             alt="Man on bycicle"
             quality={65}
             height={500}
