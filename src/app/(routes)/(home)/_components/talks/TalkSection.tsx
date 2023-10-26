@@ -17,9 +17,9 @@ const TalkSection = () => {
               transition={{ duration: 1, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 65 },
               }}
-              className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
+              className="text-5xl font-semibold tracking-tighter md:text-6xl lg:text-center lg:text-7xl"
             >
               Talks to inspire <br /> your audience.
             </motion.h2>
@@ -30,7 +30,7 @@ const TalkSection = () => {
               transition={{ duration: 1, delay: 0.45 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 55 },
+                hidden: { opacity: 0, y: 60 },
               }}
               className="max-w-[65ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg"
             >

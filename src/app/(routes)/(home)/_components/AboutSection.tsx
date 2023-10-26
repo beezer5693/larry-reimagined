@@ -19,9 +19,9 @@ const AboutSection = () => {
             transition={{ duration: 1, delay: 0.35 }}
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 50 },
+              hidden: { opacity: 0, y: 65 },
             }}
-            className="text-4xl font-semibold tracking-tighter text-gray-950 sm:text-5xl md:text-6xl lg:text-7xl"
+            className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-7xl"
           >
             Meet Larry.
           </motion.h2>
@@ -33,7 +33,7 @@ const AboutSection = () => {
               transition={{ duration: 1, delay: 0.45 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 55 },
+                hidden: { opacity: 0, y: 60 },
               }}
               className="max-w-[45ch] pb-2  font-semibold text-gray-600/90 lg:text-lg"
             >
@@ -70,7 +70,7 @@ const AboutSection = () => {
               transition={{ duration: 1, delay: 0.55 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 65 },
+                hidden: { opacity: 0, y: 50 },
               }}
               className="max-w-[45ch] pb-2  font-semibold text-gray-600/90 lg:text-lg"
             >
@@ -87,7 +87,7 @@ const AboutSection = () => {
             transition={{ duration: 1, delay: 0.55 }}
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 60 },
+              hidden: { opacity: 0, y: 45 },
             }}
           >
             <Link className="inline-block w-full lg:max-w-max" href="/about">

@@ -35,12 +35,13 @@ const Talk = ({ talk, id }: TalkProps) => {
         >
           {talk.title}
         </h4>
-        <p className="text-center font-semibold">{talk.description}</p>
-
-        <div className={`space-y-6 px-10 pt-5 text-[#2e42c4]`}>
+        <p className="max-w-[35ch] text-center font-semibold text-gray-950">
+          {talk.description}
+        </p>
+        <div className={`space-y-6 px-10 pt-5 text-gray-950`}>
           {talk.keyPoints.map((point) => (
             <p
-              className="border-b border-gray-900 pb-5 text-center font-medium"
+              className="border-b border-gray-950 pb-5 text-center"
               key={point}
             >
               {point}

@@ -21,11 +21,12 @@ const KeySection = () => {
               transition={{ duration: 1, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 55 },
+                hidden: { opacity: 0, y: 65 },
               }}
-              className="text-4xl font-semibold tracking-tighter text-gray-950 sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
+              className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-center lg:text-7xl"
             >
-              5 Keys to a<br /> new mindset.
+              The 5 essential keys <br className="hidden sm:block" />
+              to a new mindset.
             </motion.h2>
             <motion.p
               initial="hidden"
@@ -54,7 +55,7 @@ const KeySection = () => {
               transition={{ duration: 1, delay: 0.55 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 65 },
+                hidden: { opacity: 0, y: 55 },
               }}
               className="flex w-full flex-col gap-3 pt-2.5 sm:w-[450px] sm:flex-row"
             >

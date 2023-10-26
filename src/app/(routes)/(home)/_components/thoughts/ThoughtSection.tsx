@@ -13,10 +13,10 @@ const ThoughtSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: "all" }}
-            transition={{ duration: 0.75, delay: 0.35 }}
+            transition={{ duration: 1, delay: 0.35 }}
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 50 },
+              hidden: { opacity: 0, y: 65 },
             }}
             className="font-medium text-gray-950"
           >
@@ -26,23 +26,24 @@ const ThoughtSection = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: "all" }}
-            transition={{ duration: 0.75, delay: 0.45 }}
+            transition={{ duration: 1, delay: 0.45 }}
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 55 },
+              hidden: { opacity: 0, y: 60 },
             }}
-            className="text-4xl font-semibold tracking-tighter text-gray-950 sm:text-5xl md:text-6xl lg:text-center lg:text-7xl"
+            className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-center lg:text-7xl"
           >
-            Thoughts that limit <br className="" /> our potential.
+            Thoughts that limit <br className="hidden sm:block" /> our
+            potential.
           </motion.h2>
           <motion.p
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: "all" }}
-            transition={{ duration: 0.75, delay: 0.55 }}
+            transition={{ duration: 1, delay: 0.55 }}
             variants={{
               visible: { opacity: 1, y: 0 },
-              hidden: { opacity: 0, y: 65 },
+              hidden: { opacity: 0, y: 55 },
             }}
             className="max-w-[55ch] font-semibold text-gray-600/90 lg:text-center lg:text-lg"
           >
@@ -66,7 +67,7 @@ const ThoughtSection = () => {
           }}
           className="flex w-full flex-col items-center justify-center"
         >
-          <div className="w-full max-w-[1000px]">
+          <div className="w-full max-w-screen-lg">
             <Thoughts data={NEGATIVE_THOUGHTS} />
           </div>
         </motion.div>

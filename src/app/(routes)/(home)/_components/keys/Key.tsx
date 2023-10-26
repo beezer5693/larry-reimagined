@@ -43,6 +43,11 @@ const Key = ({ data, id }: KeyProps) => {
           fill
           alt={data.title}
           quality={65}
+          sizes={
+            id < 2
+              ? "(min-width: 1440px) 630px, (min-width: 780px) 45.31vw, calc(100vw - 56px)"
+              : "(min-width: 1440px) 413px, (min-width: 780px) calc(30.16vw - 15px), calc(100vw - 56px)"
+          }
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-black/50 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
         <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">

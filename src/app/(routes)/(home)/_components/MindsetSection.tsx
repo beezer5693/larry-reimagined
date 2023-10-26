@@ -10,8 +10,8 @@ import mindset from "../../../../../public/assets/home/mindset1.jpg";
 const MindsetSection = () => {
   return (
     <section className="flex w-full justify-center bg-white px-7 pb-24 md:px-10 lg:pb-40">
-      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between lg:flex-row lg:gap-10">
-        <div className="flex flex-1 flex-col self-stretch lg:items-center">
+      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between lg:flex-row lg:gap-40">
+        <div className="flex max-w-max flex-col self-stretch">
           <div className="flex flex-col gap-8 pb-10 text-gray-950 lg:py-24">
             <motion.h2
               initial="hidden"
@@ -20,9 +20,9 @@ const MindsetSection = () => {
               transition={{ duration: 1, delay: 0.35 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 50 },
+                hidden: { opacity: 0, y: 60 },
               }}
-              className="text-4xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-left lg:text-7xl"
+              className="text-5xl font-semibold tracking-tighter md:text-6xl lg:text-left lg:text-7xl"
             >
               Your mindset <br /> matters.
             </motion.h2>
@@ -53,7 +53,7 @@ const MindsetSection = () => {
               transition={{ duration: 1, delay: 0.55 }}
               variants={{
                 visible: { opacity: 1, y: 0 },
-                hidden: { opacity: 0, y: 60 },
+                hidden: { opacity: 0, y: 50 },
               }}
             >
               <Link
@@ -71,14 +71,14 @@ const MindsetSection = () => {
             </motion.div>
           </div>
         </div>
-        <div className="basis-1/2 self-stretch">
+        <div className="flex-1 self-stretch">
           <Image
             src={mindset}
             className="h-full w-full object-cover object-left grayscale"
             alt="Man on bycicle"
             quality={65}
             height={500}
-            width={1500}
+            width={700}
           />
         </div>
       </div>
