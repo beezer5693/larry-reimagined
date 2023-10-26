@@ -18,7 +18,7 @@ const Talk = ({ talk, id }: TalkProps) => {
       whileInView="visible"
       viewport={{
         once: true,
-        amount: 0.15,
+        amount: 0.2,
       }}
       transition={{ duration: 1, delay: id * 0.25 }}
       variants={{
@@ -29,7 +29,7 @@ const Talk = ({ talk, id }: TalkProps) => {
     >
       <div className="flex w-full flex-col items-center gap-6">
         <h4
-          className={cn("text-center text-[1.75rem] font-bold leading-8", {
+          className={cn("text-center text-[1.75rem] font-semibold leading-8", {
             "max-w-[18ch] sm:max-w-max lg:max-w-[18ch]": id === 0,
           })}
         >

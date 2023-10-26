@@ -33,7 +33,7 @@ const ContactFormSection = () => {
           <motion.div
             initial="hidden"
             animate="visible"
-            transition={{ duration: 1.25, delay: 2 }}
+            transition={{ duration: 1, delay: 2 }}
             variants={{
               visible: { opacity: 1, y: 0 },
               hidden: { opacity: 0, y: 0 },

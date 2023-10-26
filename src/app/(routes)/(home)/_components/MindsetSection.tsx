@@ -10,8 +10,8 @@ import mindset from "../../../../../public/assets/home/mindset1.jpg";
 const MindsetSection = () => {
   return (
     <section className="flex w-full justify-center bg-white px-7 pb-24 md:px-10 lg:pb-40">
-      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between lg:flex-row lg:gap-40">
-        <div className="flex max-w-max flex-col self-stretch">
+      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between lg:flex-row lg:gap-20">
+        <div className="flex flex-1 flex-col self-stretch lg:items-center">
           <div className="flex flex-col gap-8 pb-10 text-gray-950 lg:py-24">
             <motion.h2
               initial="hidden"
@@ -71,7 +71,7 @@ const MindsetSection = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex-1 self-stretch">
+        <div className="basis-1/2 self-stretch">
           <Image
             src={mindset}
             className="h-full w-full object-cover object-left grayscale"

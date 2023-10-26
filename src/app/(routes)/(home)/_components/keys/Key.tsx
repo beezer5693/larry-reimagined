@@ -19,7 +19,7 @@ const Key = ({ data, id }: KeyProps) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.65 }}
       transition={{ duration: 0.75, delay: 0.15 * id }}
       variants={{
         visible: { opacity: 1, x: 0 },
@@ -33,12 +33,9 @@ const Key = ({ data, id }: KeyProps) => {
         },
       )}
     >
-      <div className="group relative h-[300px] overflow-hidden sm:h-[400px] md:h-[325px] lg:h-[350px]">
+      <div className="relative h-[300px] overflow-hidden sm:h-[400px] md:h-[325px] lg:h-[350px]">
         <Image
-          className={cn(
-            "object-cover object-top grayscale transition duration-500 ease-in-out group-hover:brightness-125",
-            data.style,
-          )}
+          className={cn("object-cover object-top grayscale", data.style)}
           src={data.imageSrc}
           fill
           alt={data.title}
