@@ -11,10 +11,13 @@ const Navbar = () => {
   const currentPath = usePathname();
 
   return (
-    <div className="sticky top-0 z-50 flex w-full justify-center border-b border-neutral-300 bg-white/80 px-7 backdrop-blur-lg md:px-10">
-      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-1.5">
-        <Link className="text-lg font-semibold text-gray-950" href="/">
-          L/B
+    <div className="sticky top-0 z-50 flex w-full justify-center border-b border-gray-200 bg-white px-7 md:px-10">
+      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-2">
+        <Link
+          className="text-lg font-semibold tracking-wider text-gray-950"
+          href="/"
+        >
+          LARRY BRYAN
         </Link>
         <NavLinks links={NAV_LINKS} path={currentPath} />
         <div className="hidden max-w-max lg:block">

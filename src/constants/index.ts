@@ -104,7 +104,7 @@ export const KEYS_TO_MASTER = [
 
 export const MY_TALKS = [
   {
-    title: "Your Mindset Determines Your Life",
+    title: "Change Your Mindset, Change Your Life",
     description:
       "Explore the roots of your current mindset and learn how to overcome its limitations for greater life success in this engaging talk.",
     keyPoints: [

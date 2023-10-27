@@ -3,7 +3,7 @@
 import SocialLinks from "@/components/shared/footer/SocialLinks";
 import ContactForm from "./ContactForm";
 import Link from "next/link";
-import AnimatedText from "@/components/shared/animation/AnimatedText";
+import AnimatedText from "@/app/(routes)/contact/_components/AnimatedText";
 import { motion } from "framer-motion";
 
 const ContactFormSection = () => {

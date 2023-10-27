@@ -16,15 +16,7 @@ type KeyProps = {
 
 const Key = ({ data, id }: KeyProps) => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.65 }}
-      transition={{ duration: 0.75, delay: 0.15 * id }}
-      variants={{
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -50 },
-      }}
+    <div
       key={data.title}
       className={cn(
         "col-span-1 flex flex-col overflow-hidden text-white md:col-span-2",
@@ -54,7 +46,7 @@ const Key = ({ data, id }: KeyProps) => {
           <p className="font-medium">{data.description}</p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 export default Key;
