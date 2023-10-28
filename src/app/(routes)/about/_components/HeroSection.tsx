@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex h-screen w-full items-center"></section>
+    <section className="relative flex w-full flex-col items-center justify-center px-5 py-40 md:px-10"></section>
   );
 };
 

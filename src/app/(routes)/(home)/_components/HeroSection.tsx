@@ -8,13 +8,13 @@ import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex w-full justify-center px-7 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[1px] md:px-10 lg:pt-32">
+    <section className="relative flex w-full justify-center px-5 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[2px] md:px-10 lg:pt-32">
       <Parallax percentage={"150%"}>
         <Image
           src={bg}
           fill
           alt="crowd at conference"
-          className="object-cover grayscale"
+          className="object-cover"
           quality={65}
           sizes="100vw"
           priority
@@ -23,7 +23,7 @@ const HeroSection = () => {
       {/* Hero left/top */}
       <div className="relative flex max-w-screen-xl flex-col gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-5">
-          <h1 className="text-center text-5xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
+          <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
             Dare to think{" "}
             <span className="font-extrabold italic text-[#3a53f5]">
               Different.

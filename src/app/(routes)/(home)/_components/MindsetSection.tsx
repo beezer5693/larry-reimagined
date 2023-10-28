@@ -7,7 +7,7 @@ import mindset from "../../../../../public/assets/home/mindset1.jpg";
 
 const MindsetSection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 pb-24 md:px-10 lg:pb-40">
+    <section className="flex w-full justify-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
       <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between lg:flex-row lg:gap-20">
         <div className="flex flex-1 flex-col self-stretch lg:items-center">
           <div className="flex flex-col gap-8 pb-10 text-gray-950 lg:py-24">
@@ -45,7 +45,7 @@ const MindsetSection = () => {
         <div className="basis-1/2 self-stretch">
           <Image
             src={mindset}
-            className="h-full object-cover object-left grayscale"
+            className="h-full rounded-xl object-cover object-left shadow-2xl shadow-neutral-600/50"
             alt="Man on bycicle"
             quality={65}
           />

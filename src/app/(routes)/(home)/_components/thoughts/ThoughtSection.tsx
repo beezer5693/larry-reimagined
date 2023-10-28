@@ -3,7 +3,7 @@ import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-7 pt-24 md:px-10 lg:pt-40">
+    <section className="flex w-full justify-center bg-white px-5 pt-24 md:px-10 lg:pt-40">
       <div className="w-full max-w-screen-xl space-y-16 lg:space-y-20">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <p className="font-medium text-gray-950">

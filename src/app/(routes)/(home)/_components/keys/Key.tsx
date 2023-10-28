@@ -18,16 +18,13 @@ const Key = ({ data, id }: KeyProps) => {
   return (
     <div
       key={data.title}
-      className={cn(
-        "col-span-1 flex flex-col overflow-hidden text-white md:col-span-2",
-        {
-          "md:col-span-3": id < 2,
-        },
-      )}
+      className={cn("col-span-1 flex flex-col text-white md:col-span-2", {
+        "md:col-span-3": id < 2,
+      })}
     >
-      <div className="relative h-[300px] overflow-hidden sm:h-[400px] md:h-[325px] lg:h-[350px]">
+      <div className="relative h-[300px] overflow-hidden rounded-xl shadow-2xl shadow-neutral-600/50 sm:h-[400px] md:h-[325px] lg:h-[350px]">
         <Image
-          className={cn("object-cover object-top grayscale", data.style)}
+          className={cn("object-cover object-top", data.style)}
           src={data.imageSrc}
           fill
           alt={data.title}

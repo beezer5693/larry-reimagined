@@ -4,7 +4,7 @@ import Talks from "./Talks";
 
 const TalkSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-white px-7 pb-24 md:px-10 lg:pb-40">
+    <section className="flex w-full flex-col items-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
       <div className="w-full max-w-screen-2xl">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">

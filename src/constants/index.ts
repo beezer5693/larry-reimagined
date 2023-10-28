@@ -1,6 +1,6 @@
 import awareness from "../../public/assets/home/awareness.jpg";
-import courage from "../../public/assets/home/courage-2.jpg";
-import grit from "../../public/assets/home/grit.jpg";
+import courage from "../../public/assets/home/courage.png";
+import grit from "../../public/assets/home/grit.png";
 import leadership from "../../public/assets/home/leadership.jpg";
 import thinkDifferently from "../../public/assets/home/thinking2.jpg";
 

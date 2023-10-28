@@ -1,9 +1,6 @@
-"use client";
-
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 type TalkProps = {
@@ -13,20 +10,7 @@ type TalkProps = {
 
 const Talk = ({ talk, id }: TalkProps) => {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="visible"
-      viewport={{
-        once: true,
-        amount: 0.2,
-      }}
-      transition={{ duration: 1, delay: id * 0.25 }}
-      variants={{
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 75 },
-      }}
-      className="col-span-1 flex flex-col justify-between rounded-lg bg-white px-5 pb-5 pt-10 md:items-center"
-    >
+    <div className="col-span-1 flex flex-col justify-between rounded-lg bg-white px-5 pb-5 pt-10 md:items-center">
       <div className="flex w-full flex-col items-center gap-6">
         <h4
           className={cn("text-center text-[1.75rem] font-semibold leading-8", {
@@ -55,7 +39,7 @@ const Talk = ({ talk, id }: TalkProps) => {
           <ArrowUpRight className="ml-2" size={20} />
         </Button>
       </Link>
-    </motion.div>
+    </div>
   );
 };
 

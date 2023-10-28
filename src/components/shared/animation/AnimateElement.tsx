@@ -13,7 +13,7 @@ const AnimateElement = ({ children }: AnimateElementProps) => {
   const controls = useAnimation();
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 25 },
     visible: { opacity: 1, y: 0 },
   };
 
@@ -31,7 +31,6 @@ const AnimateElement = ({ children }: AnimateElementProps) => {
       variants={variants}
       transition={{
         duration: 0.75,
-        delay: 0.25,
       }}
     >
       {children}

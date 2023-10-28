@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 const ContactFormSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-white px-7 py-16 md:px-10 lg:py-24">
+    <section className="flex w-full flex-col items-center bg-white px-5 py-16 md:px-10 lg:py-24">
       <div className="flex w-full flex-col items-center">
         <div className="max-w-[600px] space-y-10 lg:space-y-16">
           <div className="space-y-8">
