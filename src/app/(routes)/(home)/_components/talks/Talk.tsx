@@ -36,7 +36,7 @@ const Talk = ({ talk, id }: TalkProps) => {
       <Link className="mt-14 w-full" href={"/talks"}>
         <Button className="w-full text-white hover:brightness-125">
           <span>Learn More</span>
-          <ArrowUpRight className="ml-2" size={20} />
+          <ArrowUpRight className="ml-2" size={16} />
         </Button>
       </Link>
     </div>

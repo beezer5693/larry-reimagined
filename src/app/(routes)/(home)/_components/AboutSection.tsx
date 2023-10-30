@@ -8,7 +8,7 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 const AboutSection = () => {
   return (
     <section className="flex w-full justify-center overflow-hidden bg-[#f5f5f7] px-5 py-24 md:px-10 lg:py-40">
-      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
+      <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
         <div className="flex flex-col justify-center gap-8">
           <h2 className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-7xl">
             Meet Larry.
@@ -52,7 +52,7 @@ const AboutSection = () => {
                 className="w-full bg-gray-900 text-white  hover:opacity-90"
               >
                 <span>Learn More About Larry</span>
-                <ArrowUpRight className="ml-2" size={20} />
+                <ArrowUpRight className="ml-2" size={16} />
               </Button>
             </Link>
           </AnimateElement>

@@ -9,11 +9,11 @@ type AnimateElementProps = {
 
 const AnimateElement = ({ children }: AnimateElementProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-150px 0px" });
   const controls = useAnimation();
 
   const variants = {
-    hidden: { opacity: 0, y: 25 },
+    hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
   };
 

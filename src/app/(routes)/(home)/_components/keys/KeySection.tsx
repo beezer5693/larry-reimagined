@@ -8,7 +8,7 @@ import Keys from "./Keys";
 const KeySection = () => {
   return (
     <section className="flex w-full justify-center bg-white px-5 pt-24 md:px-10 lg:pt-40">
-      <div className="w-full max-w-screen-xl">
+      <div className="w-full max-w-screen-2xl">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
             <h2 className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-center lg:text-7xl">
@@ -28,22 +28,22 @@ const KeySection = () => {
               </p>
             </AnimateElement>
             <AnimateElement>
-              <div className="flex w-full flex-col gap-3 pt-2.5 sm:w-[450px] sm:flex-row">
-                <Link className="inline-block w-full" href="/talks">
+              <div className="flex w-full flex-col gap-3 pt-2.5 sm:flex-row">
+                <Link className="sm:max-w-max" href="/talks">
                   <Button
                     className="w-full bg-gray-900 text-white hover:opacity-90"
                     variant={"secondary"}
                   >
                     <span>See My Talks</span>
-                    <ArrowUpRight className="ml-2" size={20} />
+                    <ArrowUpRight className="ml-2" size={16} />
                   </Button>
                 </Link>
-                <Link className="inline-block w-full" href="/contact">
+                <Link className="sm:max-w-max" href="/contact">
                   <Button className="group w-full hover:brightness-125">
                     <span>reach out</span>
                     <ArrowRight
                       className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
-                      size={20}
+                      size={16}
                     />
                   </Button>
                 </Link>

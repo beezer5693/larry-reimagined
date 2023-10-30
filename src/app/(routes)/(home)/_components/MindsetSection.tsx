@@ -27,15 +27,12 @@ const MindsetSection = () => {
               </p>
             </AnimateElement>
             <AnimateElement>
-              <Link
-                className="inline-block w-full sm:max-w-max"
-                href="/contact"
-              >
+              <Link className="inline-block sm:max-w-max" href="/contact">
                 <Button className="group w-full hover:brightness-125">
                   <span>get in touch</span>
                   <ArrowRight
                     className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
-                    size={20}
+                    size={16}
                   />
                 </Button>
               </Link>
@@ -45,7 +42,7 @@ const MindsetSection = () => {
         <div className="basis-1/2 self-stretch">
           <Image
             src={mindset}
-            className="h-full rounded-xl object-cover object-left shadow-2xl shadow-neutral-600/50"
+            className="h-full object-cover object-left shadow-2xl shadow-neutral-600/50"
             alt="Man on bycicle"
             quality={65}
           />

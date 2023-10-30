@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import Image, { StaticImageData } from "next/image";
-import { motion } from "framer-motion";
 
 type KeyProps = {
   data: {
@@ -22,7 +21,7 @@ const Key = ({ data, id }: KeyProps) => {
         "md:col-span-3": id < 2,
       })}
     >
-      <div className="relative h-[300px] overflow-hidden rounded-xl shadow-2xl shadow-neutral-600/50 sm:h-[400px] md:h-[325px] lg:h-[350px]">
+      <div className="relative h-[300px] overflow-hidden shadow-2xl shadow-neutral-600/50 sm:h-[400px] md:h-[325px] lg:h-[450px]">
         <Image
           className={cn("object-cover object-top", data.style)}
           src={data.imageSrc}

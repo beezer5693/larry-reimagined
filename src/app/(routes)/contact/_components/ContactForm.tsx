@@ -221,7 +221,7 @@ const ContactForm = () => {
             name="eventLocation"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Company Name</FormLabel>
+                <FormLabel>Event Location</FormLabel>
                 <FormControl>
                   <Input
                     className="border-gray-300"

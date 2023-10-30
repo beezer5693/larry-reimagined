@@ -28,10 +28,10 @@ const Thoughts = ({ data }: ThoughtProps) => {
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="w-full max-w-screen-lg"
+      className="mx-auto w-full max-w-screen-xl"
     >
-      <div className="relative flex w-full flex-1 self-stretch">
-        <div className="grid grid-cols-3 gap-3">
+      <div className="relative flex flex-1 self-stretch">
+        <div className="grid w-full grid-cols-3 gap-3">
           {data.map((thought, i) => (
             <Thought key={i} data={thought} />
           ))}

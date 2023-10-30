@@ -3,8 +3,8 @@ import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-5 pt-24 md:px-10 lg:pt-40">
-      <div className="w-full max-w-screen-xl space-y-16 lg:space-y-20">
+    <section className="mx-auto flex w-full justify-center bg-white px-5 pt-24 md:px-10 lg:pt-40">
+      <div className="w-full max-w-screen-2xl space-y-16 lg:space-y-20">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <p className="font-medium text-gray-950">
             {`"Your mindset determines everything." - Larry Bryan`}
@@ -23,9 +23,7 @@ const ThoughtSection = () => {
             ever hold you back in your life or career?
           </p>
         </div>
-        <div className="flex w-full flex-col items-center justify-center">
-          <Thoughts data={NEGATIVE_THOUGHTS} />
-        </div>
+        <Thoughts data={NEGATIVE_THOUGHTS} />
       </div>
     </section>
   );

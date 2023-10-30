@@ -8,7 +8,7 @@ import larry from "../../../../../public/assets/home/hero-larry.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex w-full justify-center px-5 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[2px] md:px-10 lg:pt-32">
+    <section className="relative mt-10 flex w-full justify-center px-5 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[2px] md:px-10 lg:pt-32">
       <Parallax percentage={"150%"}>
         <Image
           src={bg}
@@ -21,7 +21,7 @@ const HeroSection = () => {
         />
       </Parallax>
       {/* Hero left/top */}
-      <div className="relative flex max-w-screen-xl flex-col gap-10">
+      <div className="relative flex max-w-screen-2xl flex-col gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-5">
           <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
             Dare to think{" "}
@@ -33,19 +33,19 @@ const HeroSection = () => {
             Embrace the {`"Dare to Think Different"`} motto igniting a
             transformative journey toward personal and professional excellence.
           </p>
-          <div className="flex w-full flex-col gap-3 pt-3 sm:w-[450px] sm:flex-row">
-            <Link className="w-full sm:inline-block" href="/talks">
+          <div className="flex w-full flex-col justify-center gap-3 pt-3 sm:flex-row">
+            <Link className="sm:max-w-max" href="/talks">
               <Button className="w-full hover:opacity-90" variant={"secondary"}>
                 <span>See My Talks</span>
-                <ArrowUpRight className="ml-2" size={20} />
+                <ArrowUpRight className="ml-2" size={16} />
               </Button>
             </Link>
-            <Link className="w-full sm:inline-block" href="/contact">
+            <Link className="sm:max-w-max" href="/contact">
               <Button className="group w-full hover:brightness-125">
                 <span>{"Let's Chat"}</span>
                 <ArrowRight
                   className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
-                  size={20}
+                  size={16}
                 />
               </Button>
             </Link>
