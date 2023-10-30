@@ -15,7 +15,7 @@ export default function Home() {
         <MindsetSection />
       </div>
       <AboutSection />
-      <div className="w-full space-y-28 lg:space-y-60">
+      <div className="w-full space-y-28 lg:space-y-52">
         <KeySection />
         <TalkSection />
       </div>

@@ -12,7 +12,7 @@ const BookSection = () => {
           <span className="relative align-middle before:absolute before:bottom-[1px] before:left-0 before:h-[3px] before:w-0 before:bg-white before:transition-all before:duration-300 before:ease-in-out before:group-hover:w-full">
             Get In Touch
           </span>
-          <FaArrowRight className="ml-3 inline-block h-6 w-6 align-middle" />
+          <FaArrowRight className="ml-3 inline-block h-6 w-6 align-middle lg:h-7 lg:w-7" />
         </Link>
       </p>
     </div>

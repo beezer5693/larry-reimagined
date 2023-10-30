@@ -5,14 +5,16 @@ import Talks from "./Talks";
 const TalkSection = () => {
   return (
     <section className="flex w-full flex-col items-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
-      <div className="w-full max-w-screen-2xl">
+      <div className="w-full max-w-[1400px]">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
-            <h2 className="text-5xl font-semibold tracking-tighter md:text-6xl lg:text-center lg:text-7xl">
-              Talks to inspire <br /> your audience.
-            </h2>
-            <AnimateElement>
-              <p className="max-w-[65ch] pb-2 font-semibold text-gray-600/90 lg:text-center lg:text-lg">
+            <AnimateElement y={50} duration={0.75}>
+              <h2 className="balance-text text-5xl font-semibold tracking-tighter md:text-6xl lg:text-center lg:text-7xl">
+                Talks to inspire your audience.
+              </h2>
+            </AnimateElement>
+            <AnimateElement y={50} duration={0.75} delay={0.2}>
+              <p className="balance-text pb-2 font-medium text-gray-600/90 sm:max-w-[75ch] lg:text-center lg:text-xl">
                 Join Larry in a transformative journey with these three
                 compelling talks designed to uplift and inspire your audience.
                 Larry brings his{" "}

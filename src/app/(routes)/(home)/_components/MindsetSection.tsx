@@ -1,21 +1,23 @@
 import AnimateElement from "@/components/shared/animation/AnimateElement";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import mindset from "../../../../../public/assets/home/mindset1.jpg";
+import { PiArrowRightBold } from "react-icons/pi";
+import larry from "../../../../../public/assets/about/about-bg.jpg";
 
 const MindsetSection = () => {
   return (
     <section className="flex w-full justify-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
-      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between lg:flex-row lg:gap-20">
+      <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-5 lg:flex-row lg:gap-10 xl:gap-20">
         <div className="flex flex-1 flex-col self-stretch lg:items-center">
-          <div className="flex flex-col gap-8 pb-10 text-gray-950 lg:py-24">
-            <h2 className="text-5xl font-semibold tracking-tighter md:text-6xl lg:text-left lg:text-7xl">
-              Your mindset <br /> matters.
-            </h2>
-            <AnimateElement>
-              <p className="max-w-[50ch] pb-3 font-semibold text-gray-600/90 lg:max-w-[40ch] lg:text-left lg:text-lg">
+          <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
+            <AnimateElement y={50} duration={0.75}>
+              <h2 className="text-balance text-5xl font-semibold tracking-tighter md:text-6xl lg:text-left lg:text-7xl">
+                Your mindset <br /> matters.
+              </h2>
+            </AnimateElement>
+            <AnimateElement y={50} duration={0.75} delay={0.1}>
+              <p className="max-w-[50ch] pb-3 font-medium text-gray-600/90 lg:max-w-[40ch] lg:text-left lg:text-xl">
                 Every day,{" "}
                 <span className="text-gray-950">
                   95% of us process a staggering 60,000 thoughts, and an
@@ -26,11 +28,11 @@ const MindsetSection = () => {
                 lives through a shift in this mindset? Let me show you how.
               </p>
             </AnimateElement>
-            <AnimateElement>
+            <AnimateElement y={50} duration={0.75} delay={0.2}>
               <Link className="inline-block sm:max-w-max" href="/contact">
                 <Button className="group w-full hover:brightness-125">
                   <span>get in touch</span>
-                  <ArrowRight
+                  <PiArrowRightBold
                     className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
                     size={16}
                   />
@@ -41,9 +43,9 @@ const MindsetSection = () => {
         </div>
         <div className="basis-1/2 self-stretch">
           <Image
-            src={mindset}
-            className="h-full object-cover object-left shadow-2xl shadow-neutral-600/50"
-            alt="Man on bycicle"
+            src={larry}
+            className="h-full object-cover object-right shadow-2xl shadow-neutral-600/50"
+            alt="Larry sitting on a couch"
             quality={65}
           />
         </div>

@@ -2,9 +2,10 @@
 
 import { Button } from "@/components/ui/Button";
 import { NAV_LINKS } from "@/constants";
-import { ArrowRight, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PiArrowRightBold } from "react-icons/pi";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 z-50 flex w-full justify-center border-b border-gray-200 bg-white px-5 md:px-10">
-      <div className="relative flex w-full max-w-screen-xl items-center justify-between py-2">
+      <div className="relative flex w-full max-w-[1400px] items-center justify-between py-3">
         <Link
           className="text-lg font-semibold tracking-wider text-gray-950"
           href="/"
@@ -27,7 +28,7 @@ const Navbar = () => {
           >
             <Button className="px-4 py-2 hover:brightness-125">
               <span className="text-[.7rem] text-white">book larry</span>
-              <ArrowRight
+              <PiArrowRightBold
                 className="ml-1 transition duration-500 ease-in-out group-hover:translate-x-1"
                 size={14}
               />

@@ -3,9 +3,9 @@ import Navbar from "@/components/shared/navbar/Navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen scroll-smooth bg-white antialiased",
-          poppins.className,
+          inter.className,
         )}
       >
         <Navbar />

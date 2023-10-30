@@ -14,3 +14,7 @@ input:-webkit-autofill:focus {
     background-color 0s 600000s,
     color 0s 600000s;
 }
+
+.balance-text {
+  text-wrap: balance;
+}

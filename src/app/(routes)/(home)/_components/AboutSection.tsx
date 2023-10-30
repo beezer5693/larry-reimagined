@@ -1,21 +1,23 @@
-import Image from "next/image";
-import meetLarry from "../../../../../public/assets/home/meet-larry.png";
-import Link from "next/link";
-import { Button } from "@/components/ui/Button";
-import { ArrowUpRight } from "lucide-react";
 import AnimateElement from "@/components/shared/animation/AnimateElement";
+import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+import Link from "next/link";
+import { PiArrowUpRightBold } from "react-icons/pi";
+import meetLarry from "../../../../../public/assets/home/meet-larry.png";
 
 const AboutSection = () => {
   return (
-    <section className="flex w-full justify-center overflow-hidden bg-[#f5f5f7] px-5 py-24 md:px-10 lg:py-40">
+    <section className="flex w-full justify-center overflow-hidden bg-neutral-950 px-5 py-24 md:px-10 lg:py-40">
       <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
         <div className="flex flex-col justify-center gap-8">
-          <h2 className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-7xl">
-            Meet Larry.
-          </h2>
+          <AnimateElement duration={0.75} y={50}>
+            <h2 className="text-5xl font-semibold tracking-tighter text-gray-50 md:text-6xl lg:text-7xl">
+              Meet Larry.
+            </h2>
+          </AnimateElement>
           <div className="space-y-2">
-            <AnimateElement>
-              <p className="max-w-[45ch] pb-2  font-semibold text-gray-600/90 lg:text-lg">
+            <AnimateElement y={50} duration={0.75} delay={0.1}>
+              <p className="max-w-[45ch] pb-2 font-medium text-gray-300/90 lg:text-xl">
                 I have spent most of my life learning and developing the
                 necessary mindset to become an ultra-successful producer in the
                 insurance and investment businesses where I discovered
@@ -24,8 +26,8 @@ const AboutSection = () => {
                 levels.
               </p>
             </AnimateElement>
-            <AnimateElement>
-              <p className="max-w-[45ch] pb-2  font-semibold text-gray-600/90 lg:text-lg">
+            <AnimateElement y={50} duration={0.75} delay={0.2}>
+              <p className="max-w-[45ch] pb-2 font-medium text-gray-300/90 lg:text-xl">
                 The outset of my journey was fraught with formidable challenges,
                 surpassing the typical hurdles encountered by most individuals.
                 From the profound loss of my biological father when I was just
@@ -36,8 +38,8 @@ const AboutSection = () => {
                 were but a few of the trials I faced.
               </p>
             </AnimateElement>
-            <AnimateElement>
-              <p className="max-w-[45ch] pb-2  font-semibold text-gray-600/90 lg:text-lg">
+            <AnimateElement y={50} duration={0.75} delay={0.3}>
+              <p className="max-w-[45ch] pb-2 font-medium text-gray-300/90 lg:text-xl">
                 However, my ability to overcome and navigate these adversities,
                 eventually achieving the levels of success I did, can be
                 attributed to my unwavering commitment to{" "}
@@ -45,14 +47,11 @@ const AboutSection = () => {
               </p>
             </AnimateElement>
           </div>
-          <AnimateElement>
+          <AnimateElement y={50} duration={0.75} delay={0.4}>
             <Link className="inline-block w-full lg:max-w-max" href="/about">
-              <Button
-                variant={"secondary"}
-                className="w-full bg-gray-900 text-white  hover:opacity-90"
-              >
-                <span>Learn More About Larry</span>
-                <ArrowUpRight className="ml-2" size={16} />
+              <Button variant={"secondary"} className="w-full hover:opacity-90">
+                <span>Read More</span>
+                <PiArrowUpRightBold className="ml-2" size={16} />
               </Button>
             </Link>
           </AnimateElement>

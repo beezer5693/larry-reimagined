@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { PiArrowUpRightBold } from "react-icons/pi";
 
 type TalkProps = {
   talk: { title: string; description: string; keyPoints: string[] };
@@ -36,7 +37,7 @@ const Talk = ({ talk, id }: TalkProps) => {
       <Link className="mt-14 w-full" href={"/talks"}>
         <Button className="w-full text-white hover:brightness-125">
           <span>Learn More</span>
-          <ArrowUpRight className="ml-2" size={16} />
+          <PiArrowUpRightBold className="ml-2" size={16} />
         </Button>
       </Link>
     </div>
