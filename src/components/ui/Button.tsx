@@ -7,7 +7,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-gradient-to-br from-[#3a53f5] to-[#2e42c4] text-white",
+        primary: "bg-blue-600 text-white",
         secondary: "bg-white text-gray-950",
       },
       size: {

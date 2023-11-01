@@ -27,7 +27,7 @@ const HeroSection = () => {
           <AnimateElement y={50} duration={0.75}>
             <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
               Dare to think{" "}
-              <span className="font-extrabold italic text-[#3a53f5]">
+              <span className="font-extrabold italic text-blue-600">
                 Different.
               </span>
             </h1>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               excellence.
             </p>
           </AnimateElement>
-          <AnimateElement y={50} duration={0.75} delay={0.2}>
+          <AnimateElement className="w-full" y={50} duration={0.75} delay={0.2}>
             <div className="flex w-full flex-col justify-center gap-3 pt-3 sm:flex-row">
               <Link className="sm:max-w-max" href="/talks">
                 <Button

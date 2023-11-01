@@ -87,12 +87,12 @@ const ContactForm = () => {
               name="firstName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel>
+                  <FormLabel className="text-neutral-50">
                     First Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn("border-gray-300", {
+                      className={cn("border-gray-400/50", {
                         "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                           form.formState.errors.firstName,
                       })}
@@ -111,12 +111,12 @@ const ContactForm = () => {
               name="lastName"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel>
+                  <FormLabel className="text-neutral-50">
                     Last Name<span className="text-red-500">*</span>
                   </FormLabel>
                   <FormControl>
                     <Input
-                      className={cn("border-gray-300", {
+                      className={cn("border-gray-400/50", {
                         "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                           form.formState.errors.lastName,
                       })}
@@ -135,12 +135,12 @@ const ContactForm = () => {
             name="email"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>
+                <FormLabel className="text-neutral-50">
                   Email<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn("border-gray-300", {
+                    className={cn("border-gray-400/50", {
                       "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                         form.formState.errors.email,
                     })}
@@ -158,12 +158,12 @@ const ContactForm = () => {
             name="phoneNumber"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>
+                <FormLabel className="text-neutral-50">
                   Phone Number<span className="text-red-500">*</span>
                 </FormLabel>
                 <FormControl>
                   <Input
-                    className={cn("border-gray-300", {
+                    className={cn("border-gray-400/50", {
                       "border-red-500 focus:border-red-500 focus-visible:ring-red-500":
                         form.formState.errors.phoneNumber,
                     })}
@@ -184,10 +184,10 @@ const ContactForm = () => {
             name="companyName"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Company Name</FormLabel>
+                <FormLabel className="text-neutral-50">Company Name</FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300"
+                    className="border-gray-400/50"
                     placeholder="Company Name"
                     disabled={isSubmitting}
                     {...field}
@@ -202,11 +202,11 @@ const ContactForm = () => {
             name="eventDate"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Event Date</FormLabel>
+                <FormLabel className="text-neutral-50">Event Date</FormLabel>
                 <FormControl>
                   <Input
                     type="date"
-                    className="border-gray-300"
+                    className="border-gray-400/50"
                     placeholder="Company Name"
                     disabled={isSubmitting}
                     {...field}
@@ -221,10 +221,12 @@ const ContactForm = () => {
             name="eventLocation"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Event Location</FormLabel>
+                <FormLabel className="text-neutral-50">
+                  Event Location
+                </FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300"
+                    className="border-gray-400/50"
                     placeholder="Event Location"
                     disabled={isSubmitting}
                     {...field}
@@ -239,10 +241,12 @@ const ContactForm = () => {
             name="speakerBudget"
             render={({ field }) => (
               <FormItem className="w-full">
-                <FormLabel>Estimated Speaker Budget</FormLabel>
+                <FormLabel className="text-neutral-50">
+                  Estimated Speaker Budget
+                </FormLabel>
                 <FormControl>
                   <Input
-                    className="border-gray-300"
+                    className="border-gray-400/50"
                     placeholder="Estimated Speaker Budget"
                     disabled={isSubmitting}
                     {...field}
@@ -261,7 +265,7 @@ const ContactForm = () => {
             name="eventDescription"
             render={({ field }) => (
               <FormItem className="w-full pt-3">
-                <FormLabel>
+                <FormLabel className="text-neutral-50">
                   Tell me a little about your event and audience.
                 </FormLabel>
                 <FormControl>
@@ -275,10 +279,13 @@ const ContactForm = () => {
         <Button
           disabled={isSubmitting}
           type="submit"
-          className={cn("mt-10 w-full hover:brightness-125", {
-            "bg-gradient-to-br from-green-500 to-green-600 hover:brightness-100 disabled:cursor-not-allowed":
-              invitationSentSuccessfully,
-          })}
+          className={cn(
+            "mt-10 w-full bg-gradient-to-br from-blue-600 to-blue-600 hover:brightness-125",
+            {
+              "bg-gradient-to-br from-green-500 to-green-600 hover:brightness-100 disabled:cursor-not-allowed":
+                invitationSentSuccessfully,
+            },
+          )}
         >
           {invitationSentSuccessfully ? (
             <span className="inline-flex items-center gap-1.5">

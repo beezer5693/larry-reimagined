@@ -6,16 +6,16 @@ import ContactForm from "./ContactForm";
 
 const ContactFormSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-white px-5 py-16 md:px-10 lg:py-24">
+    <section className="flex w-full flex-col items-center bg-neutral-950 px-5 py-16 md:px-10 lg:py-24">
       <div className="flex w-full max-w-screen-xl justify-center gap-20">
         <div className="max-w-[650px] space-y-10 lg:space-y-16">
           <div className="space-y-8">
             <AnimatedText
-              className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-7xl"
+              className="bg-gradient-to-b from-white from-50% to-gray-300 bg-clip-text text-5xl font-semibold tracking-tighter text-transparent md:text-6xl lg:text-7xl"
               text={"Invite Larry to speak at your next event."}
             />
             <AnimateElement duration={1.25} delay={2}>
-              <p className="font-medium text-gray-600/90 lg:text-lg">
+              <p className="font-medium text-gray-300 lg:text-lg">
                 Interested in having Larry speak at your next event? Fill out
                 the form below and Larry will contact you shortly to discuss
                 more.
@@ -25,7 +25,7 @@ const ContactFormSection = () => {
           <AnimateElement duration={1} delay={2}>
             <>
               <ContactForm />
-              <div className="mt-20 grid w-full flex-1 grid-cols-2 gap-y-10">
+              <div className="mt-20 grid w-full flex-1 grid-cols-2 gap-y-10 text-gray-100">
                 <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
                   <h3 className="text-lg font-semibold">Mailing Address</h3>
                   <p className="text-center text-base font-medium">
@@ -36,7 +36,7 @@ const ContactFormSection = () => {
                 </div>
                 <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
                   <h3 className="text-lg font-semibold">Connect on Social</h3>
-                  <SocialLinks className="text-gray-950 hover:opacity-80" />
+                  <SocialLinks className="hover:opacity-80" />
                 </div>
                 <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
                   <h3 className="text-lg font-semibold">Email</h3>

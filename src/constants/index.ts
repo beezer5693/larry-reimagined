@@ -1,9 +1,3 @@
-import awareness from "../../public/assets/home/awareness.jpg";
-import courage from "../../public/assets/home/courage.png";
-import grit from "../../public/assets/home/grit.png";
-import leadership from "../../public/assets/home/leadership.jpg";
-import thinkDifferently from "../../public/assets/home/thinking2.jpg";
-
 export const NEGATIVE_THOUGHTS = [
   {
     thought: "Negative Self-Talk",
@@ -73,31 +67,28 @@ export const KEYS_TO_MASTER = [
   {
     title: "Thinking differently",
     description: "A positive mindset shift sparks positive life outcomes.",
-    imageSrc: thinkDifferently,
     style: "object-center",
   },
   {
     title: "self-leadership",
     description: "Take control of your own actions and decisions.",
-    imageSrc: leadership,
     style: "object-center",
   },
   {
     title: "Embracing courage",
     description: "Face challenges with bravery and determination.",
-    imageSrc: courage,
+
     style: "object-center",
   },
   {
     title: "Developing grit",
     description: "Overcome hurdles with determination and resilience",
-    imageSrc: grit,
+
     style: "object-center",
   },
   {
     title: "Becoming aware",
     description: "Understand your thoughts, emotions, and behaviors.",
-    imageSrc: awareness,
     style: "object-center",
   },
 ];

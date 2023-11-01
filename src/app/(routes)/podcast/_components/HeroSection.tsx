@@ -17,7 +17,7 @@ const HeroSection = () => {
         <h1 className="text-6xl font-medium tracking-tighter md:text-7xl lg:text-8xl xl:text-9xl">
           Welcome to <br />
           the{" "}
-          <span className="font-semibold text-[#3a53f5]">
+          <span className="font-semibold text-blue-600">
             {`Lion's`} Den <br className="hidden sm:block" /> Podcast
           </span>
         </h1>

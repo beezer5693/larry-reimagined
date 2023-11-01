@@ -7,9 +7,9 @@ import larry from "../../../../../public/assets/about/about-bg.jpg";
 
 const MindsetSection = () => {
   return (
-    <section className="flex w-full justify-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
+    <section className="mb-32 flex w-full justify-center bg-white px-5 md:mb-44 md:px-10 xl:mb-60">
       <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-5 lg:flex-row lg:gap-10 xl:gap-20">
-        <div className="flex flex-1 flex-col self-stretch lg:items-center">
+        <div className="flex flex-1 flex-col self-stretch">
           <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="text-balance text-5xl font-semibold tracking-tighter md:text-6xl lg:text-left lg:text-7xl">
@@ -17,15 +17,12 @@ const MindsetSection = () => {
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.1}>
-              <p className="max-w-[50ch] pb-3 font-medium text-gray-600/90 lg:max-w-[40ch] lg:text-left lg:text-xl">
-                Every day,{" "}
-                <span className="text-gray-950">
-                  95% of us process a staggering 60,000 thoughts, and an
-                  overwhelming 80% of these tend to be negative, regardless of
-                  our success.
-                </span>{" "}
-                Can you imagine the personal growth that could be made in our
-                lives through a shift in this mindset? Let me show you how.
+              <p className="max-w-[50ch] pb-3 font-medium text-gray-800 lg:max-w-[40ch] lg:text-left lg:text-xl">
+                Every day, 95% of us process a staggering 60,000 thoughts, and
+                an overwhelming 80% of these tend to be negative, regardless of
+                our success. Can you imagine the personal growth that could be
+                made in our lives through a shift in this mindset? Let me show
+                you how.
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
@@ -41,10 +38,10 @@ const MindsetSection = () => {
             </AnimateElement>
           </div>
         </div>
-        <div className="basis-1/2 self-stretch">
+        <div className="basis-[55%] self-stretch">
           <Image
             src={larry}
-            className="h-full object-cover object-right shadow-2xl shadow-neutral-600/50"
+            className="h-full w-full object-cover object-right"
             alt="Larry sitting on a couch"
             quality={65}
           />

@@ -7,7 +7,7 @@ import meetLarry from "../../../../../public/assets/home/meet-larry.png";
 
 const AboutSection = () => {
   return (
-    <section className="flex w-full justify-center overflow-hidden bg-neutral-950 px-5 py-24 md:px-10 lg:py-40">
+    <section className="flex w-full justify-center overflow-hidden bg-neutral-950 px-5 py-28 md:px-10 md:py-36 xl:py-52">
       <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
         <div className="flex flex-col justify-center gap-8">
           <AnimateElement duration={0.75} y={50}>

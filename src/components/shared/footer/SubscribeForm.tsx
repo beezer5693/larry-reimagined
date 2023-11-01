@@ -76,7 +76,7 @@ const SubscribeForm = () => {
             <Button
               disabled={isSubmitting || isSubscribed}
               className={cn(
-                "absolute right-3 top-1/2 -translate-y-1/2 bg-gradient-to-br from-transparent to-transparent p-0 text-sm capitalize text-white transition duration-200 ease-in-out hover:text-white/80",
+                "absolute right-3 top-1/2 -translate-y-1/2 bg-transparent p-0 text-sm capitalize text-white transition duration-200 ease-in-out hover:text-white/80",
                 {
                   "cursor-not-allowed text-green-400 opacity-100 hover:text-green-400 hover:brightness-100":
                     isSubscribed,

@@ -4,7 +4,7 @@ import Talks from "./Talks";
 
 const TalkSection = () => {
   return (
-    <section className="flex w-full flex-col items-center bg-white px-5 pb-24 md:px-10 lg:pb-40">
+    <section className="mb-32 flex w-full flex-col items-center bg-white px-5 md:mb-44 md:px-10 xl:mb-60">
       <div className="w-full max-w-[1400px]">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
@@ -14,17 +14,14 @@ const TalkSection = () => {
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
-              <p className="balance-text pb-2 font-medium text-gray-600/90 sm:max-w-[75ch] lg:text-center lg:text-xl">
+              <p className="balance-text pb-2 font-medium text-gray-800 sm:max-w-[75ch] lg:text-center lg:text-xl">
                 Join Larry in a transformative journey with these three
                 compelling talks designed to uplift and inspire your audience.
-                Larry brings his{" "}
-                <span className="text-gray-950">
-                  wealth of knowledge and passion for growth to the forefront,
-                  offering invaluable insights and strategies for personal and
-                  professional development.
-                </span>{" "}
-                These talks are a gateway to empowering your audience and
-                propelling them towards success.
+                Larry brings his wealth of knowledge and passion for growth to
+                the forefront, offering invaluable insights and strategies for
+                personal and professional development. These talks are a gateway
+                to empowering your audience and propelling them towards greater
+                success.
               </p>
             </AnimateElement>
           </div>

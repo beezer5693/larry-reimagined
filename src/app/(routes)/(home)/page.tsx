@@ -10,15 +10,11 @@ export default function Home() {
   return (
     <main className="flex w-full flex-col items-center overflow-hidden">
       <HeroSection />
-      <div className="w-full space-y-28 lg:space-y-60">
-        <ThoughtSection />
-        <MindsetSection />
-      </div>
+      <ThoughtSection />
+      <MindsetSection />
       <AboutSection />
-      <div className="w-full space-y-28 lg:space-y-52">
-        <KeySection />
-        <TalkSection />
-      </div>
+      <KeySection />
+      <TalkSection />
       <BookSection />
     </main>
   );
