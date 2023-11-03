@@ -29,12 +29,14 @@ const Key = ({ data, id }: KeyProps) => {
           alt={data.title}
           quality={65}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-60% to-black/30 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
-        <div className="absolute bottom-0 left-0 right-0 space-y-3 p-5">
-          <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-xl lg:text-2xl">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/40 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
+        <div className="absolute bottom-8 left-1/2 flex w-full -translate-x-1/2 flex-col items-center gap-1 px-5 lg:gap-2">
+          <h3 className="text-center text-3xl font-semibold capitalize tracking-tighter md:text-4xl">
             {data.title}
           </h3>
-          <p className="font-medium">{data.description}</p>
+          <p className="balance-text text-center font-medium lg:text-lg">
+            {data.description}
+          </p>
         </div>
       </div>
     </div>

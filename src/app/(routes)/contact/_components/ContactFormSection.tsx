@@ -8,7 +8,7 @@ const ContactFormSection = () => {
   return (
     <section className="flex w-full flex-col items-center bg-white px-5 py-16 md:px-10 lg:py-24">
       <div className="flex w-full max-w-screen-xl justify-center gap-20">
-        <div className="max-w-[650px] space-y-10 lg:space-y-16">
+        <div className="max-w-[650px] space-y-10">
           <div className="space-y-8">
             <AnimatedText
               className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tighter text-transparent md:text-6xl lg:text-7xl"

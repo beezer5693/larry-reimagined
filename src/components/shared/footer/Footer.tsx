@@ -6,7 +6,7 @@ import Subscribe from "./Subscribe";
 const Footer = () => {
   return (
     <section className="relative flex w-full flex-col items-center bg-neutral-950 px-5 pb-32 pt-24 md:px-10">
-      <div className="flex w-full max-w-[1400px] flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
+      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
             <p className="text-center lg:text-left">
@@ -21,7 +21,9 @@ const Footer = () => {
             </p>
           </div>
           <div className="space-y-3 text-center lg:text-left">
-            <p className="text-sm font-medium">Connect With Larry</p>
+            <p className="text-sm font-semibold uppercase text-white">
+              Connect With Larry
+            </p>
             <SocialLinks className="opacity-80 hover:opacity-100" />
           </div>
           <div className="text-sm">

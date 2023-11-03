@@ -9,8 +9,9 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex w-full justify-center px-5 pt-24 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-[2px] md:px-10 lg:pt-32">
-      <Parallax percentage={"200%"}>
+    <section className="relative flex w-full justify-center px-5 pt-24 md:px-10 lg:pt-32">
+      {/* Hero left/top */}
+      <Parallax percentage={"175%"}>
         <Image
           src={bg}
           fill
@@ -21,9 +22,8 @@ const HeroSection = () => {
           priority
         />
       </Parallax>
-      {/* Hero left/top */}
-      <div className="relative flex max-w-screen-2xl flex-col gap-20">
-        <div className="flex w-full flex-col items-center justify-center gap-5">
+      <div className="relative w-full max-w-screen-2xl">
+        <div className="mb-20 flex w-full flex-col items-center justify-center gap-5">
           <AnimateElement y={50} duration={0.75}>
             <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
               Dare to think{" "}

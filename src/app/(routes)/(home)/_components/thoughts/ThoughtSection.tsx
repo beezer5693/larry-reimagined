@@ -4,8 +4,8 @@ import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
-    <section className="mx-auto mb-28 flex w-full justify-center bg-white px-5 pt-28 md:mb-36 md:px-10 md:pt-36 xl:mb-60 xl:pt-44">
-      <div className="w-full max-w-[1400px] space-y-16 lg:space-y-20">
+    <section className="mb-28 w-full bg-white px-5 pt-28 md:mb-36 md:px-10 md:pt-36 xl:mb-60 xl:pt-44">
+      <div className="mx-auto w-full max-w-screen-2xl space-y-16 lg:space-y-20">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <AnimateElement y={50} duration={0.75}>
             <h2 className="balance-text text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:text-center lg:text-7xl">

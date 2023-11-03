@@ -57,7 +57,7 @@ const SubscribeForm = () => {
                     <Input
                       disabled={isSubmitting}
                       className={cn(
-                        "w-full border-gray-200/60 px-3 py-2 placeholder:text-sm placeholder:text-gray-200/60 focus:border-[#2e42c4]",
+                        "w-full border-gray-200/60 bg-gray-500/20 px-3 py-2 text-white placeholder:text-sm placeholder:text-gray-200/80 focus:border-[#2e42c4]",
                         {
                           "placeholder:text-white": isSubscribed,
                         },
