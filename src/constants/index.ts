@@ -157,3 +157,42 @@ export const SOCIAL_LINKS = [
     href: "https://www.youtube.com/@lblmotivates/videos",
   },
 ];
+
+export const CAREER_ACHIEVEMENTS = [
+  {
+    title: "$52 million",
+    description: "Gross commission generated in a single year.",
+  },
+  {
+    title: "30 offices",
+    description: "Opened from Florida to Connecticut.",
+  },
+  {
+    title: "20 years",
+    description:
+      "As a top 1% sales performer earning over $1 million in commissions per year.",
+  },
+  {
+    title: "30 years",
+    description: "Commission based sales expertise.",
+  },
+];
+
+export const LIFE_ACHIEVEMENTS = [
+  {
+    title: "6 Weeks",
+    description: "After meeting my wife I proposed.",
+  },
+  {
+    title: "3 Hrs 41 Mins",
+    description: "Time it took me to complete the Orange Bowl Marathon.",
+  },
+  {
+    title: "23 Countries",
+    description: "Visited throughout my career.",
+  },
+  {
+    title: "7 Degrees",
+    description: "Advanced educational degrees earned.",
+  },
+];
