@@ -34,32 +34,31 @@ const ExperienceSection = () => {
             <div className="text-gray-800">
               <AnimateElement y={50} duration={0.75} delay={0.1}>
                 <p className="sub-heading mb-4 font-medium lg:max-w-[45ch]">
-                  I have spent most of my life learning and developing the
-                  necessary mindset to become an ultra-successful producer in
-                  the insurance and investment businesses where I discovered
-                  consistent predictable strategies, behaviors, and ways of
-                  thinking that I used to achieve extraordinary goals and income
-                  levels.
+                  I have had a rich and diverse career in the financial and
+                  investment industry, marked by entrepreneurial success and
+                  innovative ventures. I founded a mutual fund company focused
+                  on principal-protected equity-based investments and became a
+                  1/3 owner of a cryptocurrency hedge fund management company.
+                  My experience includes building and operating a multi-state
+                  insurance and investment distribution operation, as well as
+                  creating a life insurance settlement company targeting wealthy
+                  seniors. {`I've`} also successfully prepared and presented
+                  start-up investment pitch decks to investment banks, Angel
+                  investors, and private hedge funds.
                 </p>
               </AnimateElement>
               <AnimateElement y={50} duration={0.75} delay={0.2}>
                 <p className="sub-heading mb-4 font-medium lg:max-w-[45ch]">
-                  The outset of my journey was fraught with formidable
-                  challenges, surpassing the typical hurdles encountered by most
-                  individuals. From the loss of my father when I was just four
-                  months old, to academic setbacks resulting in my departure
-                  from college, to the humbling experience of working as a
-                  janitor, to enduring the tragic suicide of three family
-                  members, and even falling victim to a multi-million-dollar
-                  scam—these were but a few of the trials I faced.
-                </p>
-              </AnimateElement>
-              <AnimateElement y={50} duration={0.75} delay={0.3}>
-                <p className="sub-heading font-medium lg:max-w-[45ch]">
-                  However, my ability to overcome and navigate these
-                  adversities, eventually achieving the levels of success I did,
-                  can be attributed to my unwavering commitment to{" "}
-                  {`"Dare to Think Different"`}.
+                  In addition, I crafted a business plan centered around a Wall
+                  Street roll-up strategy that eventually led to an initial
+                  public offering (IPO). My track record encompasses the design
+                  and implementation of unique marketing concepts that generated
+                  millions of dollars in revenue. I possess a solid grasp of
+                  contracts, legal documents, corporate entities, and tax
+                  structures. {`I've`} had the privilege of speaking at various
+                  industry functions, particularly within the sales and
+                  distribution sectors of the insurance and investment
+                  industries.
                 </p>
               </AnimateElement>
             </div>
