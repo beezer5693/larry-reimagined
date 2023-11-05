@@ -8,16 +8,16 @@ import meetLarry from "../../../../../public/assets/home/meet-larry.png";
 const AboutSection = () => {
   return (
     <section className="w-full overflow-hidden bg-neutral-950 px-5 py-28 md:px-10 md:py-36 xl:py-52">
-      <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
         <div className="flex flex-col justify-center gap-8">
           <AnimateElement duration={0.75} y={50}>
-            <h2 className="text-5xl font-semibold tracking-tighter text-gray-50 md:text-6xl lg:text-7xl">
+            <h2 className="font-semibold tracking-tighter text-gray-50">
               Meet Larry.
             </h2>
           </AnimateElement>
           <div className="space-y-2 text-gray-200">
             <AnimateElement y={50} duration={0.75} delay={0.1}>
-              <p className="max-w-[45ch] pb-2 font-medium lg:text-xl">
+              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
                 I have spent most of my life learning and developing the
                 necessary mindset to become an ultra-successful producer in the
                 insurance and investment businesses where I discovered
@@ -27,7 +27,7 @@ const AboutSection = () => {
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
-              <p className="max-w-[45ch] pb-2 font-medium lg:text-xl">
+              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
                 The outset of my journey was fraught with formidable challenges,
                 surpassing the typical hurdles encountered by most individuals.
                 From the loss of my father when I was just four months old, to
@@ -39,7 +39,7 @@ const AboutSection = () => {
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.3}>
-              <p className="max-w-[45ch] pb-2 font-medium lg:text-xl">
+              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
                 However, my ability to overcome and navigate these adversities,
                 eventually achieving the levels of success I did, can be
                 attributed to my unwavering commitment to{" "}

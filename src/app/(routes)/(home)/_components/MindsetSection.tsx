@@ -12,12 +12,12 @@ const MindsetSection = () => {
         <div className="flex flex-1 flex-col self-stretch">
           <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
             <AnimateElement y={50} duration={0.75}>
-              <h2 className="text-balance text-5xl font-semibold tracking-tighter md:text-6xl lg:text-left lg:text-7xl">
+              <h2 className="text-balance font-semibold tracking-tighter lg:text-left">
                 Your mindset <br /> matters.
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.1}>
-              <p className="max-w-[50ch] pb-3 font-medium text-gray-800 lg:max-w-[40ch] lg:text-left lg:text-xl">
+              <p className="sub-heading max-w-[50ch] pb-3 font-medium text-gray-800 lg:max-w-[40ch] lg:text-left">
                 Every day, 95% of us process a staggering 60,000 thoughts, and
                 an overwhelming 80% of these tend to be negative, regardless of
                 our success. Can you imagine the personal growth that could be
@@ -41,7 +41,7 @@ const MindsetSection = () => {
         <div className="basis-[55%] self-stretch">
           <Image
             src={larry}
-            className="h-full w-full object-cover object-right shadow-2xl shadow-neutral-600/50"
+            className="h-full w-full rounded-2xl object-cover object-right shadow-2xl shadow-neutral-600/50"
             alt="Larry sitting on a couch"
             quality={65}
           />

@@ -1,22 +1,22 @@
 import AnimateElement from "@/components/shared/animation/AnimateElement";
 import Image from "next/image";
-import careerImage from "../../../../../public/assets/about/career.jpeg";
+import careerImage from "../../../../../public/assets/about/larry-career.png";
 
 const CareerSection = () => {
   return (
     <section className="mb-28 w-full bg-white px-5 md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-screen-2xl">
-        <div className="flex w-full flex-col gap-10 lg:flex-row lg:items-center lg:gap-20 lg:px-10">
+        <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-20 lg:px-10">
           <div className="flex basis-1/2 flex-col">
             <div>
               <AnimateElement className="mb-8" y={50} duration={0.75}>
-                <h3 className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl">
+                <h3 className="font-semibold tracking-tighter text-gray-950">
                   My Career.
                 </h3>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[625px] lg:text-xl">
-                <AnimateElement y={75} duration={0.75} delay={0.2}>
-                  <p className="mb-4">
+                <AnimateElement y={50} duration={0.75} delay={0.2}>
+                  <p className="sub-heading mb-4">
                     In 1978, I began my career journey at Equitable Life, now
                     known as AXA, as an individual sales producer working on a
                     commission basis. My entry into the insurance industry was
@@ -28,8 +28,8 @@ const CareerSection = () => {
                     goals.
                   </p>
                 </AnimateElement>
-                <AnimateElement y={75} duration={0.75} delay={0.3}>
-                  <p className="mb-4">
+                <AnimateElement y={50} duration={0.75} delay={0.3}>
+                  <p className="sub-heading mb-4">
                     After a few years, I partnered with three others to
                     represent multiple insurance companies as independent sales
                     producers. Although this venture was successful, two
@@ -44,8 +44,8 @@ const CareerSection = () => {
                     in 2005.
                   </p>
                 </AnimateElement>
-                <AnimateElement y={75} duration={0.75} delay={0.4}>
-                  <p>
+                <AnimateElement y={50} duration={0.75} delay={0.4}>
+                  <p className="sub-heading">
                     Following this, I launched a second company in South
                     Florida, focusing on life insurance sales and life
                     settlements for ultra-wealthy clients. For two-thirds of my
@@ -58,7 +58,7 @@ const CareerSection = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden shadow-2xl shadow-neutral-600/50 md:h-[600px] lg:h-[850px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl  shadow-neutral-600/50 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={careerImage}
               className="h-full w-full object-cover object-top brightness-150"

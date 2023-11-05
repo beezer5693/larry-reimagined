@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <section className="relative flex w-full justify-center px-5 pt-24 md:px-10 lg:pt-32">
       {/* Hero left/top */}
-      <Parallax percentage={"175%"}>
+      <Parallax percentage={"125%"}>
         <Image
           src={bg}
           fill
@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className="relative w-full max-w-screen-2xl">
         <div className="mb-20 flex w-full flex-col items-center justify-center gap-5">
           <AnimateElement y={50} duration={0.75}>
-            <h1 className="text-center text-6xl font-semibold tracking-tighter text-white md:px-10 lg:px-0 lg:text-7xl xl:text-8xl">
+            <h1 className="text-center font-semibold tracking-tighter text-white md:px-10 lg:px-0">
               Dare to think{" "}
               <span className="font-extrabold italic text-blue-600">
                 Different.
@@ -38,7 +38,7 @@ const HeroSection = () => {
             duration={0.75}
             delay={0.1}
           >
-            <p className="max-w-[40ch] text-center font-semibold text-white lg:max-w-[55ch] lg:px-0 lg:text-lg">
+            <p className="sub-heading max-w-[40ch] text-center font-semibold text-white lg:max-w-[55ch] lg:px-0">
               Embrace the {`"Dare to Think Different"`} motto igniting a
               transformative journey toward personal and professional
               excellence.

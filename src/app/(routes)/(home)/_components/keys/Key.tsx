@@ -21,7 +21,7 @@ const Key = ({ data, id }: KeyProps) => {
         "md:col-span-3": id < 2,
       })}
     >
-      <div className="relative h-[300px] overflow-hidden shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[325px] lg:h-[450px]">
+      <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[325px] lg:h-[500px]">
         <Image
           className={cn("object-cover object-top", data.style)}
           src={data.imageSrc}
@@ -30,11 +30,11 @@ const Key = ({ data, id }: KeyProps) => {
           quality={65}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/40 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
-        <div className="absolute bottom-8 left-1/2 flex w-full -translate-x-1/2 flex-col items-center gap-1 px-5 lg:gap-2">
-          <h3 className="text-center text-3xl font-semibold capitalize tracking-tighter md:text-4xl">
+        <div className="absolute bottom-10 left-8 flex w-full flex-col gap-1 pr-20 lg:gap-2">
+          <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-4xl">
             {data.title}
           </h3>
-          <p className="balance-text text-center font-medium lg:text-lg">
+          <p className="balance-text font-medium lg:text-lg">
             {data.description}
           </p>
         </div>

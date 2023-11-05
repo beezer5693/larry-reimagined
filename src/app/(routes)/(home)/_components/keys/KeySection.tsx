@@ -8,17 +8,16 @@ const KeySection = () => {
       <div className="mx-auto w-full max-w-screen-2xl space-y-10 lg:space-y-16">
         <div className="flex w-full flex-col justify-between gap-8 text-gray-950 lg:flex-row lg:items-center">
           <AnimateElement className="basis-3/5" x={-50} duration={0.75}>
-            <h2 className="text-5xl font-semibold tracking-tighter text-gray-950 md:text-6xl lg:mr-32 lg:text-7xl">
+            <h2 className="font-semibold tracking-tighter text-gray-950 lg:mr-32">
               My 5 essential keys to a new mindset.
             </h2>
           </AnimateElement>
           <AnimateElement
             className="flex-1 sm:max-w-[65ch]"
-            y={50}
-            duration={0.75}
+            duration={0.8}
             delay={0.2}
           >
-            <p className="font-medium text-gray-800 lg:text-xl">
+            <p className="sub-heading font-medium text-gray-800">
               It took me some time to realize how my mindset influenced my life,
               but applying my{" "}
               <span className="font-semibold">{`"Five Keys to a New Mindset"`}</span>{" "}

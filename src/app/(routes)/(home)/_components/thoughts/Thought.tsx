@@ -1,3 +1,4 @@
+import AnimateElement from "@/components/shared/animation/AnimateElement";
 import { cn } from "@/lib/utils";
 
 type CardProps = {
@@ -5,20 +6,24 @@ type CardProps = {
     thought: string;
     description: string;
   };
+  index: number;
 };
 
-const Thought = ({ data }: CardProps) => {
+const Thought = ({ data, index }: CardProps) => {
   return (
-    <div
-      className={cn(
-        "relative col-span-1 flex items-center justify-center rounded-lg bg-blue-600 px-10 py-10 text-white shadow-xl shadow-blue-600/40 md:py-14 lg:py-20",
-      )}
-      key={data.thought}
-    >
-      <p className="text-center text-xs font-bold sm:text-base md:text-lg lg:text-2xl">
-        {data.thought}
-      </p>
-    </div>
+    <AnimateElement y={75} duration={0.75} delay={0.1 * index}>
+      <div
+        className={cn(
+          "relative col-span-1 flex h-full flex-col gap-5 rounded-2xl border border-neutral-200/50 p-8 shadow-xl shadow-neutral-300/50",
+        )}
+        key={data.thought}
+      >
+        <h4 className="text-xl font-bold text-gray-950 lg:text-2xl">
+          {data.thought}
+        </h4>
+        <p className="font-medium text-gray-800">{data.description}</p>
+      </div>
+    </AnimateElement>
   );
 };
 
