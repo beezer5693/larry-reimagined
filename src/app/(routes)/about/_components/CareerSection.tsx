@@ -58,7 +58,7 @@ const CareerSection = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl  shadow-neutral-600/50 md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl  shadow-neutral-600/50 md:h-[600px] lg:h-[800px] lg:flex-1">
             <Image
               src={careerImage}
               className="h-full w-full object-cover object-top brightness-150"
