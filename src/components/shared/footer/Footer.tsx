@@ -6,7 +6,7 @@ import Subscribe from "./Subscribe";
 const Footer = () => {
   return (
     <section className="relative flex w-full flex-col items-center bg-neutral-950 px-5 pb-32 pt-24 md:px-10">
-      <div className="flex w-full max-w-screen-2xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
+      <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
             <p className="text-center lg:text-left">

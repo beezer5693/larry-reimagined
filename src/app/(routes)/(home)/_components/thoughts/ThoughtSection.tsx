@@ -5,11 +5,11 @@ import Thoughts from "./Thoughts";
 const ThoughtSection = () => {
   return (
     <section className="mb-28 w-full bg-white px-5 pt-28 md:mb-36 md:px-10 md:pt-36 xl:mb-60 xl:pt-44">
-      <div className="mx-auto w-full max-w-screen-2xl space-y-16 lg:space-y-20">
+      <div className="mx-auto w-full max-w-screen-xl space-y-16 lg:space-y-20">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <AnimateElement y={50} duration={0.75}>
             <h2 className="balance-text font-semibold tracking-tighter text-gray-950 lg:text-center">
-              Thoughts that limit our potential.
+              Thoughts that limit our potential
             </h2>
           </AnimateElement>
           <AnimateElement

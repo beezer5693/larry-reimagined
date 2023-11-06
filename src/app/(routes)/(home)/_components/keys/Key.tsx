@@ -21,7 +21,7 @@ const Key = ({ data, id }: KeyProps) => {
         "md:col-span-3": id < 2,
       })}
     >
-      <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[325px] lg:h-[500px]">
+      <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[325px] lg:h-[400px]">
         <Image
           className={cn("object-cover object-top", data.style)}
           src={data.imageSrc}

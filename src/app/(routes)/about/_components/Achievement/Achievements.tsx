@@ -6,7 +6,7 @@ type AchievementProps = {
 
 const Achievements = ({ achievements }: AchievementProps) => {
   return (
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+    <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
       {achievements.map((achievement, index) => (
         <Achievement
           key={achievement.title}

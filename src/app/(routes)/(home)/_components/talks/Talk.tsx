@@ -11,7 +11,7 @@ type TalkProps = {
 const Talk = ({ talk, id }: TalkProps) => {
   return (
     <Link href={"/talks"}>
-      <div className="col-span-1 flex h-full flex-col justify-between rounded-xl border-2 border-transparent bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/50 transition duration-300 ease-in-out  hover:border-blue-500 md:items-center">
+      <div className="col-span-1 flex flex-col justify-between rounded-xl border-2 border-transparent bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/50 transition duration-300 ease-in-out  hover:border-blue-500 md:items-center">
         <div className="flex w-full flex-col items-center gap-6">
           <h4
             className={cn(

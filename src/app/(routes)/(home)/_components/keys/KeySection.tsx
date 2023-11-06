@@ -5,11 +5,11 @@ import Keys from "./Keys";
 const KeySection = () => {
   return (
     <section className="mb-28 w-full bg-white px-5 pt-28 md:mb-36 md:px-10 md:pt-36 xl:mb-52 xl:pt-44">
-      <div className="mx-auto w-full max-w-screen-2xl space-y-10 lg:space-y-16">
+      <div className="mx-auto w-full max-w-screen-xl space-y-10 lg:space-y-16">
         <div className="flex w-full flex-col justify-between gap-8 text-gray-950 lg:flex-row lg:items-center">
           <AnimateElement className="basis-3/5" x={-50} duration={0.75}>
             <h2 className="font-semibold tracking-tighter text-gray-950 lg:mr-32">
-              My 5 essential keys to a new mindset.
+              My 5 essential keys to a new mindset
             </h2>
           </AnimateElement>
           <AnimateElement

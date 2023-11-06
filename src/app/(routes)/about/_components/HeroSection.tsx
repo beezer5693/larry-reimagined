@@ -4,8 +4,8 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mb-28 flex w-full justify-center bg-white px-5 pt-28 md:mb-36 md:px-10 xl:mb-44">
-      <div className="w-full max-w-screen-2xl space-y-10 lg:space-y-16">
+    <section className="relative mx-auto mb-28 flex w-full justify-center bg-white px-5 pt-16 md:mb-36 md:px-10 lg:pt-20 xl:mb-44">
+      <div className="w-full max-w-screen-xl space-y-10 lg:space-y-16">
         <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
           <AnimateElement className="basis-[65%]" y={-50} duration={0.75}>
             <h2 className="text-balance basis-1/2 font-semibold tracking-tighter lg:text-left">
@@ -23,7 +23,7 @@ const HeroSection = () => {
             </p>
           </AnimateElement>
         </div>
-        <div className="relative h-[300px] w-full sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[800px]">
+        <div className="relative h-[300px] w-full sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]">
           <Image
             src={heroImage}
             className="h-full rounded-2xl object-cover"

@@ -8,12 +8,12 @@ import larry from "../../../../../public/assets/about/about-bg.jpg";
 const MindsetSection = () => {
   return (
     <section className="mb-32 w-full bg-white px-5 md:mb-44 md:px-10 xl:mb-60">
-      <div className="mx-auto flex w-full max-w-screen-2xl flex-col items-center justify-between gap-5 lg:flex-row lg:gap-10 xl:gap-20">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-5 lg:flex-row lg:gap-10 xl:gap-20">
         <div className="flex flex-1 flex-col self-stretch">
           <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="text-balance font-semibold tracking-tighter lg:text-left">
-                Your mindset <br /> matters.
+                Your mindset matters
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.1}>

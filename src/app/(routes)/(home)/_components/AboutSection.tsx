@@ -11,8 +11,8 @@ const AboutSection = () => {
       <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
         <div className="flex flex-col justify-center gap-8">
           <AnimateElement duration={0.75} y={50}>
-            <h2 className="font-semibold tracking-tighter text-gray-50">
-              Meet Larry.
+            <h2 className="bg-gradient-to-b from-gray-50 from-40% to-gray-400 bg-clip-text pb-2.5 font-semibold tracking-tighter text-transparent">
+              About Larry
             </h2>
           </AnimateElement>
           <div className="space-y-2 text-gray-200">

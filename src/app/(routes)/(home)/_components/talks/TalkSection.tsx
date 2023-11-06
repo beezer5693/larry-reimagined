@@ -5,12 +5,12 @@ import Talks from "./Talks";
 const TalkSection = () => {
   return (
     <section className="mb-32 w-full bg-white px-5 md:px-10">
-      <div className="mx-auto w-full max-w-screen-2xl">
+      <div className="mx-auto w-full max-w-screen-xl">
         <div className="space-y-16 lg:space-y-20">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="balance-text font-semibold tracking-tighter lg:text-center">
-                Talks to inspire your audience.
+                Talks to inspire your audience
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>

@@ -5,8 +5,8 @@ import child1 from "../../../../../public/assets/about/child1.jpeg";
 const MyStorySection = () => {
   return (
     <section className="mb-28 w-full bg-white px-5 md:mb-36 md:px-10 xl:mb-60">
-      <div className="mx-auto w-full max-w-screen-2xl">
-        <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:gap-20 lg:px-10">
+      <div className="mx-auto w-full max-w-screen-xl">
+        <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:gap-20">
           <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl shadow-neutral-600/50 md:h-[600px] lg:h-[800px] lg:flex-1">
             <Image
               src={child1}
@@ -14,22 +14,53 @@ const MyStorySection = () => {
               className="h-full w-full object-cover object-top grayscale"
             />
           </div>
-          <div className="flex basis-1/2 flex-col items-end">
+          <div className="flex basis-[45%] flex-col items-end">
             <div>
               <AnimateElement className="mb-8" y={50} duration={0.75}>
                 <h3 className="balance-text font-semibold tracking-tighter text-gray-950">
-                  Humble Beginnings.
+                  Early Days
                 </h3>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[625px] lg:text-xl">
                 <AnimateElement y={50} duration={0.75} delay={0.2}>
-                  <p className="sub-heading mb-4">{`My life had a modest beginning, marked by my parents' separation when I was only three months old, and my father's swift disappearance from my life. Growing up, I grappled with self-esteem, self-respect, and self-confidence issues, often battling fear, embarrassment, and procrastination. My internal dialogue was predominantly negative and disheartening. This mindset hindered my path to success.`}</p>
+                  <p className="sub-heading--small mb-4">
+                    My life had a modest beginning, marked by my {`parents'`}{" "}
+                    separation when I was only three months old, and my{" "}
+                    {`father's`} swift disappearance from my life. Growing up, I
+                    grappled with self-esteem, self-respect, and self-confidence
+                    issues, often battling fear, embarrassment, and
+                    procrastination. My internal dialogue was predominantly
+                    negative and disheartening. This mindset hindered my path to
+                    success.
+                  </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.3}>
-                  <p className="sub-heading mb-4">{`Adding to my unique upbringing, my mother dressed me in a professor-like attire from the age of four, sending me to preschool in suits, bowties, and wingtip shoes. As I progressed through school, I remained a C+ student while my friends excelled with A+ grades. The college application process presented limited options, and I barely gained admission to FSU, while my friends headed to prestigious institutions. My journey was marked by failure, culminating in my dismissal from FSU with a meager 1.2 GPA.`}</p>
+                  <p className="sub-heading--small mb-4">
+                    Adding to my unique upbringing, my mother dressed me in
+                    professor-like attire from the age of three, sending me to
+                    preschool in suits, bowties, and wingtip shoes. As I
+                    progressed through school, I remained a C+ student while my
+                    friends excelled with A+ grades. The college application
+                    process presented limited options, and I barely gained
+                    admission to FSU, while my friends headed to prestigious
+                    institutions. My journey was marked by failure, culminating
+                    in my dismissal from FSU with a meager 1.2 GPA.
+                  </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.4}>
-                  <p className="sub-heading">{`My parents' response to my academic struggles was to hand me a job application and insist I work long hours. I took on the roles of a janitor during the day and a car park attendant in the evenings. It wasn't until a pivotal moment that I realized the power of self-perception and self-talk in shaping one's actions and destiny. Overnight, I committed to a 180-degree life transformation and now share the tools and knowledge for others to achieve a similar change. As someone still on their self-improvement journey, I invite you to embark on this transformation together.`}</p>
+                  <p className="sub-heading--small">
+                    My {`parents'`} response to my academic struggles was to
+                    hand me a job application and insist I work long hours. I
+                    took on the roles of a janitor during the day and a car
+                    parking attendant in the evenings. It {`wasn't`} until a
+                    pivotal moment that I realized the power of self-perception
+                    and self-talk in shaping {`one's`} actions and destiny.
+                    Overnight, I committed to a 180-degree life transformation
+                    and now share the tools and knowledge for others to achieve
+                    a similar change. As someone still on their self-improvement
+                    journey, I invite you to embark on this transformation
+                    together with me.
+                  </p>
                 </AnimateElement>
               </div>
             </div>
