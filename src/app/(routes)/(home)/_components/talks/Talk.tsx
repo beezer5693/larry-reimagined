@@ -15,7 +15,7 @@ const Talk = ({ talk, id }: TalkProps) => {
         className={cn(
           "relative col-span-1 flex h-full flex-col justify-between rounded-2xl border border-neutral-300/50 bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:border-blue-600 md:items-center",
           {
-            "scale-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] pt-[3.25rem] shadow-2xl shadow-neutral-700/50":
+            "scale-y-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] pt-[3.25rem] shadow-2xl shadow-neutral-700/50":
               id === 1,
           },
         )}

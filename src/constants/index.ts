@@ -104,7 +104,7 @@ export const KEYS_TO_MASTER = [
 
 export const MY_TALKS = [
   {
-    title: "Exploring the Mindset and Behaviors of Elite Salespeople",
+    title: "The Mindset and Behaviors of Elite Salespeople",
     description:
       "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
     keyPoints: [
