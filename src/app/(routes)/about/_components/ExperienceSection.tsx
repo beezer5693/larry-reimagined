@@ -38,8 +38,8 @@ const ExperienceSection = () => {
               <AnimateElement y={50} duration={0.75} delay={0.1}>
                 <p className="sub-heading--small balance-text mb-4 text-center font-medium lg:text-left">
                   I have had a rich and diverse career in the financial and
-                  investment industries, marked by both entrepreneurial success,
-                  innovative ventures, and also failure as well. I founded a
+                  investment industries, marked by entrepreneurial success,
+                  innovative ventures, along with some failures to. I founded a
                   mutual fund company focused on principal-protected
                   equity-based investments and I also became a 1/3 owner of a
                   cryptocurrency hedge fund management company. My experience

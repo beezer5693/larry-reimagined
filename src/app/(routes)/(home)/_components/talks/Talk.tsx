@@ -13,7 +13,7 @@ const Talk = ({ talk, id }: TalkProps) => {
     <Link href={"/talks"}>
       <div
         className={cn(
-          "relative col-span-1 flex flex-col justify-between rounded-2xl border border-neutral-300/50 bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:border-blue-600 md:items-center",
+          "relative col-span-1 flex h-full flex-col justify-between rounded-2xl border border-neutral-300/50 bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:border-blue-600 md:items-center",
           {
             "scale-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] pt-[3.25rem] shadow-2xl shadow-neutral-700/50":
               id === 1,
@@ -37,16 +37,22 @@ const Talk = ({ talk, id }: TalkProps) => {
           >
             {talk.title}
           </h4>
-          <p
-            className={cn(
-              "balance-text max-w-[35ch] text-center font-semibold text-gray-950",
-              {
-                "text-white": id === 1,
-              },
-            )}
-          >
-            {talk.description}
-          </p>
+          <div>
+            <p
+              className={cn(
+                "balance-text text-center font-semibold text-gray-950",
+                {
+                  "text-white": id === 1,
+                },
+              )}
+            >
+              {talk.description}
+            </p>
+            <Button className="mt-5 w-full hover:brightness-125">
+              <span>Learn More</span>
+              <PiArrowUpRightBold className="ml-2" size={16} />
+            </Button>
+          </div>
           <div className={`space-y-6 px-10 pt-5 text-gray-950`}>
             {talk.keyPoints.map((point) => (
               <p
@@ -63,10 +69,6 @@ const Talk = ({ talk, id }: TalkProps) => {
             ))}
           </div>
         </div>
-        <Button className="mt-5 w-full hover:brightness-125">
-          <span>Learn More</span>
-          <PiArrowUpRightBold className="ml-2" size={16} />
-        </Button>
       </div>
     </Link>
   );

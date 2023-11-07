@@ -10,12 +10,14 @@ const ContactFormSection = () => {
       <div className="flex w-full max-w-screen-xl justify-center gap-20">
         <div className="max-w-[650px] space-y-10">
           <div className="space-y-8">
-            <AnimatedText
-              className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tight text-transparent md:text-6xl lg:text-7xl"
-              text={"Invite Larry to speak at your next event."}
-            />
+            <div className="balance-text text-center">
+              <AnimatedText
+                className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tight text-transparent md:text-6xl lg:text-7xl"
+                text={"Invite Larry to speak at your next event."}
+              />
+            </div>
             <AnimateElement duration={1.25} delay={2}>
-              <p className="font-medium text-gray-800 lg:text-lg">
+              <p className="balance-text sub-heading--small text-center font-medium text-gray-800">
                 Interested in having Larry speak at your next event? Fill out
                 the form below and Larry will contact you shortly to discuss
                 more.
