@@ -11,7 +11,7 @@ const ContactFormSection = () => {
         <div className="max-w-[650px] space-y-10">
           <div className="space-y-8">
             <AnimatedText
-              className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tighter text-transparent md:text-6xl lg:text-7xl"
+              className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tight text-transparent md:text-6xl lg:text-7xl"
               text={"Invite Larry to speak at your next event."}
             />
             <AnimateElement duration={1.25} delay={2}>

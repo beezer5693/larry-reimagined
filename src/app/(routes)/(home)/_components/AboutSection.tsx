@@ -7,17 +7,17 @@ import meetLarry from "../../../../../public/assets/home/meet-larry.png";
 
 const AboutSection = () => {
   return (
-    <section className="w-full overflow-hidden bg-neutral-950 px-5 py-28 md:px-10 md:py-36 xl:py-52">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row-reverse lg:gap-20">
-        <div className="flex flex-col justify-center gap-8">
+    <section className="w-full overflow-hidden bg-[#0f0e10] px-5 py-28 md:px-10 md:py-36 xl:py-52">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center gap-10 lg:flex-row-reverse lg:gap-28">
+        <div className="flex basis-1/2 flex-col justify-center gap-8">
           <AnimateElement duration={0.75} y={50}>
-            <h2 className="bg-gradient-to-b from-gray-50 from-40% to-gray-400 bg-clip-text pb-2.5 font-semibold tracking-tighter text-transparent">
+            <h2 className="bg-gradient-to-b from-white from-40% to-gray-400 bg-clip-text pb-2.5 text-center font-semibold tracking-tight text-transparent lg:text-left">
               About Larry
             </h2>
           </AnimateElement>
-          <div className="space-y-2 text-gray-200">
+          <div className="space-y-2 text-center text-gray-200/90 lg:max-w-[550px] lg:text-left">
             <AnimateElement y={50} duration={0.75} delay={0.1}>
-              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
+              <p className="sub-heading balance-text pb-2 font-medium">
                 I have spent most of my life learning and developing the
                 necessary mindset to become an ultra-successful producer in the
                 insurance and investment businesses where I discovered
@@ -27,7 +27,7 @@ const AboutSection = () => {
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
-              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
+              <p className="sub-heading balance-text pb-2 font-medium">
                 The outset of my journey was fraught with formidable challenges,
                 surpassing the typical hurdles encountered by most individuals.
                 From the loss of my father when I was just four months old, to
@@ -39,7 +39,7 @@ const AboutSection = () => {
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.3}>
-              <p className="sub-heading pb-2 font-medium lg:max-w-[45ch]">
+              <p className="sub-heading balance-text pb-2 font-medium">
                 However, my ability to overcome and navigate these adversities,
                 eventually achieving the levels of success I did, can be
                 attributed to my unwavering commitment to{" "}
@@ -48,7 +48,10 @@ const AboutSection = () => {
             </AnimateElement>
           </div>
           <AnimateElement y={50} duration={0.75} delay={0.4}>
-            <Link className="inline-block w-full lg:max-w-max" href="/about">
+            <Link
+              className="inline-block w-full sm:px-10 md:px-20 lg:max-w-max lg:px-0"
+              href="/about"
+            >
               <Button variant={"secondary"} className="w-full hover:opacity-90">
                 <span>Read More</span>
                 <PiArrowUpRightBold className="ml-2" size={16} />
@@ -56,7 +59,7 @@ const AboutSection = () => {
             </Link>
           </AnimateElement>
         </div>
-        <div className="h-[500px] lg:h-[900px]">
+        <div className="lg:flex-basis-3/5 h-[500px] lg:h-[900px]">
           <Image
             className="hidden w-auto object-cover brightness-110 lg:block"
             src={meetLarry}

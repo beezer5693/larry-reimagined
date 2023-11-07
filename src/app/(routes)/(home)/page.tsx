@@ -15,7 +15,7 @@ export default function Home() {
       <AboutSection />
       <KeySection />
       <TalkSection />
-      <BookSection />
+      {/* <BookSection /> */}
     </main>
   );
 }

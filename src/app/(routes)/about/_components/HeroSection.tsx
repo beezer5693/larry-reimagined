@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="w-full max-w-screen-xl space-y-10 lg:space-y-16">
         <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
           <AnimateElement className="basis-[65%]" y={-50} duration={0.75}>
-            <h2 className="text-balance basis-1/2 font-semibold tracking-tighter lg:text-left">
+            <h2 className="text-balance basis-1/2 font-semibold tracking-tight lg:text-left">
               <span>The Man.</span>{" "}
               <span className="whitespace-nowrap">The Myth.</span>{" "}
               <span className="whitespace-nowrap">The Mindset.</span>

@@ -31,7 +31,7 @@ const Key = ({ data, id }: KeyProps) => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black/40 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
         <div className="absolute bottom-10 left-8 flex w-full flex-col gap-1 pr-20 lg:gap-2">
-          <h3 className="text-3xl font-semibold capitalize tracking-tighter md:text-4xl">
+          <h3 className="text-3xl font-semibold capitalize tracking-tight md:text-4xl">
             {data.title}
           </h3>
           <p className="balance-text font-medium lg:text-lg">

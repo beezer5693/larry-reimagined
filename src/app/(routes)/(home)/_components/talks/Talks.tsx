@@ -10,7 +10,7 @@ type TalksProps = {
 
 const Talks = ({ talks }: TalksProps) => {
   return (
-    <div className="grid grid-cols-1 gap-5 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       {talks.map((talk, i) => (
         <Talk key={talk.title} id={i} talk={talk} />
       ))}

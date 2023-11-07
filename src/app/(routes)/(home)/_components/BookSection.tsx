@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 const BookSection = () => {
   return (
     <div className="flex w-full items-center justify-center bg-blue-600 px-5 py-10 lg:px-10 lg:py-16">
-      <p className="text-center text-3xl font-semibold tracking-tighter text-white lg:text-4xl">
+      <p className="text-center text-3xl font-semibold tracking-tight text-white lg:text-4xl">
         <span className="align-middle">
           Ready to book Larry for your next event?
         </span>{" "}

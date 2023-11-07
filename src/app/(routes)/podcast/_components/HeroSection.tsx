@@ -14,7 +14,7 @@ const HeroSection = () => {
         priority
       />
       <div className="relative w-full max-w-screen-2xl text-white sm:pl-10 xl:pl-0">
-        <h1 className="text-6xl font-medium tracking-tighter md:text-7xl lg:text-8xl xl:text-9xl">
+        <h1 className="text-6xl font-medium tracking-tight md:text-7xl lg:text-8xl xl:text-9xl">
           Welcome to <br />
           the{" "}
           <span className="font-semibold text-blue-600">

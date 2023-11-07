@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import checkmark from "./public/assets/check.png";
 
 const config: Config = {
   darkMode: ["class"],
@@ -9,7 +8,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--satoshi)"],
+      },
+    },
   },
   plugins: [],
 };

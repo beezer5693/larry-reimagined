@@ -104,6 +104,16 @@ export const KEYS_TO_MASTER = [
 
 export const MY_TALKS = [
   {
+    title: "Exploring the Mindset and Behaviors of Elite Salespeople",
+    description:
+      "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
+    keyPoints: [
+      "Gain deep insights into successful sales professionals' mindset and behaviors.",
+      "Explore top salespeople's tactics for outstanding results.",
+      "Get valuable insights and inspiration to boost your sales performance and achieve exceptional results.",
+    ],
+  },
+  {
     title: "Change Your Mindset, Change Your Life",
     description:
       "Explore the roots of your current mindset and learn how to overcome its limitations for greater life success in this engaging talk.",
@@ -111,16 +121,6 @@ export const MY_TALKS = [
       "Understand the origins of your current mindset, gaining self-awareness and introspection.",
       "Discover effective strategies and techniques to overcome mindset limitations.",
       "Empower yourself with the tools needed to achieve greater success and fulfillment in various aspects of life.",
-    ],
-  },
-  {
-    title: "Exploring the Mindset and Behaviors of Elite Salespeople",
-    description:
-      "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
-    keyPoints: [
-      "Gain profound insights into the mindset and behaviors of highly successful sales professionals.",
-      "Learn about the strategic actions and techniques employed by top-tier salespeople to achieve outstanding results.",
-      "Acquire valuable knowledge and inspiration to enhance your own sales performance and drive exceptional outcomes.",
     ],
   },
   {

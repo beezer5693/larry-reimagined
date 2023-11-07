@@ -18,10 +18,9 @@ const NavLinks = ({ links, path }: NavLinkProps) => {
           <li
             key={link.key}
             className={cn(
-              "relative text-xs text-gray-950 before:absolute before:bottom-[1px] before:left-0 before:h-[1px] before:w-0 before:bg-gray-950 before:transition-all before:duration-300 before:ease-in-out before:hover:w-full",
+              "relative text-[.9rem] font-medium text-gray-950 transition duration-200 ease-in-out hover:text-gray-950",
               {
-                "underline underline-offset-[2px] before:hidden":
-                  path === link.href,
+                "text-gray-600/80": path !== link.href,
               },
             )}
           >

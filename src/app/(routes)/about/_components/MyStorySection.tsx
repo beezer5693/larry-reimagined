@@ -17,13 +17,13 @@ const MyStorySection = () => {
           <div className="flex basis-[45%] flex-col items-end">
             <div>
               <AnimateElement className="mb-8" y={50} duration={0.75}>
-                <h3 className="balance-text font-semibold tracking-tighter text-gray-950">
-                  Early Days
+                <h3 className="balance-text balance-text text-center font-semibold tracking-tight text-gray-950 lg:text-left">
+                  The Early Days
                 </h3>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[625px] lg:text-xl">
                 <AnimateElement y={50} duration={0.75} delay={0.2}>
-                  <p className="sub-heading--small mb-4">
+                  <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     My life had a modest beginning, marked by my {`parents'`}{" "}
                     separation when I was only three months old, and my{" "}
                     {`father's`} swift disappearance from my life. Growing up, I
@@ -35,7 +35,7 @@ const MyStorySection = () => {
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.3}>
-                  <p className="sub-heading--small mb-4">
+                  <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     Adding to my unique upbringing, my mother dressed me in
                     professor-like attire from the age of three, sending me to
                     preschool in suits, bowties, and wingtip shoes. As I
@@ -48,7 +48,7 @@ const MyStorySection = () => {
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.4}>
-                  <p className="sub-heading--small">
+                  <p className="sub-heading--small balance-text text-center lg:text-left">
                     My {`parents'`} response to my academic struggles was to
                     hand me a job application and insist I work long hours. I
                     took on the roles of a janitor during the day and a car

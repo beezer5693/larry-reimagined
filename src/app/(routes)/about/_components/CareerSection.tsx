@@ -10,13 +10,13 @@ const CareerSection = () => {
           <div className="flex basis-[45%] flex-col">
             <div>
               <AnimateElement className="mb-8" y={50} duration={0.75}>
-                <h3 className="font-semibold tracking-tighter text-gray-950">
-                  Professional Journey
+                <h3 className="balance-text text-center font-semibold tracking-tight text-gray-950 lg:text-left">
+                  Career Journey
                 </h3>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[625px] lg:text-xl">
                 <AnimateElement y={50} duration={0.75} delay={0.2}>
-                  <p className="sub-heading--small mb-4">
+                  <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     In 1978, I began my career journey at Equitable Life, now
                     known as AXA, as an individual sales producer working on a
                     commission basis. My entry into the insurance industry was
@@ -29,7 +29,7 @@ const CareerSection = () => {
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.3}>
-                  <p className="sub-heading--small mb-4">
+                  <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     After a few years, I partnered with three others to
                     represent multiple insurance companies as independent sales
                     producers. Although this venture was successful, two
@@ -45,7 +45,7 @@ const CareerSection = () => {
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.4}>
-                  <p className="sub-heading--small">
+                  <p className="sub-heading--small balance-text text-center lg:text-left">
                     Following this, I launched a second company in South
                     Florida, focusing on life insurance sales and life
                     settlements for ultra-wealthy clients. For two-thirds of my
