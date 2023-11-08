@@ -112,6 +112,10 @@ export const MY_TALKS = [
       "Explore top salespeople's tactics for outstanding results.",
       "Get valuable insights and inspiration to boost your sales performance and achieve exceptional results.",
     ],
+    details: [
+      "This captivating TALK is an ideal event opener that will undoubtedly resonate with sales professionals, regardless of their current experience and success levels. It's designed to inspire your audience to explore new horizons, providing them with motivation and fresh perspectives that will deliver increased sales results. I'll share some creative marketing and customer-building concepts while also unveiling the blueprint behind my multi-million-dollar annual commission production.",
+      "This talk isn't just about promising success but offering a journey of originality, known to boost motivation and lead to remarkable achievements. It's a stimulating, fun-filled, and transformative experience that encourages imaginative thinking, ignites excitement, and inspires a hunger for newfound knowledge. Your salespeople will leave ready to implement what they just learned.",
+    ],
   },
   {
     title: "Change Your Mindset, Change Your Life",
@@ -122,6 +126,10 @@ export const MY_TALKS = [
       "Discover effective strategies and techniques to overcome mindset limitations.",
       "Empower yourself with the tools needed to achieve greater success and fulfillment in various aspects of life.",
     ],
+    details: [
+      "This presentation is bound to be a hit, brimming with energy, humor, valuable information, and powerful motivation. I'll delve into my journey of transforming my old mindset, flaws and all, into a new, success-driven perspective for both my personal and professional life. Prepare for laughter and a surge of inspiration, leaving your audience eager to make immediate mindset changes and witness instant life improvements.",
+      "This talk will reshape their outlook, equipping them to conquer new horizons and spark a lasting transformation that positively impacts everyone they encounter. Expect everyone to depart with a wealth of valuable insights.",
+    ],
   },
   {
     title: "Newest Requirements For Corporate Leadership",
@@ -131,6 +139,10 @@ export const MY_TALKS = [
       "Learn the latest criteria shaping effective corporate leadership.",
       "Understand the expectations of today's corporate leaders.",
       "Discover the latest strategies and techniques to enhance your leadership skills.",
+    ],
+    details: [
+      "This talk is vital for everyone, focusing on the newest of leadership principles and essential characteristics that define the evolving landscape of corporate and individual leadership. It explores the leadership insights executives need today and emphasizes effective team building at all levels, interpersonal relationships, and motivating diverse age groups within a corporation.",
+      "The discussion includes self-leadership, the latest in executive training for leadership, and aligning hiring practices with short, medium, and long-term corporate and employee personal goals. Expect this talk to leave your executives with new insights and action steps to implement immediately, and your other valuable employees inspired and motivated to contribute to your company's heightened success.",
     ],
   },
 ];
@@ -194,5 +206,16 @@ export const LIFE_ACHIEVEMENTS = [
   {
     title: "7 Degrees",
     description: "Advanced educational degrees earned.",
+  },
+];
+
+export const QUOTES = [
+  {
+    text: "Larry is a dynamic speaker who has a unique ability to connect with his audience. His message is powerful and his delivery is engaging. He is a true professional and I highly recommend him.",
+    author: "Linda L. Mariano, President, Mariano Group",
+  },
+  {
+    text: "Larry is a dynamic speaker who has a unique ability to connect with his audience. His message is powerful and his delivery is engaging. He is a true professional and I highly recommend him.",
+    author: "Linda L. Mariano, President, Mariano Group",
   },
 ];

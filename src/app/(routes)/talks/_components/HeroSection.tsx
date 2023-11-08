@@ -18,18 +18,18 @@ const HeroSection = () => {
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
                 Inspiration for Team Success. Discover compelling talks that
                 will energize your team, driving them towards their highest
-                potential..
+                potential.
               </p>
             </AnimateElement>
           </div>
         </div>
       </div>
-      <div className="relative h-[400px] w-full sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[800px]">
+      <div className="relative h-[400px] w-full overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[900px]">
         <Image
           src={heroImage}
           height={800}
           width={1200}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover object-bottom brightness-110"
           alt="larry sitting in a chair"
           quality={65}
         />

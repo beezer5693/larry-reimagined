@@ -6,7 +6,7 @@ const MyStorySection = () => {
   return (
     <section className="mb-28 w-full bg-white md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
-        <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:gap-20">
+        <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:items-center lg:gap-20">
           <div className="h-[400px] overflow-hidden shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl md:h-[600px] lg:h-[800px] lg:flex-1">
             <Image
               src={child1}
@@ -21,7 +21,7 @@ const MyStorySection = () => {
                   The Early Days
                 </h3>
               </AnimateElement>
-              <div className="font-medium text-gray-800 md:text-lg lg:max-w-[625px] lg:text-xl">
+              <div className="font-medium text-gray-800 md:text-lg lg:max-w-[600px] lg:text-xl">
                 <AnimateElement y={50} duration={0.75} delay={0.2}>
                   <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     My life had a modest beginning, marked by my {`parents'`}{" "}

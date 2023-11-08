@@ -10,7 +10,7 @@ const MindsetSection = () => {
     <section className="mb-32 w-full bg-white md:mb-44 md:px-10 xl:mb-60">
       <div className="mx-auto flex w-full max-w-[700px] flex-col items-center justify-between gap-5 lg:max-w-screen-2xl lg:flex-row lg:gap-10 xl:gap-20">
         <div className="mx-auto flex max-w-max flex-col self-stretch px-5 md:px-0">
-          <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
+          <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-32">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="text-balance text-center font-semibold tracking-tight lg:text-left">
                 Your mindset <br className="hidden lg:block" /> matters.
@@ -47,12 +47,14 @@ const MindsetSection = () => {
           </div>
         </div>
         <div className="basis-[50%] self-stretch">
-          <Image
-            src={larry}
-            className="h-full w-full object-cover object-right shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl"
-            alt="Larry sitting on a couch"
-            quality={65}
-          />
+          <AnimateElement className="h-full" y={75} duration={0.75}>
+            <Image
+              src={larry}
+              className="h-full w-full object-cover object-right shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl"
+              alt="Larry sitting on a couch"
+              quality={65}
+            />
+          </AnimateElement>
         </div>
       </div>
     </section>

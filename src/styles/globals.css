@@ -49,7 +49,8 @@ h3 {
   line-height: 1;
 }
 
-h4 {
+h4,
+.quote {
   font-size: var(--step-1);
   line-height: 1.15;
 }
