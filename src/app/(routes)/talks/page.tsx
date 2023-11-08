@@ -1,3 +1,4 @@
+import BookSection from "@/components/shared/book_larry/BookSection";
 import HeroSection from "./_components/HeroSection";
 import Quote from "./_components/Quote";
 import Talk1 from "./_components/Talk1";
@@ -14,6 +15,7 @@ const page = () => {
       <Talk2 />
       <Quote quote={QUOTES[1]} />
       <Talk3 />
+      <BookSection />
     </main>
   );
 };
