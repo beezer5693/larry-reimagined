@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { PiArrowRightBold } from "react-icons/pi";
-import larry from "../../../../../public/assets/home/about-bg.jpg";
+import larry from "../../../../../public/assets/home/mindset-larry.jpg";
 
 const MindsetSection = () => {
   return (
@@ -50,7 +50,7 @@ const MindsetSection = () => {
           <AnimateElement className="h-full" y={75} duration={0.75}>
             <Image
               src={larry}
-              className="h-full w-full object-cover object-right shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl"
+              className="h-full w-full object-cover object-right sm:rounded-2xl sm:shadow-2xl sm:shadow-neutral-700/60"
               alt="Larry sitting on a couch"
               quality={65}
             />

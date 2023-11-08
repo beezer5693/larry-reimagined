@@ -48,7 +48,7 @@ const Talk1 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden sm:rounded-2xl sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={talk1}
               className="h-full w-full object-cover"

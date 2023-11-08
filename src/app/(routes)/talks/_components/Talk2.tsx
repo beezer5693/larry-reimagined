@@ -11,7 +11,7 @@ const Talk2 = () => {
     <section className="mb-28 w-full bg-white md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:justify-between lg:gap-20 xl:gap-32">
-          <div className="h-[400px] overflow-hidden shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden sm:rounded-2xl sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={talk2}
               alt="Larry as a child"
