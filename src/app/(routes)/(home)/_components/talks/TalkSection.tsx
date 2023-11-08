@@ -5,7 +5,7 @@ import Talks from "./Talks";
 const TalkSection = () => {
   return (
     <section className="mb-32 w-full bg-white px-5 md:px-10 lg:mb-44">
-      <div className="mx-auto w-full max-w-screen-xl">
+      <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="space-y-16 lg:space-y-24">
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
             <AnimateElement y={50} duration={0.75}>

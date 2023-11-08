@@ -7,7 +7,7 @@ import ContactForm from "./ContactForm";
 const ContactFormSection = () => {
   return (
     <section className="flex w-full flex-col items-center bg-white px-5 py-16 md:px-10 lg:py-24">
-      <div className="flex w-full max-w-screen-xl justify-center gap-20">
+      <div className="flex w-full max-w-screen-2xl justify-center gap-20">
         <div className="max-w-[650px] space-y-10">
           <div className="space-y-8">
             <div className="balance-text text-center">

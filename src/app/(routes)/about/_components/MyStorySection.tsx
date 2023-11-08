@@ -4,18 +4,18 @@ import child1 from "../../../../../public/assets/about/child1.jpeg";
 
 const MyStorySection = () => {
   return (
-    <section className="mb-28 w-full bg-white px-5 md:mb-36 md:px-10 xl:mb-60">
-      <div className="mx-auto w-full max-w-screen-xl">
+    <section className="mb-28 w-full bg-white md:mb-36 md:px-10 xl:mb-60">
+      <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:gap-20">
-          <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl shadow-neutral-600/50 md:h-[600px] lg:h-[800px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl md:h-[600px] lg:h-[800px] lg:flex-1">
             <Image
               src={child1}
               alt="Larry as a child"
-              className="h-full w-full object-cover object-top grayscale"
+              className="h-full w-full object-cover object-bottom grayscale"
             />
           </div>
-          <div className="flex basis-[45%] flex-col items-end">
-            <div>
+          <div className="flex basis-[45%] flex-col lg:items-end">
+            <div className="px-5 md:px-0">
               <AnimateElement className="mb-8" y={50} duration={0.75}>
                 <h3 className="balance-text balance-text text-center font-semibold tracking-tight text-gray-950 lg:text-left">
                   The Early Days

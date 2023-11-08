@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const BioSection = () => {
   return (
-    <section className="mb-28 w-full px-5 md:mb-36 md:px-10 xl:mb-60">
-      <div className="mx-auto w-full max-w-screen-xl">
+    <section className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
+      <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-20">
           <div className="flex basis-[45%] flex-col">
-            <div>
+            <div className="w-full px-5 md:px-0">
               <AnimateElement className="mb-8" y={50} duration={0.75}>
                 <h3 className="text-center font-semibold tracking-tight text-gray-950 lg:text-left">
                   Meet Larry Bryan
@@ -45,10 +45,10 @@ const BioSection = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden rounded-2xl shadow-2xl  shadow-neutral-600/50 md:h-[600px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden shadow-neutral-600/50 sm:rounded-2xl  sm:shadow-2xl md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={larryWedding}
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-cover object-top md:object-[0px_-50px] lg:object-top xl:object-[0px_-50px]"
               alt="Larry sitting on couch"
             />
           </div>

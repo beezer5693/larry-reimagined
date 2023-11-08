@@ -35,13 +35,13 @@ const AnimatedText = ({ text, className }: AnimatedTextProps) => {
   };
 
   return (
-    <motion.h2 variants={container} initial="hidden" animate="visible">
+    <motion.span variants={container} initial="hidden" animate="visible">
       {words.map((word) => (
         <motion.span className={className} variants={child} key={word}>
           {word}{" "}
         </motion.span>
       ))}
-    </motion.h2>
+    </motion.span>
   );
 };
 

@@ -4,9 +4,9 @@
 
 :root {
   --step--2: clamp(0.72rem, 0.5631rem + 0.6693vw, 1.04rem);
-  --step--1: clamp(1rem, 0.7039rem + 0.8366vw, 1.25rem);
+  --step--1: clamp(1.1rem, 0.7039rem + 0.8366vw, 1.25rem);
   --step-0: clamp(1.125rem, 0.8799rem + 1.0458vw, 1.35rem);
-  --step-1: clamp(1.4063rem, 1.0999rem + 1.3072vw, 2.0313rem);
+  --step-1: clamp(1.75rem, 1.0999rem + 1.3072vw, 2.0313rem);
   --step-2: clamp(1.7581rem, 1.3752rem + 1.634vw, 2.5394rem);
   --step-3: clamp(2.1975rem, 1.7189rem + 2.0418vw, 3.1738rem);
   --step-4: clamp(2.7469rem, 2.1485rem + 2.5529vw, 3.95rem);
@@ -46,6 +46,16 @@ h1 {
 h2,
 h3 {
   font-size: var(--step-4);
+  line-height: 1;
+}
+
+h4 {
+  font-size: var(--step-1);
+  line-height: 1.15;
+}
+
+.call-to-action {
+  font-size: var(--step-2);
   line-height: 1;
 }
 

@@ -3,21 +3,26 @@ import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { PiArrowRightBold } from "react-icons/pi";
-import larry from "../../../../../public/assets/about/about-bg.jpg";
+import larry from "../../../../../public/assets/home/about-bg.jpg";
 
 const MindsetSection = () => {
   return (
-    <section className="mb-32 w-full bg-white px-5 md:mb-44 md:px-10 xl:mb-60">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center justify-between gap-5 lg:flex-row lg:gap-10 xl:gap-20">
-        <div className="flex flex-1 flex-col self-stretch">
+    <section className="mb-32 w-full bg-white md:mb-44 md:px-10 xl:mb-60">
+      <div className="mx-auto flex w-full max-w-[700px] flex-col items-center justify-between gap-5 lg:max-w-screen-2xl lg:flex-row lg:gap-10 xl:gap-20">
+        <div className="mx-auto flex max-w-max flex-col self-stretch px-5 md:px-0">
           <div className="inline-block space-y-8 pb-10 text-gray-950 lg:py-24">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="text-balance text-center font-semibold tracking-tight lg:text-left">
-                Your mindset matters.
+                Your mindset <br className="hidden lg:block" /> matters.
               </h2>
             </AnimateElement>
-            <AnimateElement y={50} duration={0.75} delay={0.1}>
-              <p className="sub-heading balance-text pb-3 text-center font-medium text-gray-800 lg:text-left">
+            <AnimateElement
+              className="mx-auto max-w-max lg:mx-0"
+              y={50}
+              duration={0.75}
+              delay={0.1}
+            >
+              <p className="sub-heading balance-text pb-3 text-center font-medium text-gray-800 lg:max-w-[600px] lg:text-left">
                 Every day, 95% of us process a staggering 60,000 thoughts, and
                 an overwhelming 80% of these tend to be negative, regardless of
                 our success. Can you imagine the personal growth that could be
@@ -41,10 +46,10 @@ const MindsetSection = () => {
             </AnimateElement>
           </div>
         </div>
-        <div className="basis-[55%] self-stretch">
+        <div className="basis-[50%] self-stretch">
           <Image
             src={larry}
-            className="h-full w-full rounded-lg object-cover object-right shadow-2xl shadow-neutral-600/50"
+            className="h-full w-full object-cover object-right shadow-neutral-600/50 sm:rounded-2xl sm:shadow-2xl"
             alt="Larry sitting on a couch"
             quality={65}
           />

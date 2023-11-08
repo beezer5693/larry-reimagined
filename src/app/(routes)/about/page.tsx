@@ -4,16 +4,18 @@ import BioSection from "./_components/BioSection";
 import CareerSection from "./_components/CareerSection";
 import AchievementsSection from "./_components/Achievement/AchievementsSection";
 import ExperienceSection from "./_components/ExperienceSection";
+import BookSection from "@/components/shared/book_larry/BookSection";
 
 const page = () => {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden">
+    <main className="w-full overflow-hidden">
       <HeroSection />
       <BioSection />
       <MyStorySection />
       <CareerSection />
       <ExperienceSection />
       <AchievementsSection />
+      <BookSection />
     </main>
   );
 };

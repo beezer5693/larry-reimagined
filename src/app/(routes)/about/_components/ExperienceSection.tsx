@@ -8,9 +8,9 @@ import Link from "next/link";
 const ExperienceSection = () => {
   return (
     <section className="w-full px-5 md:px-10">
-      <div className="mx-auto max-w-screen-xl pb-36">
-        <div className="mx-auto flex w-full max-w-screen-xl flex-col-reverse items-center justify-between gap-10 lg:flex-row lg:gap-20">
-          <div className="lg:flex-basis-3/5 mb-24 h-[500px] lg:h-[800px]">
+      <div className="mx-auto max-w-[700px] pb-36 lg:max-w-screen-2xl">
+        <div className="mx-auto flex w-full max-w-screen-xl flex-col-reverse items-center justify-between gap-10 lg:flex-row lg:gap-32">
+          <div className="lg:flex-basis-3/5 h-[500px] lg:h-[800px] xl:mb-48">
             <Image
               src={experienceImage}
               alt="larry speaking to audience"
@@ -31,7 +31,7 @@ const ExperienceSection = () => {
           <div className="flex flex-1 flex-col justify-center gap-8">
             <AnimateElement duration={0.75} y={50}>
               <h3 className="balance-text text-center font-semibold tracking-tight text-gray-950 lg:text-left">
-                Expertise
+                My Expertise
               </h3>
             </AnimateElement>
             <div className="text-gray-800 lg:max-w-[600px]">
@@ -65,20 +65,20 @@ const ExperienceSection = () => {
                   industries.
                 </p>
               </AnimateElement>
+              <AnimateElement
+                className="pt-5 sm:px-10 md:px-20 lg:px-0"
+                y={50}
+                duration={0.75}
+                delay={0.3}
+              >
+                <Link href="/talks">
+                  <Button className="w-full bg-[#0f0e10] text-gray-50 hover:opacity-90 lg:max-w-max">
+                    <span>See My Talks</span>
+                    <PiArrowUpRightBold className="ml-2" size={16} />
+                  </Button>
+                </Link>
+              </AnimateElement>
             </div>
-            <AnimateElement
-              className="sm:px-10 md:px-20 lg:px-0"
-              y={50}
-              duration={0.75}
-              delay={0.3}
-            >
-              <Link href="/talks">
-                <Button className="w-full bg-[#0f0e10] text-gray-50 hover:opacity-90 lg:max-w-max">
-                  <span>See My Talks</span>
-                  <PiArrowUpRightBold className="ml-2" size={16} />
-                </Button>
-              </Link>
-            </AnimateElement>
           </div>
         </div>
       </div>

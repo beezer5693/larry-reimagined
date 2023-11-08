@@ -64,7 +64,7 @@ export const NEGATIVE_THOUGHTS = [
 export const NAV_LINKS = [
   { key: "home", label: "Home", href: "/" },
   { key: "about", label: "About", href: "/about" },
-  { key: "talks", label: "Talks", href: "/Talks" },
+  { key: "talks", label: "Talks", href: "/talks" },
   { key: "contact", label: "Contact", href: "/contact" },
   { key: "podcast", label: "Podcast", href: "/podcast" },
 ];

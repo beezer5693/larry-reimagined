@@ -8,7 +8,7 @@ import meetLarry from "../../../../../public/assets/home/meet-larry.png";
 const AboutSection = () => {
   return (
     <section className="w-full overflow-hidden bg-[#0f0e10] px-5 py-28 md:px-10 md:py-36 xl:py-52">
-      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-center gap-10 lg:flex-row-reverse lg:gap-28">
+      <div className="mx-auto flex w-full max-w-[700px] flex-col items-center gap-10 lg:max-w-screen-2xl lg:flex-row-reverse lg:gap-28">
         <div className="flex basis-1/2 flex-col justify-center gap-8">
           <AnimateElement duration={0.75} y={50}>
             <h2 className="bg-gradient-to-b from-white from-40% to-gray-400 bg-clip-text pb-2.5 text-center font-semibold tracking-tight text-transparent lg:text-left">

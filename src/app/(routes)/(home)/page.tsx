@@ -1,5 +1,5 @@
 import AboutSection from "./_components/AboutSection";
-import BookSection from "./_components/BookSection";
+import BookSection from "../../../components/shared/book_larry/BookSection";
 import HeroSection from "./_components/HeroSection";
 import MindsetSection from "./_components/MindsetSection";
 import KeySection from "./_components/keys/KeySection";
@@ -8,14 +8,14 @@ import ThoughtSection from "./_components/thoughts/ThoughtSection";
 
 export default function Home() {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden">
+    <main className="w-full overflow-hidden">
       <HeroSection />
       <ThoughtSection />
       <MindsetSection />
       <AboutSection />
       <KeySection />
       <TalkSection />
-      {/* <BookSection /> */}
+      <BookSection />
     </main>
   );
 }

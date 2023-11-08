@@ -22,7 +22,7 @@ const AnimateElement = ({
   className,
 }: AnimateElementProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-150px 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px" });
   const controls = useAnimation();
 
   const variants = {
@@ -33,6 +33,8 @@ const AnimateElement = ({
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
   }, [controls, isInView]);
 

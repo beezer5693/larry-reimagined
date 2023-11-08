@@ -22,7 +22,7 @@ const HeroSection = () => {
           priority
         />
       </Parallax>
-      <div className="relative w-full max-w-screen-xl">
+      <div className="relative w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="mb-20 flex w-full flex-col items-center justify-center gap-5">
           <AnimateElement y={50} duration={0.75}>
             <h1 className="text-center font-semibold text-white md:px-10 lg:px-0">
@@ -38,7 +38,7 @@ const HeroSection = () => {
             duration={0.75}
             delay={0.1}
           >
-            <p className="sub-heading balance-text max-w-[800px] text-center font-medium text-white lg:px-0">
+            <p className="sub-heading balance-text text-center font-medium text-white lg:max-w-[800px] lg:px-0">
               Embrace the {`"Dare to Think Different"`} motto igniting a
               transformative journey toward personal and professional
               excellence.
