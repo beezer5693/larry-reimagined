@@ -4,36 +4,35 @@ import heroImage from "../../../../../public/assets/talks/hero-talk.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mb-28 flex h-[400px] w-full flex-col bg-white before:absolute before:inset-0 before:z-10 before:bg-gradient-to-b before:from-black/30 before:from-40% before:to-black/70 sm:h-[450px] md:mb-36 md:h-[500px] lg:h-[600px] xl:mb-44 xl:h-[800px]">
-      <Image
-        src={heroImage}
-        fill
-        sizes="100vw"
-        className="h-full w-full object-cover"
-        alt="larry sitting in a chair in his office"
-        quality={65}
-      />
-      <div className="relative z-20 mx-auto flex h-full w-full max-w-[700px] flex-col items-center justify-center lg:max-w-screen-xl">
-        <div className="mb-4">
-          <AnimateElement className="mb-8" y={50} duration={0.75}>
-            <h1 className="balance-text text-center font-semibold tracking-tight text-white">
-              Talks to <span className="text-blue-600">inspire</span> and{" "}
-              <span className="text-blue-600">motivate</span> your team.
-            </h1>
-          </AnimateElement>
-          <AnimateElement
-            className="mx-auto sm:max-w-max"
-            y={50}
-            duration={0.75}
-            delay={0.1}
-          >
-            <p className="sub-heading balance-text text-center font-medium text-white lg:max-w-[800px]">
-              Embrace the {`"Dare to Think Different"`} motto igniting a
-              transformative journey toward personal and professional
-              excellence.
-            </p>
-          </AnimateElement>
+    <section className="relative mx-auto mb-28 flex w-full flex-col space-y-10 pt-10 md:mb-36 lg:space-y-16 lg:pt-16 xl:mb-44">
+      <div className="w-full px-5 md:px-10">
+        <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
+          <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
+            <AnimateElement className="basis-[55%]" y={50} duration={0.75}>
+              <h2 className="balance-text text-center font-semibold tracking-tight lg:text-left">
+                Talks to <span className="text-blue-600">inspire</span> and
+                <span className="text-blue-600"> motivate</span> your team.
+              </h2>
+            </AnimateElement>
+            <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
+              <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
+                Inspiration for Team Success. Discover compelling talks that
+                will energize your team, driving them towards their highest
+                potential..
+              </p>
+            </AnimateElement>
+          </div>
         </div>
+      </div>
+      <div className="relative h-[400px] w-full sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[800px]">
+        <Image
+          src={heroImage}
+          height={800}
+          width={1200}
+          className="h-full w-full object-cover object-center"
+          alt="larry sitting in a chair"
+          quality={65}
+        />
       </div>
     </section>
   );

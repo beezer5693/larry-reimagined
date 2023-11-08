@@ -12,10 +12,12 @@ const HeroSection = () => {
               <h2 className="balance-text text-center font-semibold tracking-tight lg:text-left">
                 <span>The Man.</span>{" "}
                 <span className="whitespace-nowrap">The Myth.</span>{" "}
-                <span className="whitespace-nowrap">The Mindset.</span>
+                <span className="whitespace-nowrap text-blue-600">
+                  The Mindset.
+                </span>
               </h2>
             </AnimateElement>
-            <AnimateElement className="lg:flex-1" duration={0.75} delay={0.8}>
+            <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
                 Your mindset is the key to your success. Larry has spent his
                 entire life mastering the art of positive mindset and is ready
