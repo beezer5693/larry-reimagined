@@ -1,6 +1,6 @@
 import AnimateElement from "@/components/shared/animation/AnimateElement";
 import Image from "next/image";
-import heroImage from "../../../../../public/assets/talks/hero-talk.png";
+import heroImage from "../../../../../public/assets/talks/talk-hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -29,7 +29,7 @@ const HeroSection = () => {
           src={heroImage}
           height={800}
           width={1200}
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover"
           alt="larry sitting in a chair"
           quality={65}
         />
@@ -37,4 +37,5 @@ const HeroSection = () => {
     </section>
   );
 };
+
 export default HeroSection;
