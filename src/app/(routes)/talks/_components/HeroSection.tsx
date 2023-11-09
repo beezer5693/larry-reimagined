@@ -16,13 +16,10 @@ const HeroSection = () => {
             </AnimateElement>
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
-                Unlock the Path to success. Delve into a curated selection of
-                three compelling talks designed to ignite inspiration within
-                your team, propelling them toward their full potential. With a
-                focus on motivation and personal growth, these talks serve as a
-                catalyst for enhancing team dynamics, fostering collaboration,
-                and achieving remarkable results. Each talk can be delivered as
-                a keynote or breakout session.
+                Unlock the Path to success. These talks serve as a catalyst for
+                enhancing team dynamics, fostering collaboration, and achieving
+                remarkable results. Each talk can be delivered as a keynote or
+                breakout session.
               </p>
             </AnimateElement>
           </div>
