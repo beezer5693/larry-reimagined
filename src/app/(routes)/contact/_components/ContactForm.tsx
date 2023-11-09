@@ -295,7 +295,7 @@ const ContactForm = () => {
           disabled={isSubmitting}
           type="submit"
           className={cn(
-            "mt-10 w-full bg-gradient-to-br from-blue-600 to-blue-600 hover:brightness-125",
+            "mt-10 w-full bg-gradient-to-br from-blue-600 to-blue-600 duration-300 hover:brightness-110",
             {
               "bg-gradient-to-br from-green-500 to-green-600 hover:brightness-100 disabled:cursor-not-allowed":
                 invitationSentSuccessfully,

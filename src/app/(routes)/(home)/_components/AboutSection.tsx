@@ -49,7 +49,7 @@ const AboutSection = () => {
           </div>
           <AnimateElement y={50} duration={0.75} delay={0.4}>
             <Link
-              className="inline-block w-full sm:px-10 md:px-20 lg:max-w-max lg:px-0"
+              className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
               href="/about"
             >
               <Button variant={"secondary"} className="w-full hover:opacity-90">

@@ -211,8 +211,8 @@ export const LIFE_ACHIEVEMENTS = [
 
 export const QUOTES = [
   {
-    text: "Larry is a dynamic speaker who has a unique ability to connect with his audience. His message is powerful and his delivery is engaging. He is a true professional and I highly recommend him.",
-    author: "Linda L. Mariano, President, Mariano Group",
+    text: "Larry was a great mentor and a tremendous motivating force as he inspired me to reach the top one percent of sales performers in the financial services industry.",
+    author: "Marc Lowell, Owner/Partner, Lowell Newman",
   },
   {
     text: "Larry is a dynamic speaker who has a unique ability to connect with his audience. His message is powerful and his delivery is engaging. He is a true professional and I highly recommend him.",

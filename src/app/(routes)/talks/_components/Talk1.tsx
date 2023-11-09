@@ -32,10 +32,10 @@ const Talk1 = () => {
                 <AnimateElement y={50} duration={0.75} delay={0.4}>
                   <div className="mt-8">
                     <Link
-                      className="inline-block w-full sm:px-10 md:px-20 lg:max-w-max lg:px-0"
+                      className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
                       href="/contact"
                     >
-                      <Button className="group w-full hover:brightness-125">
+                      <Button className="group w-full hover:brightness-110">
                         <span>Book a Call</span>
                         <PiArrowRightBold
                           className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
@@ -48,7 +48,7 @@ const Talk1 = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden sm:rounded-2xl sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden sm:rounded-md sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={talk1}
               className="h-full w-full object-cover"

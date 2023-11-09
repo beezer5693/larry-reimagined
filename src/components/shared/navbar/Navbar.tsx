@@ -25,7 +25,7 @@ const Navbar = () => {
             className="group inline-flex items-center text-xs"
             href={"/contact"}
           >
-            <Button className="px-4 py-2.5 hover:brightness-125">
+            <Button className="px-4 py-2.5 hover:brightness-110">
               <span className="text-[.8rem] text-white">book larry</span>
             </Button>
           </Link>

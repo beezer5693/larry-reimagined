@@ -8,7 +8,7 @@ import { QUOTES } from "@/constants";
 
 const page = () => {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden">
+    <main className="flex w-full flex-col items-center overflow-hidden bg-gradient-to-b from-white from-50% to-blue-50/50">
       <HeroSection />
       <Talk1 />
       <Quote quote={QUOTES[0]} />

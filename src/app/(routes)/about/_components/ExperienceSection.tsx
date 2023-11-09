@@ -66,7 +66,7 @@ const ExperienceSection = () => {
                 </p>
               </AnimateElement>
               <AnimateElement
-                className="pt-5 sm:px-10 md:px-20 lg:px-0"
+                className="px-10 pt-5 md:px-20 lg:px-0"
                 y={50}
                 duration={0.75}
                 delay={0.3}

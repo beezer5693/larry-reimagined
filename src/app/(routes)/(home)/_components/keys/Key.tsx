@@ -21,7 +21,7 @@ const Key = ({ data, id }: KeyProps) => {
         key={data.title}
         className={cn("col-span-1 flex flex-col text-white md:col-span-1")}
       >
-        <div className="relative h-[300px] overflow-hidden rounded-2xl shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[375px] lg:h-[350px]">
+        <div className="relative h-[300px] overflow-hidden rounded-md shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[375px] lg:h-[350px]">
           <Image
             className={cn("object-cover object-center")}
             src={data.imageSrc}

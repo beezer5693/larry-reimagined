@@ -32,10 +32,10 @@ const MindsetSection = () => {
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
               <Link
-                className="inline-block w-full sm:px-10 md:px-20 lg:max-w-max lg:px-0"
+                className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
                 href="/contact"
               >
-                <Button className="group w-full hover:brightness-125">
+                <Button className="group w-full hover:brightness-110">
                   <span>get in touch</span>
                   <PiArrowRightBold
                     className="ml-2 transition duration-500 ease-in-out group-hover:translate-x-1.5"
@@ -50,7 +50,7 @@ const MindsetSection = () => {
           <AnimateElement className="h-full" y={75} duration={0.75}>
             <Image
               src={larry}
-              className="h-full w-full object-cover object-right sm:rounded-2xl sm:shadow-2xl sm:shadow-neutral-700/60"
+              className="h-full w-full object-cover object-right sm:rounded-md sm:shadow-2xl sm:shadow-neutral-700/60"
               alt="Larry sitting on a couch"
               quality={65}
             />
