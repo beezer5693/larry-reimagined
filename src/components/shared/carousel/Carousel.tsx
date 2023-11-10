@@ -49,11 +49,11 @@ const Carousel = () => {
                 key={index}
                 className="balance-text testimonial flex max-w-[400px] shrink-0 flex-col items-center gap-5 self-start rounded-md bg-black/60 p-10 shadow-2xl shadow-black/80 backdrop-blur-lg"
               >
-                <div className="w-[125px]">
+                <div className="w-[100px]">
                   <Image
                     src={quote.imageSrc}
                     alt={`image of ${quote.author}`}
-                    className="rounded-full shadow-lg shadow-black/80"
+                    className="aspect-square rounded-full object-cover shadow-lg shadow-black/80"
                   />
                 </div>
                 <div className="text-center text-lg font-medium text-gray-100">

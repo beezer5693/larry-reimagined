@@ -10,6 +10,8 @@ import ernieMadera from "../../public/assets/testimonials/ernie-madera.jpg";
 import jimLeyritz from "../../public/assets/testimonials/jim-leyritz.jpg";
 import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
+import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
+import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -239,7 +241,7 @@ export const QUOTES = [
     text: `Larry has remarkable business acumen! His strategic concepts, incredible salesmanship, and motivational support transformed how I write life insurance and communicate with clients resulting in tremendous success for me`,
     author: "Steve Fishman",
     title: "Founder-Norwood Financial Group",
-    imageSrc: michaelAltshuler,
+    imageSrc: steveFishman,
   },
   {
     text: `Larry’s salesmanship is unmatched! His ability to connect with clients and close deals was exceptional, making him an invaluable asset for me to follow and learn from.`,
@@ -269,6 +271,6 @@ export const QUOTES = [
     text: `I have known, worked with, and referred my clients to Larry for over 30 years. His knowledge of the legal, tax, and insurance structures are equaled by just a few. As importantly, his professionalism, communication, and motivational skills are the attributes that put him in a class of his own.`,
     author: "Steven A. Sciarretta",
     title: "PA, Estate Tax Attorney",
-    imageSrc: ruchelCoetzee,
+    imageSrc: stevenSciarretta,
   },
 ];
