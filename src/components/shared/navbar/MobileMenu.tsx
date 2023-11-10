@@ -1,21 +1,13 @@
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import { ChevronRight, X } from "lucide-react";
-import Image from "next/image";
+import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
 
 type Props = {
   isMenuOpen: boolean;
   closeMenu: () => void;
 };
-
-const tabs = [
-  { id: "home", label: "HOME", url: "/" },
-  { id: "about", label: "ABOUT", url: "/about" },
-  { id: "talks", label: "TALKS", url: "/talks" },
-  { id: "podcast", label: "PODCAST", url: "/podcast" },
-  { id: "contact", label: "CONTACT", url: "/contact" },
-];
 
 export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
   return (
@@ -28,11 +20,11 @@ export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
     >
       <div className="space-y-10">
         <div className="pl-10">
-          {tabs.map((tab) => (
+          {NAV_LINKS.map((tab) => (
             <Link
               onClick={closeMenu}
-              key={tab.id}
-              href={tab.url}
+              key={tab.label}
+              href={tab.href}
               className="w-full"
             >
               <div className="flex w-full items-center justify-between border-b border-gray-200 py-6 pr-5">
