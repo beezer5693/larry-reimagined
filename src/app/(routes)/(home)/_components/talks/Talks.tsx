@@ -5,6 +5,7 @@ type TalksProps = {
     title: string;
     description: string;
     keyPoints: string[];
+    path: string;
   }[];
 };
 
