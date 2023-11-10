@@ -12,6 +12,7 @@ const MyStorySection = () => {
               src={child1}
               alt="Larry as a child"
               className="h-full w-full object-cover object-bottom grayscale"
+              quality={65}
             />
           </div>
           <div className="flex basis-[45%] flex-col lg:items-end">

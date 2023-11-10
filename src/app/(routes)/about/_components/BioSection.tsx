@@ -50,6 +50,7 @@ const BioSection = () => {
               src={larryWedding}
               className="h-full w-full object-cover object-top md:object-[0px_-50px] lg:object-top xl:object-[0px_-50px]"
               alt="Larry sitting on couch"
+              quality={65}
             />
           </div>
         </div>

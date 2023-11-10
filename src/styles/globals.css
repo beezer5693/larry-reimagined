@@ -91,6 +91,6 @@ h4,
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-3600px - 9rem));
+    transform: translate(calc(-3375px - 9rem));
   }
 }

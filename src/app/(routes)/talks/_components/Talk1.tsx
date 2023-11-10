@@ -8,7 +8,7 @@ import { PiArrowRightBold } from "react-icons/pi";
 
 const Talk1 = () => {
   return (
-    <section className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
+    <section id="talk1" className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-20">
           <div className="flex basis-[45%] flex-col">
@@ -53,6 +53,7 @@ const Talk1 = () => {
               src={talk1}
               className="h-full w-full object-cover"
               alt="Salesman presenting product to customers"
+              quality={65}
             />
           </div>
         </div>

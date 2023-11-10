@@ -29,6 +29,7 @@ const Key = ({ data, id }: KeyProps) => {
             alt={data.title}
             quality={65}
             priority
+            sizes="(min-width: 1700px) 291px, (min-width: 1040px) calc(17.97vw - 11px), (min-width: 780px) 700px, calc(95.65vw - 27px)"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/40 transition-colors duration-500 ease-in-out group-hover:bg-black/0"></div>
           <div className="absolute bottom-8 left-1/2 flex w-full -translate-x-1/2 flex-col gap-1 px-3 lg:gap-2">

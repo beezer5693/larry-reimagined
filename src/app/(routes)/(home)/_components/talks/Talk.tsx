@@ -5,14 +5,19 @@ import Link from "next/link";
 import { PiArrowUpRightBold } from "react-icons/pi";
 
 type TalkProps = {
-  talk: { title: string; description: string; keyPoints: string[] };
+  talk: {
+    title: string;
+    description: string;
+    keyPoints: string[];
+    path: string;
+  };
   id: number;
 };
 
 const Talk = ({ talk, id }: TalkProps) => {
   return (
     <AnimateElement y={75} duration={0.75}>
-      <Link href={"/talks"}>
+      <Link href={talk.path}>
         <div
           className={cn(
             "relative col-span-1 flex h-full flex-col justify-between rounded-md border border-neutral-300/50 bg-white px-5 pb-5 pt-10 shadow-xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:border-blue-600 md:items-center",

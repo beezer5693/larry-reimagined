@@ -33,6 +33,7 @@ const HeroSection = () => {
           className="h-full w-full object-cover object-bottom brightness-110"
           alt="larry sitting in a chair"
           quality={65}
+          sizes="100vw"
         />
       </div>
     </section>

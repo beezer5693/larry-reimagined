@@ -8,7 +8,7 @@ import talk2 from "../../../../../public/assets/talks/talk2.jpg";
 
 const Talk2 = () => {
   return (
-    <section className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
+    <section id="talk2" className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:justify-between lg:gap-20 xl:gap-32">
           <div className="h-[400px] overflow-hidden sm:rounded-md sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
@@ -16,6 +16,7 @@ const Talk2 = () => {
               src={talk2}
               alt="Larry as a child"
               className="h-full w-full object-cover"
+              quality={65}
             />
           </div>
           <div className="flex basis-[45%] flex-col lg:items-end">

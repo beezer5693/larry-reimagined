@@ -125,6 +125,7 @@ export const MY_TALKS = [
       "This captivating talk is an ideal event opener that will undoubtedly resonate with sales professionals, regardless of their current experience and success levels. It's designed to inspire your audience to explore new horizons, providing them with motivation and fresh perspectives that will deliver increased sales results. I'll share some creative marketing and customer-building concepts while also unveiling the blueprint behind my multi-million-dollar annual commission production.",
       "This talk isn't just about promising success but offering a journey of originality, known to boost motivation and lead to remarkable achievements. It's a stimulating, fun-filled, and transformative experience that encourages imaginative thinking, ignites excitement, and inspires a hunger for newfound knowledge. Your salespeople will leave ready to implement what they just learned.",
     ],
+    path: "/talks/#talk1",
   },
   {
     title: "Change Your Mindset, Change Your Life",
@@ -139,6 +140,7 @@ export const MY_TALKS = [
       "This talk is bound to be a hit, brimming with energy, humor, valuable information, and powerful motivation. I'll delve into my journey of transforming my old mindset, flaws and all, into a new, success-driven perspective for both my personal and professional life. Prepare for laughter and a surge of inspiration, leaving your audience eager to make immediate mindset changes and witness instant life improvements.",
       "This talk will reshape their outlook, equipping them to conquer new horizons and spark a lasting transformation that positively impacts everyone they encounter. Expect everyone to depart with a wealth of valuable insights.",
     ],
+    path: "/talks/#talk2",
   },
   {
     title: "Newest Requirements For Corporate Leadership",
@@ -153,6 +155,7 @@ export const MY_TALKS = [
       "This talk is vital for everyone, focusing on the newest of leadership principles and essential characteristics that define the evolving landscape of corporate and individual leadership. It explores the leadership insights executives need today and emphasizes effective team building at all levels, interpersonal relationships, and motivating diverse age groups within a corporation.",
       "The discussion includes self-leadership, the latest in executive training for leadership, and aligning hiring practices with short, medium, and long-term corporate and employee personal goals. Expect this talk to leave your executives with new insights and action steps to implement immediately, and your other valuable employees inspired and motivated to contribute to your company's heightened success.",
     ],
+    path: "/talks/#talk3",
   },
 ];
 

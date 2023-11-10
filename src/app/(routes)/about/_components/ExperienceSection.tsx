@@ -13,7 +13,7 @@ const ExperienceSection = () => {
           <div className="lg:flex-basis-3/5 h-[500px] lg:h-[800px] xl:mb-48">
             <Image
               src={experienceImage}
-              alt="larry speaking to audience"
+              alt="Larry pointing at you"
               className="hidden w-auto object-cover brightness-110 lg:block"
               height={500}
               width={500}

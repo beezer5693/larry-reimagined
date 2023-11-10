@@ -62,7 +62,8 @@ const CareerSection = () => {
             <Image
               src={careerImage}
               className="h-full w-full object-cover brightness-150 lg:object-[-200px_0px]"
-              alt="Larry sitting on couch"
+              alt="Larry arm in arm with friends"
+              quality={65}
             />
           </div>
         </div>
