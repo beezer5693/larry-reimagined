@@ -6,7 +6,7 @@ import awareness from "../../public/assets/home/awareness.jpg";
 import markLowell from "../../public/assets/testimonials/mark-lowell.jpg";
 import michaelAltshuler from "../../public/assets/testimonials/michael-altshuler.jpg";
 import monicaDevi from "../../public/assets/testimonials/monica-devi.jpg";
-import ernieMadera from "../../public/assets/testimonials/ernie-madera.jpg";
+import ernieMadera from "../../public/assets/testimonials/ernie-m.png";
 import jimLeyritz from "../../public/assets/testimonials/jim-leyritz.jpg";
 import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
@@ -250,6 +250,12 @@ export const QUOTES = [
     imageSrc: ernieMadera,
   },
   {
+    text: `If you want to be captivated and enthralled by a motivational speaker, book Larry for your next event. His story will inspire you to step out of your comfort zone and charge forward in life. And he is hugely funny!`,
+    author: "Ruchel Coetzee",
+    title: "Senior Director of Luxury Sales, Douglas Elliman Real Estate",
+    imageSrc: ruchelCoetzee,
+  },
+  {
     text: `I was part of Larry’s family for years. He was strong, supportive, and extremely helpful to me as I navigated through some of my own life struggles.`,
     author: "Jim Leyritz",
     title: "Former NY Yankee Catcher, 3X World Series Champion",
@@ -260,12 +266,6 @@ export const QUOTES = [
     author: "Andrew Szpiro",
     title: "Regional Director, John Hancock Insurance Company",
     imageSrc: andrewSzpiro,
-  },
-  {
-    text: `If you want to be captivated and enthralled by a motivational speaker, book Larry for your next event. His story will inspire you to step out of your comfort zone and charge forward in life. And he is hugely funny!`,
-    author: "Ruchel Coetzee",
-    title: "Senior Director of Luxury Sales, Douglas Elliman Real Estate",
-    imageSrc: ruchelCoetzee,
   },
   {
     text: `I have known, worked with, and referred my clients to Larry for over 30 years. His knowledge of the legal, tax, and insurance structures are equaled by just a few. As importantly, his professionalism, communication, and motivational skills are the attributes that put him in a class of his own.`,
