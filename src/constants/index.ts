@@ -3,6 +3,13 @@ import selfLeadership from "../../public/assets/home/leadership.jpg";
 import grit from "../../public/assets/home/grit2.jpg";
 import courage from "../../public/assets/home/courage.jpg";
 import awareness from "../../public/assets/home/awareness.jpg";
+import markLowell from "../../public/assets/testimonials/mark-lowell.jpg";
+import michaelAltshuler from "../../public/assets/testimonials/michael-altshuler.jpg";
+import monicaDevi from "../../public/assets/testimonials/monica-devi.jpg";
+import ernieMadera from "../../public/assets/testimonials/ernie-madera.jpg";
+import jimLeyritz from "../../public/assets/testimonials/jim-leyritz.jpg";
+import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
+import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -212,10 +219,56 @@ export const LIFE_ACHIEVEMENTS = [
 export const QUOTES = [
   {
     text: "Larry was a great mentor and a tremendous motivating force as he inspired me to reach the top one percent of sales performers in the financial services industry.",
-    author: "Marc Lowell, Owner/Partner, Lowell Newman",
+    author: "Marc Lowell",
+    title: "Owner/Partner, Lowell Newman",
+    imageSrc: markLowell,
   },
   {
-    text: "Larry is a dynamic speaker who has a unique ability to connect with his audience. His message is powerful and his delivery is engaging. He is a true professional and I highly recommend him.",
-    author: "Linda L. Mariano, President, Mariano Group",
+    text: `There are countless speakers who talk a big game but never ‘lived” the big game. The beautiful thing about Larry is he didn’t only live the big game, he is passionate about sharing it so others can too. This man doesn’t walk the talk, he runs it! Hire Larry, you’ll be glad you did!`,
+    author: "Michael Altshuler",
+    title: "Global Speaker, Bestselling Author",
+    imageSrc: michaelAltshuler,
+  },
+  {
+    text: `Working for Larry was the best job I ever had. The way he treated, encouraged, and motivated all his employees is something I have never experienced before`,
+    author: "Monica Devi",
+    title: "Former Employee",
+    imageSrc: monicaDevi,
+  },
+  {
+    text: `Larry has remarkable business acumen! His strategic concepts, incredible salesmanship, and motivational support transformed how I write life insurance and communicate with clients resulting in tremendous success for me`,
+    author: "Steve Fishman",
+    title: "Founder-Norwood Financial Group",
+    imageSrc: michaelAltshuler,
+  },
+  {
+    text: `Larry’s salesmanship is unmatched! His ability to connect with clients and close deals was exceptional, making him an invaluable asset for me to follow and learn from.`,
+    author: "Ernie Madera",
+    title: "Madera Financial Concepts",
+    imageSrc: ernieMadera,
+  },
+  {
+    text: `I was part of Larry’s family for years. He was strong, supportive, and extremely helpful to me as I navigated through some of my own life struggles.`,
+    author: "Jim Leyritz",
+    title: "Former NY Yankee Catcher, 3X World Series Champion",
+    imageSrc: jimLeyritz,
+  },
+  {
+    text: `Larry was one of the most brilliant, motivational, and incredibly successful insurance producers I have ever worked with.`,
+    author: "Andrew Szpiro",
+    title: "Regional Director, John Hancock Insurance Company",
+    imageSrc: andrewSzpiro,
+  },
+  {
+    text: `If you want to be captivated and enthralled by a motivational speaker, book Larry for your next event. His story will inspire you to step out of your comfort zone and charge forward in life. And he is hugely funny!`,
+    author: "Ruchel Coetzee",
+    title: "Senior Director of Luxury Sales, Douglas Elliman Real Estate",
+    imageSrc: ruchelCoetzee,
+  },
+  {
+    text: `I have known, worked with, and referred my clients to Larry for over 30 years. His knowledge of the legal, tax, and insurance structures are equaled by just a few. As importantly, his professionalism, communication, and motivational skills are the attributes that put him in a class of his own.`,
+    author: "Steven A. Sciarretta",
+    title: "PA, Estate Tax Attorney",
+    imageSrc: ruchelCoetzee,
   },
 ];

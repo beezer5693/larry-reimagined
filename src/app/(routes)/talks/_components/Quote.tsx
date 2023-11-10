@@ -19,7 +19,9 @@ const Quote = ({ quote }: QuoteProps) => {
         >
           <>
             <div className="quote balance-text mb-7 text-center font-medium italic">
+              <span>{`"`}</span>
               {quote.text}
+              <span>{`"`}</span>
             </div>
             <div className="sub-heading text-center font-medium">
               - {quote.author}
