@@ -17,6 +17,7 @@
     "clsx": "^2.0.0",
     "form-data": "^4.0.0",
     "framer-motion": "^10.16.4",
+    "hamburger-react": "^2.5.0",
     "lucide-react": "^0.285.0",
     "mailgun.js": "^9.3.0",
     "next": "13.5.4",
