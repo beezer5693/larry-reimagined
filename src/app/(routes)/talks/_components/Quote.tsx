@@ -7,8 +7,8 @@ type QuoteProps = {
 
 const Quote = ({ quote }: QuoteProps) => {
   return (
-    <section className="mb-28 w-full px-5  pt-14 md:mb-36 md:px-10 md:pt-0 xl:mb-56">
-      <div className="relative mx-auto flex max-w-[900px] flex-col items-center justify-center">
+    <section className="mb-28 w-full px-5 pb-7 pt-14 md:mb-36 md:px-10 lg:pt-0 xl:mb-56">
+      <div className="relative mx-auto flex max-w-[700px] flex-col items-center justify-center lg:max-w-[900px]">
         <div className="absolute -top-[4.5rem] left-5">
           <FaQuoteLeft className="text-9xl text-gray-300/40" />
         </div>
@@ -18,7 +18,7 @@ const Quote = ({ quote }: QuoteProps) => {
           delay={0.5}
         >
           <>
-            <div className="quote balance-text mb-7 text-center font-medium italic">
+            <div className="quote balance-text mb-9 text-center font-medium italic">
               <span>{`"`}</span>
               {quote.text}
               <span>{`"`}</span>

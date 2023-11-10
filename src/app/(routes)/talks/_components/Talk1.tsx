@@ -10,8 +10,8 @@ const Talk1 = () => {
   return (
     <section id="talk1" className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
-        <div className="flex w-full flex-col gap-10 lg:flex-row lg:gap-20">
-          <div className="flex basis-[45%] flex-col">
+        <div className="flex w-full flex-col lg:flex-row lg:gap-20">
+          <div className="mb-16 flex flex-col lg:mb-0 lg:basis-[45%]">
             <div className="w-full px-5 md:px-0">
               <AnimateElement className="mb-8" y={50} duration={0.75}>
                 <h3 className="text-center font-semibold tracking-tight text-gray-950 lg:text-left">
