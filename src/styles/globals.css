@@ -90,7 +90,10 @@ h4,
 }
 
 @keyframes scroll {
-  to {
-    transform: translate(calc(-3375px - 9rem));
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-4301px + 850px));
   }
 }

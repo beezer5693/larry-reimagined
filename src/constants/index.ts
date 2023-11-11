@@ -12,6 +12,8 @@ import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
 import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
+import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
+import markShaw from "../../public/assets/testimonials/mark-shaw.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -275,5 +277,17 @@ export const QUOTES = [
     author: "Steven A. Sciarretta",
     title: "PA, Estate Tax Attorney",
     imageSrc: stevenSciarretta,
+  },
+  {
+    text: `Larry's positive mindset and upbeat attitude is very motivational and contagious. Each time we finish talking, I am more energized than the last. I have experienced why he would be a great choice for your keynote speaker.`,
+    author: "Nathaniel Pool",
+    title: "Entrepreneur, Investor",
+    imageSrc: nathanielPool,
+  },
+  {
+    text: `Larry is one of the most unique individuals I have ever met. He is always positive, always engaging and inspiring. His mentorship of many of our students has motivated them to excel in high school, which resulted in their acceptance into the top 30 colleges in the US. His impact on their lives has been incredible.`,
+    author: "Marc Shaw",
+    title: "Executive Director, American Heritage schools",
+    imageSrc: markShaw,
   },
 ];
