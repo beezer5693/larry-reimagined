@@ -86,7 +86,7 @@ export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
             >
               {NAV_LINKS.map((tab, i) => (
                 <div key={tab.label} className="overflow-hidden">
-                  <motion.div variants={mobileMenuVariants} className="mb-5">
+                  <motion.div variants={mobileMenuVariants} className="mb-7">
                     <Link
                       onClick={closeMenu}
                       href={tab.href}
@@ -102,8 +102,12 @@ export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
                 </div>
               ))}
             </motion.div>
-            <div className="mt-8 w-full max-w-[400px]">
-              <Link onClick={closeMenu} href="/contact">
+            <div className="mt-8 w-full px-10">
+              <Link
+                className="w-full max-w-[400px]"
+                onClick={closeMenu}
+                href="/contact"
+              >
                 <Button className="h-14 w-full text-xl">Book Larry</Button>
               </Link>
             </div>
