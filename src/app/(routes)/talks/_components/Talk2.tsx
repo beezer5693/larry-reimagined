@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { PiArrowRightBold } from "react-icons/pi";
 import { MY_TALKS } from "@/constants";
-import talk2 from "../../../../../public/assets/talks/talk2.jpg";
+import talk2 from "../../../../../public/assets/talks/sig-talk.jpeg";
 
 const Talk2 = () => {
   return (
