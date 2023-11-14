@@ -17,9 +17,9 @@ const HeroSection = () => {
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
                 Unlock the Path to success. These talks serve as a catalyst for
-                enhancing team dynamics, fostering collaboration, and achieving
-                remarkable results. Each talk can be delivered as a keynote or
-                breakout session.
+                motivating personal performance, enhancing team dynamics,
+                fostering collaboration, and achieving remarkable results. Each
+                talk can be delivered as a keynote or breakout session.
               </p>
             </AnimateElement>
           </div>

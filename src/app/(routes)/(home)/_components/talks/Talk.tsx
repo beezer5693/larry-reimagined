@@ -20,18 +20,28 @@ const Talk = ({ talk, id }: TalkProps) => {
       <Link href={talk.path}>
         <div
           className={cn(
-            "relative col-span-1 flex h-full flex-col justify-between rounded-md border border-neutral-300/50 bg-white px-5 pb-5 pt-10 shadow-2xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:shadow-neutral-400/70 md:items-center",
+            "relative col-span-1 flex h-full flex-col justify-between rounded-md border border-neutral-300/50 bg-white px-5 pb-5 pt-[4.5rem] shadow-2xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:shadow-neutral-400/70 md:items-center",
             {
-              "scale-y-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] pt-[3.25rem] shadow-2xl shadow-neutral-700/40 hover:shadow-neutral-900/80":
+              "scale-y-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] shadow-2xl shadow-neutral-700/40 hover:shadow-neutral-900/60":
                 id === 1,
             },
           )}
         >
-          {id === 1 && (
-            <div className="absolute right-2.5 top-2.5 rounded-full bg-blue-600 px-3 py-1 text-[.75rem] font-bold text-white shadow-lg shadow-black/40">
-              Signature Talk
-            </div>
-          )}
+          <div
+            className={cn(
+              "absolute left-1/2 top-4 w-full max-w-max -translate-x-1/2 rounded-full bg-blue-600 px-3 py-1 text-sm font-medium text-white shadow-md shadow-blue-600/60",
+              {
+                "shadow-black/40": id === 1,
+              },
+            )}
+          >
+            {id === 0
+              ? "Talk For Sales People"
+              : id === 1
+              ? "Signature Talk For Everyone"
+              : "Talk For Corporate Leadership"}
+          </div>
+
           <div className="flex w-full flex-col items-center gap-6">
             <h4
               className={cn(

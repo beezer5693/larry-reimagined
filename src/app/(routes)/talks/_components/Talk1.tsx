@@ -14,22 +14,32 @@ const Talk1 = () => {
           <div className="mb-16 flex flex-col lg:mb-0 lg:basis-[45%]">
             <div className="w-full px-5 md:px-0">
               <AnimateElement className="mb-8" y={50} duration={0.75}>
+                <div className="max-w-max rounded-full border-2 border-gray-950 px-3 font-bold text-gray-950">
+                  Keynote/Breakout
+                </div>
+              </AnimateElement>
+              <AnimateElement
+                className="mb-8"
+                y={50}
+                duration={0.75}
+                delay={0.2}
+              >
                 <h3 className="text-center font-semibold tracking-tight text-gray-950 lg:text-left">
                   {MY_TALKS[0].title}
                 </h3>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[600px] lg:text-xl">
-                <AnimateElement y={50} duration={0.75} delay={0.2}>
+                <AnimateElement y={50} duration={0.75} delay={0.3}>
                   <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     {MY_TALKS[0].details[0]}
                   </p>
                 </AnimateElement>
-                <AnimateElement y={50} duration={0.75} delay={0.3}>
+                <AnimateElement y={50} duration={0.75} delay={0.4}>
                   <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     {MY_TALKS[0].details[1]}
                   </p>
                 </AnimateElement>
-                <AnimateElement y={50} duration={0.75} delay={0.4}>
+                <AnimateElement y={50} duration={0.75} delay={0.5}>
                   <div className="mt-8">
                     <Link
                       className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
