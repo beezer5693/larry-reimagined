@@ -15,7 +15,7 @@ const TalkSection = () => {
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
               <p className="balance-text sub-heading pb-2 text-center font-medium text-gray-800 sm:max-w-[75ch]">
-                Join Larry in a transformative journey with these three
+                Let Larry take you on a transformative journey with these three
                 compelling talks designed to uplift and inspire your audience.
                 Larry brings his wealth of knowledge and passion for growth to
                 the forefront, offering invaluable insights and strategies for

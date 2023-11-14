@@ -20,7 +20,7 @@ const BioSection = () => {
                     I am a University of Miami graduate with a BA in Accounting
                     and Finance and an MBA in Finance from Nova Southeastern
                     University. I also hold several prestigious insurance
-                    designations, including CLU, CHFC, CFP, and RHU, along with
+                    designations, including CLU, CHFC, CFP, and RHU, and held
                     various licenses for fixed and variable life insurance and
                     investments (series 6, 7, 23, and 24).
                   </p>

@@ -186,20 +186,20 @@ export const SOCIAL_LINKS = [
 
 export const CAREER_ACHIEVEMENTS = [
   {
-    title: "$52 million",
-    description: "Gross commission generated in a single year.",
+    title: "$52 Million",
+    description: "Personal best commissions generated in a single year.",
   },
   {
-    title: "30 offices",
-    description: "Opened from Florida to Connecticut.",
+    title: "30 Offices",
+    description: "Spanning from Florida to Connecticut.",
   },
   {
-    title: "20 years",
+    title: "20 Years",
     description:
       "As a top 1% sales performer earning over $1 million in commissions per year.",
   },
   {
-    title: "30 years",
+    title: "30 Years",
     description: "Commission based sales expertise.",
   },
 ];
@@ -215,7 +215,7 @@ export const LIFE_ACHIEVEMENTS = [
   },
   {
     title: "23 Countries",
-    description: "Visited throughout my career.",
+    description: "Visited throughout my lifetime.",
   },
   {
     title: "7 Degrees",
