@@ -7,7 +7,7 @@ const MyStorySection = () => {
     <section className="mb-28 w-full bg-white md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col-reverse gap-10 lg:flex-row lg:items-center lg:gap-20">
-          <div className="sm: h-[400px] overflow-hidden sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[800px] lg:flex-1">
+          <div className="h-[400px] overflow-hidden sm:rounded-md sm:shadow-2xl sm:shadow-neutral-800/80 md:h-[600px] lg:h-[800px] lg:flex-1">
             <Image
               src={child1}
               alt="Larry as a child"

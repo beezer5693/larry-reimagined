@@ -16,12 +16,14 @@ type KeyProps = {
 
 const Key = ({ data, id }: KeyProps) => {
   return (
-    <AnimateElement x={20} duration={1} delay={id * 0.15}>
-      <div
-        key={data.title}
-        className={cn("col-span-1 flex flex-col text-white md:col-span-1")}
-      >
-        <div className="relative h-[300px] overflow-hidden rounded-xl shadow-xl shadow-neutral-500/50 sm:h-[400px] md:h-[375px] lg:h-[350px]">
+    <AnimateElement
+      className={cn("col-span-1 md:col-span-2")}
+      x={20}
+      duration={1}
+      delay={id * 0.15}
+    >
+      <div key={data.title} className={cn("flex flex-col text-white")}>
+        <div className="relative h-[300px] overflow-hidden rounded-md shadow-2xl shadow-neutral-800/80 sm:h-[400px] md:h-[375px] lg:h-[350px]">
           <Image
             className={cn("object-cover object-center")}
             src={data.imageSrc}

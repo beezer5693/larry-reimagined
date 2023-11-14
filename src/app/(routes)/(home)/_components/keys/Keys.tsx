@@ -12,7 +12,7 @@ type KeyProps = {
 
 const Keys = ({ keys }: KeyProps) => {
   return (
-    <div className="mx-auto grid grid-cols-1 gap-5 lg:max-w-none lg:grid-cols-5 lg:gap-5">
+    <div className="mx-auto grid grid-cols-1 gap-5 lg:max-w-none lg:grid-cols-10 lg:gap-7">
       {keys.map((key, i) => (
         <Key key={key.title} id={i} data={key} />
       ))}

@@ -20,9 +20,9 @@ const Talk = ({ talk, id }: TalkProps) => {
       <Link href={talk.path}>
         <div
           className={cn(
-            "relative col-span-1 flex h-full flex-col justify-between rounded-xl border border-neutral-300/50 bg-white px-5 pb-5 pt-[4.5rem] shadow-2xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:shadow-neutral-400/70 md:items-center",
+            "relative col-span-1 flex h-full flex-col justify-between rounded-md border border-neutral-300/50 bg-white px-5 pb-5 pt-[4.5rem] shadow-2xl shadow-neutral-300/30 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-neutral-400/70 md:items-center",
             {
-              "scale-y-105 border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] shadow-2xl shadow-neutral-700/40 hover:shadow-neutral-900/60":
+              "border-0 border-neutral-950 bg-gradient-to-b from-[#242325] to-[#171619] shadow-2xl shadow-neutral-700/40 hover:shadow-neutral-900/60":
                 id === 1,
             },
           )}

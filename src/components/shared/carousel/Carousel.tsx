@@ -15,6 +15,19 @@ const Carousel = () => {
       scrollers.forEach((scroller: any) => {
         scroller.setAttribute("data-animated", true);
       });
+
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", "true");
+
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner!.children);
+
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true) as HTMLElement;
+          duplicatedItem.setAttribute("aria-hidden", "true");
+          scrollerInner!.appendChild(duplicatedItem);
+        });
+      });
     }
   }, []);
 
@@ -47,38 +60,7 @@ const Carousel = () => {
             {QUOTES.map((quote, index) => (
               <li
                 key={index}
-                className="balance-text testimonial flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-xl bg-slate-700/20 p-7 backdrop-blur-md"
-              >
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-[100px]">
-                    <Image
-                      src={quote.imageSrc}
-                      alt={`image of ${quote.author}`}
-                      className={cn(
-                        "aspect-square rounded-full object-cover shadow-xl shadow-slate-900/80",
-                        {
-                          "brightness-125": index === 4 || index === 8,
-                        },
-                      )}
-                      quality={65}
-                    />
-                  </div>
-                  <div className="text-center text-gray-100">
-                    <div className="text-lg font-bold">{quote.author}</div>
-                    <div className="text-sm text-gray-300">{quote.title}</div>
-                  </div>
-                </div>
-                <div className="balance-text text-center text-xl italic text-gray-50">
-                  <span>{`"`}</span>
-                  {quote.text}
-                  <span>{`"`}</span>
-                </div>
-              </li>
-            ))}
-            {QUOTES.map((quote, index) => (
-              <li
-                key={index}
-                className="balance-text testimonial flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-xl p-7 backdrop-blur-md"
+                className="balance-text flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-md border border-slate-400/50 bg-slate-700/20 p-7 backdrop-blur-md"
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-[100px]">
