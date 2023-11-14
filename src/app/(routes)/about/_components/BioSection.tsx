@@ -45,7 +45,7 @@ const BioSection = () => {
               </div>
             </div>
           </div>
-          <div className="h-[400px] overflow-hidden sm:rounded-md sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="sm: h-[400px] overflow-hidden sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={larryWedding}
               className="h-full w-full object-cover object-top md:object-[0px_-50px] lg:object-top xl:object-[0px_-50px]"

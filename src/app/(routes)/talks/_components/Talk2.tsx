@@ -11,7 +11,7 @@ const Talk2 = () => {
     <section id="talk2" className="mb-28 w-full md:mb-36 md:px-10 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
         <div className="flex w-full flex-col-reverse lg:flex-row lg:justify-between lg:gap-20 xl:gap-32">
-          <div className="h-[400px] overflow-hidden sm:rounded-md sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
+          <div className="sm: h-[400px] overflow-hidden sm:shadow-2xl sm:shadow-neutral-700/60 md:h-[600px] lg:h-[700px] lg:flex-1">
             <Image
               src={talk2}
               alt="Larry as a child"
@@ -21,8 +21,12 @@ const Talk2 = () => {
           </div>
           <div className="mb-16 flex basis-[45%] flex-col lg:mb-0 lg:items-end">
             <div className="px-5 md:px-0">
-              <AnimateElement className="mb-8" y={50} duration={0.75}>
-                <div className="max-w-max rounded-full border-2 border-gray-950 px-3 font-bold text-gray-950">
+              <AnimateElement
+                className="mb-8 w-full text-center lg:text-left"
+                y={50}
+                duration={0.75}
+              >
+                <div className="inline-block rounded-full border border-gray-950 px-3 text-sm font-medium text-gray-950">
                   Keynote/Breakout
                 </div>
               </AnimateElement>

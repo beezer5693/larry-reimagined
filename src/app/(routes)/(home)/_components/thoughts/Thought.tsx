@@ -14,7 +14,7 @@ const Thought = ({ data, index }: CardProps) => {
     <AnimateElement y={75} duration={0.75} delay={0.1 * index}>
       <div
         className={cn(
-          "relative col-span-1 flex h-full flex-col items-center gap-5 rounded-md border border-neutral-300/50 bg-white p-8 shadow-2xl shadow-neutral-400/50",
+          "relative col-span-1 flex h-full flex-col items-center gap-5 rounded-xl border border-neutral-300/50 bg-white p-8 shadow-2xl shadow-neutral-400/50",
         )}
         key={data.thought}
       >

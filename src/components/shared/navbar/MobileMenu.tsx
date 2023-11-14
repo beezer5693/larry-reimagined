@@ -65,6 +65,7 @@ export default function MobileMenu({ isMenuOpen, closeMenu }: Props) {
       },
     },
   };
+
   return (
     <>
       <AnimatePresence>

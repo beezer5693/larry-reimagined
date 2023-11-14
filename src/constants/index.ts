@@ -2,7 +2,7 @@ import thinkingDifferent from "../../public/assets/home/thinking2.jpg";
 import selfLeadership from "../../public/assets/home/leadership.jpg";
 import grit from "../../public/assets/home/grit2.jpg";
 import courage from "../../public/assets/home/courage.jpg";
-import awareness from "../../public/assets/home/awareness.jpg";
+import awareness from "../../public/assets/home/aware.png";
 import markLowell from "../../public/assets/testimonials/mark-lowell.jpg";
 import michaelAltshuler from "../../public/assets/testimonials/michael-altshuler.jpg";
 import monicaDevi from "../../public/assets/testimonials/monica-devi.jpg";

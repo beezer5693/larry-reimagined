@@ -19,7 +19,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <section className="relative mb-28 w-full overflow-hidden pt-24 before:absolute before:-bottom-10 before:-left-10 before:-right-10 before:-top-10 before:z-10 before:bg-gradient-to-b before:from-black/80 before:from-50% before:to-black/70 md:mb-36 xl:mb-52">
+    <section className="relative mb-28 w-full overflow-hidden pt-24 before:absolute before:-bottom-10 before:-left-10 before:-right-10 before:-top-10 before:z-10 before:bg-gradient-to-b before:from-black/70 before:from-30% before:to-black/50 before:backdrop-blur-[2px] md:mb-36 xl:mb-52">
       <Image
         src={carouselImage}
         className="object-cover object-top"
@@ -47,7 +47,7 @@ const Carousel = () => {
             {QUOTES.map((quote, index) => (
               <li
                 key={index}
-                className="balance-text testimonial flex max-w-[375px] shrink-0 flex-col items-center gap-6 self-start rounded-md bg-slate-700/20 p-7 shadow-2xl shadow-black/80 backdrop-blur-md"
+                className="balance-text testimonial flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-xl bg-slate-700/20 p-7 backdrop-blur-md"
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-[100px]">
@@ -78,7 +78,7 @@ const Carousel = () => {
             {QUOTES.map((quote, index) => (
               <li
                 key={index}
-                className="balance-text testimonial flex max-w-[375px] shrink-0 flex-col items-center gap-6 self-start rounded-md bg-slate-700/20 p-7 shadow-2xl shadow-black/80 backdrop-blur-md"
+                className="balance-text testimonial flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-xl p-7 backdrop-blur-md"
               >
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-[100px]">
