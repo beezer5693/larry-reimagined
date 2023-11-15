@@ -18,7 +18,7 @@ const KeySection = () => {
               but applying my{" "}
               <span className="font-semibold">{`"Five Keys to a New Mindset"`}</span>{" "}
               can bring transformative change and elevate your personal and
-              professional life.
+              professional life and performance.
             </p>
           </AnimateElement>
         </div>
