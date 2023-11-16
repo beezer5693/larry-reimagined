@@ -86,10 +86,6 @@ h4,
   width: calc((350px * 24) + 24rem);
 }
 
-.scoller[data-animated="true"] .scroller__inner:hover {
-  animation-play-state: paused;
-}
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
