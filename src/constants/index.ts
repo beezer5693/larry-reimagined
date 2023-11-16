@@ -14,6 +14,7 @@ import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
 import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
 import markShaw from "../../public/assets/testimonials/mark-shaw.jpg";
+import joeKelleher from "../../public/assets/testimonials/joseph-kelleher.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -289,5 +290,11 @@ export const QUOTES = [
     author: "Marc Shaw",
     title: "Executive Director, American Heritage schools",
     imageSrc: markShaw,
+  },
+  {
+    text: `Larry’s communication skills are outstanding. He has a natural ability to convey ideas with clarity and conviction.`,
+    author: "Joe Kelleher",
+    title: "Attorney at Cozen O'Connor",
+    imageSrc: joeKelleher,
   },
 ];

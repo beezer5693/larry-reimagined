@@ -19,7 +19,8 @@ const HeroSection = () => {
                 Unlock the Path to success. These talks serve as a catalyst for
                 motivating personal performance, enhancing team dynamics,
                 fostering collaboration, and achieving remarkable results. Each
-                talk can be delivered in a keynote or breakout session.
+                talk can be delivered in a keynote, breakout or workshop
+                session.
               </p>
             </AnimateElement>
           </div>

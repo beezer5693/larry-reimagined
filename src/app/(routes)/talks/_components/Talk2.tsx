@@ -27,7 +27,7 @@ const Talk2 = () => {
                 duration={0.75}
               >
                 <div className="inline-block rounded-full border border-gray-950 px-3 text-sm font-medium text-gray-950">
-                  Keynote/Breakout
+                  Keynote/Breakout/Workshop
                 </div>
               </AnimateElement>
               <AnimateElement

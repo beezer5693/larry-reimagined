@@ -82,8 +82,8 @@ h4,
 }
 
 .scoller[data-animated="true"] .scroller__inner {
-  animation: scroll 100s linear infinite;
-  width: calc((350px * 22) + 22rem);
+  animation: scroll 85s linear infinite;
+  width: calc((350px * 24) + 24rem);
 }
 
 .scoller[data-animated="true"] .scroller__inner:hover {
@@ -95,6 +95,6 @@ h4,
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc((-350px * 11) - 11rem));
+    transform: translateX(calc((-350px * 12) - 12rem));
   }
 }
