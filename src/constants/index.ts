@@ -15,6 +15,8 @@ import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.p
 import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
 import markShaw from "../../public/assets/testimonials/mark-shaw.jpg";
 import joeKelleher from "../../public/assets/testimonials/joseph-kelleher.jpg";
+import johnReisigl from "../../public/assets/testimonials/john-reisigl.jpg";
+import freddieGary from "../../public/assets/testimonials/freddie-gary.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -296,5 +298,17 @@ export const QUOTES = [
     author: "Joe Kelleher",
     title: "Attorney at Cozen O'Connor",
     imageSrc: joeKelleher,
+  },
+  {
+    text: `Larry definitely brings the energy. He keeps the sales team engaged with his unbridled enthusiasm, optimism and humor, keeping them hanging on every word with real life experiences and inspiration. Along with being a great person, Larry is a very dynamic and engaging speaker and a great choice to fire up your sales team.`,
+    author: "John Reisigl",
+    title: "President, Cheney Brothers",
+    imageSrc: johnReisigl,
+  },
+  {
+    text: `I introduced Larry to some of my most important clients, and partnered with him in solving their financial objectives. His knowledge, professionalism, and communication skills were exceptional and well received.`,
+    author: "Freddie Gary",
+    title: "Gary Financial Group",
+    imageSrc: freddieGary,
   },
 ];
