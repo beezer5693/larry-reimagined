@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import SocialLinks from "./SocialLinks";
 import Link from "next/link";
 import Subscribe from "./Subscribe";
+import CopyRightNotice from "./CopyRightNotice";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -42,9 +43,7 @@ const Footer = () => {
         </div>
         <Subscribe />
       </div>
-      <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white">
-        © {currentYear} Larry Bryan. All rights reserved.
-      </div>
+      <CopyRightNotice />
     </section>
   );
 };
