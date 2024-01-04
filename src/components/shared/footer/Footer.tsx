@@ -4,6 +4,8 @@ import Link from "next/link";
 import Subscribe from "./Subscribe";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <section className="relative flex w-full flex-col items-center bg-[#0f0e10] px-5 pb-32 pt-24 md:px-10">
       <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
@@ -41,7 +43,7 @@ const Footer = () => {
         <Subscribe />
       </div>
       <div className="absolute bottom-5 left-1/2 w-full -translate-x-1/2 text-center text-xs text-white">
-        © {new Date().getFullYear()} Larry Bryan. All rights reserved.
+        © {currentYear} Larry Bryan. All rights reserved.
       </div>
     </section>
   );
