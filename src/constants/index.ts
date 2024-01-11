@@ -128,7 +128,7 @@ export const MY_TALKS = [
     ],
     details: [
       "This captivating talk is an ideal event opener that will undoubtedly resonate with sales professionals, regardless of their current experience and success levels. It's designed to inspire your audience to adopt some new ways of thinking and to explore new horizons, providing them with motivation and fresh perspectives that will deliver increased sales results. I'll share some creative marketing and customer-building concepts while also unveiling the blueprint behind my multi-million-dollar annual commission production.",
-      "This talk isn't just about promising success but offering a journey of originality, known to boost motivation and lead to remarkable achievements. It's a stimulating, fun-filled, and transformative experience that encourages imaginative thinking, ignites excitement, and inspires a hunger for newfound knowledge. Your salespeople will leave ready to implement what they just learned.",
+      "This talk isn't just about promising success but offering a journey of originality, known to boost motivation and lead to remarkable achievements. It's a stimulating, fun-filled, and a transformative experience that encourages imaginative thinking, ignites excitement, and inspires a hunger for newfound knowledge. Your salespeople will leave ready to implement what they just learned.",
     ],
     path: "/talks/#talk1",
   },
@@ -142,8 +142,8 @@ export const MY_TALKS = [
       "Empower yourself with the tools needed to achieve greater success and fulfillment in various aspects of life.",
     ],
     details: [
-      `This talk is bound to be a hit, brimming with energy, humor, valuable information, and powerful motivation. It's designed to "update your mindset" to the most powerful version of yourself today. I'll delve into my journey of transforming my old mindset, flaws and all, into a new, success-driven perspective for both my personal and professional life. Prepare for laughter and a surge of inspiration, leaving your audience eager to make immediate mindset changes and witness instant life improvements.",
-      "This talk will reshape their outlook, equipping them to conquer new horizons and spark a lasting transformation that positively impacts everyone they encounter. Expect everyone to depart with a wealth of valuable insights.`,
+      `This talk is bound to be a hit, brimming with energy, humor, valuable information, and powerful motivation. It's designed to "update your mindset" to the most powerful version of yourself today. I'll delve into my journey of transforming my old mindset, flaws and all, into a new, success-driven perspective for both my personal and professional life. Prepare for laughter and a surge of inspiration, leaving your audience eager to make immediate mindset changes and witness instant life improvements.`,
+      `This talk will reshape their outlook, equipping them to conquer new horizons and spark a lasting transformation that positively impacts everyone they encounter. Expect everyone to depart with a wealth of valuable insights.`,
     ],
     path: "/talks/#talk2",
   },
