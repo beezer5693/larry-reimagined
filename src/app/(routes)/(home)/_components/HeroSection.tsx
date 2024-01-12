@@ -40,7 +40,8 @@ const HeroSection = () => {
           >
             <p className="sub-heading balance-text text-center font-medium text-white lg:max-w-[800px] lg:px-0">
               <span>
-                Your mindset is the lens through which see and experience life.
+                Your mindset is the lens through which you see and experience
+                life.
               </span>
               <span>
                 {" "}
