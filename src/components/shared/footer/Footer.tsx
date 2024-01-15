@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import SocialLinks from "./SocialLinks";
 import Link from "next/link";
+import Image from "next/image";
 import Subscribe from "./Subscribe";
 import CopyRightNotice from "./CopyRightNotice";
+import logo from "../../../../public/logo.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,10 +14,8 @@ const Footer = () => {
       <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">
-            <p className="text-center lg:text-left">
-              <span className="text-xl font-semibold uppercase tracking-wider">
-                LARRY BRYAN
-              </span>
+            <p className="text-center text-xl font-semibold uppercase tracking-wider lg:text-left">
+              LARRY BRYAN
             </p>
             <p className="text-center text-sm font-medium lg:text-left">
               151 N Nob Hill Rd, Suite 350

@@ -2,13 +2,14 @@
 
 import { Button } from "@/components/ui/Button";
 import { NAV_LINKS } from "@/constants";
-import { Menu } from "lucide-react";
+import { Squeeze as Hamburger } from "hamburger-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import NavLinks from "./NavLinks";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
-import { Squeeze as Hamburger } from "hamburger-react";
+import NavLinks from "./NavLinks";
+import logo from "../../../../public/logo.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const currentPath = usePathname();
@@ -31,10 +32,11 @@ const Navbar = () => {
     <div className="sticky top-0 z-50 flex w-full justify-center border-b border-gray-200 bg-white px-5 md:px-10">
       <div className="relative flex h-14 w-full max-w-screen-xl items-center justify-between">
         <Link
-          className="text-lg font-semibold tracking-wider text-gray-950"
+          className="inline-flex items-center gap-3 text-lg font-semibold tracking-wider text-gray-950"
           href="/"
         >
-          LARRY BRYAN
+          <Image src={logo} alt="logo" height={25} width={25} />
+          <span className="font-extrabold">LARRY BRYAN</span>
         </Link>
         <NavLinks links={NAV_LINKS} path={currentPath} />
         <div className="hidden max-w-max lg:block">

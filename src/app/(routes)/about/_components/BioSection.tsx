@@ -37,9 +37,10 @@ const BioSection = () => {
                 <AnimateElement y={50} duration={0.75} delay={0.4}>
                   <p className="sub-heading--small balance-text text-center lg:text-left">
                     Today, I have transitioned into full-time public speaking,
-                    where I inspire sales and marketing professionals to develop
-                    a positive mindset, enabling them to achieve remarkable
-                    success in both their business and personal lives.
+                    where I inspire sales people, marketing professionals, and
+                    business owners to develop a positive mindset, enabling them
+                    to achieve remarkable success in both their business and
+                    personal lives.
                   </p>
                 </AnimateElement>
               </div>
