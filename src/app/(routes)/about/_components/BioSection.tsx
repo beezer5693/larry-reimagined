@@ -22,7 +22,7 @@ const BioSection = () => {
                     University. I also hold several prestigious insurance
                     designations, including CLU, CHFC, CFP, and RHU, and held
                     various licenses for fixed and variable life insurance and
-                    investments (series 6, 7, 23, and 24).
+                    investments (series 6, 7, 23, 24, and 63).
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.3}>
