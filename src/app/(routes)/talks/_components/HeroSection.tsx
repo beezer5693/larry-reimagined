@@ -11,16 +11,17 @@ const HeroSection = () => {
             <AnimateElement className="basis-[55%]" y={50} duration={0.75}>
               <h2 className="balance-text text-center font-semibold tracking-tight lg:text-left">
                 Talks to <span className="text-blue-600">inspire</span> and
-                <span className="text-blue-600"> motivate</span> your team.
+                <span className="text-blue-600"> motivate</span> your team, that
+                get results <span className="text-blue-600"> fast</span>.
               </h2>
             </AnimateElement>
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
                 Unlock the Path to success. These talks serve as a catalyst for
                 motivating personal performance, enhancing team dynamics,
-                fostering collaboration, and achieving remarkable results. Each
-                talk can be delivered in a keynote, breakout or workshop
-                session.
+                fostering collaboration, and achieving remarkable results
+                quickly. Each talk can be delivered in a keynote, breakout or
+                workshop session.
               </p>
             </AnimateElement>
           </div>

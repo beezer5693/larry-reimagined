@@ -39,17 +39,10 @@ const HeroSection = () => {
             delay={0.1}
           >
             <p className="sub-heading balance-text text-center font-medium text-white lg:max-w-[800px] lg:px-0">
-              <span>
-                Your mindset is the lens through which you see and experience
-                life.
-              </span>
-              <span>
-                {" "}
-                It serves as the perceptual filter that shapes how you perceive
-                and engage with the world around you, influencing your thoughts,
-                emotions, and behaviors.
-              </span>
-              <span> Change your mindset, change your life.</span>
+              Your mindset is the unique lens through which you perceive and
+              engage with life, shaping your thoughts, emotions, and behaviors.
+              I will show you how to change your mindset today and see how your
+              life changes for the better tomorrow.
             </p>
           </AnimateElement>
           <AnimateElement className="w-full" y={50} duration={0.75} delay={0.2}>
