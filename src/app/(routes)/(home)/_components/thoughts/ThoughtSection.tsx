@@ -9,9 +9,9 @@ const ThoughtSection = () => {
         <div className="mx-auto max-w-[800px] text-center text-2xl text-white md:text-3xl">
           <AnimateElement duration={1}>
             <div className="font-medium">
-              "Life is all about results and everyone wants them quickly. My
+              {`"Life is all about results and everyone wants them quickly. My
               talks offer the keys to achieving those remarkable results in life
-              much faster."
+              much faster."`}
             </div>
           </AnimateElement>
           <AnimateElement duration={1} delay={0.2}>
