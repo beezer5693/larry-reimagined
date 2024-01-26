@@ -9,10 +9,10 @@ const HeroSection = () => {
         <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
           <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
             <AnimateElement className="basis-[55%]" y={50} duration={0.75}>
-              <h2 className="balance-text text-center font-semibold tracking-tight lg:text-left">
-                Talks to <span className="text-blue-600">inspire</span> and
-                <span className="text-blue-600"> motivate</span> your team, that
-                get results <span className="text-blue-600"> fast</span>.
+              <h2 className="w-full text-center font-semibold tracking-tight lg:max-w-[15ch] lg:text-left">
+                Talks that <span className="text-blue-600">inspire</span> and
+                <span className="text-blue-600"> motivate</span> your team to
+                get results<span className="text-blue-600"> faster</span>.
               </h2>
             </AnimateElement>
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="relative h-[400px] w-full overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[900px]">
+      <div className="relative h-[400px] w-full overflow-hidden sm:h-[450px] md:h-[500px] lg:h-[600px] xl:h-[900px] 2xl:h-[1000px]">
         <Image
           src={heroImage}
           height={800}
