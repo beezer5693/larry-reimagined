@@ -118,7 +118,7 @@ export const KEYS_TO_MASTER = [
 
 export const MY_TALKS = [
   {
-    title: "The Mindset and Behaviors of Elite Salespeople",
+    title: "Sell Like a Lion",
     description:
       "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
     keyPoints: [
@@ -133,7 +133,7 @@ export const MY_TALKS = [
     path: "/talks/#talk1",
   },
   {
-    title: "Change Your Mindset, Change Your Life",
+    title: "Think Like a Lion",
     description:
       "Explore the roots of your current mindset and learn how to overcome its limitations for greater life success in this engaging talk.",
     keyPoints: [
@@ -148,7 +148,7 @@ export const MY_TALKS = [
     path: "/talks/#talk2",
   },
   {
-    title: "Newest Requirements For Corporate Leadership",
+    title: "Lead Like a Lion",
     description:
       "Discover the latest criteria and expectations shaping effective corporate leadership in today's dynamic business landscape.",
     keyPoints: [
