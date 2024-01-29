@@ -45,7 +45,7 @@ const Talk = ({ talk, id }: TalkProps) => {
           <div className="flex w-full flex-col items-center gap-6">
             <h4
               className={cn(
-                "text-center text-[1.75rem] font-semibold leading-8 text-gray-950",
+                "text-center text-4xl font-semibold leading-8 text-gray-950",
                 {
                   "max-w-[18ch] sm:max-w-max lg:max-w-[18ch]": id === 0,
                   "text-white": id === 1,
