@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
-import logo from "../../../../public/logo.svg";
+import logo from "../../../../public/blue-logo.svg";
 import Image from "next/image";
 
 const Navbar = () => {
@@ -36,7 +36,7 @@ const Navbar = () => {
           href="/"
         >
           <Image src={logo} alt="logo" height={25} width={25} />
-          <span className="font-extrabold">LARRY BRYAN</span>
+          <span className="font-extrabold text-[#002cda]">LARRY BRYAN</span>
         </Link>
         <NavLinks links={NAV_LINKS} path={currentPath} />
         <div className="hidden max-w-max lg:block">
