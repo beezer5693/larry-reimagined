@@ -30,7 +30,7 @@ const AboutCarousel = () => {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden pt-32 sm:pt-0">
       <div className="relative z-10 mx-auto w-full">
         <div className="scoller-about group mx-auto w-full pb-36 data-[animated=true]:overflow-hidden">
           <ul className="scroller__inner__about flex flex-wrap justify-center gap-4 group-data-[animated=true]:flex-nowrap">
