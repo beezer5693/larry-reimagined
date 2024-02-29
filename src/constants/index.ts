@@ -20,7 +20,6 @@ import image26 from "../../public/assets/about/carousel/image26.jpeg";
 import image27 from "../../public/assets/about/carousel/image27.jpeg";
 import image28 from "../../public/assets/about/carousel/image28.jpeg";
 import image29 from "../../public/assets/about/carousel/image29.jpeg";
-import image3 from "../../public/assets/about/carousel/image3.jpeg";
 import image30 from "../../public/assets/about/carousel/image30.jpeg";
 import image31 from "../../public/assets/about/carousel/image31.jpeg";
 import image32 from "../../public/assets/about/carousel/image32.jpeg";
@@ -28,7 +27,6 @@ import image33 from "../../public/assets/about/carousel/image33.jpeg";
 import image34 from "../../public/assets/about/carousel/image34.jpeg";
 import image35 from "../../public/assets/about/carousel/image35.jpeg";
 import image36 from "../../public/assets/about/carousel/image36.jpeg";
-import image4 from "../../public/assets/about/carousel/image4.jpeg";
 import image7 from "../../public/assets/about/carousel/image7.jpeg";
 import image8 from "../../public/assets/about/carousel/image8.jpeg";
 import image9 from "../../public/assets/about/carousel/image9.jpeg";
@@ -350,8 +348,6 @@ export const QUOTES = [
 export const aboutImageCourasel = [
   { src: image1, position: "object-center" },
   { src: image2, position: "object-center" },
-  { src: image3, position: "object-center" },
-  { src: image4, position: "object-center" },
   { src: image7, position: "object-center" },
   { src: image8, position: "object-center" },
   { src: image9, position: "object-center" },
@@ -370,7 +366,7 @@ export const aboutImageCourasel = [
   { src: image22, position: "object-top" },
   { src: image23, position: "object-center" },
   { src: image24, position: "object-bottom" },
-  { src: image25, position: "object-center" },
+  { src: image25, position: "object-center scale-110" },
   { src: image26, position: "object-center" },
   { src: image27, position: "object-center" },
   { src: image28, position: "object-center" },

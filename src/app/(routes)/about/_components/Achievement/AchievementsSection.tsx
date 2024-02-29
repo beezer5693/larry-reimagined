@@ -4,7 +4,7 @@ import Achievements from "./Achievements";
 
 function AchievementsSection() {
   return (
-    <section className="relative z-10 w-full sm:mb-32 sm:px-5 lg:mb-44">
+    <section className="relative z-10 mb-16 w-full sm:px-5">
       <div className="sm: mx-auto w-full max-w-screen-2xl bg-[#1d1c20] px-5 pb-16 pt-12 md:px-10 lg:px-16 lg:pb-24 lg:pt-20">
         <div className="mb-20 flex w-full flex-col items-center">
           <AnimateElement className="mb-14" duration={0.5}>
