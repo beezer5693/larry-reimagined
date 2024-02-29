@@ -1,22 +1,56 @@
-import thinkingDifferent from "../../public/assets/home/thinking2.jpg";
-import selfLeadership from "../../public/assets/home/leadership.jpg";
-import grit from "../../public/assets/home/grit2.jpg";
-import courage from "../../public/assets/home/courage.jpg";
+import image1 from "../../public/assets/about/carousel/image1.jpeg";
+import image10 from "../../public/assets/about/carousel/image10.jpeg";
+import image11 from "../../public/assets/about/carousel/image11.jpeg";
+import image12 from "../../public/assets/about/carousel/image12.jpeg";
+import image13 from "../../public/assets/about/carousel/image13.jpeg";
+import image14 from "../../public/assets/about/carousel/image14.jpeg";
+import image15 from "../../public/assets/about/carousel/image15.jpeg";
+import image16 from "../../public/assets/about/carousel/image16.jpeg";
+import image17 from "../../public/assets/about/carousel/image17.jpeg";
+import image18 from "../../public/assets/about/carousel/image18.jpeg";
+import image19 from "../../public/assets/about/carousel/image19.jpeg";
+import image2 from "../../public/assets/about/carousel/image2.jpeg";
+import image20 from "../../public/assets/about/carousel/image20.jpeg";
+import image21 from "../../public/assets/about/carousel/image21.jpeg";
+import image22 from "../../public/assets/about/carousel/image22.jpeg";
+import image23 from "../../public/assets/about/carousel/image23.jpeg";
+import image24 from "../../public/assets/about/carousel/image24.jpeg";
+import image25 from "../../public/assets/about/carousel/image25.jpeg";
+import image26 from "../../public/assets/about/carousel/image26.jpeg";
+import image27 from "../../public/assets/about/carousel/image27.jpeg";
+import image28 from "../../public/assets/about/carousel/image28.jpeg";
+import image29 from "../../public/assets/about/carousel/image29.jpeg";
+import image3 from "../../public/assets/about/carousel/image3.jpeg";
+import image30 from "../../public/assets/about/carousel/image30.jpeg";
+import image31 from "../../public/assets/about/carousel/image31.jpeg";
+import image32 from "../../public/assets/about/carousel/image32.jpeg";
+import image33 from "../../public/assets/about/carousel/image33.jpeg";
+import image34 from "../../public/assets/about/carousel/image34.jpeg";
+import image35 from "../../public/assets/about/carousel/image35.jpeg";
+import image36 from "../../public/assets/about/carousel/image36.jpeg";
+import image4 from "../../public/assets/about/carousel/image4.jpeg";
+import image7 from "../../public/assets/about/carousel/image7.jpeg";
+import image8 from "../../public/assets/about/carousel/image8.jpeg";
+import image9 from "../../public/assets/about/carousel/image9.jpeg";
 import awareness from "../../public/assets/home/aware.png";
+import courage from "../../public/assets/home/courage.jpg";
+import grit from "../../public/assets/home/grit2.jpg";
+import selfLeadership from "../../public/assets/home/leadership.jpg";
+import thinkingDifferent from "../../public/assets/home/thinking2.jpg";
+import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
+import ernieMadera from "../../public/assets/testimonials/ernie-m.png";
+import freddieGary from "../../public/assets/testimonials/freddie-gary.jpg";
+import jimLeyritz from "../../public/assets/testimonials/jim-leyritz.jpg";
+import johnReisigl from "../../public/assets/testimonials/john-reisigl.jpg";
+import joeKelleher from "../../public/assets/testimonials/joseph-kelleher.jpg";
 import markLowell from "../../public/assets/testimonials/mark-lowell.jpg";
+import markShaw from "../../public/assets/testimonials/mark-shaw.jpg";
 import michaelAltshuler from "../../public/assets/testimonials/michael-altshuler.jpg";
 import monicaDevi from "../../public/assets/testimonials/monica-devi.jpg";
-import ernieMadera from "../../public/assets/testimonials/ernie-m.png";
-import jimLeyritz from "../../public/assets/testimonials/jim-leyritz.jpg";
-import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
+import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
 import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
-import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
-import markShaw from "../../public/assets/testimonials/mark-shaw.jpg";
-import joeKelleher from "../../public/assets/testimonials/joseph-kelleher.jpg";
-import johnReisigl from "../../public/assets/testimonials/john-reisigl.jpg";
-import freddieGary from "../../public/assets/testimonials/freddie-gary.jpg";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -311,4 +345,41 @@ export const QUOTES = [
     title: "Gary Financial Group",
     imageSrc: freddieGary,
   },
+];
+
+export const aboutImageCourasel = [
+  { src: image1, position: "object-center" },
+  { src: image2, position: "object-center" },
+  { src: image3, position: "object-center" },
+  { src: image4, position: "object-center" },
+  { src: image7, position: "object-center" },
+  { src: image8, position: "object-center" },
+  { src: image9, position: "object-center" },
+  { src: image10, position: "object-center" },
+  { src: image11, position: "object-center" },
+  { src: image12, position: "object-center" },
+  { src: image13, position: "object-center" },
+  { src: image14, position: "object-center" },
+  { src: image15, position: "object-center" },
+  { src: image16, position: "object-center" },
+  { src: image17, position: "object-center" },
+  { src: image18, position: "object-center" },
+  { src: image19, position: "object-center" },
+  { src: image20, position: "object-center" },
+  { src: image21, position: "object-center" },
+  { src: image22, position: "object-top" },
+  { src: image23, position: "object-center" },
+  { src: image24, position: "object-bottom" },
+  { src: image25, position: "object-center" },
+  { src: image26, position: "object-center" },
+  { src: image27, position: "object-center" },
+  { src: image28, position: "object-center" },
+  { src: image29, position: "object-center" },
+  { src: image30, position: "object-top" },
+  { src: image31, position: "object-center" },
+  { src: image32, position: "object-center" },
+  { src: image33, position: "object-center" },
+  { src: image34, position: "object-center" },
+  { src: image35, position: "object-center" },
+  { src: image36, position: "object-center" },
 ];

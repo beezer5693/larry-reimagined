@@ -5,6 +5,7 @@ import CareerSection from "./_components/CareerSection";
 import AchievementsSection from "./_components/Achievement/AchievementsSection";
 import ExperienceSection from "./_components/ExperienceSection";
 import BookSection from "@/components/shared/book_larry/BookSection";
+import AboutCarousel from "./_components/AboutCarousel";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <CareerSection />
       <ExperienceSection />
       <AchievementsSection />
+      <AboutCarousel />
       <BookSection />
     </main>
   );
