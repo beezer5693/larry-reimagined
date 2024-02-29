@@ -37,7 +37,7 @@ const AboutCarousel = () => {
             {aboutImageCourasel.map((img, index) => (
               <li
                 key={index}
-                className="relative h-[450px] w-[450px] shrink-0 rounded-md"
+                className="relative h-[450px] w-[450px] shrink-0 rounded-md shadow-2xl shadow-black/40"
               >
                 <Image
                   src={img.src}
