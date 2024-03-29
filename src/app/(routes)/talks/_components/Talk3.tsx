@@ -28,9 +28,12 @@ const Talk3 = () => {
                 duration={0.75}
                 delay={0.2}
               >
-                <h3 className="text-center font-semibold tracking-tight text-gray-950 lg:text-left">
-                  {MY_TALKS[2].title}
-                </h3>
+                <div>
+                  <h2 className="text-center font-semibold tracking-tight text-gray-950 lg:text-left">
+                    {MY_TALKS[2].title}
+                  </h2>
+                  <div className="mx-auto mt-4 h-2 w-32 bg-yellow-500 lg:mx-0"></div>
+                </div>
               </AnimateElement>
               <div className="font-medium text-gray-800 md:text-lg lg:max-w-[600px] lg:text-xl">
                 <AnimateElement y={50} duration={0.75} delay={0.3}>

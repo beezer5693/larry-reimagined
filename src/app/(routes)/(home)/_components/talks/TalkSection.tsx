@@ -25,7 +25,6 @@ const TalkSection = () => {
               </p>
             </AnimateElement>
           </div>
-
           <Talks talks={MY_TALKS} />
         </div>
       </div>
