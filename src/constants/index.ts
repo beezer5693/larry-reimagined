@@ -49,6 +49,7 @@ import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
 import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
+import hiringEbookCoverImage from "../../public/assets/shop/hiring-ebook.png";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -113,6 +114,7 @@ export const NAV_LINKS = [
   { key: "talks", label: "Talks", href: "/talks" },
   { key: "contact", label: "Contact", href: "/contact" },
   { key: "podcast", label: "Podcast", href: "/podcast" },
+  { key: "e-books", label: "E-Books", href: "/e-books" },
 ];
 
 export const KEYS_TO_MASTER = [
@@ -378,4 +380,13 @@ export const aboutImageCourasel = [
   { src: image34, position: "object-center" },
   { src: image35, position: "object-center" },
   { src: image36, position: "object-center" },
+];
+
+export const E_BOOKS = [
+  {
+    title: "The Art of Hiring Top Performers",
+    coverImage: hiringEbookCoverImage,
+    href: "/assets/shop/hiring-ebook.pdf",
+    download: "hiring-ebook.pdf",
+  },
 ];

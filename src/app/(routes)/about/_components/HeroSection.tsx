@@ -4,7 +4,7 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 
 const HeroSection = () => {
   return (
-    <section className="relative mx-auto mb-28 flex w-full flex-col space-y-10 bg-white pt-10 md:mb-36 lg:space-y-16 lg:pt-16 xl:mb-44">
+    <section className="relative mb-28 flex w-full flex-col space-y-10 bg-white pt-10 md:mb-36 lg:space-y-16 lg:pt-16 xl:mb-44">
       <div className="w-full px-5 md:px-10">
         <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
           <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">

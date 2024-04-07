@@ -33,7 +33,7 @@ const MindsetSection = () => {
             <AnimateElement y={50} duration={0.75} delay={0.2}>
               <Link
                 className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
-                href="/contact"
+                href="https://go.oncehub.com/LarryBryan"
               >
                 <Button className="group w-full hover:brightness-110">
                   <span>get in touch</span>

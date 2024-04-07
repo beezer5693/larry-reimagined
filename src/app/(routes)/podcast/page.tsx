@@ -1,5 +1,4 @@
 import HeroSection from "./_components/HeroSection";
-import PodcastSection from "./_components/PodcastSection";
 
 const Podcast = () => {
   return (

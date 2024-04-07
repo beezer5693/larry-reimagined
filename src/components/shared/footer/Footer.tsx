@@ -1,16 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
-import SocialLinks from "./SocialLinks";
 import Link from "next/link";
-import Image from "next/image";
-import Subscribe from "./Subscribe";
 import CopyRightNotice from "./CopyRightNotice";
-import logo from "../../../../public/logo.svg";
+import SocialLinks from "./SocialLinks";
+import Subscribe from "./Subscribe";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <section className="relative flex w-full flex-col items-center bg-[#0f0e10] px-5 pb-32 pt-24 md:px-10">
+    <section className="relative mt-auto flex w-full flex-col items-center bg-[#0f0e10] px-5 pb-32 pt-24 md:px-10">
       <div className="flex w-full max-w-screen-xl flex-col items-center justify-between gap-10 lg:flex-row lg:items-start">
         <div className="flex flex-col items-center gap-8 text-white lg:items-start">
           <div className="space-y-3">

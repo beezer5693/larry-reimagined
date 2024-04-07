@@ -56,7 +56,10 @@ const HeroSection = () => {
                   <PiArrowUpRightBold className="ml-2" size={16} />
                 </Button>
               </Link>
-              <Link className="px-10 sm:max-w-max sm:px-0" href="/contact">
+              <Link
+                className="px-10 sm:max-w-max sm:px-0"
+                href="https://go.oncehub.com/LarryBryan"
+              >
                 <Button className="group w-full hover:brightness-110">
                   <span>{"Let's Chat"}</span>
                   <PiArrowRightBold

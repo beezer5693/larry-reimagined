@@ -58,7 +58,7 @@ const Talk2 = () => {
                   <div className="mt-8">
                     <Link
                       className="inline-block w-full px-10 md:px-20 lg:max-w-max lg:px-0"
-                      href="/contact"
+                      href="https://go.oncehub.com/LarryBryan"
                     >
                       <Button className="group w-full hover:brightness-110">
                         <span>Book a Call</span>

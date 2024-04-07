@@ -20,7 +20,7 @@ const NavLinks = ({ links, path }: NavLinkProps) => {
             className={cn(
               "relative text-[.9rem] font-medium text-gray-700/80 transition duration-300 ease-in-out hover:text-blue-700 hover:underline",
               {
-                "text-blue-700": path === link.href,
+                "text-blue-700 underline": path === link.href,
               },
             )}
           >

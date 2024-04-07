@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen scroll-smooth bg-white antialiased",
+          "flex min-h-screen flex-col scroll-smooth bg-white antialiased",
           satoshi.className,
         )}
       >
