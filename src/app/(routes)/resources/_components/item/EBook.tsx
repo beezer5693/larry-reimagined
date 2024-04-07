@@ -33,7 +33,9 @@ const EBook = ({ ebook }: EBookProps) => {
           {ebook.title}
         </div>
         <Link href={ebook.href} target="_blank" download={ebook.download}>
-          <Button className="mt-5">Download E-book</Button>
+          <Button variant={"dark"} className="mt-5 hover:opacity-90">
+            Download E-book
+          </Button>
         </Link>
       </div>
     </AnimateElement>

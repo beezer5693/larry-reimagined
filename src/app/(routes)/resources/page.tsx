@@ -2,7 +2,7 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 import { E_BOOKS } from "@/constants";
 import EBook from "./_components/item/EBook";
 
-const Shop = () => {
+const Resources = () => {
   return (
     <section className="mb-28 w-full px-5 pt-10 md:mb-36 md:px-10 lg:pt-16 xl:mb-60">
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
@@ -20,7 +20,7 @@ const Shop = () => {
             </p>
           </AnimateElement>
         </div>
-        <div className="mx-auto mt-5 flex max-w-max flex-col flex-wrap items-center gap-y-14 md:mt-14 lg:flex-row lg:gap-y-10">
+        <div className="mx-auto mt-5 flex max-w-screen-xl flex-col flex-wrap items-center gap-y-14 md:mt-14 lg:flex-row lg:gap-y-10">
           {E_BOOKS.map((ebook) => (
             <EBook key={ebook.title} ebook={ebook} />
           ))}
@@ -30,4 +30,4 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+export default Resources;
