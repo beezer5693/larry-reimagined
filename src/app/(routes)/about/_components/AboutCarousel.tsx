@@ -65,7 +65,7 @@ export const AboutCarousel = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "60s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "350s");
+        containerRef.current.style.setProperty("--animation-duration", "200s");
       }
     }
   };
