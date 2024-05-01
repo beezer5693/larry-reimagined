@@ -5,7 +5,7 @@ import MindsetSection from "./_components/MindsetSection";
 import KeySection from "./_components/keys/KeySection";
 import TalkSection from "./_components/talks/TalkSection";
 import ThoughtSection from "./_components/thoughts/ThoughtSection";
-import Carousel from "@/components/shared/carousel/Carousel";
+import TestimonialSection from "./_components/TestimonialSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <MindsetSection />
       <AboutSection />
       <KeySection />
-      <Carousel />
+      <TestimonialSection />
       <TalkSection />
       <BookSection />
     </main>

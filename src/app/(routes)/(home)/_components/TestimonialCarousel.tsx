@@ -1,10 +1,11 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 
-export const AboutCarousel = ({
+export const TestimonialCarousel = ({
   items,
   direction = "left",
   speed = "fast",
@@ -12,8 +13,10 @@ export const AboutCarousel = ({
   className,
 }: {
   items: {
-    src: StaticImageData;
-    position: string;
+    quote: string;
+    author: string;
+    title: string;
+    imageSrc: StaticImageData;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -63,9 +66,9 @@ export const AboutCarousel = ({
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "20s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "60s");
+        containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "350s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -80,22 +83,40 @@ export const AboutCarousel = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
-          start && "animate-scroll",
+          " flex w-max min-w-full shrink-0 flex-nowrap gap-4 py-4",
+          start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="relative h-[450px] w-[350px] max-w-full flex-shrink-0 rounded-2xl border-slate-700 px-8 py-6 md:w-[450px]"
             key={idx}
+            className="balance-text flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-md border border-slate-400/50 bg-slate-700/20 p-7 backdrop-blur-md"
           >
-            <Image
-              src={item.src.src}
-              fill={true}
-              alt="Larry Bryan"
-              className={cn("rounded-2xl object-cover", item.position)}
-            />
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-[100px]">
+                <Image
+                  src={item.imageSrc}
+                  alt={`image of ${item.author}`}
+                  className={cn(
+                    "aspect-square rounded-full object-cover shadow-xl shadow-slate-900/80",
+                    {
+                      "brightness-125": idx === 4 || idx === 8,
+                    },
+                  )}
+                  quality={65}
+                />
+              </div>
+              <div className="text-center text-gray-100">
+                <div className="text-lg font-bold">{item.author}</div>
+                <div className="text-sm text-gray-300">{item.title}</div>
+              </div>
+            </div>
+            <div className="balance-text text-center text-xl italic text-gray-50">
+              <span>{`"`}</span>
+              {item.quote}
+              <span>{`"`}</span>
+            </div>
           </li>
         ))}
       </ul>

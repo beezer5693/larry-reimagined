@@ -1,13 +1,13 @@
 "use client";
 
 import { QUOTES } from "@/constants";
-import AnimateElement from "../animation/AnimateElement";
-import { useEffect } from "react";
-import carouselImage from "../../../../public/assets/home/testimonial.jpeg";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { useEffect } from "react";
+import carouselImage from "../../../../../public/assets/home/testimonial.jpeg";
+import AnimateElement from "../../../../components/shared/animation/AnimateElement";
+import { TestimonialCarousel } from "./TestimonialCarousel";
 
-const Carousel = () => {
+const TestimonialSection = () => {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scoller");
 
@@ -55,44 +55,10 @@ const Carousel = () => {
             </p>
           </AnimateElement>
         </div>
-        <div className="scoller group mx-auto w-full pb-36 data-[animated=true]:overflow-hidden">
-          <ul className="scroller__inner flex max-w-max flex-wrap justify-center gap-4 group-data-[animated=true]:flex-nowrap">
-            {QUOTES.map((quote, index) => (
-              <li
-                key={index}
-                className="balance-text flex max-w-[350px] shrink-0 flex-col items-center gap-6 self-start rounded-md border border-slate-400/50 bg-slate-700/20 p-7 backdrop-blur-md"
-              >
-                <div className="flex flex-col items-center gap-2">
-                  <div className="w-[100px]">
-                    <Image
-                      src={quote.imageSrc}
-                      alt={`image of ${quote.author}`}
-                      className={cn(
-                        "aspect-square rounded-full object-cover shadow-xl shadow-slate-900/80",
-                        {
-                          "brightness-125": index === 4 || index === 8,
-                        },
-                      )}
-                      quality={65}
-                    />
-                  </div>
-                  <div className="text-center text-gray-100">
-                    <div className="text-lg font-bold">{quote.author}</div>
-                    <div className="text-sm text-gray-300">{quote.title}</div>
-                  </div>
-                </div>
-                <div className="balance-text text-center text-xl italic text-gray-50">
-                  <span>{`"`}</span>
-                  {quote.text}
-                  <span>{`"`}</span>
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <TestimonialCarousel items={QUOTES} speed="slow" />
       </div>
     </section>
   );
 };
 
-export default Carousel;
+export default TestimonialSection;

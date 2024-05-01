@@ -1,11 +1,12 @@
-import MyStorySection from "./_components/MyStorySection";
-import HeroSection from "./_components/HeroSection";
+import BookSection from "@/components/shared/book_larry/BookSection";
+import { AboutCarousel } from "@/app/(routes)/about/_components/AboutCarousel";
+import { aboutImageCourasel } from "@/constants";
+import AchievementsSection from "./_components/Achievement/AchievementsSection";
 import BioSection from "./_components/BioSection";
 import CareerSection from "./_components/CareerSection";
-import AchievementsSection from "./_components/Achievement/AchievementsSection";
 import ExperienceSection from "./_components/ExperienceSection";
-import BookSection from "@/components/shared/book_larry/BookSection";
-import AboutCarousel from "./_components/AboutCarousel";
+import HeroSection from "./_components/HeroSection";
+import MyStorySection from "./_components/MyStorySection";
 
 const page = () => {
   return (
@@ -16,7 +17,7 @@ const page = () => {
       <CareerSection />
       <ExperienceSection />
       <AchievementsSection />
-      <AboutCarousel />
+      <AboutCarousel items={aboutImageCourasel} speed={"slow"} />
       <BookSection />
     </main>
   );
