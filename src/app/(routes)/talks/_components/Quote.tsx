@@ -2,7 +2,7 @@ import AnimateElement from "@/components/shared/animation/AnimateElement";
 import { FaQuoteLeft } from "react-icons/fa";
 
 type QuoteProps = {
-  quote: { text: string; author: string };
+  quote: { quote: string; author: string };
 };
 
 const Quote = ({ quote }: QuoteProps) => {
@@ -20,7 +20,7 @@ const Quote = ({ quote }: QuoteProps) => {
           <>
             <div className="quote balance-text mb-9 text-center font-medium italic">
               <span>{`"`}</span>
-              {quote.text}
+              {quote.quote}
               <span>{`"`}</span>
             </div>
             <div className="sub-heading text-center font-medium">
