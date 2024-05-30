@@ -50,7 +50,7 @@ const ContactFormSection = () => {
                   </Link>
                 </div>
                 <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
-                  <h3 className="text-lg font-semibold">Phone</h3>
+                  <h3 className="text-lg font-semibold">Mobile</h3>
                   <p className="font-medium">+1 (954) 240-6900</p>
                 </div>
               </div>
