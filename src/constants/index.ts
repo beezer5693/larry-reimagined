@@ -387,7 +387,7 @@ export const E_BOOKS = [
   {
     title: "The Art of Hiring Top Performers",
     coverImage: hiringEbookCoverImage,
-    href: "/assets/shop/hiring-ebook.pdf",
+    href: "https://larrybryanlive.gumroad.com/l/hiring-top-sales-agents",
     download: "hiring-ebook.pdf",
   },
 ];
