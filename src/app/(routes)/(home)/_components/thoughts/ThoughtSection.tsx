@@ -4,35 +4,24 @@ import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
-    <section className="mb-28 w-full bg-white md:mb-36 xl:mb-60">
-      <div className="w-full bg-[#0f0e10] px-5 py-10 md:px-10">
-        <div className="mx-auto max-w-[800px] text-center text-2xl text-white md:text-3xl">
-          <AnimateElement duration={1}>
-            <div className="font-medium">
-              {`"Everyone wants great results delivered quickly and my talks offer the keys to getting those results much faster."`}
-            </div>
-          </AnimateElement>
-          <AnimateElement duration={1} delay={0.2}>
-            <div className="mt-5 font-medium">- Larry Bryan</div>
-          </AnimateElement>
-        </div>
-      </div>
-      <div className="mx-auto w-full max-w-[700px] space-y-16 px-5 pt-28 md:px-10 md:pt-36 lg:max-w-screen-2xl lg:space-y-20 xl:pt-44">
+    <section className="mb-20 w-full bg-black pb-20 md:pb-24 xl:mb-60 xl:pb-36">
+      <div className="mx-auto w-full max-w-[700px] space-y-16 px-5 pt-28 md:px-10 md:pt-20 lg:max-w-screen-2xl lg:space-y-20 xl:pt-32">
         <div className="flex flex-col items-start gap-8 lg:items-center">
           <AnimateElement y={50} duration={0.75}>
-            <h2 className="balance-text text-center font-semibold tracking-tight text-gray-950">
-              Thoughts that limit our potential.
+            <h2 className="balance-text max-w-[25ch] text-center font-semibold tracking-tight text-gray-100">
+              No one is born with exceptional sales skills - you learn them
             </h2>
           </AnimateElement>
           <AnimateElement y={50} duration={0.75} delay={0.2}>
-            <p className="balance-text sub-heading text-center font-medium text-gray-800">
-              The conversations we have with ourselves on a daily basis have a
-              significant impact on the results we get. Do any of these thoughts
-              ever hold you back in your life or career?
+            <p className="balance-text sub-heading text-center font-medium text-gray-200">
+              55% of salespeople do not possess the full set of skills and
+              mindset necessary to reach the top 1% in their industry. Investing
+              in sales training, has been shown to produce a 353% ROI in
+              production.
             </p>
           </AnimateElement>
         </div>
-        <Thoughts data={NEGATIVE_THOUGHTS} />
+        {/* <Thoughts data={NEGATIVE_THOUGHTS} /> */}
       </div>
     </section>
   );

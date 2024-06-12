@@ -26,9 +26,9 @@ const HeroSection = () => {
         <div className="mb-20 flex w-full flex-col items-center justify-center gap-5">
           <AnimateElement y={50} duration={0.75}>
             <h1 className="text-center font-semibold text-white md:px-10 lg:px-0">
-              Dare to think{" "}
+              Become a{" "}
               <span className="font-extrabold italic text-blue-600">
-                Different
+                T.O.P.
               </span>
             </h1>
           </AnimateElement>
@@ -39,10 +39,14 @@ const HeroSection = () => {
             delay={0.1}
           >
             <p className="sub-heading balance-text text-center font-medium text-white lg:max-w-[800px] lg:px-0">
-              Your mindset is the unique lens through which you perceive and
-              engage with life, shaping your thoughts, emotions, and behaviors.
-              I will show you how to change your mindset today and watch how
-              your life changes tomorrow for the better.
+              Mastering sales at the highest level demands a specific blend of
+              skills, character traits, behaviors, and a certain mindset. With
+              over 30 years of experience in life insurance sales, consistently
+              generating over $1 million in annual commissions, I will teach you
+              the same proven strategies, techniques, and mindset that I used to
+              help you become a{" "}
+              <span className="italic">Top One Percenter</span> in your
+              industry.
             </p>
           </AnimateElement>
           <AnimateElement className="w-full" y={50} duration={0.75} delay={0.2}>

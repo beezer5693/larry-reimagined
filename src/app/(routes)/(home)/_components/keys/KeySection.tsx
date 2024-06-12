@@ -9,7 +9,7 @@ const KeySection = () => {
         <div className="flex w-full flex-col justify-between gap-8 text-gray-950 lg:flex-row lg:items-center">
           <AnimateElement className="basis-3/5" y={50} duration={0.75}>
             <h2 className="balance-text text-center font-semibold tracking-tight text-gray-950 lg:mr-32 lg:text-left">
-              My 5 essential keys to a new mindset.
+              My 5 essential traits to be a top 1% producer
             </h2>
           </AnimateElement>
           <AnimateElement className="flex-1" duration={0.8} delay={0.2}>

@@ -19,11 +19,11 @@ const AboutSection = () => {
             <AnimateElement y={50} duration={0.75} delay={0.1}>
               <p className="sub-heading balance-text pb-2 font-medium">
                 I have spent most of my life learning and developing the
-                necessary mindset to become an ultra-successful producer in the
-                insurance and investment businesses where I discovered
-                consistent predictable strategies, behaviors, and ways of
-                thinking that I used to achieve extraordinary goals and income
-                levels.
+                necessary mindset and sales skills to become an ultra-successful
+                producer in the insurance and investment businesses where I
+                discovered consistent predictable strategies, behaviors, and
+                ways of thinking that I used to achieve extraordinary goals and
+                income levels.
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
@@ -42,8 +42,8 @@ const AboutSection = () => {
               <p className="sub-heading balance-text pb-2 font-medium">
                 However, my ability to overcome and navigate these adversities,
                 eventually achieving the levels of success I did, can be
-                attributed to my unwavering commitment to{" "}
-                {`"Dare to Think Different"`}.
+                attributed to my unwavering commitment to "Doing and Thinking
+                Differently".
               </p>
             </AnimateElement>
           </div>
