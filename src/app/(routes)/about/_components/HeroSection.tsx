@@ -9,20 +9,20 @@ const HeroSection = () => {
         <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-2xl">
           <div className="flex w-full flex-col gap-8 lg:flex-row lg:items-center lg:gap-20">
             <AnimateElement className="basis-[55%]" y={50} duration={0.75}>
-              <h2 className="balance-text text-center font-semibold tracking-tight lg:text-left">
+              <h2 className="text-center font-semibold tracking-tight lg:text-left">
                 <span>The Man.</span>{" "}
                 <span className="whitespace-nowrap">The Myth.</span>{" "}
-                <span className="whitespace-nowrap text-blue-600">
-                  The Mindset.
+                <span className="text-blue-600 md:whitespace-nowrap">
+                  The Mindset Sales Master.
                 </span>
               </h2>
             </AnimateElement>
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
-                Your mindset is the key to your success. Larry has spent his
-                entire life mastering the art of positive mindset and is ready
-                to share his secrets with you. Read more about Larry and his
-                journey to becoming a mindset master.
+                Larry has spent his entire career mastering the traits and
+                mindset needed to reach the top 1% in the field of sales and is
+                ready to share his secrets with you. Read more about Larry and
+                his journey in mastering the art of sales.
               </p>
             </AnimateElement>
           </div>
