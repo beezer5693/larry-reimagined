@@ -1,6 +1,4 @@
 import AnimateElement from "@/components/shared/animation/AnimateElement";
-import { NEGATIVE_THOUGHTS } from "@/constants";
-import Thoughts from "./Thoughts";
 
 const ThoughtSection = () => {
   return (
