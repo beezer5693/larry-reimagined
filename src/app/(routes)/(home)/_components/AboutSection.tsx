@@ -42,8 +42,8 @@ const AboutSection = () => {
               <p className="sub-heading balance-text pb-2 font-medium">
                 However, my ability to overcome and navigate these adversities,
                 eventually achieving the levels of success I did, can be
-                attributed to my unwavering commitment to "Doing and Thinking
-                Differently".
+                attributed to my unwavering commitment to &quot;Doing and
+                Thinking Differently&quot;.
               </p>
             </AnimateElement>
           </div>
