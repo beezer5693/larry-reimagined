@@ -14,11 +14,12 @@ const KeySection = () => {
           </AnimateElement>
           <AnimateElement className="flex-1" duration={0.75} delay={0.2}>
             <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
-              To become a top 1% producer, you need these 10 traits operating at
-              their highest level. This requires not only knowing what actions
-              to take but also adopting the right mindset. I&apos;ll guide you
-              through both aspects, showing you exactly what you need to do and
-              how you need to think to reach this elite level.
+              To become a top 1% producer, you need these{" "}
+              {KEYS_TO_MASTER.length} traits operating at their highest level.
+              This requires not only knowing what actions to take but also
+              adopting the right mindset. I&apos;ll guide you through both
+              aspects, showing you exactly what you need to do and how you need
+              to think to reach this elite level.
             </p>
           </AnimateElement>
         </div>

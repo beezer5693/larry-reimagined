@@ -23,12 +23,12 @@ const MindsetSection = () => {
               delay={0.1}
             >
               <p className="sub-heading balance-text pb-3 text-center font-medium text-gray-800 lg:max-w-[600px] lg:text-left">
-                Getting to the top 1% in sales is all about your mindset. You
-                need resilience for bouncing back, persistence to stay on track,
-                adaptability to roll with the punches, and a growth mindset for
-                always learning. The more you practice these traits, the more
-                you will see your sales soar. I will show you how to develop the
-                mindset of a <span className="italic">Top One Percenter</span>.
+                Becoming a top 1% sales earner in your industry all starts with
+                your mindset. You need resilience, persistence, adaptability,
+                social and marketing skill, plus a mindset for always learning.
+                The better you get at these and other traits, the more you will
+                see your sales soar. I will show you how to develop the mindset
+                of a <span className="italic">Top One Percenter</span>.
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>
