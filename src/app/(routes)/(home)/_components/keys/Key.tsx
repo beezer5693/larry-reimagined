@@ -25,7 +25,7 @@ const Key = ({ data, id }: KeyProps) => {
       <div key={data.title} className={cn("flex flex-col text-white")}>
         <div className="relative h-[300px] overflow-hidden rounded-md shadow-2xl shadow-neutral-800/80 sm:h-[400px] md:h-[375px] lg:h-[350px]">
           <Image
-            className={cn("object-cover object-center")}
+            className={cn("object-cover", data.style)}
             src={data.imageSrc}
             fill
             alt={data.title}
@@ -38,7 +38,7 @@ const Key = ({ data, id }: KeyProps) => {
             <h4 className="text-center font-semibold capitalize tracking-tight">
               {data.title}
             </h4>
-            <p className="balance-text text-center font-medium lg:text-lg">
+            <p className="text-balance text-center font-medium lg:text-lg">
               {data.description}
             </p>
           </div>

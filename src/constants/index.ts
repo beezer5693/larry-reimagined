@@ -30,11 +30,11 @@ import image36 from "../../public/assets/about/carousel/image36.jpeg";
 import image7 from "../../public/assets/about/carousel/image7.jpeg";
 import image8 from "../../public/assets/about/carousel/image8.jpeg";
 import image9 from "../../public/assets/about/carousel/image9.jpeg";
-import awareness from "../../public/assets/home/aware.png";
-import courage from "../../public/assets/home/courage.jpg";
-import grit from "../../public/assets/home/grit2.jpg";
-import selfLeadership from "../../public/assets/home/leadership.jpg";
-import thinkingDifferent from "../../public/assets/home/thinking2.jpg";
+import awareness from "../../public/assets/home/AWARENESS.jpg";
+import communication from "../../public/assets/home/COMMUNICATION.jpg";
+import grit from "../../public/assets/home/GRIT.jpg";
+import selfLeadership from "../../public/assets/home/LEADERSHIP.jpg";
+import thinkingDifferent from "../../public/assets/home/THINKING.jpeg";
 import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
 import ernieMadera from "../../public/assets/testimonials/ernie-m.png";
 import freddieGary from "../../public/assets/testimonials/freddie-gary.jpg";
@@ -119,32 +119,36 @@ export const NAV_LINKS = [
 
 export const KEYS_TO_MASTER = [
   {
-    title: "Thinking differently",
-    description: "A positive mindset shift sparks positive life outcomes.",
+    title: "Think differently",
+    description:
+      "A mindset embracing a more positive way of thinking and behaving.",
     style: "object-center",
     imageSrc: thinkingDifferent,
   },
   {
     title: "self-leadership",
-    description: "Take control of your own actions and decisions.",
+    description:
+      "Master time management, motivate yourself and others, and refine your selling skills.",
     style: "object-center",
     imageSrc: selfLeadership,
   },
   {
-    title: "Embracing courage",
-    description: "Face challenges with bravery and determination.",
+    title: "effective communication",
+    description: "People buy from people they like and trust.",
     style: "object-center",
-    imageSrc: courage,
+    imageSrc: communication,
   },
   {
-    title: "Developing grit",
-    description: "Overcome hurdles with determination and resilience",
-    style: "object-center",
+    title: "developing grit",
+    description:
+      "Grit requires persistence, resilience, and unwavering determination.",
+    style: "object-right",
     imageSrc: grit,
   },
   {
-    title: "Becoming aware",
-    description: "Understand your thoughts, emotions, and behaviors.",
+    title: "becoming aware",
+    description:
+      "Understand your personal brand value and how the world sees you.",
     style: "object-center",
     imageSrc: awareness,
   },
