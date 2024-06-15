@@ -33,7 +33,7 @@ import image9 from "../../public/assets/about/carousel/image9.jpeg";
 import awareness from "../../public/assets/home/AWARENESS.jpg";
 import communication from "../../public/assets/home/COMMUNICATION.jpg";
 import grit from "../../public/assets/home/GRIT.jpg";
-import selfLeadership from "../../public/assets/home/LEADERSHIP.jpg";
+import leadership from "../../public/assets/home/LEADER.jpg";
 import thinkingDifferent from "../../public/assets/home/THINKING.jpeg";
 import andrewSzpiro from "../../public/assets/testimonials/andrew-szpiro.jpg";
 import ernieMadera from "../../public/assets/testimonials/ernie-m.png";
@@ -130,7 +130,7 @@ export const KEYS_TO_MASTER = [
     description:
       "Master time management, motivate yourself and others, and refine your selling skills.",
     style: "object-center",
-    imageSrc: selfLeadership,
+    imageSrc: leadership,
   },
   {
     title: "effective communication",
