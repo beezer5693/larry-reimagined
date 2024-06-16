@@ -9,12 +9,12 @@ const KeySection = () => {
         <div className="flex w-full flex-col justify-between gap-8 text-gray-950 lg:flex-row lg:items-center">
           <AnimateElement className="basis-3/5" y={50} duration={0.75}>
             <h2 className="balance-text text-center font-semibold tracking-tight text-gray-950 lg:mr-32 lg:text-left">
-              Essential traits to becoming a top 1% sales producer
+              Essential traits to becoming a Top One Percenter
             </h2>
           </AnimateElement>
           <AnimateElement className="flex-1" duration={0.75} delay={0.2}>
             <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
-              To become a top 1% producer, you need these{" "}
+              To become a top 1% sales producer, you need these{" "}
               {KEYS_TO_MASTER.length} traits operating at their highest level.
               This requires not only knowing what actions to take but also
               adopting the right mindset. I&apos;ll guide you through both
