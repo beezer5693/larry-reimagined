@@ -23,12 +23,14 @@ const MindsetSection = () => {
               delay={0.1}
             >
               <p className="sub-heading balance-text pb-3 text-center font-medium text-gray-800 lg:max-w-[600px] lg:text-left">
-                Becoming a top 1% sales earner in your industry starts with your
-                mindset. You need resilience, persistence, adaptability, social
-                and marketing skills, and a mindset for always learning. The
-                better you get at these and other traits, the more your sales
-                will soar. I will show you how to develop the mindset and traits
-                of a <span className="italic">Top One Percenter</span>.
+                Becoming a{" "}
+                <span className="font-semibold italic">Top One Percenter</span>{" "}
+                sales earner in your industry starts with your mindset. You need
+                resilience, persistence, adaptability, social and marketing
+                skills, and a mindset for always learning. The better you get at
+                these and other traits, the more your sales will soar. I will
+                show you how to develop the mindset and traits of a{" "}
+                <span className="font-semibold italic">T.O.P.</span>
               </p>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>

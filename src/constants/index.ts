@@ -156,7 +156,7 @@ export const KEYS_TO_MASTER = [
 
 export const MY_TALKS = [
   {
-    title: "Sell Like a Lion",
+    title: "Sell Like a T.O.P.",
     description:
       "Delve into the mindset and behaviors of top-tier sales professionals and the strategic actions they take to achieve exceptional results.",
     keyPoints: [
@@ -171,7 +171,7 @@ export const MY_TALKS = [
     path: "/talks/#talk1",
   },
   {
-    title: "Think Like a Lion",
+    title: "Think Like a T.O.P.",
     description:
       "Explore the roots of your current mindset and learn how to overcome its limitations for greater life success in this engaging talk.",
     keyPoints: [
@@ -186,11 +186,11 @@ export const MY_TALKS = [
     path: "/talks/#talk2",
   },
   {
-    title: "Lead Like a Lion",
+    title: "Lead Like a T.O.P.",
     description:
-      "Discover the latest criteria and expectations shaping effective corporate leadership in today's dynamic business landscape.",
+      "Discover the latest requirements and expectations shaping entrepreneurial and corporate leadership in today's dynamic business landscape.",
     keyPoints: [
-      "Learn the latest criteria shaping effective corporate leadership.",
+      "Learn the latest criteria shaping effective entrepreneurial leadership.",
       "Understand the expectations of today's corporate leaders.",
       "Discover the latest strategies and techniques to enhance your leadership skills.",
     ],

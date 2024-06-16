@@ -38,8 +38,8 @@ const Talk = ({ talk, id }: TalkProps) => {
             {id === 0
               ? "Talk For Sales People"
               : id === 1
-              ? "Signature Talk For Everyone"
-              : "Talk For Corporate Leadership"}
+              ? "Talk For Everyone"
+              : "Talk For Entrepreneurial Leadership"}
           </div>
 
           <div className="flex w-full flex-col items-center gap-6">

@@ -20,9 +20,10 @@ const HeroSection = () => {
             <AnimateElement className="lg:flex-1" duration={0.75} delay={0.75}>
               <p className="sub-heading text-center font-medium text-gray-800 lg:text-left">
                 Larry has spent his entire career mastering the traits and
-                mindset needed to reach the top 1% in the field of sales and is
-                ready to share his secrets with you. Read more about Larry and
-                his journey in mastering the art of sales.
+                mindset needed to reach the top 1% in the field of sales and
+                entrepreneurial leadership, and is ready to share his secrets
+                with you. Read more about Larry and his journey in mastering the
+                art of both.
               </p>
             </AnimateElement>
           </div>
