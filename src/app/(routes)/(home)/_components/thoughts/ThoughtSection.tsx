@@ -20,7 +20,6 @@ const ThoughtSection = () => {
             </p>
           </AnimateElement>
         </div>
-        {/* <Thoughts data={NEGATIVE_THOUGHTS} /> */}
       </div>
     </section>
   );
