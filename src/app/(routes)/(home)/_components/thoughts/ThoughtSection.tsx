@@ -12,9 +12,10 @@ const ThoughtSection = () => {
           </AnimateElement>
           <AnimateElement y={50} duration={0.75} delay={0.2}>
             <p className="balance-text sub-heading text-center font-medium text-gray-200">
-              55% of people in sales do not possess the full set of skills and
-              mindset necessary to reach the top 1% in their industry. Investing
-              in sales training, has been shown to produce a 353% ROI in
+              <span className="font-black">55%</span> of people in sales do not
+              possess the full set of skills and mindset necessary to reach the
+              top 1% in their industry. Investing in sales training, has been
+              shown to produce a <span className="font-black">353%</span> ROI in
               production.
             </p>
           </AnimateElement>
