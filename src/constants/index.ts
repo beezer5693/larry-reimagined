@@ -27,6 +27,7 @@ import image33 from "../../public/assets/about/carousel/image33.jpeg";
 import image34 from "../../public/assets/about/carousel/image34.jpeg";
 import image35 from "../../public/assets/about/carousel/image35.jpeg";
 import image36 from "../../public/assets/about/carousel/image36.jpeg";
+import image37 from "../../public/assets/about/carousel/image37.jpeg";
 import image7 from "../../public/assets/about/carousel/image7.jpeg";
 import image8 from "../../public/assets/about/carousel/image8.jpeg";
 import image9 from "../../public/assets/about/carousel/image9.jpeg";
@@ -385,6 +386,7 @@ export const aboutImageCourasel = [
   { src: image34, position: "object-center" },
   { src: image35, position: "object-center" },
   { src: image36, position: "object-center" },
+  { src: image37, position: "object-center" },
 ];
 
 export const E_BOOKS = [

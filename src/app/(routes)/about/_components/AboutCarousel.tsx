@@ -93,6 +93,8 @@ export const AboutCarousel = ({
             <Image
               src={item.src.src}
               fill={true}
+              priority={true}
+              quality={65}
               alt="Larry Bryan"
               className={cn("rounded-2xl object-cover", item.position)}
             />
