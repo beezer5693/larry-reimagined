@@ -115,6 +115,7 @@ export const NAV_LINKS = [
   { key: "talks", label: "Talks", href: "/talks" },
   { key: "contact", label: "Contact", href: "/contact" },
   { key: "podcast", label: "Podcast", href: "/podcast" },
+  { key: "videos", label: "Videos", href: "/videos" },
   { key: "resources", label: "Resources", href: "/resources" },
 ];
 
