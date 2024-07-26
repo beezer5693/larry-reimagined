@@ -23,12 +23,12 @@ const HeroSection = () => {
         />
       </Parallax>
       <div className="relative w-full max-w-[700px] lg:max-w-screen-2xl">
-        <div className="mb-20 flex w-full flex-col items-center justify-center gap-5">
+        <div className="mb-20 flex w-full flex-col items-center justify-center gap-8">
           <AnimateElement y={50} duration={0.75}>
             <h1 className="text-center font-semibold text-white md:px-10 lg:px-0">
               Become a{" "}
               <span className="font-extrabold italic text-blue-600">
-                One Percenter
+                Top One Percenter
               </span>
             </h1>
           </AnimateElement>
@@ -39,16 +39,17 @@ const HeroSection = () => {
             delay={0.1}
           >
             <p className="sub-heading balance-pretty text-center font-medium text-white lg:max-w-[1000px] lg:px-0">
-              To become a{" "}
-              <span className="font-semibold italic">Top One Percenter</span> in
-              sales at the highest level demands a specific blend of skills,
-              character traits, behaviors, and a certain mindset. With over 30
-              years of experience in life insurance sales, consistently
-              generating over $1 million in annual commissions, I will teach you
-              the same proven strategies, techniques, and mindset that I used to
-              help you become a{" "}
-              <span className="font-semibold italic">T.O.P.</span> in your
-              industry.
+              Becoming a{" "}
+              <span className="font-semibold italic">TOP ONE PERCENTER</span> in
+              sales at the highest level requires a unique combination of
+              skills, character traits, behaviors, and a certain mindset that
+              can all be learned. With over 30 years of experience in the life
+              insurance industry and a sales track record of consistently
+              generating millions of dollars annually in commissions, I will
+              share with you the same proven strategies, techniques, and mindset
+              that fueled my success so that you too can become a{" "}
+              <span className="font-semibold italic">TOP ONE PERCENTER</span> in
+              your industry.
             </p>
           </AnimateElement>
           <AnimateElement className="w-full" y={50} duration={0.75} delay={0.2}>
