@@ -38,6 +38,7 @@ const HeroSection = () => {
           className="h-full w-full object-cover object-center"
           alt="larry sitting in a chair"
           quality={65}
+          priority
           sizes="100vw"
         />
       </div>
