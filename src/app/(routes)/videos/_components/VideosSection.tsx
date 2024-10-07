@@ -9,12 +9,14 @@ async function VideosSection() {
   const youtubeVideos: Video[] = await fetchVideos();
 
   async function fetchVideos() {
-    const cid = process.env.YT_CHANNEL_ID;
-    const youtubeApiKey = process.env.YT_API_KEY;
-
-    const reqUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${cid}&type=video&maxResults=25&order=date&key=${youtubeApiKey}`;
-    const res = await fetch(reqUrl);
+    const reqUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${process.env.YT_CHANNEL_ID}&type=video&maxResults=25&order=date&key=${process.env.YT_API_KEY}`;
+    const res = await fetch(reqUrl, {
+      method: "GET",
+      cache: "no-store",
+    });
     const data = await res.json();
+
+    console.log(data);
 
     const videos: Video[] = [];
 
