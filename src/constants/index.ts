@@ -50,6 +50,7 @@ import nathanielPool from "../../public/assets/testimonials/nathaniel-pool.jpg";
 import ruchelCoetzee from "../../public/assets/testimonials/ruchel-coetzee.jpg";
 import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
+import louisKreisberg from "../../public/assets/testimonials/louis-kreisberg.jpg";
 import hiringEbookCoverImage from "../../public/assets/shop/hiring-ebook.png";
 
 export const NEGATIVE_THOUGHTS = [
@@ -351,6 +352,12 @@ export const QUOTES = [
     author: "Freddie Gary",
     title: "Gary Financial Group",
     imageSrc: freddieGary,
+  },
+  {
+    quote: `Everyone can ride a wave of success, but few can handle the storms that come along with staying on top. Larry can help you visualize what makes you special in a very competitive world and can help you find the strength to smile and survive while others are trying to knock you down. His stories, experiences, and ability to turn a lemon into lemonade are priceless. You won’t be disappointed to have his time and insight.`,
+    author: "Louis Kreisberg",
+    title: "Principal, Pioneer Wealth Partners",
+    imageSrc: louisKreisberg,
   },
 ];
 
