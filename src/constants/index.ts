@@ -348,7 +348,7 @@ export const QUOTES = [
     imageSrc: johnReisigl,
   },
   {
-    quote: `I introduced Larry to some of my most important clients, and partnered with him in solving their financial objectives. His knowledge, professionalism, and communication skills are exceptional and well received.`,
+    quote: `I introduced Larry to some of my most important clients, including my brother, Willie Gary, and partnered with him in solving their financial objectives. His knowledge, professionalism, and communication skills are exceptional and well received.`,
     author: "Freddie Gary",
     title: "Gary Financial Group",
     imageSrc: freddieGary,
