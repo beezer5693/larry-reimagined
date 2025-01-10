@@ -39,14 +39,17 @@ const ExperienceSection = () => {
                 <p className="sub-heading--small balance-text mb-4 text-center font-medium lg:text-left">
                   I have had a rich and diverse career in the financial and
                   investment industries, marked by entrepreneurial success,
-                  innovative ventures, along with some failures to. I founded a
-                  mutual fund company focused on principal-protected
-                  equity-based investments and I also became a 1/3 owner of a
+                  innovative ventures, along with some failures to. I invested
+                  in tech startups, still manage my family&#39;s fixed, equity,
+                  and real estate investment portfolios, and founded a mutual
+                  fund company focused on principal-protected, equity-based
+                  investments. In 2020, I added cryptocurrency to my
+                  family&#39;s investment portfolio and became a 1/3 owner of a
                   cryptocurrency hedge fund management company. My experience
                   includes building and operating a multi-state insurance and
                   investment distribution operation, as well as creating a life
-                  insurance settlement company targeting wealthy seniors.{" "}
-                  {`I've`} also successfully prepared and presented start-up
+                  insurance settlement company targeting wealthy seniors.
+                  I&#39;ve` also successfully prepared and presented start-up
                   investment pitch decks to investment banks, Angel investors,
                   and private hedge funds.
                 </p>
@@ -62,7 +65,9 @@ const ExperienceSection = () => {
                   tax structures. Lastly, {`I've`} had the privilege of speaking
                   at various industry functions, particularly within the sales
                   and distribution sectors of the insurance and investment
-                  industries.
+                  industries. As for my speaking fees, they go to the Bryan
+                  Family Foundation, my family&#39;s 501(c)(3) charitable
+                  foundation.
                 </p>
               </AnimateElement>
               <AnimateElement
