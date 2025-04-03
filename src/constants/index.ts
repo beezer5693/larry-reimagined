@@ -110,14 +110,66 @@ export const NEGATIVE_THOUGHTS = [
   },
 ];
 
+export type CoachingTopic = {
+  title: string;
+  description: string;
+};
+
+export const COACHING_TOPICS: CoachingTopic[] = [
+  {
+    title: "Sales Skill Enhancement",
+    description:
+      "I will help you refine your sales skills, explore innovative strategies, and master objection handling, all of which will contribute to greater sales revenues.",
+  },
+  {
+    title: "Performance Improvement",
+    description:
+      "During our coaching sessions, I will identify areas of difficulty and provide personalized support to address weaknesses. This will, in turn, improve your overall performance and increase your sales outcomes.",
+  },
+  {
+    title: "Motivation and Engagement",
+    description:
+      "Nobody is better than I at motivating salespeople like you, boosting your confidence, and fostering greater engagement, especially in challenging sales environments.",
+  },
+  {
+    title: "Sales Strategies",
+    description:
+      "I will help you identify effective sales strategies, teach you new ones, and ensure consistent adoption across all your processes. This approach and knowledge will lead to streamlined and successful sales results.",
+  },
+  {
+    title: "Organizational Life Planning",
+    description: `I will help you plan your entire week's schedule for success. This will cover sales, marketing, education, and family, which will balance your personal and business life.`,
+  },
+  {
+    title: "Marketing",
+    description:
+      "We will develop a comprehensive marketing plan incorporating the most efficient and effective sales strategies and social media marketing outlets to generate new opportunities and larger cases.",
+  },
+  {
+    title: "Brand Identity",
+    description: `We will identify, create, and discuss how you perceive yourself and how you want your clients in the marketplace to view you. Once that's settled, we will ensure that all your marketing and image materials communicate your brand effectively.`,
+  },
+  {
+    title: "First Prospect Call",
+    description:
+      "We will have an opportunity to discuss and strategize before your first call with a new prospect about the best words to use in communicating and what we will communicate to get the next working appointment.",
+  },
+  {
+    title: "Referrals",
+    description:
+      "We will develop a comprehensive referral marketing plan encompassing the best approaches, targets, concepts, and strategies for attracting more and better referrals.",
+  },
+];
+
 export const NAV_LINKS = [
   { key: "home", label: "Home", href: "/" },
   { key: "about", label: "About", href: "/about" },
   { key: "talks", label: "Talks", href: "/talks" },
-  { key: "contact", label: "Contact", href: "/contact" },
+  { key: "coaching", label: "Coaching", href: "/coaching" },
   { key: "podcast", label: "Podcast", href: "/podcast" },
   { key: "videos", label: "Videos", href: "/videos" },
   { key: "resources", label: "Resources", href: "/resources" },
+  { key: "contact", label: "Contact", href: "/contact" },
 ];
 
 export const KEYS_TO_MASTER = [

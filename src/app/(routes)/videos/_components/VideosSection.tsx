@@ -14,9 +14,8 @@ async function VideosSection() {
       method: "GET",
       cache: "no-store",
     });
-    const data = await res.json();
 
-    console.log(data);
+    const data = await res.json();
 
     const videos: Video[] = [];
 

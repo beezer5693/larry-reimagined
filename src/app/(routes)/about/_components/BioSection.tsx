@@ -18,11 +18,12 @@ const BioSection = () => {
                 <AnimateElement y={50} duration={0.75} delay={0.2}>
                   <p className="sub-heading--small balance-text mb-4 text-center lg:text-left">
                     I am a University of Miami graduate with a BA in Accounting
-                    and Finance and an MBA in Finance from Nova Southeastern
-                    University. I also hold several prestigious insurance
-                    designations, including CLU, CHFC, CFP, and RHU, and held
-                    various licenses for fixed and variable life insurance and
-                    investments (series 6, 7, 24, and 63).
+                    and Finance, an MBA in Finance from Nova Southeastern
+                    University, and a JD from Southland University. I also hold
+                    several prestigious insurance designations, including CLU,
+                    CHFC, CFP, and RHU, and held various licenses for fixed and
+                    variable life insurance and investments (series 6, 7, 24,
+                    and 63).
                   </p>
                 </AnimateElement>
                 <AnimateElement y={50} duration={0.75} delay={0.3}>
