@@ -32,7 +32,7 @@ function CoachingSection({ topics }: CoachingTopics) {
       <div className="mx-auto w-full max-w-[700px] lg:max-w-screen-xl">
         <div className="grid grid-cols-1 place-items-center gap-y-10 md:grid-cols-2 md:gap-x-20">
           {topics.map((topic) => (
-            <div className="flex flex-col gap-4">
+            <div className="mb-auto flex flex-col gap-4">
               <h3 className="text-center text-3xl font-semibold text-blue-600 md:text-left">
                 {topic.title}
               </h3>
