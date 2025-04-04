@@ -2,7 +2,6 @@ import React from "react";
 import HeroSection from "./_components/HeroSection";
 import CoachingSection from "./_components/CoachingSection";
 import { COACHING_TOPICS } from "@/constants";
-import BookSection from "@/components/shared/book_larry/BookSection";
 import HireMeSection from "./_components/HireMeSection";
 
 const Coaching = () => {
