@@ -51,7 +51,12 @@ const ContactFormSection = () => {
                 </div>
                 <div className="col-span-2 flex flex-col items-center gap-1 lg:col-span-1">
                   <h3 className="text-lg font-semibold">Mobile</h3>
-                  <p className="font-medium">+1 (954) 240-6900</p>
+                  <a
+                    href={`tel:${+19542406900}`}
+                    className="relative font-medium before:absolute before:bottom-[1px] before:left-0 before:h-[1px] before:w-0 before:bg-black before:transition-all before:duration-300 before:ease-in-out before:hover:w-full"
+                  >
+                    {`+1 (954) 240-6900`}
+                  </a>
                 </div>
               </div>
             </>
