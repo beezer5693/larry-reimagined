@@ -51,7 +51,7 @@ const CareerSection = () => {
                     settlements for ultra-wealthy clients. For two-thirds of my
                     career, I thrived as a multi-million-dollar per year
                     commissioned producer, achieving my best year in 2006 with
-                    over $52 million in life insurance commissions. In 2007, I
+                    over $52 million in gross life insurance commissions. In 2007, I
                     decided to close the company and effectively retire.
                   </p>
                 </AnimateElement>
