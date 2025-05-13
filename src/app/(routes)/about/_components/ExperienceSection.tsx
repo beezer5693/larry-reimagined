@@ -76,12 +76,20 @@ const ExperienceSection = () => {
                 duration={0.75}
                 delay={0.3}
               >
-                <Link href="/talks">
-                  <Button className="w-full bg-[#0f0e10] text-gray-50 hover:opacity-90 lg:max-w-max">
-                    <span>See My Talks</span>
-                    <PiArrowUpRightBold className="ml-2" size={16} />
-                  </Button>
-                </Link>
+                <div className="flex flex-col gap-2 md:flex-row">
+                  <Link href="/talks">
+                    <Button className="w-full bg-[#0f0e10] text-gray-50 hover:opacity-90 lg:max-w-max">
+                      <span>See My Talks</span>
+                      <PiArrowUpRightBold className="ml-2" size={16} />
+                    </Button>
+                  </Link>
+                  <Link href="/coaching">
+                    <Button className="w-full hover:opacity-90 lg:max-w-max">
+                      <span>Coaching</span>
+                      <PiArrowUpRightBold className="ml-2" size={16} />
+                    </Button>
+                  </Link>
+                </div>
               </AnimateElement>
             </div>
           </div>

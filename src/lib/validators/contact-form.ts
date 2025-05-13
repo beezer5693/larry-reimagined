@@ -5,11 +5,7 @@ type ContactFormSchema = {
   lastName: string;
   email: string;
   phoneNumber: string;
-  companyName?: string;
-  eventDate?: string;
-  eventLocation?: string;
-  speakerBudget?: string;
-  eventDescription?: string;
+  message?: string;
 };
 
 export const contactFormSchema: ZodType<ContactFormSchema> = z.object({
@@ -47,9 +43,5 @@ export const contactFormSchema: ZodType<ContactFormSchema> = z.object({
     .regex(/^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/, {
       message: "Please enter a valid phone number",
     }),
-  companyName: z.string().optional(),
-  eventDate: z.string().optional(),
-  eventLocation: z.string().optional(),
-  speakerBudget: z.string().optional(),
-  eventDescription: z.string().optional(),
+  message: z.string().optional(),
 });

@@ -15,11 +15,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import {
-  currencyFormatter,
-  dateFormatter,
-  phoneNumberFormatter,
-} from "@/utils/formatters/formatter";
+import { phoneNumberFormatter } from "@/utils/formatters/formatter";
 import { Textarea } from "@/components/ui/TextArea";
 import { Check, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -41,21 +37,13 @@ const ContactForm = () => {
       firstName: "",
       lastName: "",
       email: "",
-      companyName: "",
-      phoneNumber: "",
-      eventDate: "",
-      eventLocation: "",
-      speakerBudget: "",
-      eventDescription: "",
+      message: "",
     },
   });
 
   async function onSubmit(values: z.infer<typeof contactFormSchema>) {
     const contactFormValues = {
       ...values,
-      eventDate: values.eventDate
-        ? dateFormatter(new Date(values.eventDate))
-        : "",
     };
 
     setIsSubmitting(true);
@@ -193,95 +181,11 @@ const ContactForm = () => {
           />
           <FormField
             control={form.control}
-            name="companyName"
+            name="message"
             render={({ field }) => (
               <FormItem className="relative w-full">
                 <FormLabel className="absolute left-3 top-2 text-sm text-gray-950">
-                  Company name
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="h-16 border-gray-300 pb-1.5 pt-8 shadow-sm"
-                    placeholder="Name"
-                    disabled={isSubmitting}
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage className="ml-1" />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="eventDate"
-            render={({ field }) => (
-              <FormItem className="relative w-full">
-                <FormLabel className="absolute left-3 top-2 text-sm text-gray-950">
-                  Event date
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    type="date"
-                    className="h-16 border-gray-300 pb-1.5 pt-8 shadow-sm"
-                    disabled={isSubmitting}
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage className="ml-1" />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="eventLocation"
-            render={({ field }) => (
-              <FormItem className="relative w-full">
-                <FormLabel className="absolute left-3 top-2 text-sm text-gray-950">
-                  Event location
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="h-16 border-gray-300 pb-1.5 pt-8 shadow-sm"
-                    placeholder="Location"
-                    disabled={isSubmitting}
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage className="ml-1" />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="speakerBudget"
-            render={({ field }) => (
-              <FormItem className="relative w-full">
-                <FormLabel className="absolute left-3 top-2 text-sm text-gray-950">
-                  Estimated speaker budget
-                </FormLabel>
-                <FormControl>
-                  <Input
-                    className="h-16 border-gray-300 pb-1.5 pt-8 shadow-sm"
-                    placeholder="Budget"
-                    disabled={isSubmitting}
-                    {...field}
-                    value={field.value ? `$${field.value}` : ""}
-                    onChange={(e) =>
-                      field.onChange(currencyFormatter(e.target.value))
-                    }
-                  />
-                </FormControl>
-                <FormMessage className="ml-1" />
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="eventDescription"
-            render={({ field }) => (
-              <FormItem className="relative w-full">
-                <FormLabel className="absolute left-3 top-2 text-sm text-gray-950">
-                  Tell me a little about your event and audience.
+                  How can I help?
                 </FormLabel>
                 <FormControl>
                   <Textarea disabled={isSubmitting} {...field} />
@@ -304,17 +208,17 @@ const ContactForm = () => {
         >
           {invitationSentSuccessfully ? (
             <span className="inline-flex items-center gap-1.5">
-              <Check size={20} /> Contact Information Sent Successfully
+              <Check size={20} /> Sent Successfully
             </span>
           ) : (
             <span className="inline-flex items-center gap-2">
               {isSubmitting ? (
                 <>
                   <Loader2 className={cn("animate-spin")} size={20} />
-                  Sending...
+                  Sending your info to Larry...
                 </>
               ) : (
-                "Send Contact Information"
+                "Send"
               )}
             </span>
           )}

@@ -13,13 +13,9 @@ export async function POST(request: Request) {
   const {
     firstName,
     lastName,
-    email,
     phoneNumber,
-    companyName,
-    eventDate,
-    eventLocation,
-    speakerBudget,
-    eventDescription,
+    email,
+    message,
   } = await request.json();
 
   const messageData = {
@@ -33,11 +29,7 @@ export async function POST(request: Request) {
           <p><strong>Name:</strong> ${firstName} ${lastName}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Phone Number:</strong> ${phoneNumber}</p>
-          <p><strong>Company Name:</strong> ${companyName}</p>
-          <p><strong>Event Date:</strong> ${eventDate}</p>
-          <p><strong>Event Location:</strong> ${eventLocation}</p>
-          <p><strong>Speaker Budget:</strong> $${speakerBudget}</p>
-          <p><strong>Event Description:</strong> ${eventDescription}</p>
+          <p><strong>Message:</strong> ${message}</p>
         </body>
       </html>
     `,

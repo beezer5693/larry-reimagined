@@ -8,7 +8,7 @@ const BookSection = () => {
         <AnimateElement duration={0.75}>
           <p className="call-to-action balance-text text-center font-semibold tracking-tight text-white">
             <span className="align-middle">
-              Interested in booking Larry for your next event?
+              Interested in talking with Larry about his services?
             </span>{" "}
             <Link
               className="group whitespace-nowrap"

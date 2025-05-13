@@ -10,7 +10,7 @@ const TalkSection = () => {
           <div className="flex flex-col justify-center gap-8 text-gray-950 lg:items-center">
             <AnimateElement y={50} duration={0.75}>
               <h2 className="balance-text text-center font-semibold tracking-tight">
-                Talks to inspire your audience.
+                Talks that inspire.
               </h2>
             </AnimateElement>
             <AnimateElement y={50} duration={0.75} delay={0.2}>

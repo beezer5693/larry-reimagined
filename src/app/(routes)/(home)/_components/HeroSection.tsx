@@ -54,12 +54,12 @@ const HeroSection = () => {
           </AnimateElement>
           <AnimateElement className="w-full" y={50} duration={0.75} delay={0.2}>
             <div className="flex w-full flex-col justify-center gap-3 pt-3 sm:flex-row">
-              <Link className="px-10 sm:max-w-max sm:px-0" href="/talks">
+              <Link className="px-10 sm:max-w-max sm:px-0" href="/coaching">
                 <Button
                   className="w-full hover:opacity-90"
                   variant={"secondary"}
                 >
-                  <span>See My Talks</span>
+                  <span>Coaching</span>
                   <PiArrowUpRightBold className="ml-2" size={16} />
                 </Button>
               </Link>

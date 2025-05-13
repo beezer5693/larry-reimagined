@@ -13,14 +13,14 @@ const ContactFormSection = () => {
             <div className="balance-text text-center">
               <AnimatedText
                 className="bg-gray-950 bg-clip-text text-5xl font-semibold tracking-tight text-transparent md:text-6xl lg:text-7xl"
-                text={"Invite Larry to speak at your next event."}
+                text={"Contact Larry about his services."}
               />
             </div>
             <AnimateElement duration={1.25} delay={2}>
               <p className="balance-text sub-heading--small text-center font-medium text-gray-800">
-                Interested in having Larry speak at your next event? Fill out
-                the form below and Larry will contact you shortly to discuss
-                more.
+                Interested in coaching services or having Larry speak at one of
+                your next events? Fill out the form below and Larry will contact
+                you shortly to discuss more.
               </p>
             </AnimateElement>
           </div>
