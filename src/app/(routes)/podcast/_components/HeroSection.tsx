@@ -14,14 +14,17 @@ const HeroSection = () => {
         priority
       />
       <div className="relative w-full max-w-screen-2xl text-white sm:pl-10 xl:pl-0">
-        <h1 className="font-medium tracking-tight">
-          Welcome to the{" "}
-          <span className="font-semibold text-blue-600">
-            <br className="hidden sm:block" /> Mindset Matters Podcast <br />{" "}
-            with Larry Bryan
+        <h2 className="font-semibold tracking-tight">
+          <span className="block text-4xl">Welcome to</span>
+          <span className="my-4 block uppercase text-blue-600">
+            The Life Lab
           </span>
-        </h1>
-        <p className="mt-10">Podcasts coming soon...</p>
+          <span className="block text-4xl">with Larry Bryan</span>
+        </h2>
+        <p className="mt-6 text-lg font-medium">
+          A podcast curating the formulas for success in life and business.
+        </p>
+        <p className="mt-4">Coming Soon...</p>
       </div>
     </section>
   );
