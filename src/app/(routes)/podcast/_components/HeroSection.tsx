@@ -2,7 +2,8 @@ import Image from "next/image";
 import podcastHeroBg from "../../../../../public/assets/podcast/podcast.jpg";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { FaSpotify, FaYoutube, FaApple } from "react-icons/fa";
+import { FaSpotify, FaYoutube, FaApple, FaTiktok } from "react-icons/fa";
+import RednoteLogo from "../../../../../public/assets/podcast/rednote.jpeg";
 
 const HeroSection = () => {
   return (
@@ -30,10 +31,12 @@ const HeroSection = () => {
           <Link
             target="_blank"
             className="col-span-1"
-            href={"https://open.spotify.com/show/36bC0NHeJrsAJIlD3X09fl"}
+            href={
+              "https://open.spotify.com/show/7zoPuoHPp5XHQDrUffvS3Z?si=e6ddd93637b44918"
+            }
           >
-            <Button className="flex w-full gap-1.5">
-              <FaSpotify className="h-6 w-6" />
+            <Button className="flex h-11 w-full gap-1.5">
+              <FaSpotify className="h-5 w-5" />
               <span>Spotify</span>
             </Button>
           </Link>
@@ -42,8 +45,8 @@ const HeroSection = () => {
             className="col-span-1"
             href={"https://podcasts.apple.com/podcast/id1831341115"}
           >
-            <Button className="flex w-full gap-1.5">
-              <FaApple className="h-6 w-6" />
+            <Button className="flex h-11 w-full gap-1.5">
+              <FaApple className="h-5 w-5" />
               <span>Apple</span>
             </Button>
           </Link>
@@ -52,9 +55,19 @@ const HeroSection = () => {
             className="col-span-1"
             href={"https://www.youtube.com/@TheLifeLab55"}
           >
-            <Button className="flex w-full gap-1.5">
-              <FaYoutube className="h-6 w-6" />
+            <Button className="flex h-11 w-full gap-1.5">
+              <FaYoutube className="h-5 w-5" />
               <span>Youtube</span>
+            </Button>
+          </Link>
+          <Link
+            target="_blank"
+            className="col-span-1"
+            href={"https://v.douyin.com/IZD39FcJeCA/11/08lCh:/t@E.uf"}
+          >
+            <Button className="flex h-11 w-full gap-1.5">
+              <FaTiktok className="h-5 w-5" />
+              <span>Douyin</span>
             </Button>
           </Link>
           <Link
@@ -64,14 +77,10 @@ const HeroSection = () => {
               "https://www.xiaohongshu.com/user/profile/6191e19100000000100099a9?xsec_token=YBvxj2Z2Miu1WtBQv6cFyy3Gw8Wjg4-2zSSOxWPFDjb18=&xsec_source=app_share&xhsshare=CopyLink&appuid=6191e19100000000100099a9&apptime=1754140872&share_id=88e714221a7c47c8a84769598a54b17e"
             }
           >
-            <Button className="w-full">RedNote</Button>
-          </Link>
-          <Link
-            target="_blank"
-            className="col-span-1"
-            href={"https://v.douyin.com/IZD39FcJeCA/11/08lCh:/t@E.uf"}
-          >
-            <Button className="w-full">Douyin</Button>
+            <Button className="flex h-11 w-full gap-1.5">
+              <Image src={RednoteLogo} className="h-4 w-auto text-white" />
+              <span>Rednote</span>
+            </Button>
           </Link>
         </div>
       </div>
