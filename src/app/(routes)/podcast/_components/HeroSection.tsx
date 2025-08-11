@@ -78,7 +78,11 @@ const HeroSection = () => {
             }
           >
             <Button className="flex h-11 w-full gap-1.5">
-              <Image src={RednoteLogo} className="h-4 w-auto text-white" />
+              <Image
+                src={RednoteLogo}
+                className="h-4 w-auto text-white"
+                alt="Rednote Logo"
+              />
               <span>Rednote</span>
             </Button>
           </Link>
