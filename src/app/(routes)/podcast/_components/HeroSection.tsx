@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { FaSpotify, FaYoutube, FaApple, FaTiktok } from "react-icons/fa";
 import RednoteLogo from "../../../../../public/assets/podcast/rednote.jpeg";
+import { PODCAST_LINKS } from "@/constants";
 
 const HeroSection = () => {
   return (
@@ -31,49 +32,47 @@ const HeroSection = () => {
           <Link
             target="_blank"
             className="col-span-1"
-            href={
-              "https://open.spotify.com/show/7zoPuoHPp5XHQDrUffvS3Z?si=e6ddd93637b44918"
-            }
+            href={PODCAST_LINKS.spotify.href}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <FaSpotify className="h-5 w-5" />
-              <span>Spotify</span>
+              <span>{PODCAST_LINKS.spotify.label}</span>
             </Button>
           </Link>
           <Link
             target="_blank"
             className="col-span-1"
-            href={"https://podcasts.apple.com/podcast/id1831341115"}
+            href={PODCAST_LINKS.apple.href}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <FaApple className="h-5 w-5" />
-              <span>Apple</span>
+              <span>{PODCAST_LINKS.apple.label}</span>
             </Button>
           </Link>
           <Link
             target="_blank"
             className="col-span-1"
-            href={"https://www.youtube.com/@TheLifeLab55"}
+            href={PODCAST_LINKS.youtube.href}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <FaYoutube className="h-5 w-5" />
-              <span>Youtube</span>
+              <span>{PODCAST_LINKS.youtube.label}</span>
             </Button>
           </Link>
           <Link
             target="_blank"
             className="col-span-1"
-            href={"https://v.douyin.com/IZD39FcJeCA/11/08lCh:/t@E.uf"}
+            href={PODCAST_LINKS.douyin.href}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <FaTiktok className="h-5 w-5" />
-              <span>Douyin</span>
+              <span>{PODCAST_LINKS.douyin.label}</span>
             </Button>
           </Link>
           <Link
             target="_blank"
             className="col-span-1"
-            href={"https://v.douyin.com/3fCGfeRQU6Y"}
+            href={PODCAST_LINKS.rednote.href}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <Image
@@ -81,7 +80,7 @@ const HeroSection = () => {
                 className="h-4 w-auto text-white"
                 alt="Rednote Logo"
               />
-              <span>Rednote</span>
+              <span>{PODCAST_LINKS.rednote.label}</span>
             </Button>
           </Link>
         </div>

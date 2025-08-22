@@ -281,6 +281,29 @@ export const SOCIAL_LINKS = [
   },
 ];
 
+export const PODCAST_LINKS = {
+  apple: {
+    label: "Apple",
+    href: "https://podcasts.apple.com/podcast/id1831341115",
+  },
+  spotify: {
+    label: "Spotify",
+    href: "https://open.spotify.com/show/7zoPuoHPp5XHQDrUffvS3Z?si=e6ddd93637b44918",
+  },
+  youtube: {
+    label: "Youtube",
+    href: "https://www.youtube.com/@TheLifeLab55",
+  },
+  douyin: {
+    label: "Douyin",
+    href: "https://v.douyin.com/3fCGfeRQU6Y",
+  },
+  rednote: {
+    label: "Rednote",
+    href: "https://www.xiaohongshu.com/user/profile/6191e19100000000100099a9?xsec_token=YBvxj2Z2Miu1WtBQv6cFyy3Ao9W8H-tyOTsKK5iWTOxYw=&xsec_source=app_share&xhsshare=CopyLink&appuid=6191e19100000000100099a9&apptime=1754752859&share_id=596900e5fe8d42e98df4dee30b231272",
+  },
+};
+
 export const CAREER_ACHIEVEMENTS = [
   {
     title: "$52 Million",
