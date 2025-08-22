@@ -73,9 +73,7 @@ const HeroSection = () => {
           <Link
             target="_blank"
             className="col-span-1"
-            href={
-              "https://www.xiaohongshu.com/user/profile/6191e19100000000100099a9?xsec_token=YBvxj2Z2Miu1WtBQv6cFyy3Gw8Wjg4-2zSSOxWPFDjb18=&xsec_source=app_share&xhsshare=CopyLink&appuid=6191e19100000000100099a9&apptime=1754140872&share_id=88e714221a7c47c8a84769598a54b17e"
-            }
+            href={"https://v.douyin.com/3fCGfeRQU6Y"}
           >
             <Button className="flex h-11 w-full gap-1.5">
               <Image
