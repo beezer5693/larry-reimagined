@@ -20,7 +20,7 @@ const Resources = () => {
             </p>
           </AnimateElement>
         </div>
-        <div className="mx-auto mt-5 flex max-w-screen-xl flex-col flex-wrap items-center gap-y-14 md:mt-14 lg:flex-row lg:gap-y-10">
+        <div className="mx-auto mt-5 grid max-w-screen-xl grid-cols-1 gap-y-14 md:mt-14 lg:grid-cols-3 lg:gap-10">
           {E_BOOKS.map((ebook) => (
             <EBook key={ebook.title} ebook={ebook} />
           ))}

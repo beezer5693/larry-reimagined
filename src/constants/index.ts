@@ -53,6 +53,7 @@ import steveFishman from "../../public/assets/testimonials/steve-fishman.jpg";
 import stevenSciarretta from "../../public/assets/testimonials/steve-sciaretta.png";
 import louisKreisberg from "../../public/assets/testimonials/louis-kreisberg.jpg";
 import hiringEbookCoverImage from "../../public/assets/shop/hiring-ebook.png";
+import sellingEbookCoverImage from "../../public/assets/shop/selling-ebook.png";
 
 export const NEGATIVE_THOUGHTS = [
   {
@@ -480,5 +481,12 @@ export const E_BOOKS = [
     coverImage: hiringEbookCoverImage,
     href: "https://larrybryanlive.gumroad.com/l/hiring-top-sales-agents",
     download: "hiring-ebook.pdf",
+  },
+  {
+    title:
+      "Acquiring and Selling Financial Services to High Net Worth Individuals",
+    coverImage: sellingEbookCoverImage,
+    href: "https://larrybryanlive.gumroad.com/l/acquiring-and-selling-financial-services-to-high-net-worth-individuals",
+    download: "",
   },
 ];

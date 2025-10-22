@@ -15,24 +15,18 @@ type EBookProps = {
 
 const EBook = ({ ebook }: EBookProps) => {
   return (
-    <AnimateElement
-      className="basis-[33.3333333%]"
-      delay={0.75}
-      duration={0.75}
-    >
-      <div className="flex flex-col items-center justify-center">
-        <div className="lg:h-[350px]">
-          <Image
-            src={ebook.coverImage}
-            alt="Hiring E-book cover"
-            className="h-full object-cover object-center"
-            quality={65}
-          />
-        </div>
+    <AnimateElement className="place-self-stretch" delay={0.75} duration={0.75}>
+      <div className="flex h-full flex-col items-center justify-center  pb-14">
+        <Image
+          src={ebook.coverImage}
+          alt={`${ebook.title} book cover`}
+          className="h-full object-cover object-center"
+          quality={65}
+        />
         <div className="max-w-[15ch] text-center text-xl font-medium">
           {ebook.title}
         </div>
-        <Link href={ebook.href} target="_blank" download={ebook.download}>
+        <Link href={ebook.href} target="_blank">
           <Button variant={"dark"} className="mt-5 hover:opacity-90">
             Download E-book
           </Button>
