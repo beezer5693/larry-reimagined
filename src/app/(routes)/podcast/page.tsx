@@ -3,7 +3,7 @@ import PodcastSection from "./_components/PodcastSection";
 
 const Podcast = () => {
   return (
-    <main className="flex w-full flex-col items-center overflow-hidden">
+    <main className="flex h-full w-full flex-col items-center overflow-hidden">
       <HeroSection />
       <PodcastSection />
     </main>

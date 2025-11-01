@@ -8,27 +8,39 @@ import { PODCAST_LINKS } from "@/constants";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex h-screen w-full flex-col items-center justify-center px-5 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-sm md:px-20">
+    <section className="relative flex w-full flex-col items-center justify-center px-5 pb-14 pt-10 before:absolute before:inset-0 before:bg-black/10 before:backdrop-blur-sm md:px-20 lg:h-screen lg:py-0 lg:pb-20 lg:pt-12">
       <Image
         src={podcastHeroBg}
         alt="Podcast Hero Background"
         fill
         className="object-cover"
-        sizes="100vw"
         quality={65}
         priority
       />
       <div className="relative w-full max-w-screen-2xl text-white xl:pl-0">
         <h1 className="font-semibold">
           <span className="block text-8xl tracking-tighter text-blue-600">
-            The Life Lab
+            Larry Bryan Live
           </span>
-          <span className="mt-1 block text-2xl">with Larry Bryan</span>
         </h1>
-        <p className="mt-6 text-xl font-medium">
-          A podcast curating the formulas for success in life and business.
-        </p>
-        <div className="mt-8 grid max-w-2xl grid-cols-1 gap-4 md:grid-cols-3 md:flex-row">
+        <div className="mt-12 max-w-[750px] space-y-4 text-xl font-medium">
+          <p>
+            {`I’m Larry Bryan, 70 years old and thriving, with a $52 million
+          insurance commission legacy. Welcome to Larry Bryan Live, where I dive
+          into 5-minute fire interviews with 20-something millionaires crushing
+          it in AI, crypto, branding, and scaling. Every Friday, it’s a
+          70-year-old hustle vs. a Gen-Z genius, bridging the gap to bring you
+          raw insights, great suggestions, and real moves.`}
+          </p>
+          <p>
+            {`Expect no fluff, just
+          actionable strategies, diverse perspectives, and mindset shifts to
+          fast-track your wealth. Whether you’re 25 or 55, I’m here to connect
+          the old-school grind with young-world innovation. Subscribe now, and
+          let’s stack the bag together. Larry Bryan Live, 70, and thriving!`}
+          </p>
+        </div>
+        <div className="mt-8 grid max-w-2xl grid-cols-1 gap-4 md:grid-cols-3">
           <Link
             target="_blank"
             className="col-span-1"
