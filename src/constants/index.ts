@@ -293,7 +293,7 @@ export const PODCAST_LINKS = {
   },
   youtube: {
     label: "Youtube",
-    href: "https://www.youtube.com/@TheLifeLab55",
+    href: "https://www.youtube.com/@larrybryanlive",
   },
   douyin: {
     label: "Douyin",
