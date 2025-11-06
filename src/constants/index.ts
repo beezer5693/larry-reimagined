@@ -285,11 +285,11 @@ export const SOCIAL_LINKS = [
 export const PODCAST_LINKS = {
   apple: {
     label: "Apple",
-    href: "https://podcasts.apple.com/podcast/id1831341115",
+    href: "https://podcasts.apple.com/us/podcast/larry-bryan-live/id1831341115",
   },
   spotify: {
     label: "Spotify",
-    href: "https://open.spotify.com/show/7zoPuoHPp5XHQDrUffvS3Z?si=e6ddd93637b44918",
+    href: "https://open.spotify.com/show/7zoPuoHPp5XHQDrUffvS3Z",
   },
   youtube: {
     label: "Youtube",
